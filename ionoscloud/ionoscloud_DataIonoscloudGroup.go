@@ -14,6 +14,8 @@ import (
 type DataIonoscloudGroup interface {
 	cdktf.TerraformDataSource
 	AccessActivityLog() cdktf.IResolvable
+	AccessAndManageCertificates() cdktf.IResolvable
+	AccessAndManageMonitoring() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -24,6 +26,7 @@ type DataIonoscloudGroup interface {
 	SetCount(val *float64)
 	CreateBackupUnit() cdktf.IResolvable
 	CreateDatacenter() cdktf.IResolvable
+	CreateFlowLog() cdktf.IResolvable
 	CreateInternetAccess() cdktf.IResolvable
 	CreateK8SCluster() cdktf.IResolvable
 	CreatePcc() cdktf.IResolvable
@@ -47,6 +50,7 @@ type DataIonoscloudGroup interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ManageDbaas() cdktf.IResolvable
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -126,6 +130,26 @@ func (j *jsiiProxy_DataIonoscloudGroup) AccessActivityLog() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudGroup) AccessAndManageCertificates() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"accessAndManageCertificates",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudGroup) AccessAndManageMonitoring() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"accessAndManageMonitoring",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudGroup) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -171,6 +195,16 @@ func (j *jsiiProxy_DataIonoscloudGroup) CreateDatacenter() cdktf.IResolvable {
 	_jsii_.Get(
 		j,
 		"createDatacenter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudGroup) CreateFlowLog() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"createFlowLog",
 		&returns,
 	)
 	return returns
@@ -281,6 +315,16 @@ func (j *jsiiProxy_DataIonoscloudGroup) Lifecycle() *cdktf.TerraformResourceLife
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudGroup) ManageDbaas() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"manageDbaas",
 		&returns,
 	)
 	return returns

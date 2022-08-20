@@ -24,19 +24,31 @@ type GroupConfig struct {
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#access_activity_log Group#access_activity_log}.
 	AccessActivityLog interface{} `field:"optional" json:"accessActivityLog" yaml:"accessActivityLog"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#access_and_manage_certificates Group#access_and_manage_certificates}.
+	// Privilege for a group to access and manage certificates.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#access_and_manage_certificates Group#access_and_manage_certificates}
 	AccessAndManageCertificates interface{} `field:"optional" json:"accessAndManageCertificates" yaml:"accessAndManageCertificates"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#access_and_manage_monitoring Group#access_and_manage_monitoring}.
+	// Privilege for a group to access and manage monitoring related functionality (access metrics, CRUD on alarms, alarm-actions etc) using Monotoring-as-a-Service (MaaS).
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#access_and_manage_monitoring Group#access_and_manage_monitoring}
 	AccessAndManageMonitoring interface{} `field:"optional" json:"accessAndManageMonitoring" yaml:"accessAndManageMonitoring"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#create_backup_unit Group#create_backup_unit}.
+	// Create backup unit privilege.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#create_backup_unit Group#create_backup_unit}
 	CreateBackupUnit interface{} `field:"optional" json:"createBackupUnit" yaml:"createBackupUnit"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#create_datacenter Group#create_datacenter}.
 	CreateDatacenter interface{} `field:"optional" json:"createDatacenter" yaml:"createDatacenter"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#create_flow_log Group#create_flow_log}.
+	// Create Flow Logs privilege.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#create_flow_log Group#create_flow_log}
 	CreateFlowLog interface{} `field:"optional" json:"createFlowLog" yaml:"createFlowLog"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#create_internet_access Group#create_internet_access}.
+	// Create internet access privilege.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#create_internet_access Group#create_internet_access}
 	CreateInternetAccess interface{} `field:"optional" json:"createInternetAccess" yaml:"createInternetAccess"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#create_k8s_cluster Group#create_k8s_cluster}.
+	// Create Kubernetes cluster privilege.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#create_k8s_cluster Group#create_k8s_cluster}
 	CreateK8SCluster interface{} `field:"optional" json:"createK8SCluster" yaml:"createK8SCluster"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#create_pcc Group#create_pcc}.
 	CreatePcc interface{} `field:"optional" json:"createPcc" yaml:"createPcc"`
@@ -47,6 +59,10 @@ type GroupConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Privilege for a group to manage DBaaS related functionality.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#manage_dbaas Group#manage_dbaas}
+	ManageDbaas interface{} `field:"optional" json:"manageDbaas" yaml:"manageDbaas"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#reserve_ip Group#reserve_ip}.
 	ReserveIp interface{} `field:"optional" json:"reserveIp" yaml:"reserveIp"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#s3_privilege Group#s3_privilege}.

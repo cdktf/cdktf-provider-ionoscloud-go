@@ -74,6 +74,9 @@ type Group interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ManageDbaas() interface{}
+	SetManageDbaas(val interface{})
+	ManageDbaasInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -147,6 +150,7 @@ type Group interface {
 	ResetCreatePcc()
 	ResetCreateSnapshot()
 	ResetId()
+	ResetManageDbaas()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -475,6 +479,26 @@ func (j *jsiiProxy_Group) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) ManageDbaas() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageDbaas",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) ManageDbaasInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageDbaasInput",
 		&returns,
 	)
 	return returns
@@ -835,6 +859,14 @@ func (j *jsiiProxy_Group) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
+func (j *jsiiProxy_Group) SetManageDbaas(val interface{}) {
+	_jsii_.Set(
+		j,
+		"manageDbaas",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Group) SetName(val *string) {
 	_jsii_.Set(
 		j,
@@ -1172,6 +1204,14 @@ func (g *jsiiProxy_Group) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetManageDbaas() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetManageDbaas",
 		nil, // no parameters
 	)
 }

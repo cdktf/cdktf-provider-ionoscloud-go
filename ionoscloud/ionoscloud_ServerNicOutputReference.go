@@ -40,6 +40,7 @@ type ServerNicOutputReference interface {
 	FirewallTypeInput() *string
 	// Experimental.
 	Fqn() *string
+	Id() *string
 	InternalValue() *ServerNic
 	SetInternalValue(val *ServerNic)
 	Ips() *[]*string
@@ -232,6 +233,16 @@ func (j *jsiiProxy_ServerNicOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServerNicOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns

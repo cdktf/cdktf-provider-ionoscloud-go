@@ -21,7 +21,9 @@ type ServerVolume struct {
 	LicenceType *string `field:"optional" json:"licenceType" yaml:"licenceType"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#name Server#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#size Server#size}.
+	// The size of the volume in GB.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#size Server#size}
 	Size *float64 `field:"optional" json:"size" yaml:"size"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#ssh_key_path Server#ssh_key_path}.
 	SshKeyPath *[]*string `field:"optional" json:"sshKeyPath" yaml:"sshKeyPath"`
