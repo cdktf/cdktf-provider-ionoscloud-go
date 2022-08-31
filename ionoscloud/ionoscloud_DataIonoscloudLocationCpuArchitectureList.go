@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataIonoscloudLocationCpuArchitectureList) WrapsSet() *bool {
 func NewDataIonoscloudLocationCpuArchitectureList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudLocationCpuArchitectureList {
 	_init_.Initialize()
 
+	if err := validateNewDataIonoscloudLocationCpuArchitectureListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataIonoscloudLocationCpuArchitectureList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataIonoscloudLocationCpuArchitectureList_Override(d DataIonoscloudLocat
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudLocationCpuArchitectureList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataIonoscloudLocationCpuArchitectureList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataIonoscloudLocationCpuArchitectureList) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudLocationCpuArchitectureList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataIonoscloudLocationCpuArchitectureList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataIonoscloudLocationCpuArchitectureList) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudLocationCpuArchitectureList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataIonoscloudLocationCpuArchitectureList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataIonoscloudLocationCpuArchitectureList) ComputeFqn() *stri
 }
 
 func (d *jsiiProxy_DataIonoscloudLocationCpuArchitectureList) Get(index *float64) DataIonoscloudLocationCpuArchitectureOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataIonoscloudLocationCpuArchitectureOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataIonoscloudLocationCpuArchitectureList) Get(index *float64
 }
 
 func (d *jsiiProxy_DataIonoscloudLocationCpuArchitectureList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

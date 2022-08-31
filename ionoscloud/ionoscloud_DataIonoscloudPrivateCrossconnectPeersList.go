@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectPeersList) WrapsSet() *bool 
 func NewDataIonoscloudPrivateCrossconnectPeersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudPrivateCrossconnectPeersList {
 	_init_.Initialize()
 
+	if err := validateNewDataIonoscloudPrivateCrossconnectPeersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataIonoscloudPrivateCrossconnectPeersList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataIonoscloudPrivateCrossconnectPeersList_Override(d DataIonoscloudPriv
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectPeersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectPeersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectPeersList) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectPeersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectPeersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectPeersList) SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectPeersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectPeersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectPeersList) ComputeFqn() *str
 }
 
 func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectPeersList) Get(index *float64) DataIonoscloudPrivateCrossconnectPeersOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataIonoscloudPrivateCrossconnectPeersOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectPeersList) Get(index *float6
 }
 
 func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectPeersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

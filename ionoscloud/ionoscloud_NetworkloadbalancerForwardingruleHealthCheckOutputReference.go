@@ -247,6 +247,9 @@ func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) 
 func NewNetworkloadbalancerForwardingruleHealthCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkloadbalancerForwardingruleHealthCheckOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewNetworkloadbalancerForwardingruleHealthCheckOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference{}
 
 	_jsii_.Create(
@@ -268,7 +271,10 @@ func NewNetworkloadbalancerForwardingruleHealthCheckOutputReference_Override(n N
 	)
 }
 
-func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) SetClientTimeout(val *float64) {
+func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference)SetClientTimeout(val *float64) {
+	if err := j.validateSetClientTimeoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientTimeout",
@@ -276,7 +282,10 @@ func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -284,7 +293,10 @@ func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -292,7 +304,10 @@ func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) SetConnectTimeout(val *float64) {
+func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference)SetConnectTimeout(val *float64) {
+	if err := j.validateSetConnectTimeoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connectTimeout",
@@ -300,7 +315,10 @@ func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) SetInternalValue(val *NetworkloadbalancerForwardingruleHealthCheck) {
+func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference)SetInternalValue(val *NetworkloadbalancerForwardingruleHealthCheck) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -308,7 +326,10 @@ func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) SetRetries(val *float64) {
+func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference)SetRetries(val *float64) {
+	if err := j.validateSetRetriesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"retries",
@@ -316,7 +337,10 @@ func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) SetTargetTimeout(val *float64) {
+func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference)SetTargetTimeout(val *float64) {
+	if err := j.validateSetTargetTimeoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"targetTimeout",
@@ -324,7 +348,10 @@ func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -332,7 +359,10 @@ func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -354,6 +384,9 @@ func (n *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) 
 }
 
 func (n *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -367,6 +400,9 @@ func (n *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) 
 }
 
 func (n *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -380,6 +416,9 @@ func (n *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) 
 }
 
 func (n *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -393,6 +432,9 @@ func (n *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) 
 }
 
 func (n *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -406,6 +448,9 @@ func (n *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) 
 }
 
 func (n *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -419,6 +464,9 @@ func (n *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) 
 }
 
 func (n *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -432,6 +480,9 @@ func (n *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) 
 }
 
 func (n *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -445,6 +496,9 @@ func (n *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) 
 }
 
 func (n *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -458,6 +512,9 @@ func (n *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) 
 }
 
 func (n *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -484,6 +541,9 @@ func (n *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) 
 }
 
 func (n *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -529,6 +589,9 @@ func (n *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) 
 }
 
 func (n *jsiiProxy_NetworkloadbalancerForwardingruleHealthCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

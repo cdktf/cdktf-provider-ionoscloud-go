@@ -111,6 +111,9 @@ func (j *jsiiProxy_NatgatewayLansList) WrapsSet() *bool {
 func NewNatgatewayLansList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NatgatewayLansList {
 	_init_.Initialize()
 
+	if err := validateNewNatgatewayLansListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NatgatewayLansList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewNatgatewayLansList_Override(n NatgatewayLansList, terraformResource cdkt
 	)
 }
 
-func (j *jsiiProxy_NatgatewayLansList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NatgatewayLansList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_NatgatewayLansList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NatgatewayLansList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NatgatewayLansList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_NatgatewayLansList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NatgatewayLansList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NatgatewayLansList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_NatgatewayLansList) SetTerraformResource(val cdktf.IInterpola
 	)
 }
 
-func (j *jsiiProxy_NatgatewayLansList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_NatgatewayLansList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (n *jsiiProxy_NatgatewayLansList) ComputeFqn() *string {
 }
 
 func (n *jsiiProxy_NatgatewayLansList) Get(index *float64) NatgatewayLansOutputReference {
+	if err := n.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns NatgatewayLansOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (n *jsiiProxy_NatgatewayLansList) Get(index *float64) NatgatewayLansOutputR
 }
 
 func (n *jsiiProxy_NatgatewayLansList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

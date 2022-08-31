@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataIonoscloudPgClusterFromBackupList) WrapsSet() *bool {
 func NewDataIonoscloudPgClusterFromBackupList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudPgClusterFromBackupList {
 	_init_.Initialize()
 
+	if err := validateNewDataIonoscloudPgClusterFromBackupListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataIonoscloudPgClusterFromBackupList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataIonoscloudPgClusterFromBackupList_Override(d DataIonoscloudPgCluster
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterFromBackupList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataIonoscloudPgClusterFromBackupList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataIonoscloudPgClusterFromBackupList) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterFromBackupList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataIonoscloudPgClusterFromBackupList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataIonoscloudPgClusterFromBackupList) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterFromBackupList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataIonoscloudPgClusterFromBackupList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataIonoscloudPgClusterFromBackupList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataIonoscloudPgClusterFromBackupList) Get(index *float64) DataIonoscloudPgClusterFromBackupOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataIonoscloudPgClusterFromBackupOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataIonoscloudPgClusterFromBackupList) Get(index *float64) Da
 }
 
 func (d *jsiiProxy_DataIonoscloudPgClusterFromBackupList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

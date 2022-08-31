@@ -220,6 +220,9 @@ func (j *jsiiProxy_PgClusterConnectionsOutputReference) TerraformResource() cdkt
 func NewPgClusterConnectionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PgClusterConnectionsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewPgClusterConnectionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PgClusterConnectionsOutputReference{}
 
 	_jsii_.Create(
@@ -241,7 +244,10 @@ func NewPgClusterConnectionsOutputReference_Override(p PgClusterConnectionsOutpu
 	)
 }
 
-func (j *jsiiProxy_PgClusterConnectionsOutputReference) SetCidr(val *string) {
+func (j *jsiiProxy_PgClusterConnectionsOutputReference)SetCidr(val *string) {
+	if err := j.validateSetCidrParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cidr",
@@ -249,7 +255,10 @@ func (j *jsiiProxy_PgClusterConnectionsOutputReference) SetCidr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PgClusterConnectionsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_PgClusterConnectionsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -257,7 +266,10 @@ func (j *jsiiProxy_PgClusterConnectionsOutputReference) SetComplexObjectIndex(va
 	)
 }
 
-func (j *jsiiProxy_PgClusterConnectionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_PgClusterConnectionsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -265,7 +277,10 @@ func (j *jsiiProxy_PgClusterConnectionsOutputReference) SetComplexObjectIsFromSe
 	)
 }
 
-func (j *jsiiProxy_PgClusterConnectionsOutputReference) SetDatacenterId(val *string) {
+func (j *jsiiProxy_PgClusterConnectionsOutputReference)SetDatacenterId(val *string) {
+	if err := j.validateSetDatacenterIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"datacenterId",
@@ -273,7 +288,10 @@ func (j *jsiiProxy_PgClusterConnectionsOutputReference) SetDatacenterId(val *str
 	)
 }
 
-func (j *jsiiProxy_PgClusterConnectionsOutputReference) SetInternalValue(val *PgClusterConnections) {
+func (j *jsiiProxy_PgClusterConnectionsOutputReference)SetInternalValue(val *PgClusterConnections) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -281,7 +299,10 @@ func (j *jsiiProxy_PgClusterConnectionsOutputReference) SetInternalValue(val *Pg
 	)
 }
 
-func (j *jsiiProxy_PgClusterConnectionsOutputReference) SetLanId(val *string) {
+func (j *jsiiProxy_PgClusterConnectionsOutputReference)SetLanId(val *string) {
+	if err := j.validateSetLanIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lanId",
@@ -289,7 +310,10 @@ func (j *jsiiProxy_PgClusterConnectionsOutputReference) SetLanId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PgClusterConnectionsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PgClusterConnectionsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -297,7 +321,10 @@ func (j *jsiiProxy_PgClusterConnectionsOutputReference) SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_PgClusterConnectionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PgClusterConnectionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -319,6 +346,9 @@ func (p *jsiiProxy_PgClusterConnectionsOutputReference) ComputeFqn() *string {
 }
 
 func (p *jsiiProxy_PgClusterConnectionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -332,6 +362,9 @@ func (p *jsiiProxy_PgClusterConnectionsOutputReference) GetAnyMapAttribute(terra
 }
 
 func (p *jsiiProxy_PgClusterConnectionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -345,6 +378,9 @@ func (p *jsiiProxy_PgClusterConnectionsOutputReference) GetBooleanAttribute(terr
 }
 
 func (p *jsiiProxy_PgClusterConnectionsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -358,6 +394,9 @@ func (p *jsiiProxy_PgClusterConnectionsOutputReference) GetBooleanMapAttribute(t
 }
 
 func (p *jsiiProxy_PgClusterConnectionsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -371,6 +410,9 @@ func (p *jsiiProxy_PgClusterConnectionsOutputReference) GetListAttribute(terrafo
 }
 
 func (p *jsiiProxy_PgClusterConnectionsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -384,6 +426,9 @@ func (p *jsiiProxy_PgClusterConnectionsOutputReference) GetNumberAttribute(terra
 }
 
 func (p *jsiiProxy_PgClusterConnectionsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -397,6 +442,9 @@ func (p *jsiiProxy_PgClusterConnectionsOutputReference) GetNumberListAttribute(t
 }
 
 func (p *jsiiProxy_PgClusterConnectionsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -410,6 +458,9 @@ func (p *jsiiProxy_PgClusterConnectionsOutputReference) GetNumberMapAttribute(te
 }
 
 func (p *jsiiProxy_PgClusterConnectionsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -423,6 +474,9 @@ func (p *jsiiProxy_PgClusterConnectionsOutputReference) GetStringAttribute(terra
 }
 
 func (p *jsiiProxy_PgClusterConnectionsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (p *jsiiProxy_PgClusterConnectionsOutputReference) InterpolationAsList() cd
 }
 
 func (p *jsiiProxy_PgClusterConnectionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -462,6 +519,9 @@ func (p *jsiiProxy_PgClusterConnectionsOutputReference) InterpolationForAttribut
 }
 
 func (p *jsiiProxy_PgClusterConnectionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -736,6 +736,9 @@ func (j *jsiiProxy_K8SNodePool) TimeoutsInput() interface{} {
 func NewK8SNodePool(scope constructs.Construct, id *string, config *K8SNodePoolConfig) K8SNodePool {
 	_init_.Initialize()
 
+	if err := validateNewK8SNodePoolParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_K8SNodePool{}
 
 	_jsii_.Create(
@@ -758,7 +761,10 @@ func NewK8SNodePool_Override(k K8SNodePool, scope constructs.Construct, id *stri
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetAllowReplace(val interface{}) {
+func (j *jsiiProxy_K8SNodePool)SetAllowReplace(val interface{}) {
+	if err := j.validateSetAllowReplaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowReplace",
@@ -766,7 +772,10 @@ func (j *jsiiProxy_K8SNodePool) SetAllowReplace(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetAnnotations(val *map[string]*string) {
+func (j *jsiiProxy_K8SNodePool)SetAnnotations(val *map[string]*string) {
+	if err := j.validateSetAnnotationsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"annotations",
@@ -774,7 +783,10 @@ func (j *jsiiProxy_K8SNodePool) SetAnnotations(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetAvailabilityZone(val *string) {
+func (j *jsiiProxy_K8SNodePool)SetAvailabilityZone(val *string) {
+	if err := j.validateSetAvailabilityZoneParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"availabilityZone",
@@ -782,7 +794,10 @@ func (j *jsiiProxy_K8SNodePool) SetAvailabilityZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetConnection(val interface{}) {
+func (j *jsiiProxy_K8SNodePool)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -790,7 +805,10 @@ func (j *jsiiProxy_K8SNodePool) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetCoresCount(val *float64) {
+func (j *jsiiProxy_K8SNodePool)SetCoresCount(val *float64) {
+	if err := j.validateSetCoresCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"coresCount",
@@ -798,7 +816,7 @@ func (j *jsiiProxy_K8SNodePool) SetCoresCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetCount(val *float64) {
+func (j *jsiiProxy_K8SNodePool)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -806,7 +824,10 @@ func (j *jsiiProxy_K8SNodePool) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetCpuFamily(val *string) {
+func (j *jsiiProxy_K8SNodePool)SetCpuFamily(val *string) {
+	if err := j.validateSetCpuFamilyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cpuFamily",
@@ -814,7 +835,10 @@ func (j *jsiiProxy_K8SNodePool) SetCpuFamily(val *string) {
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetDatacenterId(val *string) {
+func (j *jsiiProxy_K8SNodePool)SetDatacenterId(val *string) {
+	if err := j.validateSetDatacenterIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"datacenterId",
@@ -822,7 +846,7 @@ func (j *jsiiProxy_K8SNodePool) SetDatacenterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_K8SNodePool)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -830,7 +854,7 @@ func (j *jsiiProxy_K8SNodePool) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_K8SNodePool)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -838,7 +862,10 @@ func (j *jsiiProxy_K8SNodePool) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetId(val *string) {
+func (j *jsiiProxy_K8SNodePool)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -846,7 +873,10 @@ func (j *jsiiProxy_K8SNodePool) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetK8SClusterId(val *string) {
+func (j *jsiiProxy_K8SNodePool)SetK8SClusterId(val *string) {
+	if err := j.validateSetK8SClusterIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"k8SClusterId",
@@ -854,7 +884,10 @@ func (j *jsiiProxy_K8SNodePool) SetK8SClusterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetK8SVersion(val *string) {
+func (j *jsiiProxy_K8SNodePool)SetK8SVersion(val *string) {
+	if err := j.validateSetK8SVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"k8SVersion",
@@ -862,7 +895,10 @@ func (j *jsiiProxy_K8SNodePool) SetK8SVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetLabels(val *map[string]*string) {
+func (j *jsiiProxy_K8SNodePool)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"labels",
@@ -870,7 +906,10 @@ func (j *jsiiProxy_K8SNodePool) SetLabels(val *map[string]*string) {
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_K8SNodePool)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -878,7 +917,10 @@ func (j *jsiiProxy_K8SNodePool) SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetName(val *string) {
+func (j *jsiiProxy_K8SNodePool)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -886,7 +928,10 @@ func (j *jsiiProxy_K8SNodePool) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetNodeCount(val *float64) {
+func (j *jsiiProxy_K8SNodePool)SetNodeCount(val *float64) {
+	if err := j.validateSetNodeCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"nodeCount",
@@ -894,7 +939,7 @@ func (j *jsiiProxy_K8SNodePool) SetNodeCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_K8SNodePool)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -902,7 +947,10 @@ func (j *jsiiProxy_K8SNodePool) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_K8SNodePool)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -910,7 +958,10 @@ func (j *jsiiProxy_K8SNodePool) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetPublicIps(val *[]*string) {
+func (j *jsiiProxy_K8SNodePool)SetPublicIps(val *[]*string) {
+	if err := j.validateSetPublicIpsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"publicIps",
@@ -918,7 +969,10 @@ func (j *jsiiProxy_K8SNodePool) SetPublicIps(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetRamSize(val *float64) {
+func (j *jsiiProxy_K8SNodePool)SetRamSize(val *float64) {
+	if err := j.validateSetRamSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ramSize",
@@ -926,7 +980,10 @@ func (j *jsiiProxy_K8SNodePool) SetRamSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetStorageSize(val *float64) {
+func (j *jsiiProxy_K8SNodePool)SetStorageSize(val *float64) {
+	if err := j.validateSetStorageSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"storageSize",
@@ -934,7 +991,10 @@ func (j *jsiiProxy_K8SNodePool) SetStorageSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_K8SNodePool) SetStorageType(val *string) {
+func (j *jsiiProxy_K8SNodePool)SetStorageType(val *string) {
+	if err := j.validateSetStorageTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"storageType",
@@ -962,6 +1022,9 @@ func (j *jsiiProxy_K8SNodePool) SetStorageType(val *string) {
 func K8SNodePool_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateK8SNodePool_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -986,6 +1049,9 @@ func K8SNodePool_TfResourceType() *string {
 }
 
 func (k *jsiiProxy_K8SNodePool) AddOverride(path *string, value interface{}) {
+	if err := k.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		k,
 		"addOverride",
@@ -994,6 +1060,9 @@ func (k *jsiiProxy_K8SNodePool) AddOverride(path *string, value interface{}) {
 }
 
 func (k *jsiiProxy_K8SNodePool) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1007,6 +1076,9 @@ func (k *jsiiProxy_K8SNodePool) GetAnyMapAttribute(terraformAttribute *string) *
 }
 
 func (k *jsiiProxy_K8SNodePool) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := k.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1020,6 +1092,9 @@ func (k *jsiiProxy_K8SNodePool) GetBooleanAttribute(terraformAttribute *string) 
 }
 
 func (k *jsiiProxy_K8SNodePool) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := k.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1033,6 +1108,9 @@ func (k *jsiiProxy_K8SNodePool) GetBooleanMapAttribute(terraformAttribute *strin
 }
 
 func (k *jsiiProxy_K8SNodePool) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := k.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1046,6 +1124,9 @@ func (k *jsiiProxy_K8SNodePool) GetListAttribute(terraformAttribute *string) *[]
 }
 
 func (k *jsiiProxy_K8SNodePool) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := k.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1059,6 +1140,9 @@ func (k *jsiiProxy_K8SNodePool) GetNumberAttribute(terraformAttribute *string) *
 }
 
 func (k *jsiiProxy_K8SNodePool) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := k.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1072,6 +1156,9 @@ func (k *jsiiProxy_K8SNodePool) GetNumberListAttribute(terraformAttribute *strin
 }
 
 func (k *jsiiProxy_K8SNodePool) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := k.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1085,6 +1172,9 @@ func (k *jsiiProxy_K8SNodePool) GetNumberMapAttribute(terraformAttribute *string
 }
 
 func (k *jsiiProxy_K8SNodePool) GetStringAttribute(terraformAttribute *string) *string {
+	if err := k.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1098,6 +1188,9 @@ func (k *jsiiProxy_K8SNodePool) GetStringAttribute(terraformAttribute *string) *
 }
 
 func (k *jsiiProxy_K8SNodePool) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := k.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1111,6 +1204,9 @@ func (k *jsiiProxy_K8SNodePool) GetStringMapAttribute(terraformAttribute *string
 }
 
 func (k *jsiiProxy_K8SNodePool) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1124,6 +1220,9 @@ func (k *jsiiProxy_K8SNodePool) InterpolationForAttribute(terraformAttribute *st
 }
 
 func (k *jsiiProxy_K8SNodePool) OverrideLogicalId(newLogicalId *string) {
+	if err := k.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		k,
 		"overrideLogicalId",
@@ -1132,6 +1231,9 @@ func (k *jsiiProxy_K8SNodePool) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (k *jsiiProxy_K8SNodePool) PutAutoScaling(value *K8SNodePoolAutoScaling) {
+	if err := k.validatePutAutoScalingParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		k,
 		"putAutoScaling",
@@ -1140,6 +1242,9 @@ func (k *jsiiProxy_K8SNodePool) PutAutoScaling(value *K8SNodePoolAutoScaling) {
 }
 
 func (k *jsiiProxy_K8SNodePool) PutLans(value interface{}) {
+	if err := k.validatePutLansParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		k,
 		"putLans",
@@ -1148,6 +1253,9 @@ func (k *jsiiProxy_K8SNodePool) PutLans(value interface{}) {
 }
 
 func (k *jsiiProxy_K8SNodePool) PutMaintenanceWindow(value *K8SNodePoolMaintenanceWindow) {
+	if err := k.validatePutMaintenanceWindowParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		k,
 		"putMaintenanceWindow",
@@ -1156,6 +1264,9 @@ func (k *jsiiProxy_K8SNodePool) PutMaintenanceWindow(value *K8SNodePoolMaintenan
 }
 
 func (k *jsiiProxy_K8SNodePool) PutTimeouts(value *K8SNodePoolTimeouts) {
+	if err := k.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		k,
 		"putTimeouts",

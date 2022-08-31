@@ -381,6 +381,9 @@ func (j *jsiiProxy_DataIonoscloudIpfailover) TimeoutsInput() interface{} {
 func NewDataIonoscloudIpfailover(scope constructs.Construct, id *string, config *DataIonoscloudIpfailoverConfig) DataIonoscloudIpfailover {
 	_init_.Initialize()
 
+	if err := validateNewDataIonoscloudIpfailoverParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataIonoscloudIpfailover{}
 
 	_jsii_.Create(
@@ -403,7 +406,7 @@ func NewDataIonoscloudIpfailover_Override(d DataIonoscloudIpfailover, scope cons
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudIpfailover) SetCount(val *float64) {
+func (j *jsiiProxy_DataIonoscloudIpfailover)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -411,7 +414,10 @@ func (j *jsiiProxy_DataIonoscloudIpfailover) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudIpfailover) SetDatacenterId(val *string) {
+func (j *jsiiProxy_DataIonoscloudIpfailover)SetDatacenterId(val *string) {
+	if err := j.validateSetDatacenterIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"datacenterId",
@@ -419,7 +425,7 @@ func (j *jsiiProxy_DataIonoscloudIpfailover) SetDatacenterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudIpfailover) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataIonoscloudIpfailover)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -427,7 +433,7 @@ func (j *jsiiProxy_DataIonoscloudIpfailover) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudIpfailover) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataIonoscloudIpfailover)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -435,7 +441,10 @@ func (j *jsiiProxy_DataIonoscloudIpfailover) SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudIpfailover) SetId(val *string) {
+func (j *jsiiProxy_DataIonoscloudIpfailover)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -443,7 +452,10 @@ func (j *jsiiProxy_DataIonoscloudIpfailover) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudIpfailover) SetIp(val *string) {
+func (j *jsiiProxy_DataIonoscloudIpfailover)SetIp(val *string) {
+	if err := j.validateSetIpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ip",
@@ -451,7 +463,10 @@ func (j *jsiiProxy_DataIonoscloudIpfailover) SetIp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudIpfailover) SetLanId(val *string) {
+func (j *jsiiProxy_DataIonoscloudIpfailover)SetLanId(val *string) {
+	if err := j.validateSetLanIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lanId",
@@ -459,7 +474,10 @@ func (j *jsiiProxy_DataIonoscloudIpfailover) SetLanId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudIpfailover) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataIonoscloudIpfailover)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -467,7 +485,10 @@ func (j *jsiiProxy_DataIonoscloudIpfailover) SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudIpfailover) SetNicuuid(val *string) {
+func (j *jsiiProxy_DataIonoscloudIpfailover)SetNicuuid(val *string) {
+	if err := j.validateSetNicuuidParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"nicuuid",
@@ -475,7 +496,7 @@ func (j *jsiiProxy_DataIonoscloudIpfailover) SetNicuuid(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudIpfailover) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataIonoscloudIpfailover)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -503,6 +524,9 @@ func (j *jsiiProxy_DataIonoscloudIpfailover) SetProvider(val cdktf.TerraformProv
 func DataIonoscloudIpfailover_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataIonoscloudIpfailover_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -527,6 +551,9 @@ func DataIonoscloudIpfailover_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataIonoscloudIpfailover) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -535,6 +562,9 @@ func (d *jsiiProxy_DataIonoscloudIpfailover) AddOverride(path *string, value int
 }
 
 func (d *jsiiProxy_DataIonoscloudIpfailover) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -548,6 +578,9 @@ func (d *jsiiProxy_DataIonoscloudIpfailover) GetAnyMapAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DataIonoscloudIpfailover) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -561,6 +594,9 @@ func (d *jsiiProxy_DataIonoscloudIpfailover) GetBooleanAttribute(terraformAttrib
 }
 
 func (d *jsiiProxy_DataIonoscloudIpfailover) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -574,6 +610,9 @@ func (d *jsiiProxy_DataIonoscloudIpfailover) GetBooleanMapAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataIonoscloudIpfailover) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -587,6 +626,9 @@ func (d *jsiiProxy_DataIonoscloudIpfailover) GetListAttribute(terraformAttribute
 }
 
 func (d *jsiiProxy_DataIonoscloudIpfailover) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -600,6 +642,9 @@ func (d *jsiiProxy_DataIonoscloudIpfailover) GetNumberAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DataIonoscloudIpfailover) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -613,6 +658,9 @@ func (d *jsiiProxy_DataIonoscloudIpfailover) GetNumberListAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataIonoscloudIpfailover) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -626,6 +674,9 @@ func (d *jsiiProxy_DataIonoscloudIpfailover) GetNumberMapAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataIonoscloudIpfailover) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -639,6 +690,9 @@ func (d *jsiiProxy_DataIonoscloudIpfailover) GetStringAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DataIonoscloudIpfailover) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -652,6 +706,9 @@ func (d *jsiiProxy_DataIonoscloudIpfailover) GetStringMapAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataIonoscloudIpfailover) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -665,6 +722,9 @@ func (d *jsiiProxy_DataIonoscloudIpfailover) InterpolationForAttribute(terraform
 }
 
 func (d *jsiiProxy_DataIonoscloudIpfailover) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
@@ -673,6 +733,9 @@ func (d *jsiiProxy_DataIonoscloudIpfailover) OverrideLogicalId(newLogicalId *str
 }
 
 func (d *jsiiProxy_DataIonoscloudIpfailover) PutTimeouts(value *DataIonoscloudIpfailoverTimeouts) {
+	if err := d.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",

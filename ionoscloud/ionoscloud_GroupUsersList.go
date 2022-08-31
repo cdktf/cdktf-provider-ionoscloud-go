@@ -99,6 +99,9 @@ func (j *jsiiProxy_GroupUsersList) WrapsSet() *bool {
 func NewGroupUsersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GroupUsersList {
 	_init_.Initialize()
 
+	if err := validateNewGroupUsersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_GroupUsersList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewGroupUsersList_Override(g GroupUsersList, terraformResource cdktf.IInter
 	)
 }
 
-func (j *jsiiProxy_GroupUsersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GroupUsersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_GroupUsersList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GroupUsersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GroupUsersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_GroupUsersList) SetTerraformResource(val cdktf.IInterpolating
 	)
 }
 
-func (j *jsiiProxy_GroupUsersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GroupUsersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (g *jsiiProxy_GroupUsersList) ComputeFqn() *string {
 }
 
 func (g *jsiiProxy_GroupUsersList) Get(index *float64) GroupUsersOutputReference {
+	if err := g.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns GroupUsersOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (g *jsiiProxy_GroupUsersList) Get(index *float64) GroupUsersOutputReference
 }
 
 func (g *jsiiProxy_GroupUsersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

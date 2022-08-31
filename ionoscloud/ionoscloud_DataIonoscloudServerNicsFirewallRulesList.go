@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataIonoscloudServerNicsFirewallRulesList) WrapsSet() *bool {
 func NewDataIonoscloudServerNicsFirewallRulesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudServerNicsFirewallRulesList {
 	_init_.Initialize()
 
+	if err := validateNewDataIonoscloudServerNicsFirewallRulesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataIonoscloudServerNicsFirewallRulesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataIonoscloudServerNicsFirewallRulesList_Override(d DataIonoscloudServe
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudServerNicsFirewallRulesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataIonoscloudServerNicsFirewallRulesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataIonoscloudServerNicsFirewallRulesList) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudServerNicsFirewallRulesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataIonoscloudServerNicsFirewallRulesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataIonoscloudServerNicsFirewallRulesList) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudServerNicsFirewallRulesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataIonoscloudServerNicsFirewallRulesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataIonoscloudServerNicsFirewallRulesList) ComputeFqn() *stri
 }
 
 func (d *jsiiProxy_DataIonoscloudServerNicsFirewallRulesList) Get(index *float64) DataIonoscloudServerNicsFirewallRulesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataIonoscloudServerNicsFirewallRulesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataIonoscloudServerNicsFirewallRulesList) Get(index *float64
 }
 
 func (d *jsiiProxy_DataIonoscloudServerNicsFirewallRulesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

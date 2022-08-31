@@ -247,6 +247,9 @@ func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) UpdateInput() *string 
 func NewNatgatewayRuleTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NatgatewayRuleTimeoutsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewNatgatewayRuleTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NatgatewayRuleTimeoutsOutputReference{}
 
 	_jsii_.Create(
@@ -268,7 +271,10 @@ func NewNatgatewayRuleTimeoutsOutputReference_Override(n NatgatewayRuleTimeoutsO
 	)
 }
 
-func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -276,7 +282,10 @@ func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -284,7 +293,10 @@ func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) SetCreate(val *string) {
+func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference)SetCreate(val *string) {
+	if err := j.validateSetCreateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"create",
@@ -292,7 +304,10 @@ func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) SetCreate(val *string)
 	)
 }
 
-func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) SetDefault(val *string) {
+func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference)SetDefault(val *string) {
+	if err := j.validateSetDefaultParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"default",
@@ -300,7 +315,10 @@ func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) SetDefault(val *string
 	)
 }
 
-func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) SetDelete(val *string) {
+func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference)SetDelete(val *string) {
+	if err := j.validateSetDeleteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"delete",
@@ -308,7 +326,10 @@ func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) SetDelete(val *string)
 	)
 }
 
-func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -316,7 +337,10 @@ func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -324,7 +348,10 @@ func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -332,7 +359,10 @@ func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) SetUpdate(val *string) {
+func (j *jsiiProxy_NatgatewayRuleTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"update",
@@ -354,6 +384,9 @@ func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) ComputeFqn() *string {
 }
 
 func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -367,6 +400,9 @@ func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) GetAnyMapAttribute(ter
 }
 
 func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -380,6 +416,9 @@ func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) GetBooleanAttribute(te
 }
 
 func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -393,6 +432,9 @@ func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) GetBooleanMapAttribute
 }
 
 func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -406,6 +448,9 @@ func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) GetListAttribute(terra
 }
 
 func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -419,6 +464,9 @@ func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) GetNumberAttribute(ter
 }
 
 func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -432,6 +480,9 @@ func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) GetNumberListAttribute
 }
 
 func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -445,6 +496,9 @@ func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) GetNumberMapAttribute(
 }
 
 func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -458,6 +512,9 @@ func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) GetStringAttribute(ter
 }
 
 func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -484,6 +541,9 @@ func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) InterpolationAsList() 
 }
 
 func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -529,6 +589,9 @@ func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) ResetUpdate() {
 }
 
 func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

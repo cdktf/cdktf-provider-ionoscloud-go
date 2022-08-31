@@ -510,6 +510,9 @@ func (j *jsiiProxy_DataIonoscloudNic) TimeoutsInput() interface{} {
 func NewDataIonoscloudNic(scope constructs.Construct, id *string, config *DataIonoscloudNicConfig) DataIonoscloudNic {
 	_init_.Initialize()
 
+	if err := validateNewDataIonoscloudNicParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataIonoscloudNic{}
 
 	_jsii_.Create(
@@ -532,7 +535,7 @@ func NewDataIonoscloudNic_Override(d DataIonoscloudNic, scope constructs.Constru
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNic) SetCount(val *float64) {
+func (j *jsiiProxy_DataIonoscloudNic)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -540,7 +543,10 @@ func (j *jsiiProxy_DataIonoscloudNic) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNic) SetDatacenterId(val *string) {
+func (j *jsiiProxy_DataIonoscloudNic)SetDatacenterId(val *string) {
+	if err := j.validateSetDatacenterIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"datacenterId",
@@ -548,7 +554,7 @@ func (j *jsiiProxy_DataIonoscloudNic) SetDatacenterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNic) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataIonoscloudNic)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -556,7 +562,10 @@ func (j *jsiiProxy_DataIonoscloudNic) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNic) SetDhcp(val interface{}) {
+func (j *jsiiProxy_DataIonoscloudNic)SetDhcp(val interface{}) {
+	if err := j.validateSetDhcpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dhcp",
@@ -564,7 +573,10 @@ func (j *jsiiProxy_DataIonoscloudNic) SetDhcp(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNic) SetFirewallActive(val interface{}) {
+func (j *jsiiProxy_DataIonoscloudNic)SetFirewallActive(val interface{}) {
+	if err := j.validateSetFirewallActiveParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"firewallActive",
@@ -572,7 +584,10 @@ func (j *jsiiProxy_DataIonoscloudNic) SetFirewallActive(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNic) SetFirewallType(val *string) {
+func (j *jsiiProxy_DataIonoscloudNic)SetFirewallType(val *string) {
+	if err := j.validateSetFirewallTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"firewallType",
@@ -580,7 +595,7 @@ func (j *jsiiProxy_DataIonoscloudNic) SetFirewallType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNic) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataIonoscloudNic)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -588,7 +603,10 @@ func (j *jsiiProxy_DataIonoscloudNic) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNic) SetId(val *string) {
+func (j *jsiiProxy_DataIonoscloudNic)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -596,7 +614,10 @@ func (j *jsiiProxy_DataIonoscloudNic) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNic) SetIps(val *[]*string) {
+func (j *jsiiProxy_DataIonoscloudNic)SetIps(val *[]*string) {
+	if err := j.validateSetIpsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ips",
@@ -604,7 +625,10 @@ func (j *jsiiProxy_DataIonoscloudNic) SetIps(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNic) SetLan(val *float64) {
+func (j *jsiiProxy_DataIonoscloudNic)SetLan(val *float64) {
+	if err := j.validateSetLanParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lan",
@@ -612,7 +636,10 @@ func (j *jsiiProxy_DataIonoscloudNic) SetLan(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNic) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataIonoscloudNic)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -620,7 +647,10 @@ func (j *jsiiProxy_DataIonoscloudNic) SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNic) SetName(val *string) {
+func (j *jsiiProxy_DataIonoscloudNic)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -628,7 +658,7 @@ func (j *jsiiProxy_DataIonoscloudNic) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNic) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataIonoscloudNic)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -636,7 +666,10 @@ func (j *jsiiProxy_DataIonoscloudNic) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNic) SetServerId(val *string) {
+func (j *jsiiProxy_DataIonoscloudNic)SetServerId(val *string) {
+	if err := j.validateSetServerIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"serverId",
@@ -664,6 +697,9 @@ func (j *jsiiProxy_DataIonoscloudNic) SetServerId(val *string) {
 func DataIonoscloudNic_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataIonoscloudNic_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -688,6 +724,9 @@ func DataIonoscloudNic_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataIonoscloudNic) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -696,6 +735,9 @@ func (d *jsiiProxy_DataIonoscloudNic) AddOverride(path *string, value interface{
 }
 
 func (d *jsiiProxy_DataIonoscloudNic) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -709,6 +751,9 @@ func (d *jsiiProxy_DataIonoscloudNic) GetAnyMapAttribute(terraformAttribute *str
 }
 
 func (d *jsiiProxy_DataIonoscloudNic) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -722,6 +767,9 @@ func (d *jsiiProxy_DataIonoscloudNic) GetBooleanAttribute(terraformAttribute *st
 }
 
 func (d *jsiiProxy_DataIonoscloudNic) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -735,6 +783,9 @@ func (d *jsiiProxy_DataIonoscloudNic) GetBooleanMapAttribute(terraformAttribute 
 }
 
 func (d *jsiiProxy_DataIonoscloudNic) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -748,6 +799,9 @@ func (d *jsiiProxy_DataIonoscloudNic) GetListAttribute(terraformAttribute *strin
 }
 
 func (d *jsiiProxy_DataIonoscloudNic) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -761,6 +815,9 @@ func (d *jsiiProxy_DataIonoscloudNic) GetNumberAttribute(terraformAttribute *str
 }
 
 func (d *jsiiProxy_DataIonoscloudNic) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -774,6 +831,9 @@ func (d *jsiiProxy_DataIonoscloudNic) GetNumberListAttribute(terraformAttribute 
 }
 
 func (d *jsiiProxy_DataIonoscloudNic) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -787,6 +847,9 @@ func (d *jsiiProxy_DataIonoscloudNic) GetNumberMapAttribute(terraformAttribute *
 }
 
 func (d *jsiiProxy_DataIonoscloudNic) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -800,6 +863,9 @@ func (d *jsiiProxy_DataIonoscloudNic) GetStringAttribute(terraformAttribute *str
 }
 
 func (d *jsiiProxy_DataIonoscloudNic) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -813,6 +879,9 @@ func (d *jsiiProxy_DataIonoscloudNic) GetStringMapAttribute(terraformAttribute *
 }
 
 func (d *jsiiProxy_DataIonoscloudNic) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -826,6 +895,9 @@ func (d *jsiiProxy_DataIonoscloudNic) InterpolationForAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DataIonoscloudNic) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
@@ -834,6 +906,9 @@ func (d *jsiiProxy_DataIonoscloudNic) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (d *jsiiProxy_DataIonoscloudNic) PutTimeouts(value *DataIonoscloudNicTimeouts) {
+	if err := d.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",

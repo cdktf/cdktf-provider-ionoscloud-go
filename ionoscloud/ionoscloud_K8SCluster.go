@@ -458,6 +458,9 @@ func (j *jsiiProxy_K8SCluster) ViableNodePoolVersionsInput() *[]*string {
 func NewK8SCluster(scope constructs.Construct, id *string, config *K8SClusterConfig) K8SCluster {
 	_init_.Initialize()
 
+	if err := validateNewK8SClusterParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_K8SCluster{}
 
 	_jsii_.Create(
@@ -480,7 +483,10 @@ func NewK8SCluster_Override(k K8SCluster, scope constructs.Construct, id *string
 	)
 }
 
-func (j *jsiiProxy_K8SCluster) SetApiSubnetAllowList(val *[]*string) {
+func (j *jsiiProxy_K8SCluster)SetApiSubnetAllowList(val *[]*string) {
+	if err := j.validateSetApiSubnetAllowListParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"apiSubnetAllowList",
@@ -488,7 +494,10 @@ func (j *jsiiProxy_K8SCluster) SetApiSubnetAllowList(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_K8SCluster) SetConnection(val interface{}) {
+func (j *jsiiProxy_K8SCluster)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -496,7 +505,7 @@ func (j *jsiiProxy_K8SCluster) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_K8SCluster) SetCount(val *float64) {
+func (j *jsiiProxy_K8SCluster)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -504,7 +513,7 @@ func (j *jsiiProxy_K8SCluster) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_K8SCluster) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_K8SCluster)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -512,7 +521,7 @@ func (j *jsiiProxy_K8SCluster) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_K8SCluster) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_K8SCluster)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -520,7 +529,10 @@ func (j *jsiiProxy_K8SCluster) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_K8SCluster) SetId(val *string) {
+func (j *jsiiProxy_K8SCluster)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -528,7 +540,10 @@ func (j *jsiiProxy_K8SCluster) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_K8SCluster) SetK8SVersion(val *string) {
+func (j *jsiiProxy_K8SCluster)SetK8SVersion(val *string) {
+	if err := j.validateSetK8SVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"k8SVersion",
@@ -536,7 +551,10 @@ func (j *jsiiProxy_K8SCluster) SetK8SVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_K8SCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_K8SCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -544,7 +562,10 @@ func (j *jsiiProxy_K8SCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_K8SCluster) SetName(val *string) {
+func (j *jsiiProxy_K8SCluster)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -552,7 +573,7 @@ func (j *jsiiProxy_K8SCluster) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_K8SCluster) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_K8SCluster)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -560,7 +581,10 @@ func (j *jsiiProxy_K8SCluster) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_K8SCluster) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_K8SCluster)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -568,7 +592,10 @@ func (j *jsiiProxy_K8SCluster) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_K8SCluster) SetViableNodePoolVersions(val *[]*string) {
+func (j *jsiiProxy_K8SCluster)SetViableNodePoolVersions(val *[]*string) {
+	if err := j.validateSetViableNodePoolVersionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"viableNodePoolVersions",
@@ -596,6 +623,9 @@ func (j *jsiiProxy_K8SCluster) SetViableNodePoolVersions(val *[]*string) {
 func K8SCluster_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateK8SCluster_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -620,6 +650,9 @@ func K8SCluster_TfResourceType() *string {
 }
 
 func (k *jsiiProxy_K8SCluster) AddOverride(path *string, value interface{}) {
+	if err := k.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		k,
 		"addOverride",
@@ -628,6 +661,9 @@ func (k *jsiiProxy_K8SCluster) AddOverride(path *string, value interface{}) {
 }
 
 func (k *jsiiProxy_K8SCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -641,6 +677,9 @@ func (k *jsiiProxy_K8SCluster) GetAnyMapAttribute(terraformAttribute *string) *m
 }
 
 func (k *jsiiProxy_K8SCluster) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := k.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -654,6 +693,9 @@ func (k *jsiiProxy_K8SCluster) GetBooleanAttribute(terraformAttribute *string) c
 }
 
 func (k *jsiiProxy_K8SCluster) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := k.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -667,6 +709,9 @@ func (k *jsiiProxy_K8SCluster) GetBooleanMapAttribute(terraformAttribute *string
 }
 
 func (k *jsiiProxy_K8SCluster) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := k.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -680,6 +725,9 @@ func (k *jsiiProxy_K8SCluster) GetListAttribute(terraformAttribute *string) *[]*
 }
 
 func (k *jsiiProxy_K8SCluster) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := k.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -693,6 +741,9 @@ func (k *jsiiProxy_K8SCluster) GetNumberAttribute(terraformAttribute *string) *f
 }
 
 func (k *jsiiProxy_K8SCluster) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := k.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -706,6 +757,9 @@ func (k *jsiiProxy_K8SCluster) GetNumberListAttribute(terraformAttribute *string
 }
 
 func (k *jsiiProxy_K8SCluster) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := k.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -719,6 +773,9 @@ func (k *jsiiProxy_K8SCluster) GetNumberMapAttribute(terraformAttribute *string)
 }
 
 func (k *jsiiProxy_K8SCluster) GetStringAttribute(terraformAttribute *string) *string {
+	if err := k.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -732,6 +789,9 @@ func (k *jsiiProxy_K8SCluster) GetStringAttribute(terraformAttribute *string) *s
 }
 
 func (k *jsiiProxy_K8SCluster) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := k.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -745,6 +805,9 @@ func (k *jsiiProxy_K8SCluster) GetStringMapAttribute(terraformAttribute *string)
 }
 
 func (k *jsiiProxy_K8SCluster) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -758,6 +821,9 @@ func (k *jsiiProxy_K8SCluster) InterpolationForAttribute(terraformAttribute *str
 }
 
 func (k *jsiiProxy_K8SCluster) OverrideLogicalId(newLogicalId *string) {
+	if err := k.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		k,
 		"overrideLogicalId",
@@ -766,6 +832,9 @@ func (k *jsiiProxy_K8SCluster) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (k *jsiiProxy_K8SCluster) PutMaintenanceWindow(value *K8SClusterMaintenanceWindow) {
+	if err := k.validatePutMaintenanceWindowParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		k,
 		"putMaintenanceWindow",
@@ -774,6 +843,9 @@ func (k *jsiiProxy_K8SCluster) PutMaintenanceWindow(value *K8SClusterMaintenance
 }
 
 func (k *jsiiProxy_K8SCluster) PutS3Buckets(value interface{}) {
+	if err := k.validatePutS3BucketsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		k,
 		"putS3Buckets",
@@ -782,6 +854,9 @@ func (k *jsiiProxy_K8SCluster) PutS3Buckets(value interface{}) {
 }
 
 func (k *jsiiProxy_K8SCluster) PutTimeouts(value *K8SClusterTimeouts) {
+	if err := k.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		k,
 		"putTimeouts",

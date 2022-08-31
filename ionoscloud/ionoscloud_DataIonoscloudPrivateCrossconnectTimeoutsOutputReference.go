@@ -247,6 +247,9 @@ func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) Upd
 func NewDataIonoscloudPrivateCrossconnectTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataIonoscloudPrivateCrossconnectTimeoutsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataIonoscloudPrivateCrossconnectTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference{}
 
 	_jsii_.Create(
@@ -268,7 +271,10 @@ func NewDataIonoscloudPrivateCrossconnectTimeoutsOutputReference_Override(d Data
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -276,7 +282,10 @@ func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -284,7 +293,10 @@ func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) SetCreate(val *string) {
+func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference)SetCreate(val *string) {
+	if err := j.validateSetCreateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"create",
@@ -292,7 +304,10 @@ func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) SetDefault(val *string) {
+func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference)SetDefault(val *string) {
+	if err := j.validateSetDefaultParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"default",
@@ -300,7 +315,10 @@ func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) SetDelete(val *string) {
+func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference)SetDelete(val *string) {
+	if err := j.validateSetDeleteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"delete",
@@ -308,7 +326,10 @@ func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -316,7 +337,10 @@ func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -324,7 +348,10 @@ func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -332,7 +359,10 @@ func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) Set
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) SetUpdate(val *string) {
+func (j *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"update",
@@ -354,6 +384,9 @@ func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) Com
 }
 
 func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -367,6 +400,9 @@ func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -380,6 +416,9 @@ func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -393,6 +432,9 @@ func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -406,6 +448,9 @@ func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -419,6 +464,9 @@ func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -432,6 +480,9 @@ func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -445,6 +496,9 @@ func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -458,6 +512,9 @@ func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) Get
 }
 
 func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -484,6 +541,9 @@ func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) Int
 }
 
 func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -529,6 +589,9 @@ func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) Res
 }
 
 func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

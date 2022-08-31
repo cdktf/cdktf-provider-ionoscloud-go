@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataIonoscloudServersServersVolumesList) WrapsSet() *bool {
 func NewDataIonoscloudServersServersVolumesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudServersServersVolumesList {
 	_init_.Initialize()
 
+	if err := validateNewDataIonoscloudServersServersVolumesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataIonoscloudServersServersVolumesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataIonoscloudServersServersVolumesList_Override(d DataIonoscloudServers
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudServersServersVolumesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataIonoscloudServersServersVolumesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataIonoscloudServersServersVolumesList) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudServersServersVolumesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataIonoscloudServersServersVolumesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataIonoscloudServersServersVolumesList) SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudServersServersVolumesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataIonoscloudServersServersVolumesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataIonoscloudServersServersVolumesList) ComputeFqn() *string
 }
 
 func (d *jsiiProxy_DataIonoscloudServersServersVolumesList) Get(index *float64) DataIonoscloudServersServersVolumesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataIonoscloudServersServersVolumesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataIonoscloudServersServersVolumesList) Get(index *float64) 
 }
 
 func (d *jsiiProxy_DataIonoscloudServersServersVolumesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

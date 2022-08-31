@@ -423,6 +423,9 @@ func (j *jsiiProxy_DataIonoscloudNatgatewayRule) Type() *string {
 func NewDataIonoscloudNatgatewayRule(scope constructs.Construct, id *string, config *DataIonoscloudNatgatewayRuleConfig) DataIonoscloudNatgatewayRule {
 	_init_.Initialize()
 
+	if err := validateNewDataIonoscloudNatgatewayRuleParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataIonoscloudNatgatewayRule{}
 
 	_jsii_.Create(
@@ -445,7 +448,7 @@ func NewDataIonoscloudNatgatewayRule_Override(d DataIonoscloudNatgatewayRule, sc
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNatgatewayRule) SetCount(val *float64) {
+func (j *jsiiProxy_DataIonoscloudNatgatewayRule)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -453,7 +456,10 @@ func (j *jsiiProxy_DataIonoscloudNatgatewayRule) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNatgatewayRule) SetDatacenterId(val *string) {
+func (j *jsiiProxy_DataIonoscloudNatgatewayRule)SetDatacenterId(val *string) {
+	if err := j.validateSetDatacenterIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"datacenterId",
@@ -461,7 +467,7 @@ func (j *jsiiProxy_DataIonoscloudNatgatewayRule) SetDatacenterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNatgatewayRule) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataIonoscloudNatgatewayRule)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -469,7 +475,7 @@ func (j *jsiiProxy_DataIonoscloudNatgatewayRule) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNatgatewayRule) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataIonoscloudNatgatewayRule)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -477,7 +483,10 @@ func (j *jsiiProxy_DataIonoscloudNatgatewayRule) SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNatgatewayRule) SetId(val *string) {
+func (j *jsiiProxy_DataIonoscloudNatgatewayRule)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -485,7 +494,10 @@ func (j *jsiiProxy_DataIonoscloudNatgatewayRule) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNatgatewayRule) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataIonoscloudNatgatewayRule)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -493,7 +505,10 @@ func (j *jsiiProxy_DataIonoscloudNatgatewayRule) SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNatgatewayRule) SetName(val *string) {
+func (j *jsiiProxy_DataIonoscloudNatgatewayRule)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -501,7 +516,10 @@ func (j *jsiiProxy_DataIonoscloudNatgatewayRule) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNatgatewayRule) SetNatgatewayId(val *string) {
+func (j *jsiiProxy_DataIonoscloudNatgatewayRule)SetNatgatewayId(val *string) {
+	if err := j.validateSetNatgatewayIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"natgatewayId",
@@ -509,7 +527,7 @@ func (j *jsiiProxy_DataIonoscloudNatgatewayRule) SetNatgatewayId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNatgatewayRule) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataIonoscloudNatgatewayRule)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -537,6 +555,9 @@ func (j *jsiiProxy_DataIonoscloudNatgatewayRule) SetProvider(val cdktf.Terraform
 func DataIonoscloudNatgatewayRule_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataIonoscloudNatgatewayRule_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -561,6 +582,9 @@ func DataIonoscloudNatgatewayRule_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataIonoscloudNatgatewayRule) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -569,6 +593,9 @@ func (d *jsiiProxy_DataIonoscloudNatgatewayRule) AddOverride(path *string, value
 }
 
 func (d *jsiiProxy_DataIonoscloudNatgatewayRule) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -582,6 +609,9 @@ func (d *jsiiProxy_DataIonoscloudNatgatewayRule) GetAnyMapAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataIonoscloudNatgatewayRule) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -595,6 +625,9 @@ func (d *jsiiProxy_DataIonoscloudNatgatewayRule) GetBooleanAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataIonoscloudNatgatewayRule) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -608,6 +641,9 @@ func (d *jsiiProxy_DataIonoscloudNatgatewayRule) GetBooleanMapAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataIonoscloudNatgatewayRule) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -621,6 +657,9 @@ func (d *jsiiProxy_DataIonoscloudNatgatewayRule) GetListAttribute(terraformAttri
 }
 
 func (d *jsiiProxy_DataIonoscloudNatgatewayRule) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -634,6 +673,9 @@ func (d *jsiiProxy_DataIonoscloudNatgatewayRule) GetNumberAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataIonoscloudNatgatewayRule) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -647,6 +689,9 @@ func (d *jsiiProxy_DataIonoscloudNatgatewayRule) GetNumberListAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataIonoscloudNatgatewayRule) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -660,6 +705,9 @@ func (d *jsiiProxy_DataIonoscloudNatgatewayRule) GetNumberMapAttribute(terraform
 }
 
 func (d *jsiiProxy_DataIonoscloudNatgatewayRule) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -673,6 +721,9 @@ func (d *jsiiProxy_DataIonoscloudNatgatewayRule) GetStringAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataIonoscloudNatgatewayRule) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -686,6 +737,9 @@ func (d *jsiiProxy_DataIonoscloudNatgatewayRule) GetStringMapAttribute(terraform
 }
 
 func (d *jsiiProxy_DataIonoscloudNatgatewayRule) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -699,6 +753,9 @@ func (d *jsiiProxy_DataIonoscloudNatgatewayRule) InterpolationForAttribute(terra
 }
 
 func (d *jsiiProxy_DataIonoscloudNatgatewayRule) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
@@ -707,6 +764,9 @@ func (d *jsiiProxy_DataIonoscloudNatgatewayRule) OverrideLogicalId(newLogicalId 
 }
 
 func (d *jsiiProxy_DataIonoscloudNatgatewayRule) PutTimeouts(value *DataIonoscloudNatgatewayRuleTimeouts) {
+	if err := d.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",

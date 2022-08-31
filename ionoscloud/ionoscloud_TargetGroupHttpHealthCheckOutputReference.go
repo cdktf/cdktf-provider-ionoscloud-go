@@ -293,6 +293,9 @@ func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) TerraformResource(
 func NewTargetGroupHttpHealthCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TargetGroupHttpHealthCheckOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewTargetGroupHttpHealthCheckOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_TargetGroupHttpHealthCheckOutputReference{}
 
 	_jsii_.Create(
@@ -314,7 +317,10 @@ func NewTargetGroupHttpHealthCheckOutputReference_Override(t TargetGroupHttpHeal
 	)
 }
 
-func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -322,7 +328,10 @@ func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -330,7 +339,10 @@ func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) SetInternalValue(val *TargetGroupHttpHealthCheck) {
+func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference)SetInternalValue(val *TargetGroupHttpHealthCheck) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -338,7 +350,10 @@ func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) SetMatchType(val *string) {
+func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference)SetMatchType(val *string) {
+	if err := j.validateSetMatchTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"matchType",
@@ -346,7 +361,10 @@ func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) SetMatchType(val *
 	)
 }
 
-func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) SetMethod(val *string) {
+func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference)SetMethod(val *string) {
+	if err := j.validateSetMethodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"method",
@@ -354,7 +372,10 @@ func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) SetMethod(val *str
 	)
 }
 
-func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) SetNegate(val interface{}) {
+func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference)SetNegate(val interface{}) {
+	if err := j.validateSetNegateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"negate",
@@ -362,7 +383,10 @@ func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) SetNegate(val inte
 	)
 }
 
-func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) SetPath(val *string) {
+func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"path",
@@ -370,7 +394,10 @@ func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) SetPath(val *strin
 	)
 }
 
-func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) SetRegex(val interface{}) {
+func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference)SetRegex(val interface{}) {
+	if err := j.validateSetRegexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"regex",
@@ -378,7 +405,10 @@ func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) SetRegex(val inter
 	)
 }
 
-func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) SetResponse(val *string) {
+func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference)SetResponse(val *string) {
+	if err := j.validateSetResponseParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"response",
@@ -386,7 +416,10 @@ func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) SetResponse(val *s
 	)
 }
 
-func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -394,7 +427,10 @@ func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TargetGroupHttpHealthCheckOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -416,6 +452,9 @@ func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) ComputeFqn() *stri
 }
 
 func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -429,6 +468,9 @@ func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) GetAnyMapAttribute
 }
 
 func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -442,6 +484,9 @@ func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) GetBooleanAttribut
 }
 
 func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := t.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -455,6 +500,9 @@ func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) GetBooleanMapAttri
 }
 
 func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := t.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -468,6 +516,9 @@ func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) GetListAttribute(t
 }
 
 func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := t.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -481,6 +532,9 @@ func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) GetNumberAttribute
 }
 
 func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := t.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -494,6 +548,9 @@ func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) GetNumberListAttri
 }
 
 func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := t.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -507,6 +564,9 @@ func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) GetNumberMapAttrib
 }
 
 func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := t.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -520,6 +580,9 @@ func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) GetStringAttribute
 }
 
 func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := t.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -546,6 +609,9 @@ func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) InterpolationAsLis
 }
 
 func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -591,6 +657,9 @@ func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) ResetRegex() {
 }
 
 func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

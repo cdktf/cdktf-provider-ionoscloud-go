@@ -111,6 +111,9 @@ func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesList) WrapsSet(
 func NewApplicationLoadbalancerForwardingruleHttpRulesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationLoadbalancerForwardingruleHttpRulesList {
 	_init_.Initialize()
 
+	if err := validateNewApplicationLoadbalancerForwardingruleHttpRulesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewApplicationLoadbalancerForwardingruleHttpRulesList_Override(a Applicatio
 	)
 }
 
-func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesList) SetIntern
 	)
 }
 
-func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesList) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesList) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesList) ComputeFq
 }
 
 func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesList) Get(index *float64) ApplicationLoadbalancerForwardingruleHttpRulesOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesList) Get(index
 }
 
 func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

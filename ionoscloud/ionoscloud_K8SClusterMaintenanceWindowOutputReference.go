@@ -197,6 +197,9 @@ func (j *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) TimeInput() *stri
 func NewK8SClusterMaintenanceWindowOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) K8SClusterMaintenanceWindowOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewK8SClusterMaintenanceWindowOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_K8SClusterMaintenanceWindowOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewK8SClusterMaintenanceWindowOutputReference_Override(k K8SClusterMaintena
 	)
 }
 
-func (j *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_K8SClusterMaintenanceWindowOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_K8SClusterMaintenanceWindowOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) SetDayOfTheWeek(val *string) {
+func (j *jsiiProxy_K8SClusterMaintenanceWindowOutputReference)SetDayOfTheWeek(val *string) {
+	if err := j.validateSetDayOfTheWeekParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dayOfTheWeek",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) SetDayOfTheWeek(v
 	)
 }
 
-func (j *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) SetInternalValue(val *K8SClusterMaintenanceWindow) {
+func (j *jsiiProxy_K8SClusterMaintenanceWindowOutputReference)SetInternalValue(val *K8SClusterMaintenanceWindow) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_K8SClusterMaintenanceWindowOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_K8SClusterMaintenanceWindowOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) SetTime(val *string) {
+func (j *jsiiProxy_K8SClusterMaintenanceWindowOutputReference)SetTime(val *string) {
+	if err := j.validateSetTimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"time",
@@ -288,6 +312,9 @@ func (k *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) ComputeFqn() *str
 }
 
 func (k *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (k *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) GetAnyMapAttribut
 }
 
 func (k *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := k.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (k *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) GetBooleanAttribu
 }
 
 func (k *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := k.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (k *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) GetBooleanMapAttr
 }
 
 func (k *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := k.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (k *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) GetListAttribute(
 }
 
 func (k *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := k.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (k *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) GetNumberAttribut
 }
 
 func (k *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := k.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (k *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) GetNumberListAttr
 }
 
 func (k *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := k.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (k *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) GetNumberMapAttri
 }
 
 func (k *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := k.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (k *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) GetStringAttribut
 }
 
 func (k *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := k.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (k *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) InterpolationAsLi
 }
 
 func (k *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := k.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (k *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) InterpolationForA
 }
 
 func (k *jsiiProxy_K8SClusterMaintenanceWindowOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -247,6 +247,9 @@ func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) Update
 func NewDataIonoscloudK8SNodePoolNodesTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataIonoscloudK8SNodePoolNodesTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference{}
 
 	_jsii_.Create(
@@ -268,7 +271,10 @@ func NewDataIonoscloudK8SNodePoolNodesTimeoutsOutputReference_Override(d DataIon
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -276,7 +282,10 @@ func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) SetCom
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -284,7 +293,10 @@ func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) SetCom
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) SetCreate(val *string) {
+func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference)SetCreate(val *string) {
+	if err := j.validateSetCreateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"create",
@@ -292,7 +304,10 @@ func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) SetCre
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) SetDefault(val *string) {
+func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference)SetDefault(val *string) {
+	if err := j.validateSetDefaultParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"default",
@@ -300,7 +315,10 @@ func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) SetDef
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) SetDelete(val *string) {
+func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference)SetDelete(val *string) {
+	if err := j.validateSetDeleteParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"delete",
@@ -308,7 +326,10 @@ func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) SetDel
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -316,7 +337,10 @@ func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) SetInt
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -324,7 +348,10 @@ func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) SetTer
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -332,7 +359,10 @@ func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) SetTer
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) SetUpdate(val *string) {
+func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"update",
@@ -354,6 +384,9 @@ func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) Comput
 }
 
 func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -367,6 +400,9 @@ func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) GetAny
 }
 
 func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -380,6 +416,9 @@ func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) GetBoo
 }
 
 func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -393,6 +432,9 @@ func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) GetBoo
 }
 
 func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -406,6 +448,9 @@ func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) GetLis
 }
 
 func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -419,6 +464,9 @@ func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) GetNum
 }
 
 func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -432,6 +480,9 @@ func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) GetNum
 }
 
 func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -445,6 +496,9 @@ func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) GetNum
 }
 
 func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -458,6 +512,9 @@ func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) GetStr
 }
 
 func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -484,6 +541,9 @@ func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) Interp
 }
 
 func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -529,6 +589,9 @@ func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) ResetU
 }
 
 func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

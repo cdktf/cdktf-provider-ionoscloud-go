@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingruleHealthCheckLis
 func NewDataIonoscloudNetworkloadbalancerForwardingruleHealthCheckList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudNetworkloadbalancerForwardingruleHealthCheckList {
 	_init_.Initialize()
 
+	if err := validateNewDataIonoscloudNetworkloadbalancerForwardingruleHealthCheckListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingruleHealthCheckList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataIonoscloudNetworkloadbalancerForwardingruleHealthCheckList_Override(
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingruleHealthCheckList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingruleHealthCheckList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingruleHealthCheckLis
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingruleHealthCheckList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingruleHealthCheckList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingruleHealthCheckLis
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingruleHealthCheckList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingruleHealthCheckList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingruleHealthCheckLis
 }
 
 func (d *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingruleHealthCheckList) Get(index *float64) DataIonoscloudNetworkloadbalancerForwardingruleHealthCheckOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataIonoscloudNetworkloadbalancerForwardingruleHealthCheckOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingruleHealthCheckLis
 }
 
 func (d *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingruleHealthCheckList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

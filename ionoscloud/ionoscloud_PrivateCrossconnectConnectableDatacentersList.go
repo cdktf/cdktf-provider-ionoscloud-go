@@ -111,6 +111,9 @@ func (j *jsiiProxy_PrivateCrossconnectConnectableDatacentersList) WrapsSet() *bo
 func NewPrivateCrossconnectConnectableDatacentersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrivateCrossconnectConnectableDatacentersList {
 	_init_.Initialize()
 
+	if err := validateNewPrivateCrossconnectConnectableDatacentersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PrivateCrossconnectConnectableDatacentersList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewPrivateCrossconnectConnectableDatacentersList_Override(p PrivateCrosscon
 	)
 }
 
-func (j *jsiiProxy_PrivateCrossconnectConnectableDatacentersList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PrivateCrossconnectConnectableDatacentersList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_PrivateCrossconnectConnectableDatacentersList) SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_PrivateCrossconnectConnectableDatacentersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PrivateCrossconnectConnectableDatacentersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_PrivateCrossconnectConnectableDatacentersList) SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_PrivateCrossconnectConnectableDatacentersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PrivateCrossconnectConnectableDatacentersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_PrivateCrossconnectConnectableDatacentersList) SetTerraformRe
 	)
 }
 
-func (j *jsiiProxy_PrivateCrossconnectConnectableDatacentersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_PrivateCrossconnectConnectableDatacentersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (p *jsiiProxy_PrivateCrossconnectConnectableDatacentersList) ComputeFqn() *
 }
 
 func (p *jsiiProxy_PrivateCrossconnectConnectableDatacentersList) Get(index *float64) PrivateCrossconnectConnectableDatacentersOutputReference {
+	if err := p.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns PrivateCrossconnectConnectableDatacentersOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (p *jsiiProxy_PrivateCrossconnectConnectableDatacentersList) Get(index *flo
 }
 
 func (p *jsiiProxy_PrivateCrossconnectConnectableDatacentersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

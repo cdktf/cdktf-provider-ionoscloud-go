@@ -111,6 +111,9 @@ func (j *jsiiProxy_K8SClusterS3BucketsList) WrapsSet() *bool {
 func NewK8SClusterS3BucketsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) K8SClusterS3BucketsList {
 	_init_.Initialize()
 
+	if err := validateNewK8SClusterS3BucketsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_K8SClusterS3BucketsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewK8SClusterS3BucketsList_Override(k K8SClusterS3BucketsList, terraformRes
 	)
 }
 
-func (j *jsiiProxy_K8SClusterS3BucketsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_K8SClusterS3BucketsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_K8SClusterS3BucketsList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_K8SClusterS3BucketsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_K8SClusterS3BucketsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_K8SClusterS3BucketsList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_K8SClusterS3BucketsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_K8SClusterS3BucketsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_K8SClusterS3BucketsList) SetTerraformResource(val cdktf.IInte
 	)
 }
 
-func (j *jsiiProxy_K8SClusterS3BucketsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_K8SClusterS3BucketsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (k *jsiiProxy_K8SClusterS3BucketsList) ComputeFqn() *string {
 }
 
 func (k *jsiiProxy_K8SClusterS3BucketsList) Get(index *float64) K8SClusterS3BucketsOutputReference {
+	if err := k.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns K8SClusterS3BucketsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (k *jsiiProxy_K8SClusterS3BucketsList) Get(index *float64) K8SClusterS3Buck
 }
 
 func (k *jsiiProxy_K8SClusterS3BucketsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -641,6 +641,9 @@ func (j *jsiiProxy_PgCluster) TimeoutsInput() interface{} {
 func NewPgCluster(scope constructs.Construct, id *string, config *PgClusterConfig) PgCluster {
 	_init_.Initialize()
 
+	if err := validateNewPgClusterParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PgCluster{}
 
 	_jsii_.Create(
@@ -663,7 +666,10 @@ func NewPgCluster_Override(p PgCluster, scope constructs.Construct, id *string, 
 	)
 }
 
-func (j *jsiiProxy_PgCluster) SetBackupLocation(val *string) {
+func (j *jsiiProxy_PgCluster)SetBackupLocation(val *string) {
+	if err := j.validateSetBackupLocationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backupLocation",
@@ -671,7 +677,10 @@ func (j *jsiiProxy_PgCluster) SetBackupLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PgCluster) SetConnection(val interface{}) {
+func (j *jsiiProxy_PgCluster)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -679,7 +688,10 @@ func (j *jsiiProxy_PgCluster) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PgCluster) SetCores(val *float64) {
+func (j *jsiiProxy_PgCluster)SetCores(val *float64) {
+	if err := j.validateSetCoresParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cores",
@@ -687,7 +699,7 @@ func (j *jsiiProxy_PgCluster) SetCores(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PgCluster) SetCount(val *float64) {
+func (j *jsiiProxy_PgCluster)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -695,7 +707,7 @@ func (j *jsiiProxy_PgCluster) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PgCluster) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PgCluster)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -703,7 +715,10 @@ func (j *jsiiProxy_PgCluster) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PgCluster) SetDisplayName(val *string) {
+func (j *jsiiProxy_PgCluster)SetDisplayName(val *string) {
+	if err := j.validateSetDisplayNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"displayName",
@@ -711,7 +726,7 @@ func (j *jsiiProxy_PgCluster) SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PgCluster) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PgCluster)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -719,7 +734,10 @@ func (j *jsiiProxy_PgCluster) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_PgCluster) SetId(val *string) {
+func (j *jsiiProxy_PgCluster)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -727,7 +745,10 @@ func (j *jsiiProxy_PgCluster) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PgCluster) SetInstances(val *float64) {
+func (j *jsiiProxy_PgCluster)SetInstances(val *float64) {
+	if err := j.validateSetInstancesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"instances",
@@ -735,7 +756,10 @@ func (j *jsiiProxy_PgCluster) SetInstances(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PgCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PgCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -743,7 +767,10 @@ func (j *jsiiProxy_PgCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_PgCluster) SetLocation(val *string) {
+func (j *jsiiProxy_PgCluster)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"location",
@@ -751,7 +778,10 @@ func (j *jsiiProxy_PgCluster) SetLocation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PgCluster) SetPostgresVersion(val *string) {
+func (j *jsiiProxy_PgCluster)SetPostgresVersion(val *string) {
+	if err := j.validateSetPostgresVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"postgresVersion",
@@ -759,7 +789,7 @@ func (j *jsiiProxy_PgCluster) SetPostgresVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PgCluster) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PgCluster)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -767,7 +797,10 @@ func (j *jsiiProxy_PgCluster) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_PgCluster) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PgCluster)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -775,7 +808,10 @@ func (j *jsiiProxy_PgCluster) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PgCluster) SetRam(val *float64) {
+func (j *jsiiProxy_PgCluster)SetRam(val *float64) {
+	if err := j.validateSetRamParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ram",
@@ -783,7 +819,10 @@ func (j *jsiiProxy_PgCluster) SetRam(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PgCluster) SetStorageSize(val *float64) {
+func (j *jsiiProxy_PgCluster)SetStorageSize(val *float64) {
+	if err := j.validateSetStorageSizeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"storageSize",
@@ -791,7 +830,10 @@ func (j *jsiiProxy_PgCluster) SetStorageSize(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PgCluster) SetStorageType(val *string) {
+func (j *jsiiProxy_PgCluster)SetStorageType(val *string) {
+	if err := j.validateSetStorageTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"storageType",
@@ -799,7 +841,10 @@ func (j *jsiiProxy_PgCluster) SetStorageType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PgCluster) SetSynchronizationMode(val *string) {
+func (j *jsiiProxy_PgCluster)SetSynchronizationMode(val *string) {
+	if err := j.validateSetSynchronizationModeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"synchronizationMode",
@@ -827,6 +872,9 @@ func (j *jsiiProxy_PgCluster) SetSynchronizationMode(val *string) {
 func PgCluster_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validatePgCluster_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -851,6 +899,9 @@ func PgCluster_TfResourceType() *string {
 }
 
 func (p *jsiiProxy_PgCluster) AddOverride(path *string, value interface{}) {
+	if err := p.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
@@ -859,6 +910,9 @@ func (p *jsiiProxy_PgCluster) AddOverride(path *string, value interface{}) {
 }
 
 func (p *jsiiProxy_PgCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -872,6 +926,9 @@ func (p *jsiiProxy_PgCluster) GetAnyMapAttribute(terraformAttribute *string) *ma
 }
 
 func (p *jsiiProxy_PgCluster) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -885,6 +942,9 @@ func (p *jsiiProxy_PgCluster) GetBooleanAttribute(terraformAttribute *string) cd
 }
 
 func (p *jsiiProxy_PgCluster) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -898,6 +958,9 @@ func (p *jsiiProxy_PgCluster) GetBooleanMapAttribute(terraformAttribute *string)
 }
 
 func (p *jsiiProxy_PgCluster) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -911,6 +974,9 @@ func (p *jsiiProxy_PgCluster) GetListAttribute(terraformAttribute *string) *[]*s
 }
 
 func (p *jsiiProxy_PgCluster) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -924,6 +990,9 @@ func (p *jsiiProxy_PgCluster) GetNumberAttribute(terraformAttribute *string) *fl
 }
 
 func (p *jsiiProxy_PgCluster) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -937,6 +1006,9 @@ func (p *jsiiProxy_PgCluster) GetNumberListAttribute(terraformAttribute *string)
 }
 
 func (p *jsiiProxy_PgCluster) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -950,6 +1022,9 @@ func (p *jsiiProxy_PgCluster) GetNumberMapAttribute(terraformAttribute *string) 
 }
 
 func (p *jsiiProxy_PgCluster) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -963,6 +1038,9 @@ func (p *jsiiProxy_PgCluster) GetStringAttribute(terraformAttribute *string) *st
 }
 
 func (p *jsiiProxy_PgCluster) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -976,6 +1054,9 @@ func (p *jsiiProxy_PgCluster) GetStringMapAttribute(terraformAttribute *string) 
 }
 
 func (p *jsiiProxy_PgCluster) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -989,6 +1070,9 @@ func (p *jsiiProxy_PgCluster) InterpolationForAttribute(terraformAttribute *stri
 }
 
 func (p *jsiiProxy_PgCluster) OverrideLogicalId(newLogicalId *string) {
+	if err := p.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
@@ -997,6 +1081,9 @@ func (p *jsiiProxy_PgCluster) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (p *jsiiProxy_PgCluster) PutConnections(value *PgClusterConnections) {
+	if err := p.validatePutConnectionsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"putConnections",
@@ -1005,6 +1092,9 @@ func (p *jsiiProxy_PgCluster) PutConnections(value *PgClusterConnections) {
 }
 
 func (p *jsiiProxy_PgCluster) PutCredentials(value *PgClusterCredentials) {
+	if err := p.validatePutCredentialsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"putCredentials",
@@ -1013,6 +1103,9 @@ func (p *jsiiProxy_PgCluster) PutCredentials(value *PgClusterCredentials) {
 }
 
 func (p *jsiiProxy_PgCluster) PutFromBackup(value *PgClusterFromBackup) {
+	if err := p.validatePutFromBackupParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"putFromBackup",
@@ -1021,6 +1114,9 @@ func (p *jsiiProxy_PgCluster) PutFromBackup(value *PgClusterFromBackup) {
 }
 
 func (p *jsiiProxy_PgCluster) PutMaintenanceWindow(value *PgClusterMaintenanceWindow) {
+	if err := p.validatePutMaintenanceWindowParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"putMaintenanceWindow",
@@ -1029,6 +1125,9 @@ func (p *jsiiProxy_PgCluster) PutMaintenanceWindow(value *PgClusterMaintenanceWi
 }
 
 func (p *jsiiProxy_PgCluster) PutTimeouts(value *PgClusterTimeouts) {
+	if err := p.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"putTimeouts",

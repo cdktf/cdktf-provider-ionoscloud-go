@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataIonoscloudK8SClusterConfigContextsList) WrapsSet() *bool 
 func NewDataIonoscloudK8SClusterConfigContextsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudK8SClusterConfigContextsList {
 	_init_.Initialize()
 
+	if err := validateNewDataIonoscloudK8SClusterConfigContextsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataIonoscloudK8SClusterConfigContextsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataIonoscloudK8SClusterConfigContextsList_Override(d DataIonoscloudK8SC
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudK8SClusterConfigContextsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataIonoscloudK8SClusterConfigContextsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataIonoscloudK8SClusterConfigContextsList) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudK8SClusterConfigContextsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataIonoscloudK8SClusterConfigContextsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataIonoscloudK8SClusterConfigContextsList) SetTerraformResou
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudK8SClusterConfigContextsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataIonoscloudK8SClusterConfigContextsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataIonoscloudK8SClusterConfigContextsList) ComputeFqn() *str
 }
 
 func (d *jsiiProxy_DataIonoscloudK8SClusterConfigContextsList) Get(index *float64) DataIonoscloudK8SClusterConfigContextsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataIonoscloudK8SClusterConfigContextsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataIonoscloudK8SClusterConfigContextsList) Get(index *float6
 }
 
 func (d *jsiiProxy_DataIonoscloudK8SClusterConfigContextsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

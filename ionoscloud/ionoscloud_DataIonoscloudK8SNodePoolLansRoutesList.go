@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataIonoscloudK8SNodePoolLansRoutesList) WrapsSet() *bool {
 func NewDataIonoscloudK8SNodePoolLansRoutesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudK8SNodePoolLansRoutesList {
 	_init_.Initialize()
 
+	if err := validateNewDataIonoscloudK8SNodePoolLansRoutesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataIonoscloudK8SNodePoolLansRoutesList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataIonoscloudK8SNodePoolLansRoutesList_Override(d DataIonoscloudK8SNode
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudK8SNodePoolLansRoutesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataIonoscloudK8SNodePoolLansRoutesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataIonoscloudK8SNodePoolLansRoutesList) SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudK8SNodePoolLansRoutesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataIonoscloudK8SNodePoolLansRoutesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataIonoscloudK8SNodePoolLansRoutesList) SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudK8SNodePoolLansRoutesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataIonoscloudK8SNodePoolLansRoutesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataIonoscloudK8SNodePoolLansRoutesList) ComputeFqn() *string
 }
 
 func (d *jsiiProxy_DataIonoscloudK8SNodePoolLansRoutesList) Get(index *float64) DataIonoscloudK8SNodePoolLansRoutesOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataIonoscloudK8SNodePoolLansRoutesOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataIonoscloudK8SNodePoolLansRoutesList) Get(index *float64) 
 }
 
 func (d *jsiiProxy_DataIonoscloudK8SNodePoolLansRoutesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

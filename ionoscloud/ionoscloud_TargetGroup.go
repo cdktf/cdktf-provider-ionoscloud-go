@@ -455,6 +455,9 @@ func (j *jsiiProxy_TargetGroup) TimeoutsInput() interface{} {
 func NewTargetGroup(scope constructs.Construct, id *string, config *TargetGroupConfig) TargetGroup {
 	_init_.Initialize()
 
+	if err := validateNewTargetGroupParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_TargetGroup{}
 
 	_jsii_.Create(
@@ -477,7 +480,10 @@ func NewTargetGroup_Override(t TargetGroup, scope constructs.Construct, id *stri
 	)
 }
 
-func (j *jsiiProxy_TargetGroup) SetAlgorithm(val *string) {
+func (j *jsiiProxy_TargetGroup)SetAlgorithm(val *string) {
+	if err := j.validateSetAlgorithmParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"algorithm",
@@ -485,7 +491,10 @@ func (j *jsiiProxy_TargetGroup) SetAlgorithm(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TargetGroup) SetConnection(val interface{}) {
+func (j *jsiiProxy_TargetGroup)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -493,7 +502,7 @@ func (j *jsiiProxy_TargetGroup) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TargetGroup) SetCount(val *float64) {
+func (j *jsiiProxy_TargetGroup)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -501,7 +510,7 @@ func (j *jsiiProxy_TargetGroup) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_TargetGroup) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_TargetGroup)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -509,7 +518,7 @@ func (j *jsiiProxy_TargetGroup) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TargetGroup) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TargetGroup)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -517,7 +526,10 @@ func (j *jsiiProxy_TargetGroup) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_TargetGroup) SetId(val *string) {
+func (j *jsiiProxy_TargetGroup)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -525,7 +537,10 @@ func (j *jsiiProxy_TargetGroup) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TargetGroup) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TargetGroup)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -533,7 +548,10 @@ func (j *jsiiProxy_TargetGroup) SetLifecycle(val *cdktf.TerraformResourceLifecyc
 	)
 }
 
-func (j *jsiiProxy_TargetGroup) SetName(val *string) {
+func (j *jsiiProxy_TargetGroup)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -541,7 +559,10 @@ func (j *jsiiProxy_TargetGroup) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TargetGroup) SetProtocol(val *string) {
+func (j *jsiiProxy_TargetGroup)SetProtocol(val *string) {
+	if err := j.validateSetProtocolParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"protocol",
@@ -549,7 +570,7 @@ func (j *jsiiProxy_TargetGroup) SetProtocol(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TargetGroup) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TargetGroup)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -557,7 +578,10 @@ func (j *jsiiProxy_TargetGroup) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_TargetGroup) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_TargetGroup)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -585,6 +609,9 @@ func (j *jsiiProxy_TargetGroup) SetProvisioners(val *[]interface{}) {
 func TargetGroup_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateTargetGroup_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -609,6 +636,9 @@ func TargetGroup_TfResourceType() *string {
 }
 
 func (t *jsiiProxy_TargetGroup) AddOverride(path *string, value interface{}) {
+	if err := t.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
@@ -617,6 +647,9 @@ func (t *jsiiProxy_TargetGroup) AddOverride(path *string, value interface{}) {
 }
 
 func (t *jsiiProxy_TargetGroup) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -630,6 +663,9 @@ func (t *jsiiProxy_TargetGroup) GetAnyMapAttribute(terraformAttribute *string) *
 }
 
 func (t *jsiiProxy_TargetGroup) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -643,6 +679,9 @@ func (t *jsiiProxy_TargetGroup) GetBooleanAttribute(terraformAttribute *string) 
 }
 
 func (t *jsiiProxy_TargetGroup) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := t.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -656,6 +695,9 @@ func (t *jsiiProxy_TargetGroup) GetBooleanMapAttribute(terraformAttribute *strin
 }
 
 func (t *jsiiProxy_TargetGroup) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := t.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -669,6 +711,9 @@ func (t *jsiiProxy_TargetGroup) GetListAttribute(terraformAttribute *string) *[]
 }
 
 func (t *jsiiProxy_TargetGroup) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := t.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -682,6 +727,9 @@ func (t *jsiiProxy_TargetGroup) GetNumberAttribute(terraformAttribute *string) *
 }
 
 func (t *jsiiProxy_TargetGroup) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := t.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -695,6 +743,9 @@ func (t *jsiiProxy_TargetGroup) GetNumberListAttribute(terraformAttribute *strin
 }
 
 func (t *jsiiProxy_TargetGroup) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := t.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -708,6 +759,9 @@ func (t *jsiiProxy_TargetGroup) GetNumberMapAttribute(terraformAttribute *string
 }
 
 func (t *jsiiProxy_TargetGroup) GetStringAttribute(terraformAttribute *string) *string {
+	if err := t.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -721,6 +775,9 @@ func (t *jsiiProxy_TargetGroup) GetStringAttribute(terraformAttribute *string) *
 }
 
 func (t *jsiiProxy_TargetGroup) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := t.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -734,6 +791,9 @@ func (t *jsiiProxy_TargetGroup) GetStringMapAttribute(terraformAttribute *string
 }
 
 func (t *jsiiProxy_TargetGroup) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -747,6 +807,9 @@ func (t *jsiiProxy_TargetGroup) InterpolationForAttribute(terraformAttribute *st
 }
 
 func (t *jsiiProxy_TargetGroup) OverrideLogicalId(newLogicalId *string) {
+	if err := t.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",
@@ -755,6 +818,9 @@ func (t *jsiiProxy_TargetGroup) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (t *jsiiProxy_TargetGroup) PutHealthCheck(value *TargetGroupHealthCheck) {
+	if err := t.validatePutHealthCheckParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"putHealthCheck",
@@ -763,6 +829,9 @@ func (t *jsiiProxy_TargetGroup) PutHealthCheck(value *TargetGroupHealthCheck) {
 }
 
 func (t *jsiiProxy_TargetGroup) PutHttpHealthCheck(value *TargetGroupHttpHealthCheck) {
+	if err := t.validatePutHttpHealthCheckParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"putHttpHealthCheck",
@@ -771,6 +840,9 @@ func (t *jsiiProxy_TargetGroup) PutHttpHealthCheck(value *TargetGroupHttpHealthC
 }
 
 func (t *jsiiProxy_TargetGroup) PutTargets(value interface{}) {
+	if err := t.validatePutTargetsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"putTargets",
@@ -779,6 +851,9 @@ func (t *jsiiProxy_TargetGroup) PutTargets(value interface{}) {
 }
 
 func (t *jsiiProxy_TargetGroup) PutTimeouts(value *TargetGroupTimeouts) {
+	if err := t.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"putTimeouts",

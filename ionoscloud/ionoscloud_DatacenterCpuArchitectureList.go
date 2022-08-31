@@ -99,6 +99,9 @@ func (j *jsiiProxy_DatacenterCpuArchitectureList) WrapsSet() *bool {
 func NewDatacenterCpuArchitectureList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatacenterCpuArchitectureList {
 	_init_.Initialize()
 
+	if err := validateNewDatacenterCpuArchitectureListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatacenterCpuArchitectureList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDatacenterCpuArchitectureList_Override(d DatacenterCpuArchitectureList, 
 	)
 }
 
-func (j *jsiiProxy_DatacenterCpuArchitectureList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatacenterCpuArchitectureList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DatacenterCpuArchitectureList) SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_DatacenterCpuArchitectureList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatacenterCpuArchitectureList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DatacenterCpuArchitectureList) SetTerraformResource(val cdktf
 	)
 }
 
-func (j *jsiiProxy_DatacenterCpuArchitectureList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DatacenterCpuArchitectureList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DatacenterCpuArchitectureList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DatacenterCpuArchitectureList) Get(index *float64) DatacenterCpuArchitectureOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DatacenterCpuArchitectureOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DatacenterCpuArchitectureList) Get(index *float64) Datacenter
 }
 
 func (d *jsiiProxy_DatacenterCpuArchitectureList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

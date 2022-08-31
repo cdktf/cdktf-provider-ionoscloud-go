@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataIonoscloudServerNicsList) WrapsSet() *bool {
 func NewDataIonoscloudServerNicsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudServerNicsList {
 	_init_.Initialize()
 
+	if err := validateNewDataIonoscloudServerNicsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataIonoscloudServerNicsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataIonoscloudServerNicsList_Override(d DataIonoscloudServerNicsList, te
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudServerNicsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataIonoscloudServerNicsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataIonoscloudServerNicsList) SetTerraformAttribute(val *stri
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudServerNicsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataIonoscloudServerNicsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataIonoscloudServerNicsList) SetTerraformResource(val cdktf.
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudServerNicsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataIonoscloudServerNicsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataIonoscloudServerNicsList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataIonoscloudServerNicsList) Get(index *float64) DataIonoscloudServerNicsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataIonoscloudServerNicsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataIonoscloudServerNicsList) Get(index *float64) DataIonoscl
 }
 
 func (d *jsiiProxy_DataIonoscloudServerNicsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -410,6 +410,9 @@ func (j *jsiiProxy_PrivateCrossconnect) TimeoutsInput() interface{} {
 func NewPrivateCrossconnect(scope constructs.Construct, id *string, config *PrivateCrossconnectConfig) PrivateCrossconnect {
 	_init_.Initialize()
 
+	if err := validateNewPrivateCrossconnectParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PrivateCrossconnect{}
 
 	_jsii_.Create(
@@ -432,7 +435,10 @@ func NewPrivateCrossconnect_Override(p PrivateCrossconnect, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_PrivateCrossconnect) SetConnection(val interface{}) {
+func (j *jsiiProxy_PrivateCrossconnect)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -440,7 +446,7 @@ func (j *jsiiProxy_PrivateCrossconnect) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PrivateCrossconnect) SetCount(val *float64) {
+func (j *jsiiProxy_PrivateCrossconnect)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -448,7 +454,7 @@ func (j *jsiiProxy_PrivateCrossconnect) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PrivateCrossconnect) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PrivateCrossconnect)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -456,7 +462,10 @@ func (j *jsiiProxy_PrivateCrossconnect) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PrivateCrossconnect) SetDescription(val *string) {
+func (j *jsiiProxy_PrivateCrossconnect)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -464,7 +473,7 @@ func (j *jsiiProxy_PrivateCrossconnect) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PrivateCrossconnect) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PrivateCrossconnect)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -472,7 +481,10 @@ func (j *jsiiProxy_PrivateCrossconnect) SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_PrivateCrossconnect) SetId(val *string) {
+func (j *jsiiProxy_PrivateCrossconnect)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -480,7 +492,10 @@ func (j *jsiiProxy_PrivateCrossconnect) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PrivateCrossconnect) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PrivateCrossconnect)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -488,7 +503,10 @@ func (j *jsiiProxy_PrivateCrossconnect) SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_PrivateCrossconnect) SetName(val *string) {
+func (j *jsiiProxy_PrivateCrossconnect)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -496,7 +514,7 @@ func (j *jsiiProxy_PrivateCrossconnect) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PrivateCrossconnect) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PrivateCrossconnect)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -504,7 +522,10 @@ func (j *jsiiProxy_PrivateCrossconnect) SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_PrivateCrossconnect) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PrivateCrossconnect)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -532,6 +553,9 @@ func (j *jsiiProxy_PrivateCrossconnect) SetProvisioners(val *[]interface{}) {
 func PrivateCrossconnect_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validatePrivateCrossconnect_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -556,6 +580,9 @@ func PrivateCrossconnect_TfResourceType() *string {
 }
 
 func (p *jsiiProxy_PrivateCrossconnect) AddOverride(path *string, value interface{}) {
+	if err := p.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
@@ -564,6 +591,9 @@ func (p *jsiiProxy_PrivateCrossconnect) AddOverride(path *string, value interfac
 }
 
 func (p *jsiiProxy_PrivateCrossconnect) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -577,6 +607,9 @@ func (p *jsiiProxy_PrivateCrossconnect) GetAnyMapAttribute(terraformAttribute *s
 }
 
 func (p *jsiiProxy_PrivateCrossconnect) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -590,6 +623,9 @@ func (p *jsiiProxy_PrivateCrossconnect) GetBooleanAttribute(terraformAttribute *
 }
 
 func (p *jsiiProxy_PrivateCrossconnect) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -603,6 +639,9 @@ func (p *jsiiProxy_PrivateCrossconnect) GetBooleanMapAttribute(terraformAttribut
 }
 
 func (p *jsiiProxy_PrivateCrossconnect) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -616,6 +655,9 @@ func (p *jsiiProxy_PrivateCrossconnect) GetListAttribute(terraformAttribute *str
 }
 
 func (p *jsiiProxy_PrivateCrossconnect) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -629,6 +671,9 @@ func (p *jsiiProxy_PrivateCrossconnect) GetNumberAttribute(terraformAttribute *s
 }
 
 func (p *jsiiProxy_PrivateCrossconnect) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -642,6 +687,9 @@ func (p *jsiiProxy_PrivateCrossconnect) GetNumberListAttribute(terraformAttribut
 }
 
 func (p *jsiiProxy_PrivateCrossconnect) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -655,6 +703,9 @@ func (p *jsiiProxy_PrivateCrossconnect) GetNumberMapAttribute(terraformAttribute
 }
 
 func (p *jsiiProxy_PrivateCrossconnect) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -668,6 +719,9 @@ func (p *jsiiProxy_PrivateCrossconnect) GetStringAttribute(terraformAttribute *s
 }
 
 func (p *jsiiProxy_PrivateCrossconnect) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -681,6 +735,9 @@ func (p *jsiiProxy_PrivateCrossconnect) GetStringMapAttribute(terraformAttribute
 }
 
 func (p *jsiiProxy_PrivateCrossconnect) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -694,6 +751,9 @@ func (p *jsiiProxy_PrivateCrossconnect) InterpolationForAttribute(terraformAttri
 }
 
 func (p *jsiiProxy_PrivateCrossconnect) OverrideLogicalId(newLogicalId *string) {
+	if err := p.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
@@ -702,6 +762,9 @@ func (p *jsiiProxy_PrivateCrossconnect) OverrideLogicalId(newLogicalId *string) 
 }
 
 func (p *jsiiProxy_PrivateCrossconnect) PutConnectableDatacenters(value interface{}) {
+	if err := p.validatePutConnectableDatacentersParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"putConnectableDatacenters",
@@ -710,6 +773,9 @@ func (p *jsiiProxy_PrivateCrossconnect) PutConnectableDatacenters(value interfac
 }
 
 func (p *jsiiProxy_PrivateCrossconnect) PutPeers(value interface{}) {
+	if err := p.validatePutPeersParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"putPeers",
@@ -718,6 +784,9 @@ func (p *jsiiProxy_PrivateCrossconnect) PutPeers(value interface{}) {
 }
 
 func (p *jsiiProxy_PrivateCrossconnect) PutTimeouts(value *PrivateCrossconnectTimeouts) {
+	if err := p.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"putTimeouts",

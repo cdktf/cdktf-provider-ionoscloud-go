@@ -111,6 +111,9 @@ func (j *jsiiProxy_IpblockIpConsumersList) WrapsSet() *bool {
 func NewIpblockIpConsumersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IpblockIpConsumersList {
 	_init_.Initialize()
 
+	if err := validateNewIpblockIpConsumersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_IpblockIpConsumersList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewIpblockIpConsumersList_Override(i IpblockIpConsumersList, terraformResou
 	)
 }
 
-func (j *jsiiProxy_IpblockIpConsumersList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_IpblockIpConsumersList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_IpblockIpConsumersList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IpblockIpConsumersList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_IpblockIpConsumersList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_IpblockIpConsumersList) SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IpblockIpConsumersList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IpblockIpConsumersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_IpblockIpConsumersList) SetTerraformResource(val cdktf.IInter
 	)
 }
 
-func (j *jsiiProxy_IpblockIpConsumersList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_IpblockIpConsumersList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (i *jsiiProxy_IpblockIpConsumersList) ComputeFqn() *string {
 }
 
 func (i *jsiiProxy_IpblockIpConsumersList) Get(index *float64) IpblockIpConsumersOutputReference {
+	if err := i.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns IpblockIpConsumersOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (i *jsiiProxy_IpblockIpConsumersList) Get(index *float64) IpblockIpConsumer
 }
 
 func (i *jsiiProxy_IpblockIpConsumersList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

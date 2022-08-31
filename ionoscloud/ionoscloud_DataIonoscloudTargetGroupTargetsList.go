@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataIonoscloudTargetGroupTargetsList) WrapsSet() *bool {
 func NewDataIonoscloudTargetGroupTargetsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudTargetGroupTargetsList {
 	_init_.Initialize()
 
+	if err := validateNewDataIonoscloudTargetGroupTargetsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataIonoscloudTargetGroupTargetsList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataIonoscloudTargetGroupTargetsList_Override(d DataIonoscloudTargetGrou
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudTargetGroupTargetsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataIonoscloudTargetGroupTargetsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataIonoscloudTargetGroupTargetsList) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudTargetGroupTargetsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataIonoscloudTargetGroupTargetsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataIonoscloudTargetGroupTargetsList) SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudTargetGroupTargetsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataIonoscloudTargetGroupTargetsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataIonoscloudTargetGroupTargetsList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DataIonoscloudTargetGroupTargetsList) Get(index *float64) DataIonoscloudTargetGroupTargetsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataIonoscloudTargetGroupTargetsOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataIonoscloudTargetGroupTargetsList) Get(index *float64) Dat
 }
 
 func (d *jsiiProxy_DataIonoscloudTargetGroupTargetsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

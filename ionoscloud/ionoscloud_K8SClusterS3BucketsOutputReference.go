@@ -175,6 +175,9 @@ func (j *jsiiProxy_K8SClusterS3BucketsOutputReference) TerraformResource() cdktf
 func NewK8SClusterS3BucketsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) K8SClusterS3BucketsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewK8SClusterS3BucketsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_K8SClusterS3BucketsOutputReference{}
 
 	_jsii_.Create(
@@ -196,7 +199,10 @@ func NewK8SClusterS3BucketsOutputReference_Override(k K8SClusterS3BucketsOutputR
 	)
 }
 
-func (j *jsiiProxy_K8SClusterS3BucketsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_K8SClusterS3BucketsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -204,7 +210,10 @@ func (j *jsiiProxy_K8SClusterS3BucketsOutputReference) SetComplexObjectIndex(val
 	)
 }
 
-func (j *jsiiProxy_K8SClusterS3BucketsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_K8SClusterS3BucketsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -212,7 +221,10 @@ func (j *jsiiProxy_K8SClusterS3BucketsOutputReference) SetComplexObjectIsFromSet
 	)
 }
 
-func (j *jsiiProxy_K8SClusterS3BucketsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_K8SClusterS3BucketsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -220,7 +232,10 @@ func (j *jsiiProxy_K8SClusterS3BucketsOutputReference) SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_K8SClusterS3BucketsOutputReference) SetName(val *string) {
+func (j *jsiiProxy_K8SClusterS3BucketsOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -228,7 +243,10 @@ func (j *jsiiProxy_K8SClusterS3BucketsOutputReference) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_K8SClusterS3BucketsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_K8SClusterS3BucketsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -236,7 +254,10 @@ func (j *jsiiProxy_K8SClusterS3BucketsOutputReference) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_K8SClusterS3BucketsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_K8SClusterS3BucketsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -258,6 +279,9 @@ func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) ComputeFqn() *string {
 }
 
 func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -271,6 +295,9 @@ func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) GetAnyMapAttribute(terraf
 }
 
 func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := k.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -284,6 +311,9 @@ func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) GetBooleanAttribute(terra
 }
 
 func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := k.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -297,6 +327,9 @@ func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) GetBooleanMapAttribute(te
 }
 
 func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := k.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -310,6 +343,9 @@ func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) GetListAttribute(terrafor
 }
 
 func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := k.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -323,6 +359,9 @@ func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) GetNumberAttribute(terraf
 }
 
 func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := k.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -336,6 +375,9 @@ func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) GetNumberListAttribute(te
 }
 
 func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := k.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -349,6 +391,9 @@ func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) GetNumberMapAttribute(ter
 }
 
 func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := k.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -362,6 +407,9 @@ func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) GetStringAttribute(terraf
 }
 
 func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := k.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -388,6 +436,9 @@ func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) InterpolationAsList() cdk
 }
 
 func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := k.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -409,6 +460,9 @@ func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) ResetName() {
 }
 
 func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -378,6 +378,9 @@ func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer) TimeoutsInput() interface{
 func NewDataIonoscloudNetworkloadbalancer(scope constructs.Construct, id *string, config *DataIonoscloudNetworkloadbalancerConfig) DataIonoscloudNetworkloadbalancer {
 	_init_.Initialize()
 
+	if err := validateNewDataIonoscloudNetworkloadbalancerParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataIonoscloudNetworkloadbalancer{}
 
 	_jsii_.Create(
@@ -400,7 +403,7 @@ func NewDataIonoscloudNetworkloadbalancer_Override(d DataIonoscloudNetworkloadba
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer) SetCount(val *float64) {
+func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -408,7 +411,10 @@ func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer) SetDatacenterId(val *string) {
+func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer)SetDatacenterId(val *string) {
+	if err := j.validateSetDatacenterIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"datacenterId",
@@ -416,7 +422,7 @@ func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer) SetDatacenterId(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -424,7 +430,7 @@ func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer) SetDependsOn(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -432,7 +438,10 @@ func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer) SetForEach(val cdktf.ITerr
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer) SetId(val *string) {
+func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -440,7 +449,10 @@ func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -448,7 +460,10 @@ func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer) SetLifecycle(val *cdktf.Te
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer) SetName(val *string) {
+func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -456,7 +471,7 @@ func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -484,6 +499,9 @@ func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer) SetProvider(val cdktf.Terr
 func DataIonoscloudNetworkloadbalancer_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataIonoscloudNetworkloadbalancer_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -508,6 +526,9 @@ func DataIonoscloudNetworkloadbalancer_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -516,6 +537,9 @@ func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) AddOverride(path *string, 
 }
 
 func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -529,6 +553,9 @@ func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) GetAnyMapAttribute(terrafo
 }
 
 func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -542,6 +569,9 @@ func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) GetBooleanAttribute(terraf
 }
 
 func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -555,6 +585,9 @@ func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) GetBooleanMapAttribute(ter
 }
 
 func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -568,6 +601,9 @@ func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) GetListAttribute(terraform
 }
 
 func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -581,6 +617,9 @@ func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) GetNumberAttribute(terrafo
 }
 
 func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -594,6 +633,9 @@ func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) GetNumberListAttribute(ter
 }
 
 func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -607,6 +649,9 @@ func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) GetNumberMapAttribute(terr
 }
 
 func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -620,6 +665,9 @@ func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) GetStringAttribute(terrafo
 }
 
 func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -633,6 +681,9 @@ func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) GetStringMapAttribute(terr
 }
 
 func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -646,6 +697,9 @@ func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) InterpolationForAttribute(
 }
 
 func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
@@ -654,6 +708,9 @@ func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) OverrideLogicalId(newLogic
 }
 
 func (d *jsiiProxy_DataIonoscloudNetworkloadbalancer) PutTimeouts(value *DataIonoscloudNetworkloadbalancerTimeouts) {
+	if err := d.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",

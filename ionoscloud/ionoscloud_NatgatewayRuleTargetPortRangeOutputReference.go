@@ -199,6 +199,9 @@ func (j *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) TerraformResour
 func NewNatgatewayRuleTargetPortRangeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NatgatewayRuleTargetPortRangeOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewNatgatewayRuleTargetPortRangeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference{}
 
 	_jsii_.Create(
@@ -220,7 +223,10 @@ func NewNatgatewayRuleTargetPortRangeOutputReference_Override(n NatgatewayRuleTa
 	)
 }
 
-func (j *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -228,7 +234,10 @@ func (j *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -236,7 +245,10 @@ func (j *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) SetEnd(val *float64) {
+func (j *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference)SetEnd(val *float64) {
+	if err := j.validateSetEndParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"end",
@@ -244,7 +256,10 @@ func (j *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) SetEnd(val *flo
 	)
 }
 
-func (j *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) SetInternalValue(val *NatgatewayRuleTargetPortRange) {
+func (j *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference)SetInternalValue(val *NatgatewayRuleTargetPortRange) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -252,7 +267,10 @@ func (j *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) SetStart(val *float64) {
+func (j *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference)SetStart(val *float64) {
+	if err := j.validateSetStartParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"start",
@@ -260,7 +278,10 @@ func (j *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) SetStart(val *f
 	)
 }
 
-func (j *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -268,7 +289,10 @@ func (j *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -290,6 +314,9 @@ func (n *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) ComputeFqn() *s
 }
 
 func (n *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -303,6 +330,9 @@ func (n *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) GetAnyMapAttrib
 }
 
 func (n *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -316,6 +346,9 @@ func (n *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) GetBooleanAttri
 }
 
 func (n *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -329,6 +362,9 @@ func (n *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) GetBooleanMapAt
 }
 
 func (n *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -342,6 +378,9 @@ func (n *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) GetListAttribut
 }
 
 func (n *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -355,6 +394,9 @@ func (n *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) GetNumberAttrib
 }
 
 func (n *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -368,6 +410,9 @@ func (n *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) GetNumberListAt
 }
 
 func (n *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -381,6 +426,9 @@ func (n *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) GetNumberMapAtt
 }
 
 func (n *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -394,6 +442,9 @@ func (n *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) GetStringAttrib
 }
 
 func (n *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -420,6 +471,9 @@ func (n *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) InterpolationAs
 }
 
 func (n *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -449,6 +503,9 @@ func (n *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) ResetStart() {
 }
 
 func (n *jsiiProxy_NatgatewayRuleTargetPortRangeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

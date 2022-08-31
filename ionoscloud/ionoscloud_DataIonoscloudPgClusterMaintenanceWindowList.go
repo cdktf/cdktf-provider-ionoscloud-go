@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataIonoscloudPgClusterMaintenanceWindowList) WrapsSet() *boo
 func NewDataIonoscloudPgClusterMaintenanceWindowList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudPgClusterMaintenanceWindowList {
 	_init_.Initialize()
 
+	if err := validateNewDataIonoscloudPgClusterMaintenanceWindowListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataIonoscloudPgClusterMaintenanceWindowList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataIonoscloudPgClusterMaintenanceWindowList_Override(d DataIonoscloudPg
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterMaintenanceWindowList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataIonoscloudPgClusterMaintenanceWindowList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataIonoscloudPgClusterMaintenanceWindowList) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterMaintenanceWindowList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataIonoscloudPgClusterMaintenanceWindowList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataIonoscloudPgClusterMaintenanceWindowList) SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterMaintenanceWindowList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataIonoscloudPgClusterMaintenanceWindowList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataIonoscloudPgClusterMaintenanceWindowList) ComputeFqn() *s
 }
 
 func (d *jsiiProxy_DataIonoscloudPgClusterMaintenanceWindowList) Get(index *float64) DataIonoscloudPgClusterMaintenanceWindowOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataIonoscloudPgClusterMaintenanceWindowOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataIonoscloudPgClusterMaintenanceWindowList) Get(index *floa
 }
 
 func (d *jsiiProxy_DataIonoscloudPgClusterMaintenanceWindowList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

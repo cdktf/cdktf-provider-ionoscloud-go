@@ -321,6 +321,9 @@ func (j *jsiiProxy_DataIonoscloudPgBackups) TimeoutsInput() interface{} {
 func NewDataIonoscloudPgBackups(scope constructs.Construct, id *string, config *DataIonoscloudPgBackupsConfig) DataIonoscloudPgBackups {
 	_init_.Initialize()
 
+	if err := validateNewDataIonoscloudPgBackupsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataIonoscloudPgBackups{}
 
 	_jsii_.Create(
@@ -343,7 +346,10 @@ func NewDataIonoscloudPgBackups_Override(d DataIonoscloudPgBackups, scope constr
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgBackups) SetClusterId(val *string) {
+func (j *jsiiProxy_DataIonoscloudPgBackups)SetClusterId(val *string) {
+	if err := j.validateSetClusterIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clusterId",
@@ -351,7 +357,7 @@ func (j *jsiiProxy_DataIonoscloudPgBackups) SetClusterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgBackups) SetCount(val *float64) {
+func (j *jsiiProxy_DataIonoscloudPgBackups)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -359,7 +365,7 @@ func (j *jsiiProxy_DataIonoscloudPgBackups) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgBackups) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataIonoscloudPgBackups)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -367,7 +373,7 @@ func (j *jsiiProxy_DataIonoscloudPgBackups) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgBackups) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataIonoscloudPgBackups)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -375,7 +381,10 @@ func (j *jsiiProxy_DataIonoscloudPgBackups) SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgBackups) SetId(val *string) {
+func (j *jsiiProxy_DataIonoscloudPgBackups)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -383,7 +392,10 @@ func (j *jsiiProxy_DataIonoscloudPgBackups) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgBackups) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataIonoscloudPgBackups)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -391,7 +403,7 @@ func (j *jsiiProxy_DataIonoscloudPgBackups) SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgBackups) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataIonoscloudPgBackups)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -419,6 +431,9 @@ func (j *jsiiProxy_DataIonoscloudPgBackups) SetProvider(val cdktf.TerraformProvi
 func DataIonoscloudPgBackups_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataIonoscloudPgBackups_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -443,6 +458,9 @@ func DataIonoscloudPgBackups_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataIonoscloudPgBackups) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -451,6 +469,9 @@ func (d *jsiiProxy_DataIonoscloudPgBackups) AddOverride(path *string, value inte
 }
 
 func (d *jsiiProxy_DataIonoscloudPgBackups) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -464,6 +485,9 @@ func (d *jsiiProxy_DataIonoscloudPgBackups) GetAnyMapAttribute(terraformAttribut
 }
 
 func (d *jsiiProxy_DataIonoscloudPgBackups) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -477,6 +501,9 @@ func (d *jsiiProxy_DataIonoscloudPgBackups) GetBooleanAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DataIonoscloudPgBackups) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -490,6 +517,9 @@ func (d *jsiiProxy_DataIonoscloudPgBackups) GetBooleanMapAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataIonoscloudPgBackups) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -503,6 +533,9 @@ func (d *jsiiProxy_DataIonoscloudPgBackups) GetListAttribute(terraformAttribute 
 }
 
 func (d *jsiiProxy_DataIonoscloudPgBackups) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -516,6 +549,9 @@ func (d *jsiiProxy_DataIonoscloudPgBackups) GetNumberAttribute(terraformAttribut
 }
 
 func (d *jsiiProxy_DataIonoscloudPgBackups) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -529,6 +565,9 @@ func (d *jsiiProxy_DataIonoscloudPgBackups) GetNumberListAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataIonoscloudPgBackups) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -542,6 +581,9 @@ func (d *jsiiProxy_DataIonoscloudPgBackups) GetNumberMapAttribute(terraformAttri
 }
 
 func (d *jsiiProxy_DataIonoscloudPgBackups) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -555,6 +597,9 @@ func (d *jsiiProxy_DataIonoscloudPgBackups) GetStringAttribute(terraformAttribut
 }
 
 func (d *jsiiProxy_DataIonoscloudPgBackups) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -568,6 +613,9 @@ func (d *jsiiProxy_DataIonoscloudPgBackups) GetStringMapAttribute(terraformAttri
 }
 
 func (d *jsiiProxy_DataIonoscloudPgBackups) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -581,6 +629,9 @@ func (d *jsiiProxy_DataIonoscloudPgBackups) InterpolationForAttribute(terraformA
 }
 
 func (d *jsiiProxy_DataIonoscloudPgBackups) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
@@ -589,6 +640,9 @@ func (d *jsiiProxy_DataIonoscloudPgBackups) OverrideLogicalId(newLogicalId *stri
 }
 
 func (d *jsiiProxy_DataIonoscloudPgBackups) PutTimeouts(value *DataIonoscloudPgBackupsTimeouts) {
+	if err := d.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putTimeouts",

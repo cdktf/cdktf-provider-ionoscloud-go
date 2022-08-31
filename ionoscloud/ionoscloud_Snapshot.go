@@ -549,6 +549,9 @@ func (j *jsiiProxy_Snapshot) VolumeIdInput() *string {
 func NewSnapshot(scope constructs.Construct, id *string, config *SnapshotConfig) Snapshot {
 	_init_.Initialize()
 
+	if err := validateNewSnapshotParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_Snapshot{}
 
 	_jsii_.Create(
@@ -571,7 +574,10 @@ func NewSnapshot_Override(s Snapshot, scope constructs.Construct, id *string, co
 	)
 }
 
-func (j *jsiiProxy_Snapshot) SetConnection(val interface{}) {
+func (j *jsiiProxy_Snapshot)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -579,7 +585,7 @@ func (j *jsiiProxy_Snapshot) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Snapshot) SetCount(val *float64) {
+func (j *jsiiProxy_Snapshot)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -587,7 +593,10 @@ func (j *jsiiProxy_Snapshot) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Snapshot) SetDatacenterId(val *string) {
+func (j *jsiiProxy_Snapshot)SetDatacenterId(val *string) {
+	if err := j.validateSetDatacenterIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"datacenterId",
@@ -595,7 +604,7 @@ func (j *jsiiProxy_Snapshot) SetDatacenterId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Snapshot) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Snapshot)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -603,7 +612,7 @@ func (j *jsiiProxy_Snapshot) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Snapshot) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Snapshot)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -611,7 +620,10 @@ func (j *jsiiProxy_Snapshot) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Snapshot) SetId(val *string) {
+func (j *jsiiProxy_Snapshot)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -619,7 +631,10 @@ func (j *jsiiProxy_Snapshot) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Snapshot) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Snapshot)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -627,7 +642,10 @@ func (j *jsiiProxy_Snapshot) SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_Snapshot) SetName(val *string) {
+func (j *jsiiProxy_Snapshot)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -635,7 +653,7 @@ func (j *jsiiProxy_Snapshot) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Snapshot) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Snapshot)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -643,7 +661,10 @@ func (j *jsiiProxy_Snapshot) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_Snapshot) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Snapshot)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -651,7 +672,10 @@ func (j *jsiiProxy_Snapshot) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Snapshot) SetVolumeId(val *string) {
+func (j *jsiiProxy_Snapshot)SetVolumeId(val *string) {
+	if err := j.validateSetVolumeIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"volumeId",
@@ -679,6 +703,9 @@ func (j *jsiiProxy_Snapshot) SetVolumeId(val *string) {
 func Snapshot_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSnapshot_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -703,6 +730,9 @@ func Snapshot_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_Snapshot) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -711,6 +741,9 @@ func (s *jsiiProxy_Snapshot) AddOverride(path *string, value interface{}) {
 }
 
 func (s *jsiiProxy_Snapshot) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -724,6 +757,9 @@ func (s *jsiiProxy_Snapshot) GetAnyMapAttribute(terraformAttribute *string) *map
 }
 
 func (s *jsiiProxy_Snapshot) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -737,6 +773,9 @@ func (s *jsiiProxy_Snapshot) GetBooleanAttribute(terraformAttribute *string) cdk
 }
 
 func (s *jsiiProxy_Snapshot) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -750,6 +789,9 @@ func (s *jsiiProxy_Snapshot) GetBooleanMapAttribute(terraformAttribute *string) 
 }
 
 func (s *jsiiProxy_Snapshot) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -763,6 +805,9 @@ func (s *jsiiProxy_Snapshot) GetListAttribute(terraformAttribute *string) *[]*st
 }
 
 func (s *jsiiProxy_Snapshot) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -776,6 +821,9 @@ func (s *jsiiProxy_Snapshot) GetNumberAttribute(terraformAttribute *string) *flo
 }
 
 func (s *jsiiProxy_Snapshot) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -789,6 +837,9 @@ func (s *jsiiProxy_Snapshot) GetNumberListAttribute(terraformAttribute *string) 
 }
 
 func (s *jsiiProxy_Snapshot) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -802,6 +853,9 @@ func (s *jsiiProxy_Snapshot) GetNumberMapAttribute(terraformAttribute *string) *
 }
 
 func (s *jsiiProxy_Snapshot) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -815,6 +869,9 @@ func (s *jsiiProxy_Snapshot) GetStringAttribute(terraformAttribute *string) *str
 }
 
 func (s *jsiiProxy_Snapshot) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -828,6 +885,9 @@ func (s *jsiiProxy_Snapshot) GetStringMapAttribute(terraformAttribute *string) *
 }
 
 func (s *jsiiProxy_Snapshot) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -841,6 +901,9 @@ func (s *jsiiProxy_Snapshot) InterpolationForAttribute(terraformAttribute *strin
 }
 
 func (s *jsiiProxy_Snapshot) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
@@ -849,6 +912,9 @@ func (s *jsiiProxy_Snapshot) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (s *jsiiProxy_Snapshot) PutTimeouts(value *SnapshotTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putTimeouts",

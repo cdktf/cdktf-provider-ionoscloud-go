@@ -99,6 +99,9 @@ func (j *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsMetadataList) WrapsSet()
 func NewDataIonoscloudPgBackupsClusterBackupsMetadataList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudPgBackupsClusterBackupsMetadataList {
 	_init_.Initialize()
 
+	if err := validateNewDataIonoscloudPgBackupsClusterBackupsMetadataListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataIonoscloudPgBackupsClusterBackupsMetadataList{}
 
 	_jsii_.Create(
@@ -120,7 +123,10 @@ func NewDataIonoscloudPgBackupsClusterBackupsMetadataList_Override(d DataIonoscl
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsMetadataList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsMetadataList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -128,7 +134,10 @@ func (j *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsMetadataList) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsMetadataList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsMetadataList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -136,7 +145,10 @@ func (j *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsMetadataList) SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsMetadataList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsMetadataList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -158,6 +170,9 @@ func (d *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsMetadataList) ComputeFqn
 }
 
 func (d *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsMetadataList) Get(index *float64) DataIonoscloudPgBackupsClusterBackupsMetadataOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DataIonoscloudPgBackupsClusterBackupsMetadataOutputReference
 
 	_jsii_.Invoke(
@@ -171,6 +186,9 @@ func (d *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsMetadataList) Get(index 
 }
 
 func (d *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsMetadataList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

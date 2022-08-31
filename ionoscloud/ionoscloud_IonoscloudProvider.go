@@ -305,6 +305,9 @@ func (j *jsiiProxy_IonoscloudProvider) UsernameInput() *string {
 func NewIonoscloudProvider(scope constructs.Construct, id *string, config *IonoscloudProviderConfig) IonoscloudProvider {
 	_init_.Initialize()
 
+	if err := validateNewIonoscloudProviderParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_IonoscloudProvider{}
 
 	_jsii_.Create(
@@ -327,7 +330,7 @@ func NewIonoscloudProvider_Override(i IonoscloudProvider, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_IonoscloudProvider) SetAlias(val *string) {
+func (j *jsiiProxy_IonoscloudProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -335,7 +338,7 @@ func (j *jsiiProxy_IonoscloudProvider) SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IonoscloudProvider) SetEndpoint(val *string) {
+func (j *jsiiProxy_IonoscloudProvider)SetEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"endpoint",
@@ -343,7 +346,7 @@ func (j *jsiiProxy_IonoscloudProvider) SetEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IonoscloudProvider) SetPassword(val *string) {
+func (j *jsiiProxy_IonoscloudProvider)SetPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"password",
@@ -351,7 +354,7 @@ func (j *jsiiProxy_IonoscloudProvider) SetPassword(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IonoscloudProvider) SetRetries(val *float64) {
+func (j *jsiiProxy_IonoscloudProvider)SetRetries(val *float64) {
 	_jsii_.Set(
 		j,
 		"retries",
@@ -359,7 +362,7 @@ func (j *jsiiProxy_IonoscloudProvider) SetRetries(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_IonoscloudProvider) SetToken(val *string) {
+func (j *jsiiProxy_IonoscloudProvider)SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
@@ -367,7 +370,7 @@ func (j *jsiiProxy_IonoscloudProvider) SetToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_IonoscloudProvider) SetUsername(val *string) {
+func (j *jsiiProxy_IonoscloudProvider)SetUsername(val *string) {
 	_jsii_.Set(
 		j,
 		"username",
@@ -395,6 +398,9 @@ func (j *jsiiProxy_IonoscloudProvider) SetUsername(val *string) {
 func IonoscloudProvider_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateIonoscloudProvider_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -419,6 +425,9 @@ func IonoscloudProvider_TfResourceType() *string {
 }
 
 func (i *jsiiProxy_IonoscloudProvider) AddOverride(path *string, value interface{}) {
+	if err := i.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		i,
 		"addOverride",
@@ -427,6 +436,9 @@ func (i *jsiiProxy_IonoscloudProvider) AddOverride(path *string, value interface
 }
 
 func (i *jsiiProxy_IonoscloudProvider) OverrideLogicalId(newLogicalId *string) {
+	if err := i.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		i,
 		"overrideLogicalId",

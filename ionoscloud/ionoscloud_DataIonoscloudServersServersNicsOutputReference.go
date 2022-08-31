@@ -272,6 +272,9 @@ func (j *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) TerraformRes
 func NewDataIonoscloudServersServersNicsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataIonoscloudServersServersNicsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataIonoscloudServersServersNicsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataIonoscloudServersServersNicsOutputReference{}
 
 	_jsii_.Create(
@@ -293,7 +296,10 @@ func NewDataIonoscloudServersServersNicsOutputReference_Override(d DataIonosclou
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataIonoscloudServersServersNicsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -301,7 +307,10 @@ func (j *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataIonoscloudServersServersNicsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -309,7 +318,10 @@ func (j *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) SetInternalValue(val *DataIonoscloudServersServersNics) {
+func (j *jsiiProxy_DataIonoscloudServersServersNicsOutputReference)SetInternalValue(val *DataIonoscloudServersServersNics) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -317,7 +329,10 @@ func (j *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) SetInternalV
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataIonoscloudServersServersNicsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -325,7 +340,10 @@ func (j *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataIonoscloudServersServersNicsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -347,6 +365,9 @@ func (d *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) ComputeFqn()
 }
 
 func (d *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -360,6 +381,9 @@ func (d *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) GetAnyMapAtt
 }
 
 func (d *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -373,6 +397,9 @@ func (d *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) GetBooleanAt
 }
 
 func (d *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -386,6 +413,9 @@ func (d *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) GetBooleanMa
 }
 
 func (d *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -399,6 +429,9 @@ func (d *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) GetListAttri
 }
 
 func (d *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -412,6 +445,9 @@ func (d *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) GetNumberAtt
 }
 
 func (d *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -425,6 +461,9 @@ func (d *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) GetNumberLis
 }
 
 func (d *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -438,6 +477,9 @@ func (d *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) GetNumberMap
 }
 
 func (d *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -451,6 +493,9 @@ func (d *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) GetStringAtt
 }
 
 func (d *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -477,6 +522,9 @@ func (d *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) Interpolatio
 }
 
 func (d *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -490,6 +538,9 @@ func (d *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) Interpolatio
 }
 
 func (d *jsiiProxy_DataIonoscloudServersServersNicsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -365,6 +365,9 @@ func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 func NewApplicationLoadbalancerForwardingruleHttpRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ApplicationLoadbalancerForwardingruleHttpRulesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewApplicationLoadbalancerForwardingruleHttpRulesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference{}
 
 	_jsii_.Create(
@@ -386,7 +389,10 @@ func NewApplicationLoadbalancerForwardingruleHttpRulesOutputReference_Override(a
 	)
 }
 
-func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -394,7 +400,10 @@ func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 	)
 }
 
-func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -402,7 +411,10 @@ func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 	)
 }
 
-func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) SetContentType(val *string) {
+func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference)SetContentType(val *string) {
+	if err := j.validateSetContentTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"contentType",
@@ -410,7 +422,10 @@ func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 	)
 }
 
-func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) SetDropQuery(val interface{}) {
+func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference)SetDropQuery(val interface{}) {
+	if err := j.validateSetDropQueryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dropQuery",
@@ -418,7 +433,10 @@ func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 	)
 }
 
-func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -426,7 +444,10 @@ func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 	)
 }
 
-func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) SetLocation(val *string) {
+func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"location",
@@ -434,7 +455,10 @@ func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 	)
 }
 
-func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) SetName(val *string) {
+func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -442,7 +466,10 @@ func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 	)
 }
 
-func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) SetResponseMessage(val *string) {
+func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference)SetResponseMessage(val *string) {
+	if err := j.validateSetResponseMessageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"responseMessage",
@@ -450,7 +477,10 @@ func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 	)
 }
 
-func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) SetStatusCode(val *float64) {
+func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference)SetStatusCode(val *float64) {
+	if err := j.validateSetStatusCodeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"statusCode",
@@ -458,7 +488,10 @@ func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 	)
 }
 
-func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) SetTargetGroup(val *string) {
+func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference)SetTargetGroup(val *string) {
+	if err := j.validateSetTargetGroupParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"targetGroup",
@@ -466,7 +499,10 @@ func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 	)
 }
 
-func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -474,7 +510,10 @@ func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 	)
 }
 
-func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -482,7 +521,10 @@ func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 	)
 }
 
-func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) SetType(val *string) {
+func (j *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -504,6 +546,9 @@ func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 }
 
 func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -517,6 +562,9 @@ func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 }
 
 func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -530,6 +578,9 @@ func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 }
 
 func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -543,6 +594,9 @@ func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 }
 
 func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -556,6 +610,9 @@ func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 }
 
 func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -569,6 +626,9 @@ func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 }
 
 func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -582,6 +642,9 @@ func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 }
 
 func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -595,6 +658,9 @@ func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 }
 
 func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -608,6 +674,9 @@ func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 }
 
 func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -634,6 +703,9 @@ func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 }
 
 func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -647,6 +719,9 @@ func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 }
 
 func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) PutConditions(value interface{}) {
+	if err := a.validatePutConditionsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"putConditions",
@@ -711,6 +786,9 @@ func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 }
 
 func (a *jsiiProxy_ApplicationLoadbalancerForwardingruleHttpRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(
