@@ -1,0 +1,6 @@
+package dataionoscloudnetworkloadbalancerforwardingrule
+
+
+type DataIonoscloudNetworkloadbalancerForwardingruleTargetsHealthCheck struct {
+}
+

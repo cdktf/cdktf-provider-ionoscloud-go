@@ -1,0 +1,6 @@
+package dataionoscloudapplicationloadbalancerforwardingrule
+
+
+type DataIonoscloudApplicationLoadbalancerForwardingruleHttpRulesConditions struct {
+}
+
