@@ -60,7 +60,9 @@ type ServerConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#timeouts Server#timeouts}
 	Timeouts *ServerTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#type Server#type}.
+	// server usages: ENTERPRISE or CUBE.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#type Server#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 
