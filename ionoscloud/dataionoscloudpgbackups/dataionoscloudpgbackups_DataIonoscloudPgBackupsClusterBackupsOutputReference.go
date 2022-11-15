@@ -26,12 +26,16 @@ type DataIonoscloudPgBackupsClusterBackupsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EarliestRecoveryTargetTime() *string
 	// Experimental.
 	Fqn() *string
 	Id() *string
 	InternalValue() *DataIonoscloudPgBackupsClusterBackups
 	SetInternalValue(val *DataIonoscloudPgBackupsClusterBackups)
+	IsActive() cdktf.IResolvable
+	Location() *string
 	Metadata() DataIonoscloudPgBackupsClusterBackupsMetadataList
+	Size() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -41,6 +45,7 @@ type DataIonoscloudPgBackupsClusterBackupsOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	Type() *string
+	Version() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -120,6 +125,16 @@ func (j *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsOutputReference) Creatio
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsOutputReference) EarliestRecoveryTargetTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"earliestRecoveryTargetTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -150,11 +165,41 @@ func (j *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsOutputReference) Interna
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsOutputReference) IsActive() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"isActive",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsOutputReference) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsOutputReference) Metadata() DataIonoscloudPgBackupsClusterBackupsMetadataList {
 	var returns DataIonoscloudPgBackupsClusterBackupsMetadataList
 	_jsii_.Get(
 		j,
 		"metadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsOutputReference) Size() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"size",
 		&returns,
 	)
 	return returns
@@ -185,6 +230,16 @@ func (j *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsOutputReference) Type() 
 	_jsii_.Get(
 		j,
 		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudPgBackupsClusterBackupsOutputReference) Version() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"version",
 		&returns,
 	)
 	return returns
