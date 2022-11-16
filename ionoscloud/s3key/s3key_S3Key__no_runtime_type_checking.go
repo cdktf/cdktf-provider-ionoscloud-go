@@ -60,6 +60,14 @@ func validateS3Key_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateS3Key_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateS3Key_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3Key) validateSetActiveParameters(val interface{}) error {
 	return nil
 }

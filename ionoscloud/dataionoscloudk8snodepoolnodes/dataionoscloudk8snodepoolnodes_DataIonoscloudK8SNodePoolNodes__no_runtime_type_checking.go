@@ -60,6 +60,14 @@ func validateDataIonoscloudK8SNodePoolNodes_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataIonoscloudK8SNodePoolNodes_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataIonoscloudK8SNodePoolNodes_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodes) validateSetIdParameters(val *string) error {
 	return nil
 }

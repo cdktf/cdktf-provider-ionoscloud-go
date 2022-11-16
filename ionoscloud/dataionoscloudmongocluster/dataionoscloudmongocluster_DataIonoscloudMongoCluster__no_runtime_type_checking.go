@@ -60,6 +60,14 @@ func validateDataIonoscloudMongoCluster_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataIonoscloudMongoCluster_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataIonoscloudMongoCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudMongoCluster) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

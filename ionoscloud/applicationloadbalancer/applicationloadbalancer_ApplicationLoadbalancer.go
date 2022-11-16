@@ -2,10 +2,10 @@ package applicationloadbalancer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v3/applicationloadbalancer/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v4/applicationloadbalancer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -649,6 +649,44 @@ func ApplicationLoadbalancer_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-ionoscloud.applicationLoadbalancer.ApplicationLoadbalancer",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ApplicationLoadbalancer_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApplicationLoadbalancer_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-ionoscloud.applicationLoadbalancer.ApplicationLoadbalancer",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ApplicationLoadbalancer_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApplicationLoadbalancer_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-ionoscloud.applicationLoadbalancer.ApplicationLoadbalancer",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

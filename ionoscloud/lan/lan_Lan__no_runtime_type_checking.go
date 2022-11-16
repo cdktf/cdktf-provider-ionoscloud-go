@@ -64,6 +64,14 @@ func validateLan_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLan_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLan_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Lan) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

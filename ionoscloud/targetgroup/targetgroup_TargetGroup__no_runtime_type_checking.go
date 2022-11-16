@@ -72,6 +72,14 @@ func validateTargetGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateTargetGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTargetGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TargetGroup) validateSetAlgorithmParameters(val *string) error {
 	return nil
 }

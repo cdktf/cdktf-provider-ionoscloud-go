@@ -60,6 +60,14 @@ func validateDataIonoscloudNatgatewayRule_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataIonoscloudNatgatewayRule_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataIonoscloudNatgatewayRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudNatgatewayRule) validateSetDatacenterIdParameters(val *string) error {
 	return nil
 }

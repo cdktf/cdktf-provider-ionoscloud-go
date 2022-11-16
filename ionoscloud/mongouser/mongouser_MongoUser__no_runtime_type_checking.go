@@ -64,6 +64,14 @@ func validateMongoUser_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMongoUser_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMongoUser_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MongoUser) validateSetClusterIdParameters(val *string) error {
 	return nil
 }

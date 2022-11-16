@@ -68,6 +68,14 @@ func validateK8SCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateK8SCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateK8SCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_K8SCluster) validateSetApiSubnetAllowListParameters(val *[]*string) error {
 	return nil
 }

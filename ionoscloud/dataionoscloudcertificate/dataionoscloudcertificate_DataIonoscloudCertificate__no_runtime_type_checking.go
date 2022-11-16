@@ -60,6 +60,14 @@ func validateDataIonoscloudCertificate_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataIonoscloudCertificate_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataIonoscloudCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudCertificate) validateSetCertificateParameters(val *string) error {
 	return nil
 }

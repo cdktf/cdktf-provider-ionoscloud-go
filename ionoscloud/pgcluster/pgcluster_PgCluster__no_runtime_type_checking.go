@@ -76,6 +76,14 @@ func validatePgCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePgCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePgCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PgCluster) validateSetBackupLocationParameters(val *string) error {
 	return nil
 }

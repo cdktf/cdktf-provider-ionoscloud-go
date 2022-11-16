@@ -60,6 +60,14 @@ func validateDataIonoscloudPgVersions_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataIonoscloudPgVersions_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataIonoscloudPgVersions_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudPgVersions) validateSetClusterIdParameters(val *string) error {
 	return nil
 }

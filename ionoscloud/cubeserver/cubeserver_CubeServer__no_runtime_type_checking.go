@@ -68,6 +68,14 @@ func validateCubeServer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCubeServer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCubeServer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CubeServer) validateSetAvailabilityZoneParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateNatgatewayRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNatgatewayRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNatgatewayRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NatgatewayRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

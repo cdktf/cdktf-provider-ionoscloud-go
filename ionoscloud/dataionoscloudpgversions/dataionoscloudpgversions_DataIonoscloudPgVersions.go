@@ -2,10 +2,10 @@ package dataionoscloudpgversions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v3/dataionoscloudpgversions/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v4/dataionoscloudpgversions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -439,6 +439,44 @@ func DataIonoscloudPgVersions_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-ionoscloud.dataIonoscloudPgVersions.DataIonoscloudPgVersions",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataIonoscloudPgVersions_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataIonoscloudPgVersions_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-ionoscloud.dataIonoscloudPgVersions.DataIonoscloudPgVersions",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataIonoscloudPgVersions_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataIonoscloudPgVersions_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-ionoscloud.dataIonoscloudPgVersions.DataIonoscloudPgVersions",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

@@ -64,6 +64,14 @@ func validateDataIonoscloudMongoUser_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataIonoscloudMongoUser_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataIonoscloudMongoUser_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudMongoUser) validateSetClusterIdParameters(val *string) error {
 	return nil
 }

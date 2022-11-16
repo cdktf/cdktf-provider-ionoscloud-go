@@ -72,6 +72,14 @@ func validateMongoCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMongoCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMongoCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MongoCluster) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

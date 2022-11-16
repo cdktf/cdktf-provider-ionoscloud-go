@@ -60,6 +60,14 @@ func validateDataIonoscloudS3Key_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataIonoscloudS3Key_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataIonoscloudS3Key_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudS3Key) validateSetActiveParameters(val interface{}) error {
 	return nil
 }

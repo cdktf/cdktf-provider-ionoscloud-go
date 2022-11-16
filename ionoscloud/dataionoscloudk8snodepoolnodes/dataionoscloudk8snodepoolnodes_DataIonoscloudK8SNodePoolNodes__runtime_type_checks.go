@@ -130,6 +130,22 @@ func validateDataIonoscloudK8SNodePoolNodes_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataIonoscloudK8SNodePoolNodes_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataIonoscloudK8SNodePoolNodes_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodes) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -64,6 +64,14 @@ func validateApplicationLoadbalancerForwardingrule_IsConstructParameters(x inter
 	return nil
 }
 
+func validateApplicationLoadbalancerForwardingrule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApplicationLoadbalancerForwardingrule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationLoadbalancerForwardingrule) validateSetApplicationLoadbalancerIdParameters(val *string) error {
 	return nil
 }

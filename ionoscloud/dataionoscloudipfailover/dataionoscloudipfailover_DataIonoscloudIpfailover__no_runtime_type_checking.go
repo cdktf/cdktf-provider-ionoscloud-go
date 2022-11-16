@@ -60,6 +60,14 @@ func validateDataIonoscloudIpfailover_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataIonoscloudIpfailover_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataIonoscloudIpfailover_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudIpfailover) validateSetDatacenterIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,14 @@ func validateK8SNodePool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateK8SNodePool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateK8SNodePool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_K8SNodePool) validateSetAllowReplaceParameters(val interface{}) error {
 	return nil
 }

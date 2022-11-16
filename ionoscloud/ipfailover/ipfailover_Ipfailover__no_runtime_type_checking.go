@@ -60,6 +60,14 @@ func validateIpfailover_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIpfailover_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIpfailover_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ipfailover) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

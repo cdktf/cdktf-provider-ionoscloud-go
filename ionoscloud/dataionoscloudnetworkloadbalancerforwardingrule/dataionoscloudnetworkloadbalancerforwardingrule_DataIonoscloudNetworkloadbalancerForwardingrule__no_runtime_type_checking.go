@@ -60,6 +60,14 @@ func validateDataIonoscloudNetworkloadbalancerForwardingrule_IsConstructParamete
 	return nil
 }
 
+func validateDataIonoscloudNetworkloadbalancerForwardingrule_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataIonoscloudNetworkloadbalancerForwardingrule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingrule) validateSetDatacenterIdParameters(val *string) error {
 	return nil
 }

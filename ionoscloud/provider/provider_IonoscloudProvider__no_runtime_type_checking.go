@@ -16,6 +16,14 @@ func validateIonoscloudProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIonoscloudProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIonoscloudProvider_IsTerraformProviderParameters(x interface{}) error {
+	return nil
+}
+
 func validateNewIonoscloudProviderParameters(scope constructs.Construct, id *string, config *IonoscloudProviderConfig) error {
 	return nil
 }

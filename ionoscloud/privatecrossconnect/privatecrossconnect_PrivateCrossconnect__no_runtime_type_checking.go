@@ -68,6 +68,14 @@ func validatePrivateCrossconnect_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePrivateCrossconnect_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePrivateCrossconnect_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrivateCrossconnect) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

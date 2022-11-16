@@ -68,6 +68,14 @@ func validateServer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateServer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Server) validateSetAvailabilityZoneParameters(val *string) error {
 	return nil
 }

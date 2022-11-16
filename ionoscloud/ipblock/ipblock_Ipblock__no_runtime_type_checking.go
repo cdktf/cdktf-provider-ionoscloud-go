@@ -64,6 +64,14 @@ func validateIpblock_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIpblock_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIpblock_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ipblock) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

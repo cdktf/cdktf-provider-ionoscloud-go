@@ -172,6 +172,22 @@ func validateNetworkloadbalancerForwardingrule_IsConstructParameters(x interface
 	return nil
 }
 
+func validateNetworkloadbalancerForwardingrule_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateNetworkloadbalancerForwardingrule_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NetworkloadbalancerForwardingrule) validateSetAlgorithmParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

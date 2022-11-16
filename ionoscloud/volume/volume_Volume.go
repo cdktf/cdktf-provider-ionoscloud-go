@@ -2,10 +2,10 @@ package volume
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v3/volume/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v4/volume/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1026,6 +1026,44 @@ func Volume_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-ionoscloud.volume.Volume",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Volume_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVolume_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-ionoscloud.volume.Volume",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Volume_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVolume_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-ionoscloud.volume.Volume",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)
