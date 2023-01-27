@@ -27,9 +27,6 @@ type MongoUser interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
-	Database() *string
-	SetDatabase(val *string)
-	DatabaseInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -180,26 +177,6 @@ func (j *jsiiProxy_MongoUser) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MongoUser) Database() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"database",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MongoUser) DatabaseInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"databaseInput",
 		&returns,
 	)
 	return returns
@@ -481,17 +458,6 @@ func (j *jsiiProxy_MongoUser)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MongoUser)SetDatabase(val *string) {
-	if err := j.validateSetDatabaseParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"database",
 		val,
 	)
 }

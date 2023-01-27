@@ -56,7 +56,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetS3Buckets", GoMethod: "ResetS3Buckets"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
-			_jsii_.MemberMethod{JsiiMethod: "resetViableNodePoolVersions", GoMethod: "ResetViableNodePoolVersions"},
 			_jsii_.MemberProperty{JsiiProperty: "s3Buckets", GoGetter: "S3Buckets"},
 			_jsii_.MemberProperty{JsiiProperty: "s3BucketsInput", GoGetter: "S3BucketsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -69,7 +68,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "viableNodePoolVersions", GoGetter: "ViableNodePoolVersions"},
-			_jsii_.MemberProperty{JsiiProperty: "viableNodePoolVersionsInput", GoGetter: "ViableNodePoolVersionsInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_K8SCluster{}

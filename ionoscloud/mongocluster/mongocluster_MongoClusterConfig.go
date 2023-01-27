@@ -47,6 +47,8 @@ type MongoClusterConfig struct {
 	MongodbVersion *string `field:"required" json:"mongodbVersion" yaml:"mongodbVersion"`
 	// The unique ID of the template, which specifies the number of cores, storage size, and memory.
 	//
+	// You cannot downgrade to a smaller template or minor edition (e.g. from business to playground).
+	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#template_id MongoCluster#template_id}
 	TemplateId *string `field:"required" json:"templateId" yaml:"templateId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#id MongoCluster#id}.

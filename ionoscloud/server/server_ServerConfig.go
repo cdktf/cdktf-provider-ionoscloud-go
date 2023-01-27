@@ -50,10 +50,20 @@ type ServerConfig struct {
 	ImageName *string `field:"optional" json:"imageName" yaml:"imageName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#image_password Server#image_password}.
 	ImagePassword *string `field:"optional" json:"imagePassword" yaml:"imagePassword"`
+	// label block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#label Server#label}
+	Label interface{} `field:"optional" json:"label" yaml:"label"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#ram Server#ram}.
 	Ram *float64 `field:"optional" json:"ram" yaml:"ram"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#ssh_key_path Server#ssh_key_path}.
 	SshKeyPath *[]*string `field:"optional" json:"sshKeyPath" yaml:"sshKeyPath"`
+	// Public SSH keys are set on the image as authorized keys for appropriate SSH login to the instance using the corresponding private key.
+	//
+	// This field may only be set in creation requests. When reading, it always returns null. SSH keys are only supported if a public Linux image is used for the volume creation.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#ssh_keys Server#ssh_keys}
+	SshKeys *[]*string `field:"optional" json:"sshKeys" yaml:"sshKeys"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#template_uuid Server#template_uuid}.
 	TemplateUuid *string `field:"optional" json:"templateUuid" yaml:"templateUuid"`
 	// timeouts block.

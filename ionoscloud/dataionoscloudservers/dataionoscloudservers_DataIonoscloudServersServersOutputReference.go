@@ -37,6 +37,7 @@ type DataIonoscloudServersServersOutputReference interface {
 	Id() *string
 	InternalValue() *DataIonoscloudServersServers
 	SetInternalValue(val *DataIonoscloudServersServers)
+	Labels() DataIonoscloudServersServersLabelsList
 	Name() *string
 	Nics() DataIonoscloudServersServersNicsList
 	Ram() *float64
@@ -217,6 +218,16 @@ func (j *jsiiProxy_DataIonoscloudServersServersOutputReference) InternalValue() 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudServersServersOutputReference) Labels() DataIonoscloudServersServersLabelsList {
+	var returns DataIonoscloudServersServersLabelsList
+	_jsii_.Get(
+		j,
+		"labels",
 		&returns,
 	)
 	return returns

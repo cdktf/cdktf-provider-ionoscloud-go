@@ -80,10 +80,6 @@ func (j *jsiiProxy_MongoUser) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_MongoUser) validateSetDatabaseParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_MongoUser) validateSetIdParameters(val *string) error {
 	return nil
 }

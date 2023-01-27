@@ -65,6 +65,8 @@ type Server interface {
 	ImagePassword() *string
 	SetImagePassword(val *string)
 	ImagePasswordInput() *string
+	Label() ServerLabelList
+	LabelInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -94,6 +96,9 @@ type Server interface {
 	SshKeyPath() *[]*string
 	SetSshKeyPath(val *[]*string)
 	SshKeyPathInput() *[]*string
+	SshKeys() *[]*string
+	SetSshKeys(val *[]*string)
+	SshKeysInput() *[]*string
 	TemplateUuid() *string
 	SetTemplateUuid(val *string)
 	TemplateUuidInput() *string
@@ -135,6 +140,7 @@ type Server interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutLabel(value interface{})
 	PutNic(value *ServerNic)
 	PutTimeouts(value *ServerTimeouts)
 	PutVolume(value *ServerVolume)
@@ -146,11 +152,13 @@ type Server interface {
 	ResetId()
 	ResetImageName()
 	ResetImagePassword()
+	ResetLabel()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRam()
 	ResetSshKeyPath()
+	ResetSshKeys()
 	ResetTemplateUuid()
 	ResetTimeouts()
 	ResetType()
@@ -449,6 +457,26 @@ func (j *jsiiProxy_Server) ImagePasswordInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Server) Label() ServerLabelList {
+	var returns ServerLabelList
+	_jsii_.Get(
+		j,
+		"label",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Server) LabelInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"labelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Server) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -594,6 +622,26 @@ func (j *jsiiProxy_Server) SshKeyPathInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"sshKeyPathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Server) SshKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sshKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Server) SshKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sshKeysInput",
 		&returns,
 	)
 	return returns
@@ -936,6 +984,17 @@ func (j *jsiiProxy_Server)SetSshKeyPath(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_Server)SetSshKeys(val *[]*string) {
+	if err := j.validateSetSshKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sshKeys",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Server)SetTemplateUuid(val *string) {
 	if err := j.validateSetTemplateUuidParameters(val); err != nil {
 		panic(err)
@@ -1224,6 +1283,17 @@ func (s *jsiiProxy_Server) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_Server) PutLabel(value interface{}) {
+	if err := s.validatePutLabelParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putLabel",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_Server) PutNic(value *ServerNic) {
 	if err := s.validatePutNicParameters(value); err != nil {
 		panic(err)
@@ -1321,6 +1391,14 @@ func (s *jsiiProxy_Server) ResetImagePassword() {
 	)
 }
 
+func (s *jsiiProxy_Server) ResetLabel() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLabel",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_Server) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1341,6 +1419,14 @@ func (s *jsiiProxy_Server) ResetSshKeyPath() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSshKeyPath",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Server) ResetSshKeys() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSshKeys",
 		nil, // no parameters
 	)
 }

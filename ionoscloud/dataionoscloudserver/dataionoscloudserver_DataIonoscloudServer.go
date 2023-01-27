@@ -45,6 +45,7 @@ type DataIonoscloudServer interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Labels() DataIonoscloudServerLabelsList
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -303,6 +304,16 @@ func (j *jsiiProxy_DataIonoscloudServer) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudServer) Labels() DataIonoscloudServerLabelsList {
+	var returns DataIonoscloudServerLabelsList
+	_jsii_.Get(
+		j,
+		"labels",
 		&returns,
 	)
 	return returns

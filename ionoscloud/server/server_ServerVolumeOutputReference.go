@@ -65,6 +65,9 @@ type ServerVolumeOutputReference interface {
 	SshKeyPath() *[]*string
 	SetSshKeyPath(val *[]*string)
 	SshKeyPathInput() *[]*string
+	SshKeys() *[]*string
+	SetSshKeys(val *[]*string)
+	SshKeysInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -108,6 +111,7 @@ type ServerVolumeOutputReference interface {
 	ResetName()
 	ResetSize()
 	ResetSshKeyPath()
+	ResetSshKeys()
 	ResetUserData()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -444,6 +448,26 @@ func (j *jsiiProxy_ServerVolumeOutputReference) SshKeyPathInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_ServerVolumeOutputReference) SshKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sshKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServerVolumeOutputReference) SshKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sshKeysInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServerVolumeOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -640,6 +664,17 @@ func (j *jsiiProxy_ServerVolumeOutputReference)SetSshKeyPath(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"sshKeyPath",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServerVolumeOutputReference)SetSshKeys(val *[]*string) {
+	if err := j.validateSetSshKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sshKeys",
 		val,
 	)
 }
@@ -923,6 +958,14 @@ func (s *jsiiProxy_ServerVolumeOutputReference) ResetSshKeyPath() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSshKeyPath",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServerVolumeOutputReference) ResetSshKeys() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSshKeys",
 		nil, // no parameters
 	)
 }

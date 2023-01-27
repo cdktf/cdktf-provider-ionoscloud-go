@@ -50,9 +50,5 @@ type K8SClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_cluster#timeouts K8SCluster#timeouts}
 	Timeouts *K8SClusterTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
-	// List of versions that may be used for node pools under this cluster.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_cluster#viable_node_pool_versions K8SCluster#viable_node_pool_versions}
-	ViableNodePoolVersions *[]*string `field:"optional" json:"viableNodePoolVersions" yaml:"viableNodePoolVersions"`
 }
 

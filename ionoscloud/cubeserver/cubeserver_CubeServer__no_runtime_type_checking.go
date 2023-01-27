@@ -92,10 +92,6 @@ func (j *jsiiProxy_CubeServer) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_CubeServer) validateSetCpuFamilyParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_CubeServer) validateSetDatacenterIdParameters(val *string) error {
 	return nil
 }

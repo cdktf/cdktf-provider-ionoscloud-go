@@ -104,10 +104,6 @@ func (j *jsiiProxy_K8SCluster) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
-func (j *jsiiProxy_K8SCluster) validateSetViableNodePoolVersionsParameters(val *[]*string) error {
-	return nil
-}
-
 func validateNewK8SClusterParameters(scope constructs.Construct, id *string, config *K8SClusterConfig) error {
 	return nil
 }

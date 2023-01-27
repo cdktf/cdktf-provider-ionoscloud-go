@@ -103,6 +103,9 @@ type Volume interface {
 	SshKeyPath() *[]*string
 	SetSshKeyPath(val *[]*string)
 	SshKeyPathInput() *[]*string
+	SshKeys() *[]*string
+	SetSshKeys(val *[]*string)
+	SshKeysInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -152,6 +155,7 @@ type Volume interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSshKeyPath()
+	ResetSshKeys()
 	ResetTimeouts()
 	ResetUserData()
 	SynthesizeAttributes() *map[string]interface{}
@@ -679,6 +683,26 @@ func (j *jsiiProxy_Volume) SshKeyPathInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_Volume) SshKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sshKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Volume) SshKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sshKeysInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Volume) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -983,6 +1007,17 @@ func (j *jsiiProxy_Volume)SetSshKeyPath(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"sshKeyPath",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Volume)SetSshKeys(val *[]*string) {
+	if err := j.validateSetSshKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sshKeys",
 		val,
 	)
 }
@@ -1351,6 +1386,14 @@ func (v *jsiiProxy_Volume) ResetSshKeyPath() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetSshKeyPath",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_Volume) ResetSshKeys() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetSshKeys",
 		nil, // no parameters
 	)
 }

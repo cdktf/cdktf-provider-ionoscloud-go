@@ -132,6 +132,10 @@ func (j *jsiiProxy_Volume) validateSetSshKeyPathParameters(val *[]*string) error
 	return nil
 }
 
+func (j *jsiiProxy_Volume) validateSetSshKeysParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Volume) validateSetUserDataParameters(val *string) error {
 	return nil
 }

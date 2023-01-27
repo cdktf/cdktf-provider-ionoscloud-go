@@ -77,8 +77,6 @@ type K8SCluster interface {
 	Timeouts() K8SClusterTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	ViableNodePoolVersions() *[]*string
-	SetViableNodePoolVersions(val *[]*string)
-	ViableNodePoolVersionsInput() *[]*string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -116,7 +114,6 @@ type K8SCluster interface {
 	ResetOverrideLogicalId()
 	ResetS3Buckets()
 	ResetTimeouts()
-	ResetViableNodePoolVersions()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -442,16 +439,6 @@ func (j *jsiiProxy_K8SCluster) ViableNodePoolVersions() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_K8SCluster) ViableNodePoolVersionsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"viableNodePoolVersionsInput",
-		&returns,
-	)
-	return returns
-}
-
 
 // Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_cluster ionoscloud_k8s_cluster} Resource.
 func NewK8SCluster(scope constructs.Construct, id *string, config *K8SClusterConfig) K8SCluster {
@@ -587,17 +574,6 @@ func (j *jsiiProxy_K8SCluster)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_K8SCluster)SetViableNodePoolVersions(val *[]*string) {
-	if err := j.validateSetViableNodePoolVersionsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"viableNodePoolVersions",
 		val,
 	)
 }
@@ -953,14 +929,6 @@ func (k *jsiiProxy_K8SCluster) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetTimeouts",
-		nil, // no parameters
-	)
-}
-
-func (k *jsiiProxy_K8SCluster) ResetViableNodePoolVersions() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetViableNodePoolVersions",
 		nil, // no parameters
 	)
 }

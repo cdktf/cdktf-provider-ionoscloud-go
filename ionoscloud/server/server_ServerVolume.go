@@ -24,8 +24,18 @@ type ServerVolume struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#size Server#size}
 	Size *float64 `field:"optional" json:"size" yaml:"size"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#ssh_key_path Server#ssh_key_path}.
+	// Public SSH keys are set on the image as authorized keys for appropriate SSH login to the instance using the corresponding private key.
+	//
+	// This field may only be set in creation requests. When reading, it always returns null. SSH keys are only supported if a public Linux image is used for the volume creation.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#ssh_key_path Server#ssh_key_path}
 	SshKeyPath *[]*string `field:"optional" json:"sshKeyPath" yaml:"sshKeyPath"`
+	// Public SSH keys are set on the image as authorized keys for appropriate SSH login to the instance using the corresponding private key.
+	//
+	// This field may only be set in creation requests. When reading, it always returns null. SSH keys are only supported if a public Linux image is used for the volume creation.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#ssh_keys Server#ssh_keys}
+	SshKeys *[]*string `field:"optional" json:"sshKeys" yaml:"sshKeys"`
 	// The cloud-init configuration for the volume as base64 encoded string.
 	//
 	// The property is immutable and is only allowed to be set on a new volume creation. It is mandatory to provide either 'public image' or 'imageAlias' that has cloud-init compatibility in conjunction with this property.

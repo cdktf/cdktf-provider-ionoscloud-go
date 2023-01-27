@@ -39,8 +39,6 @@ type CubeServerConfig struct {
 	BootCdrom *string `field:"optional" json:"bootCdrom" yaml:"bootCdrom"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/cube_server#boot_image CubeServer#boot_image}.
 	BootImage *string `field:"optional" json:"bootImage" yaml:"bootImage"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/cube_server#cpu_family CubeServer#cpu_family}.
-	CpuFamily *string `field:"optional" json:"cpuFamily" yaml:"cpuFamily"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/cube_server#id CubeServer#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

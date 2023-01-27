@@ -52,6 +52,10 @@ func (s *jsiiProxy_Server) validateOverrideLogicalIdParameters(newLogicalId *str
 	return nil
 }
 
+func (s *jsiiProxy_Server) validatePutLabelParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_Server) validatePutNicParameters(value *ServerNic) error {
 	return nil
 }
@@ -133,6 +137,10 @@ func (j *jsiiProxy_Server) validateSetRamParameters(val *float64) error {
 }
 
 func (j *jsiiProxy_Server) validateSetSshKeyPathParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Server) validateSetSshKeysParameters(val *[]*string) error {
 	return nil
 }
 

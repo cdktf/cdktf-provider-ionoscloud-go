@@ -96,6 +96,10 @@ func (j *jsiiProxy_ServerVolumeOutputReference) validateSetSshKeyPathParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ServerVolumeOutputReference) validateSetSshKeysParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServerVolumeOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

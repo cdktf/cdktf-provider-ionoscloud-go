@@ -48,6 +48,8 @@ type VolumeConfig struct {
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#ssh_key_path Volume#ssh_key_path}.
 	SshKeyPath *[]*string `field:"optional" json:"sshKeyPath" yaml:"sshKeyPath"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#ssh_keys Volume#ssh_keys}.
+	SshKeys *[]*string `field:"optional" json:"sshKeys" yaml:"sshKeys"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#timeouts Volume#timeouts}

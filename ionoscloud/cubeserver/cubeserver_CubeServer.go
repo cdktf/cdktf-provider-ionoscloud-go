@@ -34,9 +34,6 @@ type CubeServer interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
-	CpuFamily() *string
-	SetCpuFamily(val *string)
-	CpuFamilyInput() *string
 	DatacenterId() *string
 	SetDatacenterId(val *string)
 	DatacenterIdInput() *string
@@ -132,7 +129,6 @@ type CubeServer interface {
 	ResetAvailabilityZone()
 	ResetBootCdrom()
 	ResetBootImage()
-	ResetCpuFamily()
 	ResetId()
 	ResetImageName()
 	ResetImagePassword()
@@ -261,26 +257,6 @@ func (j *jsiiProxy_CubeServer) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CubeServer) CpuFamily() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"cpuFamily",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CubeServer) CpuFamilyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"cpuFamilyInput",
 		&returns,
 	)
 	return returns
@@ -714,17 +690,6 @@ func (j *jsiiProxy_CubeServer)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CubeServer)SetCpuFamily(val *string) {
-	if err := j.validateSetCpuFamilyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"cpuFamily",
 		val,
 	)
 }
@@ -1171,14 +1136,6 @@ func (c *jsiiProxy_CubeServer) ResetBootImage() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetBootImage",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CubeServer) ResetCpuFamily() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetCpuFamily",
 		nil, // no parameters
 	)
 }

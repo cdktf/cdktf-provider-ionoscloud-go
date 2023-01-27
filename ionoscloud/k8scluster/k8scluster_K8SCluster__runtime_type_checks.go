@@ -307,14 +307,6 @@ func (j *jsiiProxy_K8SCluster) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
-func (j *jsiiProxy_K8SCluster) validateSetViableNodePoolVersionsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewK8SClusterParameters(scope constructs.Construct, id *string, config *K8SClusterConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

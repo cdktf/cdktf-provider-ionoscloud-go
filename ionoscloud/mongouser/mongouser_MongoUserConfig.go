@@ -21,15 +21,9 @@ type MongoUserConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_user#cluster_id MongoUser#cluster_id}.
 	ClusterId *string `field:"required" json:"clusterId" yaml:"clusterId"`
-	// The user database to use for authentication.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_user#database MongoUser#database}
-	Database *string `field:"required" json:"database" yaml:"database"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_user#password MongoUser#password}.
 	Password *string `field:"required" json:"password" yaml:"password"`
-	// The user database uses for authentication.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_user#username MongoUser#username}
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_user#username MongoUser#username}.
 	Username *string `field:"required" json:"username" yaml:"username"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_user#id MongoUser#id}.
 	//
