@@ -2,14 +2,14 @@ package dataionoscloudmongocluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudmongocluster/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudmongocluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/mongo_cluster ionoscloud_mongo_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/mongo_cluster ionoscloud_mongo_cluster}.
 type DataIonoscloudMongoCluster interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -19,9 +19,9 @@ type DataIonoscloudMongoCluster interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Credentials() DataIonoscloudMongoClusterCredentialsList
 	// Experimental.
 	DependsOn() *[]*string
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DataIonoscloudMongoCluster) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudMongoCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataIonoscloudMongoCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DataIonoscloudMongoCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/mongo_cluster ionoscloud_mongo_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/mongo_cluster ionoscloud_mongo_cluster} Data Source.
 func NewDataIonoscloudMongoCluster(scope constructs.Construct, id *string, config *DataIonoscloudMongoClusterConfig) DataIonoscloudMongoCluster {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewDataIonoscloudMongoCluster(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/mongo_cluster ionoscloud_mongo_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/mongo_cluster ionoscloud_mongo_cluster} Data Source.
 func NewDataIonoscloudMongoCluster_Override(d DataIonoscloudMongoCluster, scope constructs.Construct, id *string, config *DataIonoscloudMongoClusterConfig) {
 	_init_.Initialize()
 
@@ -423,7 +423,10 @@ func NewDataIonoscloudMongoCluster_Override(d DataIonoscloudMongoCluster, scope 
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudMongoCluster)SetCount(val *float64) {
+func (j *jsiiProxy_DataIonoscloudMongoCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

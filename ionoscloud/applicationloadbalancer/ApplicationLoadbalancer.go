@@ -2,14 +2,14 @@ package applicationloadbalancer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/applicationloadbalancer/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/applicationloadbalancer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/r/application_loadbalancer ionoscloud_application_loadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer}.
 type ApplicationLoadbalancer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ApplicationLoadbalancer interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DatacenterId() *string
 	SetDatacenterId(val *string)
 	DatacenterIdInput() *string
@@ -159,8 +159,8 @@ func (j *jsiiProxy_ApplicationLoadbalancer) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_ApplicationLoadbalancer) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApplicationLoadbalancer) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -450,7 +450,7 @@ func (j *jsiiProxy_ApplicationLoadbalancer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/application_loadbalancer ionoscloud_application_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer} Resource.
 func NewApplicationLoadbalancer(scope constructs.Construct, id *string, config *ApplicationLoadbalancerConfig) ApplicationLoadbalancer {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewApplicationLoadbalancer(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/application_loadbalancer ionoscloud_application_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer} Resource.
 func NewApplicationLoadbalancer_Override(a ApplicationLoadbalancer, scope constructs.Construct, id *string, config *ApplicationLoadbalancerConfig) {
 	_init_.Initialize()
 
@@ -490,7 +490,10 @@ func (j *jsiiProxy_ApplicationLoadbalancer)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApplicationLoadbalancer)SetCount(val *float64) {
+func (j *jsiiProxy_ApplicationLoadbalancer)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func validateDataIonoscloudNatgateway_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudNatgateway) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudNatgateway) validateSetDatacenterIdParameters(val *string) error {
 	return nil
 }

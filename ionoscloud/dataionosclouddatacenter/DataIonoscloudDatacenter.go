@@ -2,14 +2,14 @@ package dataionosclouddatacenter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionosclouddatacenter/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionosclouddatacenter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/datacenter ionoscloud_datacenter}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/datacenter ionoscloud_datacenter}.
 type DataIonoscloudDatacenter interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataIonoscloudDatacenter interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CpuArchitecture() DataIonoscloudDatacenterCpuArchitectureList
 	// Experimental.
 	DependsOn() *[]*string
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataIonoscloudDatacenter) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudDatacenter) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataIonoscloudDatacenter) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DataIonoscloudDatacenter) Version() *float64 {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/datacenter ionoscloud_datacenter} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/datacenter ionoscloud_datacenter} Data Source.
 func NewDataIonoscloudDatacenter(scope constructs.Construct, id *string, config *DataIonoscloudDatacenterConfig) DataIonoscloudDatacenter {
 	_init_.Initialize()
 
@@ -403,7 +403,7 @@ func NewDataIonoscloudDatacenter(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/datacenter ionoscloud_datacenter} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/datacenter ionoscloud_datacenter} Data Source.
 func NewDataIonoscloudDatacenter_Override(d DataIonoscloudDatacenter, scope constructs.Construct, id *string, config *DataIonoscloudDatacenterConfig) {
 	_init_.Initialize()
 
@@ -414,7 +414,10 @@ func NewDataIonoscloudDatacenter_Override(d DataIonoscloudDatacenter, scope cons
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudDatacenter)SetCount(val *float64) {
+func (j *jsiiProxy_DataIonoscloudDatacenter)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

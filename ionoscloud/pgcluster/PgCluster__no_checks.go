@@ -96,6 +96,10 @@ func (j *jsiiProxy_PgCluster) validateSetCoresParameters(val *float64) error {
 	return nil
 }
 
+func (j *jsiiProxy_PgCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PgCluster) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package containerregistrytoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/containerregistrytoken/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/containerregistrytoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token ionoscloud_container_registry_token}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/container_registry_token ionoscloud_container_registry_token}.
 type ContainerRegistryToken interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ContainerRegistryToken interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Credentials() ContainerRegistryTokenCredentialsList
 	// Experimental.
 	DependsOn() *[]*string
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ContainerRegistryToken) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_ContainerRegistryToken) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ContainerRegistryToken) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -463,7 +463,7 @@ func (j *jsiiProxy_ContainerRegistryToken) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token ionoscloud_container_registry_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/container_registry_token ionoscloud_container_registry_token} Resource.
 func NewContainerRegistryToken(scope constructs.Construct, id *string, config *ContainerRegistryTokenConfig) ContainerRegistryToken {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewContainerRegistryToken(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token ionoscloud_container_registry_token} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/container_registry_token ionoscloud_container_registry_token} Resource.
 func NewContainerRegistryToken_Override(c ContainerRegistryToken, scope constructs.Construct, id *string, config *ContainerRegistryTokenConfig) {
 	_init_.Initialize()
 
@@ -503,7 +503,10 @@ func (j *jsiiProxy_ContainerRegistryToken)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ContainerRegistryToken)SetCount(val *float64) {
+func (j *jsiiProxy_ContainerRegistryToken)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataIonoscloudPgVersions) validateSetClusterIdParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudPgVersions) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudPgVersions) validateSetIdParameters(val *string) error {
 	return nil
 }

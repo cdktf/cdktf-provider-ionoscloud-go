@@ -68,6 +68,10 @@ func validateDataIonoscloudApplicationLoadbalancer_IsTerraformElementParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudApplicationLoadbalancer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudApplicationLoadbalancer) validateSetDatacenterIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataIonoscloudApplicationLoadbalancerForwardingrule) validate
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudApplicationLoadbalancerForwardingrule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudApplicationLoadbalancerForwardingrule) validateSetDatacenterIdParameters(val *string) error {
 	return nil
 }

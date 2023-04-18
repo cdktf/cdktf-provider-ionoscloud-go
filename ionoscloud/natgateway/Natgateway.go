@@ -2,14 +2,14 @@ package natgateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/natgateway/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/natgateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/r/natgateway ionoscloud_natgateway}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway ionoscloud_natgateway}.
 type Natgateway interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type Natgateway interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DatacenterId() *string
 	SetDatacenterId(val *string)
 	DatacenterIdInput() *string
@@ -151,8 +151,8 @@ func (j *jsiiProxy_Natgateway) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Natgateway) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Natgateway) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -402,7 +402,7 @@ func (j *jsiiProxy_Natgateway) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/natgateway ionoscloud_natgateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway ionoscloud_natgateway} Resource.
 func NewNatgateway(scope constructs.Construct, id *string, config *NatgatewayConfig) Natgateway {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewNatgateway(scope constructs.Construct, id *string, config *NatgatewayCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/natgateway ionoscloud_natgateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway ionoscloud_natgateway} Resource.
 func NewNatgateway_Override(n Natgateway, scope constructs.Construct, id *string, config *NatgatewayConfig) {
 	_init_.Initialize()
 
@@ -442,7 +442,10 @@ func (j *jsiiProxy_Natgateway)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Natgateway)SetCount(val *float64) {
+func (j *jsiiProxy_Natgateway)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

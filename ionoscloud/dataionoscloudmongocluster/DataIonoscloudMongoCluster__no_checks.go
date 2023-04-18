@@ -68,6 +68,10 @@ func validateDataIonoscloudMongoCluster_IsTerraformElementParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudMongoCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudMongoCluster) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

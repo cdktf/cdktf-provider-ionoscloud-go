@@ -2,9 +2,9 @@ package dataionoscloudlocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudlocation/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudlocation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

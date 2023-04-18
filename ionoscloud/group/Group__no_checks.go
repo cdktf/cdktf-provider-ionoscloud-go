@@ -84,6 +84,10 @@ func (j *jsiiProxy_Group) validateSetConnectionParameters(val interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_Group) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Group) validateSetCreateBackupUnitParameters(val interface{}) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func validateDataIonoscloudContainerRegistry_IsTerraformElementParameters(x inte
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudContainerRegistry) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudContainerRegistry) validateSetIdParameters(val *string) error {
 	return nil
 }

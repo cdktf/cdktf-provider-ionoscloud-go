@@ -68,6 +68,10 @@ func validateDataIonoscloudFirewall_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudFirewall) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudFirewall) validateSetDatacenterIdParameters(val *string) error {
 	return nil
 }

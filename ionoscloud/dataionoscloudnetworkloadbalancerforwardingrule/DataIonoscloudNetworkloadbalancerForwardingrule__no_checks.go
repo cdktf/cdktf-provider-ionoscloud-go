@@ -68,6 +68,10 @@ func validateDataIonoscloudNetworkloadbalancerForwardingrule_IsTerraformElementP
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingrule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingrule) validateSetDatacenterIdParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func validateDataIonoscloudCubeServer_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudCubeServer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudCubeServer) validateSetDatacenterIdParameters(val *string) error {
 	return nil
 }

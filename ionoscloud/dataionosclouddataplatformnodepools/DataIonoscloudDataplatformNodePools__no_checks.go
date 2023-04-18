@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataIonoscloudDataplatformNodePools) validateSetClusterIdPara
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudDataplatformNodePools) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudDataplatformNodePools) validateSetIdParameters(val *string) error {
 	return nil
 }

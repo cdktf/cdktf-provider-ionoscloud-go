@@ -2,14 +2,14 @@ package ipfailover
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/ipfailover/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/ipfailover/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/r/ipfailover ionoscloud_ipfailover}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/ipfailover ionoscloud_ipfailover}.
 type Ipfailover interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type Ipfailover interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DatacenterId() *string
 	SetDatacenterId(val *string)
 	DatacenterIdInput() *string
@@ -151,8 +151,8 @@ func (j *jsiiProxy_Ipfailover) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Ipfailover) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Ipfailover) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -402,7 +402,7 @@ func (j *jsiiProxy_Ipfailover) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/ipfailover ionoscloud_ipfailover} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/ipfailover ionoscloud_ipfailover} Resource.
 func NewIpfailover(scope constructs.Construct, id *string, config *IpfailoverConfig) Ipfailover {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewIpfailover(scope constructs.Construct, id *string, config *IpfailoverCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/ipfailover ionoscloud_ipfailover} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/ipfailover ionoscloud_ipfailover} Resource.
 func NewIpfailover_Override(i Ipfailover, scope constructs.Construct, id *string, config *IpfailoverConfig) {
 	_init_.Initialize()
 
@@ -442,7 +442,10 @@ func (j *jsiiProxy_Ipfailover)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Ipfailover)SetCount(val *float64) {
+func (j *jsiiProxy_Ipfailover)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

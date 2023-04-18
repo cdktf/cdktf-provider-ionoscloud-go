@@ -2,14 +2,14 @@ package dataionoscloudlocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudlocation/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudlocation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/location ionoscloud_location}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/location ionoscloud_location}.
 type DataIonoscloudLocation interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataIonoscloudLocation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CpuArchitecture() DataIonoscloudLocationCpuArchitectureList
 	// Experimental.
 	DependsOn() *[]*string
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataIonoscloudLocation) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudLocation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataIonoscloudLocation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -352,7 +352,7 @@ func (j *jsiiProxy_DataIonoscloudLocation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/location ionoscloud_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/location ionoscloud_location} Data Source.
 func NewDataIonoscloudLocation(scope constructs.Construct, id *string, config *DataIonoscloudLocationConfig) DataIonoscloudLocation {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewDataIonoscloudLocation(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/location ionoscloud_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/location ionoscloud_location} Data Source.
 func NewDataIonoscloudLocation_Override(d DataIonoscloudLocation, scope constructs.Construct, id *string, config *DataIonoscloudLocationConfig) {
 	_init_.Initialize()
 
@@ -381,7 +381,10 @@ func NewDataIonoscloudLocation_Override(d DataIonoscloudLocation, scope construc
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudLocation)SetCount(val *float64) {
+func (j *jsiiProxy_DataIonoscloudLocation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

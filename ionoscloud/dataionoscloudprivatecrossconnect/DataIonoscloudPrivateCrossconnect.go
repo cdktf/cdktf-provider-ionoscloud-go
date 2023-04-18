@@ -2,14 +2,14 @@ package dataionoscloudprivatecrossconnect
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudprivatecrossconnect/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudprivatecrossconnect/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/private_crossconnect ionoscloud_private_crossconnect}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/private_crossconnect ionoscloud_private_crossconnect}.
 type DataIonoscloudPrivateCrossconnect interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -18,9 +18,9 @@ type DataIonoscloudPrivateCrossconnect interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_DataIonoscloudPrivateCrossconnect) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudPrivateCrossconnect) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataIonoscloudPrivateCrossconnect) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -352,7 +352,7 @@ func (j *jsiiProxy_DataIonoscloudPrivateCrossconnect) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/private_crossconnect ionoscloud_private_crossconnect} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/private_crossconnect ionoscloud_private_crossconnect} Data Source.
 func NewDataIonoscloudPrivateCrossconnect(scope constructs.Construct, id *string, config *DataIonoscloudPrivateCrossconnectConfig) DataIonoscloudPrivateCrossconnect {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewDataIonoscloudPrivateCrossconnect(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/private_crossconnect ionoscloud_private_crossconnect} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/private_crossconnect ionoscloud_private_crossconnect} Data Source.
 func NewDataIonoscloudPrivateCrossconnect_Override(d DataIonoscloudPrivateCrossconnect, scope constructs.Construct, id *string, config *DataIonoscloudPrivateCrossconnectConfig) {
 	_init_.Initialize()
 
@@ -381,7 +381,10 @@ func NewDataIonoscloudPrivateCrossconnect_Override(d DataIonoscloudPrivateCrossc
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPrivateCrossconnect)SetCount(val *float64) {
+func (j *jsiiProxy_DataIonoscloudPrivateCrossconnect)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

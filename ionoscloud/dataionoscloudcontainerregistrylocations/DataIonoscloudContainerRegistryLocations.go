@@ -2,14 +2,14 @@ package dataionoscloudcontainerregistrylocations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudcontainerregistrylocations/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudcontainerregistrylocations/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations ionoscloud_container_registry_locations}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations ionoscloud_container_registry_locations}.
 type DataIonoscloudContainerRegistryLocations interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataIonoscloudContainerRegistryLocations interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DataIonoscloudContainerRegistryLocations) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudContainerRegistryLocations) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataIonoscloudContainerRegistryLocations) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DataIonoscloudContainerRegistryLocations) TimeoutsInput() int
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations ionoscloud_container_registry_locations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations ionoscloud_container_registry_locations} Data Source.
 func NewDataIonoscloudContainerRegistryLocations(scope constructs.Construct, id *string, config *DataIonoscloudContainerRegistryLocationsConfig) DataIonoscloudContainerRegistryLocations {
 	_init_.Initialize()
 
@@ -311,7 +311,7 @@ func NewDataIonoscloudContainerRegistryLocations(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations ionoscloud_container_registry_locations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations ionoscloud_container_registry_locations} Data Source.
 func NewDataIonoscloudContainerRegistryLocations_Override(d DataIonoscloudContainerRegistryLocations, scope constructs.Construct, id *string, config *DataIonoscloudContainerRegistryLocationsConfig) {
 	_init_.Initialize()
 
@@ -322,7 +322,10 @@ func NewDataIonoscloudContainerRegistryLocations_Override(d DataIonoscloudContai
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudContainerRegistryLocations)SetCount(val *float64) {
+func (j *jsiiProxy_DataIonoscloudContainerRegistryLocations)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

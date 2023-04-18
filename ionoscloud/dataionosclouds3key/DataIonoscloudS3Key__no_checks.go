@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataIonoscloudS3Key) validateSetActiveParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudS3Key) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudS3Key) validateSetIdParameters(val *string) error {
 	return nil
 }

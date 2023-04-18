@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataIonoscloudImage) validateSetCloudInitParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudImage) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudImage) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

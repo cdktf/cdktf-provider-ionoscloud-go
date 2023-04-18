@@ -76,6 +76,10 @@ func (j *jsiiProxy_Natgateway) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_Natgateway) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Natgateway) validateSetDatacenterIdParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func validateDataIonoscloudUser_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudUser) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudUser) validateSetEmailParameters(val *string) error {
 	return nil
 }

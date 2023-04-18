@@ -100,6 +100,10 @@ func (j *jsiiProxy_Server) validateSetCoresParameters(val *float64) error {
 	return nil
 }
 
+func (j *jsiiProxy_Server) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Server) validateSetCpuFamilyParameters(val *string) error {
 	return nil
 }

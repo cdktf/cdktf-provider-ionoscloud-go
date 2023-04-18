@@ -68,6 +68,10 @@ func validateDataIonoscloudK8SCluster_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudK8SCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudK8SCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

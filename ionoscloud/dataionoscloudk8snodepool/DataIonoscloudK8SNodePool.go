@@ -2,14 +2,14 @@ package dataionoscloudk8snodepool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudk8snodepool/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudk8snodepool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_node_pool ionoscloud_k8s_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_node_pool ionoscloud_k8s_node_pool}.
 type DataIonoscloudK8SNodePool interface {
 	cdktf.TerraformDataSource
 	Annotations() cdktf.StringMap
@@ -22,9 +22,9 @@ type DataIonoscloudK8SNodePool interface {
 	ConstructNodeMetadata() *map[string]interface{}
 	CoresCount() *float64
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CpuFamily() *string
 	DatacenterId() *string
 	// Experimental.
@@ -195,8 +195,8 @@ func (j *jsiiProxy_DataIonoscloudK8SNodePool) CoresCount() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudK8SNodePool) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataIonoscloudK8SNodePool) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -516,7 +516,7 @@ func (j *jsiiProxy_DataIonoscloudK8SNodePool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_node_pool ionoscloud_k8s_node_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_node_pool ionoscloud_k8s_node_pool} Data Source.
 func NewDataIonoscloudK8SNodePool(scope constructs.Construct, id *string, config *DataIonoscloudK8SNodePoolConfig) DataIonoscloudK8SNodePool {
 	_init_.Initialize()
 
@@ -534,7 +534,7 @@ func NewDataIonoscloudK8SNodePool(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_node_pool ionoscloud_k8s_node_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_node_pool ionoscloud_k8s_node_pool} Data Source.
 func NewDataIonoscloudK8SNodePool_Override(d DataIonoscloudK8SNodePool, scope constructs.Construct, id *string, config *DataIonoscloudK8SNodePoolConfig) {
 	_init_.Initialize()
 
@@ -545,7 +545,10 @@ func NewDataIonoscloudK8SNodePool_Override(d DataIonoscloudK8SNodePool, scope co
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudK8SNodePool)SetCount(val *float64) {
+func (j *jsiiProxy_DataIonoscloudK8SNodePool)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

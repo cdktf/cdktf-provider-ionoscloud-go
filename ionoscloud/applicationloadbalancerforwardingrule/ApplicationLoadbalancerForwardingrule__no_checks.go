@@ -84,6 +84,10 @@ func (j *jsiiProxy_ApplicationLoadbalancerForwardingrule) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationLoadbalancerForwardingrule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationLoadbalancerForwardingrule) validateSetDatacenterIdParameters(val *string) error {
 	return nil
 }

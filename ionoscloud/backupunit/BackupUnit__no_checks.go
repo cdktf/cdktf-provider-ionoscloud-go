@@ -72,6 +72,10 @@ func (j *jsiiProxy_BackupUnit) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_BackupUnit) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupUnit) validateSetEmailParameters(val *string) error {
 	return nil
 }

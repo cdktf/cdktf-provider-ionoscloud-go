@@ -84,6 +84,10 @@ func (j *jsiiProxy_NetworkloadbalancerForwardingrule) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_NetworkloadbalancerForwardingrule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkloadbalancerForwardingrule) validateSetDatacenterIdParameters(val *string) error {
 	return nil
 }

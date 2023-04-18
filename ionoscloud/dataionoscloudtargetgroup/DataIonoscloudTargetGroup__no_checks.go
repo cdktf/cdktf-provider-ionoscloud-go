@@ -68,6 +68,10 @@ func validateDataIonoscloudTargetGroup_IsTerraformElementParameters(x interface{
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudTargetGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudTargetGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

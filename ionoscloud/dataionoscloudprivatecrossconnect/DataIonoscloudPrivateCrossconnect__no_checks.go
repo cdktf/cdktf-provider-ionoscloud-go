@@ -68,6 +68,10 @@ func validateDataIonoscloudPrivateCrossconnect_IsTerraformElementParameters(x in
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudPrivateCrossconnect) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudPrivateCrossconnect) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataIonoscloudTemplate) validateSetCoresParameters(val *float
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudTemplate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudTemplate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

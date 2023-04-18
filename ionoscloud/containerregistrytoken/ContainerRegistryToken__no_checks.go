@@ -76,6 +76,10 @@ func (j *jsiiProxy_ContainerRegistryToken) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_ContainerRegistryToken) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerRegistryToken) validateSetExpiryDateParameters(val *string) error {
 	return nil
 }

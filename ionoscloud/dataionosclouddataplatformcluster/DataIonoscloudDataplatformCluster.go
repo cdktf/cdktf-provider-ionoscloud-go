@@ -2,14 +2,14 @@ package dataionosclouddataplatformcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionosclouddataplatformcluster/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionosclouddataplatformcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/dataplatform_cluster ionoscloud_dataplatform_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/dataplatform_cluster ionoscloud_dataplatform_cluster}.
 type DataIonoscloudDataplatformCluster interface {
 	cdktf.TerraformDataSource
 	CaCrt() *string
@@ -19,9 +19,9 @@ type DataIonoscloudDataplatformCluster interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DatacenterId() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -157,8 +157,8 @@ func (j *jsiiProxy_DataIonoscloudDataplatformCluster) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudDataplatformCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataIonoscloudDataplatformCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -418,7 +418,7 @@ func (j *jsiiProxy_DataIonoscloudDataplatformCluster) Version() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/dataplatform_cluster ionoscloud_dataplatform_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/dataplatform_cluster ionoscloud_dataplatform_cluster} Data Source.
 func NewDataIonoscloudDataplatformCluster(scope constructs.Construct, id *string, config *DataIonoscloudDataplatformClusterConfig) DataIonoscloudDataplatformCluster {
 	_init_.Initialize()
 
@@ -436,7 +436,7 @@ func NewDataIonoscloudDataplatformCluster(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/dataplatform_cluster ionoscloud_dataplatform_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/dataplatform_cluster ionoscloud_dataplatform_cluster} Data Source.
 func NewDataIonoscloudDataplatformCluster_Override(d DataIonoscloudDataplatformCluster, scope constructs.Construct, id *string, config *DataIonoscloudDataplatformClusterConfig) {
 	_init_.Initialize()
 
@@ -447,7 +447,10 @@ func NewDataIonoscloudDataplatformCluster_Override(d DataIonoscloudDataplatformC
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudDataplatformCluster)SetCount(val *float64) {
+func (j *jsiiProxy_DataIonoscloudDataplatformCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

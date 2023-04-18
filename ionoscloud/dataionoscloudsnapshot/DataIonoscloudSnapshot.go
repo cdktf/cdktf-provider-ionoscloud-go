@@ -2,14 +2,14 @@ package dataionoscloudsnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudsnapshot/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudsnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/snapshot ionoscloud_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/snapshot ionoscloud_snapshot}.
 type DataIonoscloudSnapshot interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataIonoscloudSnapshot interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CpuHotPlug() cdktf.IResolvable
 	CpuHotUnplug() cdktf.IResolvable
 	// Experimental.
@@ -146,8 +146,8 @@ func (j *jsiiProxy_DataIonoscloudSnapshot) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudSnapshot) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataIonoscloudSnapshot) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -497,7 +497,7 @@ func (j *jsiiProxy_DataIonoscloudSnapshot) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/snapshot ionoscloud_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/snapshot ionoscloud_snapshot} Data Source.
 func NewDataIonoscloudSnapshot(scope constructs.Construct, id *string, config *DataIonoscloudSnapshotConfig) DataIonoscloudSnapshot {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewDataIonoscloudSnapshot(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/snapshot ionoscloud_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/snapshot ionoscloud_snapshot} Data Source.
 func NewDataIonoscloudSnapshot_Override(d DataIonoscloudSnapshot, scope constructs.Construct, id *string, config *DataIonoscloudSnapshotConfig) {
 	_init_.Initialize()
 
@@ -526,7 +526,10 @@ func NewDataIonoscloudSnapshot_Override(d DataIonoscloudSnapshot, scope construc
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudSnapshot)SetCount(val *float64) {
+func (j *jsiiProxy_DataIonoscloudSnapshot)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

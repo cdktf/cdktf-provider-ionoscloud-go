@@ -76,6 +76,10 @@ func (j *jsiiProxy_S3Key) validateSetConnectionParameters(val interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_S3Key) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3Key) validateSetIdParameters(val *string) error {
 	return nil
 }

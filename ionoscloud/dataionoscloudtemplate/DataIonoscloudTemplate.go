@@ -2,14 +2,14 @@ package dataionoscloudtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudtemplate/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudtemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/template ionoscloud_template}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/template ionoscloud_template}.
 type DataIonoscloudTemplate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -20,9 +20,9 @@ type DataIonoscloudTemplate interface {
 	SetCores(val *float64)
 	CoresInput() *float64
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -154,8 +154,8 @@ func (j *jsiiProxy_DataIonoscloudTemplate) CoresInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudTemplate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataIonoscloudTemplate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -365,7 +365,7 @@ func (j *jsiiProxy_DataIonoscloudTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/template ionoscloud_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/template ionoscloud_template} Data Source.
 func NewDataIonoscloudTemplate(scope constructs.Construct, id *string, config *DataIonoscloudTemplateConfig) DataIonoscloudTemplate {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewDataIonoscloudTemplate(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/template ionoscloud_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/template ionoscloud_template} Data Source.
 func NewDataIonoscloudTemplate_Override(d DataIonoscloudTemplate, scope constructs.Construct, id *string, config *DataIonoscloudTemplateConfig) {
 	_init_.Initialize()
 
@@ -405,7 +405,10 @@ func (j *jsiiProxy_DataIonoscloudTemplate)SetCores(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudTemplate)SetCount(val *float64) {
+func (j *jsiiProxy_DataIonoscloudTemplate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

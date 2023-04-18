@@ -68,6 +68,10 @@ func validateDataIonoscloudShare_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudShare) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudShare) validateSetEditPrivilegeParameters(val interface{}) error {
 	return nil
 }

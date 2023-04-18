@@ -2,14 +2,14 @@ package snapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/snapshot/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/snapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/r/snapshot ionoscloud_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/snapshot ionoscloud_snapshot}.
 type Snapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type Snapshot interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CpuHotPlug() cdktf.IResolvable
 	CpuHotUnplug() cdktf.IResolvable
 	DatacenterId() *string
@@ -163,8 +163,8 @@ func (j *jsiiProxy_Snapshot) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Snapshot) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Snapshot) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -544,7 +544,7 @@ func (j *jsiiProxy_Snapshot) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/snapshot ionoscloud_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/snapshot ionoscloud_snapshot} Resource.
 func NewSnapshot(scope constructs.Construct, id *string, config *SnapshotConfig) Snapshot {
 	_init_.Initialize()
 
@@ -562,7 +562,7 @@ func NewSnapshot(scope constructs.Construct, id *string, config *SnapshotConfig)
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/snapshot ionoscloud_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/snapshot ionoscloud_snapshot} Resource.
 func NewSnapshot_Override(s Snapshot, scope constructs.Construct, id *string, config *SnapshotConfig) {
 	_init_.Initialize()
 
@@ -584,7 +584,10 @@ func (j *jsiiProxy_Snapshot)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Snapshot)SetCount(val *float64) {
+func (j *jsiiProxy_Snapshot)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

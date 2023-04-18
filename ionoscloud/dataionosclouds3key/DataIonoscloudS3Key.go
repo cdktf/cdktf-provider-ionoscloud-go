@@ -2,14 +2,14 @@ package dataionosclouds3key
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionosclouds3key/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionosclouds3key/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/s3_key ionoscloud_s3_key}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/s3_key ionoscloud_s3_key}.
 type DataIonoscloudS3Key interface {
 	cdktf.TerraformDataSource
 	Active() interface{}
@@ -20,9 +20,9 @@ type DataIonoscloudS3Key interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataIonoscloudS3Key) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudS3Key) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataIonoscloudS3Key) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -340,7 +340,7 @@ func (j *jsiiProxy_DataIonoscloudS3Key) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/s3_key ionoscloud_s3_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/s3_key ionoscloud_s3_key} Data Source.
 func NewDataIonoscloudS3Key(scope constructs.Construct, id *string, config *DataIonoscloudS3KeyConfig) DataIonoscloudS3Key {
 	_init_.Initialize()
 
@@ -358,7 +358,7 @@ func NewDataIonoscloudS3Key(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/s3_key ionoscloud_s3_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/s3_key ionoscloud_s3_key} Data Source.
 func NewDataIonoscloudS3Key_Override(d DataIonoscloudS3Key, scope constructs.Construct, id *string, config *DataIonoscloudS3KeyConfig) {
 	_init_.Initialize()
 
@@ -380,7 +380,10 @@ func (j *jsiiProxy_DataIonoscloudS3Key)SetActive(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudS3Key)SetCount(val *float64) {
+func (j *jsiiProxy_DataIonoscloudS3Key)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

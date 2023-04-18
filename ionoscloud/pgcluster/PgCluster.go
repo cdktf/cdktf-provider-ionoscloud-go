@@ -2,14 +2,14 @@ package pgcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/pgcluster/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/pgcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster ionoscloud_pg_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster ionoscloud_pg_cluster}.
 type PgCluster interface {
 	cdktf.TerraformResource
 	BackupLocation() *string
@@ -29,9 +29,9 @@ type PgCluster interface {
 	SetCores(val *float64)
 	CoresInput() *float64
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Credentials() PgClusterCredentialsOutputReference
 	CredentialsInput() *PgClusterCredentials
 	// Experimental.
@@ -246,8 +246,8 @@ func (j *jsiiProxy_PgCluster) CoresInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_PgCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PgCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -647,7 +647,7 @@ func (j *jsiiProxy_PgCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster ionoscloud_pg_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster ionoscloud_pg_cluster} Resource.
 func NewPgCluster(scope constructs.Construct, id *string, config *PgClusterConfig) PgCluster {
 	_init_.Initialize()
 
@@ -665,7 +665,7 @@ func NewPgCluster(scope constructs.Construct, id *string, config *PgClusterConfi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster ionoscloud_pg_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster ionoscloud_pg_cluster} Resource.
 func NewPgCluster_Override(p PgCluster, scope constructs.Construct, id *string, config *PgClusterConfig) {
 	_init_.Initialize()
 
@@ -709,7 +709,10 @@ func (j *jsiiProxy_PgCluster)SetCores(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PgCluster)SetCount(val *float64) {
+func (j *jsiiProxy_PgCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

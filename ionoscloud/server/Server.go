@@ -2,14 +2,14 @@ package server
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/server/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/server/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/r/server ionoscloud_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/server ionoscloud_server}.
 type Server interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -34,9 +34,9 @@ type Server interface {
 	SetCores(val *float64)
 	CoresInput() *float64
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CpuFamily() *string
 	SetCpuFamily(val *string)
 	CpuFamilyInput() *string
@@ -297,8 +297,8 @@ func (j *jsiiProxy_Server) CoresInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Server) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Server) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -758,7 +758,7 @@ func (j *jsiiProxy_Server) VolumeInput() *ServerVolume {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/server ionoscloud_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/server ionoscloud_server} Resource.
 func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Server {
 	_init_.Initialize()
 
@@ -776,7 +776,7 @@ func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Ser
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/server ionoscloud_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/server ionoscloud_server} Resource.
 func NewServer_Override(s Server, scope constructs.Construct, id *string, config *ServerConfig) {
 	_init_.Initialize()
 
@@ -842,7 +842,10 @@ func (j *jsiiProxy_Server)SetCores(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Server)SetCount(val *float64) {
+func (j *jsiiProxy_Server)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

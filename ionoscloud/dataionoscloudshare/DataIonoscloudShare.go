@@ -2,14 +2,14 @@ package dataionoscloudshare
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudshare/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudshare/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/share ionoscloud_share}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/share ionoscloud_share}.
 type DataIonoscloudShare interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataIonoscloudShare interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataIonoscloudShare) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudShare) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataIonoscloudShare) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -375,7 +375,7 @@ func (j *jsiiProxy_DataIonoscloudShare) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/share ionoscloud_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/share ionoscloud_share} Data Source.
 func NewDataIonoscloudShare(scope constructs.Construct, id *string, config *DataIonoscloudShareConfig) DataIonoscloudShare {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewDataIonoscloudShare(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/share ionoscloud_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/share ionoscloud_share} Data Source.
 func NewDataIonoscloudShare_Override(d DataIonoscloudShare, scope constructs.Construct, id *string, config *DataIonoscloudShareConfig) {
 	_init_.Initialize()
 
@@ -404,7 +404,10 @@ func NewDataIonoscloudShare_Override(d DataIonoscloudShare, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudShare)SetCount(val *float64) {
+func (j *jsiiProxy_DataIonoscloudShare)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

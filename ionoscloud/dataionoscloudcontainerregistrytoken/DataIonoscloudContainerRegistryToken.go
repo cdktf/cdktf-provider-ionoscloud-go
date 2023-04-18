@@ -2,14 +2,14 @@ package dataionoscloudcontainerregistrytoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudcontainerregistrytoken/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudcontainerregistrytoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_token ionoscloud_container_registry_token}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_token ionoscloud_container_registry_token}.
 type DataIonoscloudContainerRegistryToken interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataIonoscloudContainerRegistryToken interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Credentials() DataIonoscloudContainerRegistryTokenCredentialsList
 	// Experimental.
 	DependsOn() *[]*string
@@ -136,8 +136,8 @@ func (j *jsiiProxy_DataIonoscloudContainerRegistryToken) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudContainerRegistryToken) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataIonoscloudContainerRegistryToken) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -397,7 +397,7 @@ func (j *jsiiProxy_DataIonoscloudContainerRegistryToken) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_token ionoscloud_container_registry_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_token ionoscloud_container_registry_token} Data Source.
 func NewDataIonoscloudContainerRegistryToken(scope constructs.Construct, id *string, config *DataIonoscloudContainerRegistryTokenConfig) DataIonoscloudContainerRegistryToken {
 	_init_.Initialize()
 
@@ -415,7 +415,7 @@ func NewDataIonoscloudContainerRegistryToken(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_token ionoscloud_container_registry_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_token ionoscloud_container_registry_token} Data Source.
 func NewDataIonoscloudContainerRegistryToken_Override(d DataIonoscloudContainerRegistryToken, scope constructs.Construct, id *string, config *DataIonoscloudContainerRegistryTokenConfig) {
 	_init_.Initialize()
 
@@ -426,7 +426,10 @@ func NewDataIonoscloudContainerRegistryToken_Override(d DataIonoscloudContainerR
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudContainerRegistryToken)SetCount(val *float64) {
+func (j *jsiiProxy_DataIonoscloudContainerRegistryToken)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

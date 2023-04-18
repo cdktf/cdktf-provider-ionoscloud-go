@@ -2,14 +2,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/provider/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/ionoscloud ionoscloud}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs ionoscloud}.
 type IonoscloudProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -300,7 +300,7 @@ func (j *jsiiProxy_IonoscloudProvider) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud ionoscloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs ionoscloud} Resource.
 func NewIonoscloudProvider(scope constructs.Construct, id *string, config *IonoscloudProviderConfig) IonoscloudProvider {
 	_init_.Initialize()
 
@@ -318,7 +318,7 @@ func NewIonoscloudProvider(scope constructs.Construct, id *string, config *Ionos
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud ionoscloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs ionoscloud} Resource.
 func NewIonoscloudProvider_Override(i IonoscloudProvider, scope constructs.Construct, id *string, config *IonoscloudProviderConfig) {
 	_init_.Initialize()
 

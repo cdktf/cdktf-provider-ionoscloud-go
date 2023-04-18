@@ -2,14 +2,14 @@ package volume
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/volume/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/volume/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume ionoscloud_volume}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume ionoscloud_volume}.
 type Volume interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -31,9 +31,9 @@ type Volume interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CpuHotPlug() cdktf.IResolvable
 	DatacenterId() *string
 	SetDatacenterId(val *string)
@@ -273,8 +273,8 @@ func (j *jsiiProxy_Volume) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Volume) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Volume) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -774,7 +774,7 @@ func (j *jsiiProxy_Volume) UserDataInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume ionoscloud_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume ionoscloud_volume} Resource.
 func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Volume {
 	_init_.Initialize()
 
@@ -792,7 +792,7 @@ func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Vol
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume ionoscloud_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume ionoscloud_volume} Resource.
 func NewVolume_Override(v Volume, scope constructs.Construct, id *string, config *VolumeConfig) {
 	_init_.Initialize()
 
@@ -847,7 +847,10 @@ func (j *jsiiProxy_Volume)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Volume)SetCount(val *float64) {
+func (j *jsiiProxy_Volume)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -100,6 +100,10 @@ func (j *jsiiProxy_K8SNodePool) validateSetCoresCountParameters(val *float64) er
 	return nil
 }
 
+func (j *jsiiProxy_K8SNodePool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_K8SNodePool) validateSetCpuFamilyParameters(val *string) error {
 	return nil
 }

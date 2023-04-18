@@ -68,6 +68,10 @@ func validateDataIonoscloudLan_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudLan) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudLan) validateSetDatacenterIdParameters(val *string) error {
 	return nil
 }

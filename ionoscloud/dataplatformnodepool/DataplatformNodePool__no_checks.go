@@ -92,6 +92,10 @@ func (j *jsiiProxy_DataplatformNodePool) validateSetCoresCountParameters(val *fl
 	return nil
 }
 
+func (j *jsiiProxy_DataplatformNodePool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataplatformNodePool) validateSetCpuFamilyParameters(val *string) error {
 	return nil
 }

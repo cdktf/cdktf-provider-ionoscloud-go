@@ -2,14 +2,14 @@ package dataionoscloudpgcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudpgcluster/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudpgcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/pg_cluster ionoscloud_pg_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/pg_cluster ionoscloud_pg_cluster}.
 type DataIonoscloudPgCluster interface {
 	cdktf.TerraformDataSource
 	BackupLocation() *string
@@ -20,9 +20,9 @@ type DataIonoscloudPgCluster interface {
 	ConstructNodeMetadata() *map[string]interface{}
 	Cores() *float64
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Credentials() DataIonoscloudPgClusterCredentialsList
 	// Experimental.
 	DependsOn() *[]*string
@@ -169,8 +169,8 @@ func (j *jsiiProxy_DataIonoscloudPgCluster) Cores() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudPgCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataIonoscloudPgCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -460,7 +460,7 @@ func (j *jsiiProxy_DataIonoscloudPgCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/pg_cluster ionoscloud_pg_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/pg_cluster ionoscloud_pg_cluster} Data Source.
 func NewDataIonoscloudPgCluster(scope constructs.Construct, id *string, config *DataIonoscloudPgClusterConfig) DataIonoscloudPgCluster {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewDataIonoscloudPgCluster(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/pg_cluster ionoscloud_pg_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/pg_cluster ionoscloud_pg_cluster} Data Source.
 func NewDataIonoscloudPgCluster_Override(d DataIonoscloudPgCluster, scope constructs.Construct, id *string, config *DataIonoscloudPgClusterConfig) {
 	_init_.Initialize()
 
@@ -489,7 +489,10 @@ func NewDataIonoscloudPgCluster_Override(d DataIonoscloudPgCluster, scope constr
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgCluster)SetCount(val *float64) {
+func (j *jsiiProxy_DataIonoscloudPgCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
