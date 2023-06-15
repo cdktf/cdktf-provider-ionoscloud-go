@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/application_loadbalancer_forwardingrule ionoscloud_application_loadbalancer_forwardingrule}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/application_loadbalancer_forwardingrule ionoscloud_application_loadbalancer_forwardingrule}.
 type ApplicationLoadbalancerForwardingrule interface {
 	cdktf.TerraformResource
 	ApplicationLoadbalancerId() *string
@@ -520,7 +520,7 @@ func (j *jsiiProxy_ApplicationLoadbalancerForwardingrule) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/application_loadbalancer_forwardingrule ionoscloud_application_loadbalancer_forwardingrule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/application_loadbalancer_forwardingrule ionoscloud_application_loadbalancer_forwardingrule} Resource.
 func NewApplicationLoadbalancerForwardingrule(scope constructs.Construct, id *string, config *ApplicationLoadbalancerForwardingruleConfig) ApplicationLoadbalancerForwardingrule {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewApplicationLoadbalancerForwardingrule(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/application_loadbalancer_forwardingrule ionoscloud_application_loadbalancer_forwardingrule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/application_loadbalancer_forwardingrule ionoscloud_application_loadbalancer_forwardingrule} Resource.
 func NewApplicationLoadbalancerForwardingrule_Override(a ApplicationLoadbalancerForwardingrule, scope constructs.Construct, id *string, config *ApplicationLoadbalancerForwardingruleConfig) {
 	_init_.Initialize()
 

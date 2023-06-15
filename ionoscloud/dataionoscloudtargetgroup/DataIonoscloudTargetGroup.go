@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/target_group ionoscloud_target_group}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/target_group ionoscloud_target_group}.
 type DataIonoscloudTargetGroup interface {
 	cdktf.TerraformDataSource
 	Algorithm() *string
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DataIonoscloudTargetGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/target_group ionoscloud_target_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/target_group ionoscloud_target_group} Data Source.
 func NewDataIonoscloudTargetGroup(scope constructs.Construct, id *string, config *DataIonoscloudTargetGroupConfig) DataIonoscloudTargetGroup {
 	_init_.Initialize()
 
@@ -403,7 +403,7 @@ func NewDataIonoscloudTargetGroup(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/target_group ionoscloud_target_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/target_group ionoscloud_target_group} Data Source.
 func NewDataIonoscloudTargetGroup_Override(d DataIonoscloudTargetGroup, scope constructs.Construct, id *string, config *DataIonoscloudTargetGroupConfig) {
 	_init_.Initialize()
 

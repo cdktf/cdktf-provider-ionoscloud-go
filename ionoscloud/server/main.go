@@ -49,6 +49,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "imageNameInput", GoGetter: "ImageNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "imagePassword", GoGetter: "ImagePassword"},
 			_jsii_.MemberProperty{JsiiProperty: "imagePasswordInput", GoGetter: "ImagePasswordInput"},
+			_jsii_.MemberProperty{JsiiProperty: "inlineVolumeIds", GoGetter: "InlineVolumeIds"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "label", GoGetter: "Label"},
 			_jsii_.MemberProperty{JsiiProperty: "labelInput", GoGetter: "LabelInput"},

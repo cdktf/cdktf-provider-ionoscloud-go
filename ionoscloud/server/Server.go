@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/server ionoscloud_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/server ionoscloud_server}.
 type Server interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -65,6 +65,7 @@ type Server interface {
 	ImagePassword() *string
 	SetImagePassword(val *string)
 	ImagePasswordInput() *string
+	InlineVolumeIds() *[]*string
 	Label() ServerLabelList
 	LabelInput() interface{}
 	// Experimental.
@@ -457,6 +458,16 @@ func (j *jsiiProxy_Server) ImagePasswordInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Server) InlineVolumeIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"inlineVolumeIds",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Server) Label() ServerLabelList {
 	var returns ServerLabelList
 	_jsii_.Get(
@@ -758,7 +769,7 @@ func (j *jsiiProxy_Server) VolumeInput() *ServerVolume {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/server ionoscloud_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/server ionoscloud_server} Resource.
 func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Server {
 	_init_.Initialize()
 
@@ -776,7 +787,7 @@ func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Ser
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/server ionoscloud_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/server ionoscloud_server} Resource.
 func NewServer_Override(s Server, scope constructs.Construct, id *string, config *ServerConfig) {
 	_init_.Initialize()
 
