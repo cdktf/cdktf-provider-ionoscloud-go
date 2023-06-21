@@ -173,6 +173,8 @@ func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowOutputReference) validat
 
 func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataplatformNodePoolMaintenanceWindow:
 		val := val.(*DataplatformNodePoolMaintenanceWindow)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowOutputReference) validat
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataplatformNodePoolMaintenanceWindow, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataplatformNodePoolMaintenanceWindow; received %#v (a %T)", val, val)
 		}
 	}
 

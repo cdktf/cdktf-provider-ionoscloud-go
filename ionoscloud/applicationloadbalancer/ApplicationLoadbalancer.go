@@ -2,14 +2,14 @@ package applicationloadbalancer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/applicationloadbalancer/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/applicationloadbalancer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer}.
 type ApplicationLoadbalancer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -450,7 +450,7 @@ func (j *jsiiProxy_ApplicationLoadbalancer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer} Resource.
 func NewApplicationLoadbalancer(scope constructs.Construct, id *string, config *ApplicationLoadbalancerConfig) ApplicationLoadbalancer {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewApplicationLoadbalancer(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer} Resource.
 func NewApplicationLoadbalancer_Override(a ApplicationLoadbalancer, scope constructs.Construct, id *string, config *ApplicationLoadbalancerConfig) {
 	_init_.Initialize()
 

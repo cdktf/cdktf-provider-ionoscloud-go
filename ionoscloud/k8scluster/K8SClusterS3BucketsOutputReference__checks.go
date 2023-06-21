@@ -165,6 +165,8 @@ func (j *jsiiProxy_K8SClusterS3BucketsOutputReference) validateSetComplexObjectI
 
 func (j *jsiiProxy_K8SClusterS3BucketsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *K8SClusterS3Buckets:
 		val := val.(*K8SClusterS3Buckets)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_K8SClusterS3BucketsOutputReference) validateSetInternalValueP
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *K8SClusterS3Buckets, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *K8SClusterS3Buckets; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -2,14 +2,14 @@ package targetgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/targetgroup/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/targetgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/target_group ionoscloud_target_group}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/resources/target_group ionoscloud_target_group}.
 type TargetGroup interface {
 	cdktf.TerraformResource
 	Algorithm() *string
@@ -450,7 +450,7 @@ func (j *jsiiProxy_TargetGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/target_group ionoscloud_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/resources/target_group ionoscloud_target_group} Resource.
 func NewTargetGroup(scope constructs.Construct, id *string, config *TargetGroupConfig) TargetGroup {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewTargetGroup(scope constructs.Construct, id *string, config *TargetGroupC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/target_group ionoscloud_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/resources/target_group ionoscloud_target_group} Resource.
 func NewTargetGroup_Override(t TargetGroup, scope constructs.Construct, id *string, config *TargetGroupConfig) {
 	_init_.Initialize()
 

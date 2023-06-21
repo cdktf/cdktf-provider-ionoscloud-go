@@ -2,14 +2,14 @@ package natgateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/natgateway/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/natgateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/natgateway ionoscloud_natgateway}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/resources/natgateway ionoscloud_natgateway}.
 type Natgateway interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_Natgateway) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/natgateway ionoscloud_natgateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/resources/natgateway ionoscloud_natgateway} Resource.
 func NewNatgateway(scope constructs.Construct, id *string, config *NatgatewayConfig) Natgateway {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewNatgateway(scope constructs.Construct, id *string, config *NatgatewayCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/natgateway ionoscloud_natgateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/resources/natgateway ionoscloud_natgateway} Resource.
 func NewNatgateway_Override(n Natgateway, scope constructs.Construct, id *string, config *NatgatewayConfig) {
 	_init_.Initialize()
 

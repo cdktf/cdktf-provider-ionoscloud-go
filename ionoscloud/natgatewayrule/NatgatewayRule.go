@@ -2,14 +2,14 @@ package natgatewayrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/natgatewayrule/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/natgatewayrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/natgateway_rule ionoscloud_natgateway_rule}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/resources/natgateway_rule ionoscloud_natgateway_rule}.
 type NatgatewayRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -521,7 +521,7 @@ func (j *jsiiProxy_NatgatewayRule) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/natgateway_rule ionoscloud_natgateway_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/resources/natgateway_rule ionoscloud_natgateway_rule} Resource.
 func NewNatgatewayRule(scope constructs.Construct, id *string, config *NatgatewayRuleConfig) NatgatewayRule {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewNatgatewayRule(scope constructs.Construct, id *string, config *Natgatewa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/natgateway_rule ionoscloud_natgateway_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/resources/natgateway_rule ionoscloud_natgateway_rule} Resource.
 func NewNatgatewayRule_Override(n NatgatewayRule, scope constructs.Construct, id *string, config *NatgatewayRuleConfig) {
 	_init_.Initialize()
 

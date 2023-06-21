@@ -2,14 +2,14 @@ package dataionosclouddataplatformversions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionosclouddataplatformversions/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/dataionosclouddataplatformversions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/dataplatform_versions ionoscloud_dataplatform_versions}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/dataplatform_versions ionoscloud_dataplatform_versions}.
 type DataIonoscloudDataplatformVersions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DataIonoscloudDataplatformVersions) Versions() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/dataplatform_versions ionoscloud_dataplatform_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/dataplatform_versions ionoscloud_dataplatform_versions} Data Source.
 func NewDataIonoscloudDataplatformVersions(scope constructs.Construct, id *string, config *DataIonoscloudDataplatformVersionsConfig) DataIonoscloudDataplatformVersions {
 	_init_.Initialize()
 
@@ -311,7 +311,7 @@ func NewDataIonoscloudDataplatformVersions(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/dataplatform_versions ionoscloud_dataplatform_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/dataplatform_versions ionoscloud_dataplatform_versions} Data Source.
 func NewDataIonoscloudDataplatformVersions_Override(d DataIonoscloudDataplatformVersions, scope constructs.Construct, id *string, config *DataIonoscloudDataplatformVersionsConfig) {
 	_init_.Initialize()
 

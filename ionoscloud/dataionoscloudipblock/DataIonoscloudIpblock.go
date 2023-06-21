@@ -2,14 +2,14 @@ package dataionoscloudipblock
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudipblock/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/dataionoscloudipblock/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/ipblock ionoscloud_ipblock}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/ipblock ionoscloud_ipblock}.
 type DataIonoscloudIpblock interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -389,7 +389,7 @@ func (j *jsiiProxy_DataIonoscloudIpblock) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/ipblock ionoscloud_ipblock} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/ipblock ionoscloud_ipblock} Data Source.
 func NewDataIonoscloudIpblock(scope constructs.Construct, id *string, config *DataIonoscloudIpblockConfig) DataIonoscloudIpblock {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewDataIonoscloudIpblock(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/ipblock ionoscloud_ipblock} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/ipblock ionoscloud_ipblock} Data Source.
 func NewDataIonoscloudIpblock_Override(d DataIonoscloudIpblock, scope constructs.Construct, id *string, config *DataIonoscloudIpblockConfig) {
 	_init_.Initialize()
 

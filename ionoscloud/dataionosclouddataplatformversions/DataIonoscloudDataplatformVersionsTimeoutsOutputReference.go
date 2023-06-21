@@ -2,9 +2,9 @@ package dataionosclouddataplatformversions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/jsii"
 
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionosclouddataplatformversions/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/dataionosclouddataplatformversions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

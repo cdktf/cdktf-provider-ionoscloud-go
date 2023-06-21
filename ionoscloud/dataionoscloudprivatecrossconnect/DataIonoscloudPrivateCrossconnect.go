@@ -2,14 +2,14 @@ package dataionoscloudprivatecrossconnect
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudprivatecrossconnect/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/dataionoscloudprivatecrossconnect/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/private_crossconnect ionoscloud_private_crossconnect}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/private_crossconnect ionoscloud_private_crossconnect}.
 type DataIonoscloudPrivateCrossconnect interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -352,7 +352,7 @@ func (j *jsiiProxy_DataIonoscloudPrivateCrossconnect) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/private_crossconnect ionoscloud_private_crossconnect} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/private_crossconnect ionoscloud_private_crossconnect} Data Source.
 func NewDataIonoscloudPrivateCrossconnect(scope constructs.Construct, id *string, config *DataIonoscloudPrivateCrossconnectConfig) DataIonoscloudPrivateCrossconnect {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewDataIonoscloudPrivateCrossconnect(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/private_crossconnect ionoscloud_private_crossconnect} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/private_crossconnect ionoscloud_private_crossconnect} Data Source.
 func NewDataIonoscloudPrivateCrossconnect_Override(d DataIonoscloudPrivateCrossconnect, scope constructs.Construct, id *string, config *DataIonoscloudPrivateCrossconnectConfig) {
 	_init_.Initialize()
 

@@ -189,6 +189,8 @@ func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) valida
 
 func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataIonoscloudK8SNodePoolNodesTimeouts:
 		val := val.(*DataIonoscloudK8SNodePoolNodesTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -200,11 +202,9 @@ func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodesTimeoutsOutputReference) valida
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataIonoscloudK8SNodePoolNodesTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataIonoscloudK8SNodePoolNodesTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

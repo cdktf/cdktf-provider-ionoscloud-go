@@ -2,14 +2,14 @@ package dataionoscloudserver
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudserver/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/dataionoscloudserver/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/server ionoscloud_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/server ionoscloud_server}.
 type DataIonoscloudServer interface {
 	cdktf.TerraformDataSource
 	AvailabilityZone() *string
@@ -520,7 +520,7 @@ func (j *jsiiProxy_DataIonoscloudServer) Volumes() DataIonoscloudServerVolumesLi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/server ionoscloud_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/server ionoscloud_server} Data Source.
 func NewDataIonoscloudServer(scope constructs.Construct, id *string, config *DataIonoscloudServerConfig) DataIonoscloudServer {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewDataIonoscloudServer(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/server ionoscloud_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/server ionoscloud_server} Data Source.
 func NewDataIonoscloudServer_Override(d DataIonoscloudServer, scope constructs.Construct, id *string, config *DataIonoscloudServerConfig) {
 	_init_.Initialize()
 

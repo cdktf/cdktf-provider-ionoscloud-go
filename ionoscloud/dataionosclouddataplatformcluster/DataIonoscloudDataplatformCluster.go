@@ -2,14 +2,14 @@ package dataionosclouddataplatformcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionosclouddataplatformcluster/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/dataionosclouddataplatformcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/dataplatform_cluster ionoscloud_dataplatform_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/dataplatform_cluster ionoscloud_dataplatform_cluster}.
 type DataIonoscloudDataplatformCluster interface {
 	cdktf.TerraformDataSource
 	CaCrt() *string
@@ -418,7 +418,7 @@ func (j *jsiiProxy_DataIonoscloudDataplatformCluster) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/dataplatform_cluster ionoscloud_dataplatform_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/dataplatform_cluster ionoscloud_dataplatform_cluster} Data Source.
 func NewDataIonoscloudDataplatformCluster(scope constructs.Construct, id *string, config *DataIonoscloudDataplatformClusterConfig) DataIonoscloudDataplatformCluster {
 	_init_.Initialize()
 
@@ -436,7 +436,7 @@ func NewDataIonoscloudDataplatformCluster(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/dataplatform_cluster ionoscloud_dataplatform_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/dataplatform_cluster ionoscloud_dataplatform_cluster} Data Source.
 func NewDataIonoscloudDataplatformCluster_Override(d DataIonoscloudDataplatformCluster, scope constructs.Construct, id *string, config *DataIonoscloudDataplatformClusterConfig) {
 	_init_.Initialize()
 

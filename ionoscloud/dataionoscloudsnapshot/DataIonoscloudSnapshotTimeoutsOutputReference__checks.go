@@ -189,6 +189,8 @@ func (j *jsiiProxy_DataIonoscloudSnapshotTimeoutsOutputReference) validateSetDel
 
 func (j *jsiiProxy_DataIonoscloudSnapshotTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataIonoscloudSnapshotTimeouts:
 		val := val.(*DataIonoscloudSnapshotTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -200,11 +202,9 @@ func (j *jsiiProxy_DataIonoscloudSnapshotTimeoutsOutputReference) validateSetInt
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataIonoscloudSnapshotTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataIonoscloudSnapshotTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -189,6 +189,8 @@ func (j *jsiiProxy_K8SClusterTimeoutsOutputReference) validateSetDeleteParameter
 
 func (j *jsiiProxy_K8SClusterTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *K8SClusterTimeouts:
 		val := val.(*K8SClusterTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -200,11 +202,9 @@ func (j *jsiiProxy_K8SClusterTimeoutsOutputReference) validateSetInternalValuePa
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *K8SClusterTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *K8SClusterTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

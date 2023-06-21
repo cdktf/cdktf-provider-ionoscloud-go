@@ -1,4 +1,4 @@
-module github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7
+module github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8
 
 go 1.18
 

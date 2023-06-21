@@ -2,14 +2,14 @@ package dataionosclouds3key
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionosclouds3key/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/dataionosclouds3key/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/s3_key ionoscloud_s3_key}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/s3_key ionoscloud_s3_key}.
 type DataIonoscloudS3Key interface {
 	cdktf.TerraformDataSource
 	Active() interface{}
@@ -340,7 +340,7 @@ func (j *jsiiProxy_DataIonoscloudS3Key) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/s3_key ionoscloud_s3_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/s3_key ionoscloud_s3_key} Data Source.
 func NewDataIonoscloudS3Key(scope constructs.Construct, id *string, config *DataIonoscloudS3KeyConfig) DataIonoscloudS3Key {
 	_init_.Initialize()
 
@@ -358,7 +358,7 @@ func NewDataIonoscloudS3Key(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/s3_key ionoscloud_s3_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/s3_key ionoscloud_s3_key} Data Source.
 func NewDataIonoscloudS3Key_Override(d DataIonoscloudS3Key, scope constructs.Construct, id *string, config *DataIonoscloudS3KeyConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package dataionosclouddnsrecord
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionosclouddnsrecord/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/dataionosclouddnsrecord/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/dns_record ionoscloud_dns_record}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/dns_record ionoscloud_dns_record}.
 type DataIonoscloudDnsRecord interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -408,7 +408,7 @@ func (j *jsiiProxy_DataIonoscloudDnsRecord) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/dns_record ionoscloud_dns_record} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/dns_record ionoscloud_dns_record} Data Source.
 func NewDataIonoscloudDnsRecord(scope constructs.Construct, id *string, config *DataIonoscloudDnsRecordConfig) DataIonoscloudDnsRecord {
 	_init_.Initialize()
 
@@ -426,7 +426,7 @@ func NewDataIonoscloudDnsRecord(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/dns_record ionoscloud_dns_record} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/dns_record ionoscloud_dns_record} Data Source.
 func NewDataIonoscloudDnsRecord_Override(d DataIonoscloudDnsRecord, scope constructs.Construct, id *string, config *DataIonoscloudDnsRecordConfig) {
 	_init_.Initialize()
 

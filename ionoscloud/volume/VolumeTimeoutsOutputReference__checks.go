@@ -189,6 +189,8 @@ func (j *jsiiProxy_VolumeTimeoutsOutputReference) validateSetDeleteParameters(va
 
 func (j *jsiiProxy_VolumeTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *VolumeTimeouts:
 		val := val.(*VolumeTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -200,11 +202,9 @@ func (j *jsiiProxy_VolumeTimeoutsOutputReference) validateSetInternalValueParame
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *VolumeTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *VolumeTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

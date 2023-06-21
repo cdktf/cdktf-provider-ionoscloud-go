@@ -2,14 +2,14 @@ package dataionoscloudpgcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudpgcluster/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/dataionoscloudpgcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/pg_cluster ionoscloud_pg_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/pg_cluster ionoscloud_pg_cluster}.
 type DataIonoscloudPgCluster interface {
 	cdktf.TerraformDataSource
 	BackupLocation() *string
@@ -460,7 +460,7 @@ func (j *jsiiProxy_DataIonoscloudPgCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/pg_cluster ionoscloud_pg_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/pg_cluster ionoscloud_pg_cluster} Data Source.
 func NewDataIonoscloudPgCluster(scope constructs.Construct, id *string, config *DataIonoscloudPgClusterConfig) DataIonoscloudPgCluster {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewDataIonoscloudPgCluster(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/pg_cluster ionoscloud_pg_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/pg_cluster ionoscloud_pg_cluster} Data Source.
 func NewDataIonoscloudPgCluster_Override(d DataIonoscloudPgCluster, scope constructs.Construct, id *string, config *DataIonoscloudPgClusterConfig) {
 	_init_.Initialize()
 
