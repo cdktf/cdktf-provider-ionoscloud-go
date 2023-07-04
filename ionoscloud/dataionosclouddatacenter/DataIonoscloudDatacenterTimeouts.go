@@ -2,13 +2,13 @@ package dataionosclouddatacenter
 
 
 type DataIonoscloudDatacenterTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/datacenter#create DataIonoscloudDatacenter#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.2/docs/data-sources/datacenter#create DataIonoscloudDatacenter#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/datacenter#default DataIonoscloudDatacenter#default}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.2/docs/data-sources/datacenter#default DataIonoscloudDatacenter#default}.
 	Default *string `field:"optional" json:"default" yaml:"default"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/datacenter#delete DataIonoscloudDatacenter#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.2/docs/data-sources/datacenter#delete DataIonoscloudDatacenter#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/data-sources/datacenter#update DataIonoscloudDatacenter#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.2/docs/data-sources/datacenter#update DataIonoscloudDatacenter#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

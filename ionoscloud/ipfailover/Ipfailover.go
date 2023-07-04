@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/resources/ipfailover ionoscloud_ipfailover}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.2/docs/resources/ipfailover ionoscloud_ipfailover}.
 type Ipfailover interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_Ipfailover) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/resources/ipfailover ionoscloud_ipfailover} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.2/docs/resources/ipfailover ionoscloud_ipfailover} Resource.
 func NewIpfailover(scope constructs.Construct, id *string, config *IpfailoverConfig) Ipfailover {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewIpfailover(scope constructs.Construct, id *string, config *IpfailoverCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.1/docs/resources/ipfailover ionoscloud_ipfailover} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.2/docs/resources/ipfailover ionoscloud_ipfailover} Resource.
 func NewIpfailover_Override(i Ipfailover, scope constructs.Construct, id *string, config *IpfailoverConfig) {
 	_init_.Initialize()
 
