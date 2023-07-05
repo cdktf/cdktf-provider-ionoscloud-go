@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.2/docs/resources/k8s_cluster ionoscloud_k8s_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/resources/k8s_cluster ionoscloud_k8s_cluster}.
 type K8SCluster interface {
 	cdktf.TerraformResource
 	ApiSubnetAllowList() *[]*string
@@ -440,7 +440,7 @@ func (j *jsiiProxy_K8SCluster) ViableNodePoolVersions() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.2/docs/resources/k8s_cluster ionoscloud_k8s_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/resources/k8s_cluster ionoscloud_k8s_cluster} Resource.
 func NewK8SCluster(scope constructs.Construct, id *string, config *K8SClusterConfig) K8SCluster {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewK8SCluster(scope constructs.Construct, id *string, config *K8SClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.2/docs/resources/k8s_cluster ionoscloud_k8s_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/resources/k8s_cluster ionoscloud_k8s_cluster} Resource.
 func NewK8SCluster_Override(k K8SCluster, scope constructs.Construct, id *string, config *K8SClusterConfig) {
 	_init_.Initialize()
 

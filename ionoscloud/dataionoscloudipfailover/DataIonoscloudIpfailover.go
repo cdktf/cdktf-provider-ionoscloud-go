@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.2/docs/data-sources/ipfailover ionoscloud_ipfailover}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/data-sources/ipfailover ionoscloud_ipfailover}.
 type DataIonoscloudIpfailover interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -376,7 +376,7 @@ func (j *jsiiProxy_DataIonoscloudIpfailover) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.2/docs/data-sources/ipfailover ionoscloud_ipfailover} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/data-sources/ipfailover ionoscloud_ipfailover} Data Source.
 func NewDataIonoscloudIpfailover(scope constructs.Construct, id *string, config *DataIonoscloudIpfailoverConfig) DataIonoscloudIpfailover {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewDataIonoscloudIpfailover(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.2/docs/data-sources/ipfailover ionoscloud_ipfailover} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/data-sources/ipfailover ionoscloud_ipfailover} Data Source.
 func NewDataIonoscloudIpfailover_Override(d DataIonoscloudIpfailover, scope constructs.Construct, id *string, config *DataIonoscloudIpfailoverConfig) {
 	_init_.Initialize()
 
