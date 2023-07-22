@@ -1,14 +1,14 @@
-package dataionoscloudmongocluster
+package dataionoscloudpgdatabases
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/jsii"
 
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/dataionoscloudmongocluster/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/dataionoscloudpgdatabases/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DataIonoscloudMongoClusterCredentialsOutputReference interface {
+type DataIonoscloudPgDatabasesDatabasesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
@@ -27,9 +27,11 @@ type DataIonoscloudMongoClusterCredentialsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *DataIonoscloudMongoClusterCredentials
-	SetInternalValue(val *DataIonoscloudMongoClusterCredentials)
-	Password() *string
+	Id() *string
+	InternalValue() *DataIonoscloudPgDatabasesDatabases
+	SetInternalValue(val *DataIonoscloudPgDatabasesDatabases)
+	Name() *string
+	Owner() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -38,7 +40,6 @@ type DataIonoscloudMongoClusterCredentialsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Username() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -73,12 +74,12 @@ type DataIonoscloudMongoClusterCredentialsOutputReference interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for DataIonoscloudMongoClusterCredentialsOutputReference
-type jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference struct {
+// The jsii proxy struct for DataIonoscloudPgDatabasesDatabasesOutputReference
+type jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -88,7 +89,7 @@ func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) Complex
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -98,7 +99,7 @@ func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) Complex
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -108,7 +109,7 @@ func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) Creatio
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) Fqn() *string {
+func (j *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -118,8 +119,18 @@ func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) InternalValue() *DataIonoscloudMongoClusterCredentials {
-	var returns *DataIonoscloudMongoClusterCredentials
+func (j *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) InternalValue() *DataIonoscloudPgDatabasesDatabases {
+	var returns *DataIonoscloudPgDatabasesDatabases
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -128,17 +139,27 @@ func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) Interna
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) Password() *string {
+func (j *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"password",
+		"name",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) Owner() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"owner",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -148,7 +169,7 @@ func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -158,27 +179,17 @@ func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) Username() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"username",
-		&returns,
-	)
-	return returns
-}
 
-
-func NewDataIonoscloudMongoClusterCredentialsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataIonoscloudMongoClusterCredentialsOutputReference {
+func NewDataIonoscloudPgDatabasesDatabasesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataIonoscloudPgDatabasesDatabasesOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataIonoscloudMongoClusterCredentialsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewDataIonoscloudPgDatabasesDatabasesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference{}
+	j := jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-ionoscloud.dataIonoscloudMongoCluster.DataIonoscloudMongoClusterCredentialsOutputReference",
+		"@cdktf/provider-ionoscloud.dataIonoscloudPgDatabases.DataIonoscloudPgDatabasesDatabasesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -186,17 +197,17 @@ func NewDataIonoscloudMongoClusterCredentialsOutputReference(terraformResource c
 	return &j
 }
 
-func NewDataIonoscloudMongoClusterCredentialsOutputReference_Override(d DataIonoscloudMongoClusterCredentialsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataIonoscloudPgDatabasesDatabasesOutputReference_Override(d DataIonoscloudPgDatabasesDatabasesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-ionoscloud.dataIonoscloudMongoCluster.DataIonoscloudMongoClusterCredentialsOutputReference",
+		"@cdktf/provider-ionoscloud.dataIonoscloudPgDatabases.DataIonoscloudPgDatabasesDatabasesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -207,7 +218,7 @@ func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -218,7 +229,7 @@ func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference)SetCompl
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference)SetInternalValue(val *DataIonoscloudMongoClusterCredentials) {
+func (j *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference)SetInternalValue(val *DataIonoscloudPgDatabasesDatabases) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -229,7 +240,7 @@ func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference)SetInter
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -240,7 +251,7 @@ func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -251,7 +262,7 @@ func (j *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference)SetTerra
 	)
 }
 
-func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) ComputeFqn() *string {
+func (d *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -264,7 +275,7 @@ func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) Compute
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -280,7 +291,7 @@ func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) GetAnyM
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -296,7 +307,7 @@ func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) GetBool
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (d *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -312,7 +323,7 @@ func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) GetBool
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+func (d *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -328,7 +339,7 @@ func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) GetList
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (d *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -344,7 +355,7 @@ func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) GetNumb
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (d *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -360,7 +371,7 @@ func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) GetNumb
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (d *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -376,7 +387,7 @@ func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) GetNumb
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+func (d *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
 	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -392,7 +403,7 @@ func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) GetStri
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (d *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -408,7 +419,7 @@ func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) GetStri
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (d *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -421,7 +432,7 @@ func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) Interpo
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
@@ -437,7 +448,7 @@ func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) Interpo
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -453,7 +464,7 @@ func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) Resolve
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudMongoClusterCredentialsOutputReference) ToString() *string {
+func (d *jsiiProxy_DataIonoscloudPgDatabasesDatabasesOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

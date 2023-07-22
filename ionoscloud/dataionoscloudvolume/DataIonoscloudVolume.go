@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/data-sources/volume ionoscloud_volume}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/volume ionoscloud_volume}.
 type DataIonoscloudVolume interface {
 	cdktf.TerraformDataSource
 	AvailabilityZone() *string
@@ -538,7 +538,7 @@ func (j *jsiiProxy_DataIonoscloudVolume) UserData() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/data-sources/volume ionoscloud_volume} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/volume ionoscloud_volume} Data Source.
 func NewDataIonoscloudVolume(scope constructs.Construct, id *string, config *DataIonoscloudVolumeConfig) DataIonoscloudVolume {
 	_init_.Initialize()
 
@@ -556,7 +556,7 @@ func NewDataIonoscloudVolume(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/data-sources/volume ionoscloud_volume} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/volume ionoscloud_volume} Data Source.
 func NewDataIonoscloudVolume_Override(d DataIonoscloudVolume, scope constructs.Construct, id *string, config *DataIonoscloudVolumeConfig) {
 	_init_.Initialize()
 

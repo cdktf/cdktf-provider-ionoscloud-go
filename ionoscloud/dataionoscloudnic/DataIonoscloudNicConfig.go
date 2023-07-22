@@ -19,30 +19,30 @@ type DataIonoscloudNicConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/data-sources/nic#datacenter_id DataIonoscloudNic#datacenter_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/nic#datacenter_id DataIonoscloudNic#datacenter_id}.
 	DatacenterId *string `field:"required" json:"datacenterId" yaml:"datacenterId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/data-sources/nic#server_id DataIonoscloudNic#server_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/nic#server_id DataIonoscloudNic#server_id}.
 	ServerId *string `field:"required" json:"serverId" yaml:"serverId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/data-sources/nic#dhcp DataIonoscloudNic#dhcp}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/nic#dhcp DataIonoscloudNic#dhcp}.
 	Dhcp interface{} `field:"optional" json:"dhcp" yaml:"dhcp"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/data-sources/nic#firewall_active DataIonoscloudNic#firewall_active}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/nic#firewall_active DataIonoscloudNic#firewall_active}.
 	FirewallActive interface{} `field:"optional" json:"firewallActive" yaml:"firewallActive"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/data-sources/nic#firewall_type DataIonoscloudNic#firewall_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/nic#firewall_type DataIonoscloudNic#firewall_type}.
 	FirewallType *string `field:"optional" json:"firewallType" yaml:"firewallType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/data-sources/nic#id DataIonoscloudNic#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/nic#id DataIonoscloudNic#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/data-sources/nic#ips DataIonoscloudNic#ips}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/nic#ips DataIonoscloudNic#ips}.
 	Ips *[]*string `field:"optional" json:"ips" yaml:"ips"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/data-sources/nic#lan DataIonoscloudNic#lan}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/nic#lan DataIonoscloudNic#lan}.
 	Lan *float64 `field:"optional" json:"lan" yaml:"lan"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/data-sources/nic#name DataIonoscloudNic#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/nic#name DataIonoscloudNic#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/data-sources/nic#timeouts DataIonoscloudNic#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/nic#timeouts DataIonoscloudNic#timeouts}
 	Timeouts *DataIonoscloudNicTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 
