@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/networkloadbalancer_forwardingrule ionoscloud_networkloadbalancer_forwardingrule}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/networkloadbalancer_forwardingrule ionoscloud_networkloadbalancer_forwardingrule}.
 type NetworkloadbalancerForwardingrule interface {
 	cdktf.TerraformResource
 	Algorithm() *string
@@ -518,7 +518,7 @@ func (j *jsiiProxy_NetworkloadbalancerForwardingrule) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/networkloadbalancer_forwardingrule ionoscloud_networkloadbalancer_forwardingrule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/networkloadbalancer_forwardingrule ionoscloud_networkloadbalancer_forwardingrule} Resource.
 func NewNetworkloadbalancerForwardingrule(scope constructs.Construct, id *string, config *NetworkloadbalancerForwardingruleConfig) NetworkloadbalancerForwardingrule {
 	_init_.Initialize()
 
@@ -536,7 +536,7 @@ func NewNetworkloadbalancerForwardingrule(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/networkloadbalancer_forwardingrule ionoscloud_networkloadbalancer_forwardingrule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/networkloadbalancer_forwardingrule ionoscloud_networkloadbalancer_forwardingrule} Resource.
 func NewNetworkloadbalancerForwardingrule_Override(n NetworkloadbalancerForwardingrule, scope constructs.Construct, id *string, config *NetworkloadbalancerForwardingruleConfig) {
 	_init_.Initialize()
 

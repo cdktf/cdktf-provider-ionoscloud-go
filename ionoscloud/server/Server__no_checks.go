@@ -112,6 +112,10 @@ func (j *jsiiProxy_Server) validateSetDatacenterIdParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_Server) validateSetFirewallruleIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Server) validateSetIdParameters(val *string) error {
 	return nil
 }

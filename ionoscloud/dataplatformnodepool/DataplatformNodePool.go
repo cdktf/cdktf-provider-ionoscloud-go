@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/dataplatform_node_pool ionoscloud_dataplatform_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/dataplatform_node_pool ionoscloud_dataplatform_node_pool}.
 type DataplatformNodePool interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -617,7 +617,7 @@ func (j *jsiiProxy_DataplatformNodePool) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/dataplatform_node_pool ionoscloud_dataplatform_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/dataplatform_node_pool ionoscloud_dataplatform_node_pool} Resource.
 func NewDataplatformNodePool(scope constructs.Construct, id *string, config *DataplatformNodePoolConfig) DataplatformNodePool {
 	_init_.Initialize()
 
@@ -635,7 +635,7 @@ func NewDataplatformNodePool(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/dataplatform_node_pool ionoscloud_dataplatform_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/dataplatform_node_pool ionoscloud_dataplatform_node_pool} Resource.
 func NewDataplatformNodePool_Override(d DataplatformNodePool, scope constructs.Construct, id *string, config *DataplatformNodePoolConfig) {
 	_init_.Initialize()
 

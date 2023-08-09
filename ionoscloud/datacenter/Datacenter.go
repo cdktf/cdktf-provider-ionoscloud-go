@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter ionoscloud_datacenter}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter ionoscloud_datacenter}.
 type Datacenter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -44,6 +44,7 @@ type Datacenter interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Ipv6CidrBlock() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -266,6 +267,16 @@ func (j *jsiiProxy_Datacenter) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Datacenter) Ipv6CidrBlock() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6CidrBlock",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Datacenter) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -437,7 +448,7 @@ func (j *jsiiProxy_Datacenter) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter ionoscloud_datacenter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter ionoscloud_datacenter} Resource.
 func NewDatacenter(scope constructs.Construct, id *string, config *DatacenterConfig) Datacenter {
 	_init_.Initialize()
 
@@ -455,7 +466,7 @@ func NewDatacenter(scope constructs.Construct, id *string, config *DatacenterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter ionoscloud_datacenter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter ionoscloud_datacenter} Resource.
 func NewDatacenter_Override(d Datacenter, scope constructs.Construct, id *string, config *DatacenterConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/nic ionoscloud_nic}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic ionoscloud_nic}.
 type Nic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -35,6 +35,9 @@ type Nic interface {
 	Dhcp() interface{}
 	SetDhcp(val interface{})
 	DhcpInput() interface{}
+	Dhcpv6() interface{}
+	SetDhcpv6(val interface{})
+	Dhcpv6Input() interface{}
 	FirewallActive() interface{}
 	SetFirewallActive(val interface{})
 	FirewallActiveInput() interface{}
@@ -55,6 +58,12 @@ type Nic interface {
 	Ips() *[]*string
 	SetIps(val *[]*string)
 	IpsInput() *[]*string
+	Ipv6CidrBlock() *string
+	SetIpv6CidrBlock(val *string)
+	Ipv6CidrBlockInput() *string
+	Ipv6Ips() *[]*string
+	SetIpv6Ips(val *[]*string)
+	Ipv6IpsInput() *[]*string
 	Lan() *float64
 	SetLan(val *float64)
 	LanInput() *float64
@@ -117,10 +126,13 @@ type Nic interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *NicTimeouts)
 	ResetDhcp()
+	ResetDhcpv6()
 	ResetFirewallActive()
 	ResetFirewallType()
 	ResetId()
 	ResetIps()
+	ResetIpv6CidrBlock()
+	ResetIpv6Ips()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -241,6 +253,26 @@ func (j *jsiiProxy_Nic) DhcpInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Nic) Dhcpv6() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dhcpv6",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Nic) Dhcpv6Input() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dhcpv6Input",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Nic) FirewallActive() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -346,6 +378,46 @@ func (j *jsiiProxy_Nic) IpsInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"ipsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Nic) Ipv6CidrBlock() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6CidrBlock",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Nic) Ipv6CidrBlockInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6CidrBlockInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Nic) Ipv6Ips() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipv6Ips",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Nic) Ipv6IpsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipv6IpsInput",
 		&returns,
 	)
 	return returns
@@ -532,7 +604,7 @@ func (j *jsiiProxy_Nic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/nic ionoscloud_nic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic ionoscloud_nic} Resource.
 func NewNic(scope constructs.Construct, id *string, config *NicConfig) Nic {
 	_init_.Initialize()
 
@@ -550,7 +622,7 @@ func NewNic(scope constructs.Construct, id *string, config *NicConfig) Nic {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/nic ionoscloud_nic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic ionoscloud_nic} Resource.
 func NewNic_Override(n Nic, scope constructs.Construct, id *string, config *NicConfig) {
 	_init_.Initialize()
 
@@ -613,6 +685,17 @@ func (j *jsiiProxy_Nic)SetDhcp(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Nic)SetDhcpv6(val interface{}) {
+	if err := j.validateSetDhcpv6Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dhcpv6",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Nic)SetFirewallActive(val interface{}) {
 	if err := j.validateSetFirewallActiveParameters(val); err != nil {
 		panic(err)
@@ -661,6 +744,28 @@ func (j *jsiiProxy_Nic)SetIps(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"ips",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Nic)SetIpv6CidrBlock(val *string) {
+	if err := j.validateSetIpv6CidrBlockParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6CidrBlock",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Nic)SetIpv6Ips(val *[]*string) {
+	if err := j.validateSetIpv6IpsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6Ips",
 		val,
 	)
 }
@@ -1013,6 +1118,14 @@ func (n *jsiiProxy_Nic) ResetDhcp() {
 	)
 }
 
+func (n *jsiiProxy_Nic) ResetDhcpv6() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetDhcpv6",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_Nic) ResetFirewallActive() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1041,6 +1154,22 @@ func (n *jsiiProxy_Nic) ResetIps() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetIps",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Nic) ResetIpv6CidrBlock() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIpv6CidrBlock",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Nic) ResetIpv6Ips() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIpv6Ips",
 		nil, // no parameters
 	)
 }

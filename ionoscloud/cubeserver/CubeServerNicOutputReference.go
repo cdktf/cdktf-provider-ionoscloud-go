@@ -29,6 +29,9 @@ type CubeServerNicOutputReference interface {
 	Dhcp() interface{}
 	SetDhcp(val interface{})
 	DhcpInput() interface{}
+	Dhcpv6() interface{}
+	SetDhcpv6(val interface{})
+	Dhcpv6Input() interface{}
 	Firewall() CubeServerNicFirewallOutputReference
 	FirewallActive() interface{}
 	SetFirewallActive(val interface{})
@@ -44,6 +47,12 @@ type CubeServerNicOutputReference interface {
 	Ips() *[]*string
 	SetIps(val *[]*string)
 	IpsInput() *[]*string
+	Ipv6CidrBlock() *string
+	SetIpv6CidrBlock(val *string)
+	Ipv6CidrBlockInput() *string
+	Ipv6Ips() *[]*string
+	SetIpv6Ips(val *[]*string)
+	Ipv6IpsInput() *[]*string
 	Lan() *float64
 	SetLan(val *float64)
 	LanInput() *float64
@@ -86,10 +95,13 @@ type CubeServerNicOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutFirewall(value *CubeServerNicFirewall)
 	ResetDhcp()
+	ResetDhcpv6()
 	ResetFirewall()
 	ResetFirewallActive()
 	ResetFirewallType()
 	ResetIps()
+	ResetIpv6CidrBlock()
+	ResetIpv6Ips()
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -161,6 +173,26 @@ func (j *jsiiProxy_CubeServerNicOutputReference) DhcpInput() interface{} {
 	_jsii_.Get(
 		j,
 		"dhcpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CubeServerNicOutputReference) Dhcpv6() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dhcpv6",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CubeServerNicOutputReference) Dhcpv6Input() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dhcpv6Input",
 		&returns,
 	)
 	return returns
@@ -261,6 +293,46 @@ func (j *jsiiProxy_CubeServerNicOutputReference) IpsInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"ipsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CubeServerNicOutputReference) Ipv6CidrBlock() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6CidrBlock",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CubeServerNicOutputReference) Ipv6CidrBlockInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6CidrBlockInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CubeServerNicOutputReference) Ipv6Ips() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipv6Ips",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CubeServerNicOutputReference) Ipv6IpsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipv6IpsInput",
 		&returns,
 	)
 	return returns
@@ -407,6 +479,17 @@ func (j *jsiiProxy_CubeServerNicOutputReference)SetDhcp(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_CubeServerNicOutputReference)SetDhcpv6(val interface{}) {
+	if err := j.validateSetDhcpv6Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dhcpv6",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CubeServerNicOutputReference)SetFirewallActive(val interface{}) {
 	if err := j.validateSetFirewallActiveParameters(val); err != nil {
 		panic(err)
@@ -447,6 +530,28 @@ func (j *jsiiProxy_CubeServerNicOutputReference)SetIps(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"ips",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CubeServerNicOutputReference)SetIpv6CidrBlock(val *string) {
+	if err := j.validateSetIpv6CidrBlockParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6CidrBlock",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CubeServerNicOutputReference)SetIpv6Ips(val *[]*string) {
+	if err := j.validateSetIpv6IpsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6Ips",
 		val,
 	)
 }
@@ -700,6 +805,14 @@ func (c *jsiiProxy_CubeServerNicOutputReference) ResetDhcp() {
 	)
 }
 
+func (c *jsiiProxy_CubeServerNicOutputReference) ResetDhcpv6() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDhcpv6",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CubeServerNicOutputReference) ResetFirewall() {
 	_jsii_.InvokeVoid(
 		c,
@@ -728,6 +841,22 @@ func (c *jsiiProxy_CubeServerNicOutputReference) ResetIps() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetIps",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CubeServerNicOutputReference) ResetIpv6CidrBlock() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIpv6CidrBlock",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CubeServerNicOutputReference) ResetIpv6Ips() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIpv6Ips",
 		nil, // no parameters
 	)
 }

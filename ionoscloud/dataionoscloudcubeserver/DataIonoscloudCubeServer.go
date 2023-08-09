@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/cube_server ionoscloud_cube_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/data-sources/cube_server ionoscloud_cube_server}.
 type DataIonoscloudCubeServer interface {
 	cdktf.TerraformDataSource
 	AvailabilityZone() *string
@@ -21,6 +21,7 @@ type DataIonoscloudCubeServer interface {
 	Cdroms() DataIonoscloudCubeServerCdromsList
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	Cores() *float64
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -58,6 +59,7 @@ type DataIonoscloudCubeServer interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	Ram() *float64
 	// Experimental.
 	RawOverrides() interface{}
 	TemplateUuid() *string
@@ -187,6 +189,16 @@ func (j *jsiiProxy_DataIonoscloudCubeServer) ConstructNodeMetadata() *map[string
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudCubeServer) Cores() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cores",
 		&returns,
 	)
 	return returns
@@ -352,6 +364,16 @@ func (j *jsiiProxy_DataIonoscloudCubeServer) Provider() cdktf.TerraformProvider 
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudCubeServer) Ram() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ram",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudCubeServer) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -463,7 +485,7 @@ func (j *jsiiProxy_DataIonoscloudCubeServer) Volumes() DataIonoscloudCubeServerV
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/cube_server ionoscloud_cube_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/data-sources/cube_server ionoscloud_cube_server} Data Source.
 func NewDataIonoscloudCubeServer(scope constructs.Construct, id *string, config *DataIonoscloudCubeServerConfig) DataIonoscloudCubeServer {
 	_init_.Initialize()
 
@@ -481,7 +503,7 @@ func NewDataIonoscloudCubeServer(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/cube_server ionoscloud_cube_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/data-sources/cube_server ionoscloud_cube_server} Data Source.
 func NewDataIonoscloudCubeServer_Override(d DataIonoscloudCubeServer, scope constructs.Construct, id *string, config *DataIonoscloudCubeServerConfig) {
 	_init_.Initialize()
 

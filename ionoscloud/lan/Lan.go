@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan ionoscloud_lan}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan ionoscloud_lan}.
 type Lan interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -44,6 +44,9 @@ type Lan interface {
 	IdInput() *string
 	IpFailover() LanIpFailoverList
 	IpFailoverInput() interface{}
+	Ipv6CidrBlock() *string
+	SetIpv6CidrBlock(val *string)
+	Ipv6CidrBlockInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -106,6 +109,7 @@ type Lan interface {
 	PutTimeouts(value *LanTimeouts)
 	ResetId()
 	ResetIpFailover()
+	ResetIpv6CidrBlock()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -263,6 +267,26 @@ func (j *jsiiProxy_Lan) IpFailoverInput() interface{} {
 	_jsii_.Get(
 		j,
 		"ipFailoverInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Lan) Ipv6CidrBlock() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6CidrBlock",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Lan) Ipv6CidrBlockInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6CidrBlockInput",
 		&returns,
 	)
 	return returns
@@ -429,7 +453,7 @@ func (j *jsiiProxy_Lan) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan ionoscloud_lan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan ionoscloud_lan} Resource.
 func NewLan(scope constructs.Construct, id *string, config *LanConfig) Lan {
 	_init_.Initialize()
 
@@ -447,7 +471,7 @@ func NewLan(scope constructs.Construct, id *string, config *LanConfig) Lan {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan ionoscloud_lan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan ionoscloud_lan} Resource.
 func NewLan_Override(l Lan, scope constructs.Construct, id *string, config *LanConfig) {
 	_init_.Initialize()
 
@@ -514,6 +538,17 @@ func (j *jsiiProxy_Lan)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Lan)SetIpv6CidrBlock(val *string) {
+	if err := j.validateSetIpv6CidrBlockParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6CidrBlock",
 		val,
 	)
 }
@@ -881,6 +916,14 @@ func (l *jsiiProxy_Lan) ResetIpFailover() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetIpFailover",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Lan) ResetIpv6CidrBlock() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetIpv6CidrBlock",
 		nil, // no parameters
 	)
 }

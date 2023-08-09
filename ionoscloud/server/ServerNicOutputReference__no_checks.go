@@ -44,7 +44,7 @@ func (s *jsiiProxy_ServerNicOutputReference) validateInterpolationForAttributePa
 	return nil
 }
 
-func (s *jsiiProxy_ServerNicOutputReference) validatePutFirewallParameters(value *ServerNicFirewall) error {
+func (s *jsiiProxy_ServerNicOutputReference) validatePutFirewallParameters(value interface{}) error {
 	return nil
 }
 
@@ -64,6 +64,10 @@ func (j *jsiiProxy_ServerNicOutputReference) validateSetDhcpParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_ServerNicOutputReference) validateSetDhcpv6Parameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServerNicOutputReference) validateSetFirewallActiveParameters(val interface{}) error {
 	return nil
 }
@@ -77,6 +81,14 @@ func (j *jsiiProxy_ServerNicOutputReference) validateSetInternalValueParameters(
 }
 
 func (j *jsiiProxy_ServerNicOutputReference) validateSetIpsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ServerNicOutputReference) validateSetIpv6CidrBlockParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ServerNicOutputReference) validateSetIpv6IpsParameters(val *[]*string) error {
 	return nil
 }
 

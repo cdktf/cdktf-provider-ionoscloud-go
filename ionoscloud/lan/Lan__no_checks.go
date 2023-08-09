@@ -88,6 +88,10 @@ func (j *jsiiProxy_Lan) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Lan) validateSetIpv6CidrBlockParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Lan) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

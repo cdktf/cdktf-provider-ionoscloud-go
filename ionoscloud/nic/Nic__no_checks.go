@@ -84,6 +84,10 @@ func (j *jsiiProxy_Nic) validateSetDhcpParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Nic) validateSetDhcpv6Parameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Nic) validateSetFirewallActiveParameters(val interface{}) error {
 	return nil
 }
@@ -97,6 +101,14 @@ func (j *jsiiProxy_Nic) validateSetIdParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Nic) validateSetIpsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Nic) validateSetIpv6CidrBlockParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Nic) validateSetIpv6IpsParameters(val *[]*string) error {
 	return nil
 }
 

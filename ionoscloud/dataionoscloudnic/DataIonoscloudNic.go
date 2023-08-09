@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/nic ionoscloud_nic}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/data-sources/nic ionoscloud_nic}.
 type DataIonoscloudNic interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -31,6 +31,9 @@ type DataIonoscloudNic interface {
 	Dhcp() interface{}
 	SetDhcp(val interface{})
 	DhcpInput() interface{}
+	Dhcpv6() interface{}
+	SetDhcpv6(val interface{})
+	Dhcpv6Input() interface{}
 	FirewallActive() interface{}
 	SetFirewallActive(val interface{})
 	FirewallActiveInput() interface{}
@@ -51,6 +54,12 @@ type DataIonoscloudNic interface {
 	Ips() *[]*string
 	SetIps(val *[]*string)
 	IpsInput() *[]*string
+	Ipv6CidrBlock() *string
+	SetIpv6CidrBlock(val *string)
+	Ipv6CidrBlockInput() *string
+	Ipv6Ips() *[]*string
+	SetIpv6Ips(val *[]*string)
+	Ipv6IpsInput() *[]*string
 	Lan() *float64
 	SetLan(val *float64)
 	LanInput() *float64
@@ -109,10 +118,13 @@ type DataIonoscloudNic interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DataIonoscloudNicTimeouts)
 	ResetDhcp()
+	ResetDhcpv6()
 	ResetFirewallActive()
 	ResetFirewallType()
 	ResetId()
 	ResetIps()
+	ResetIpv6CidrBlock()
+	ResetIpv6Ips()
 	ResetLan()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -224,6 +236,26 @@ func (j *jsiiProxy_DataIonoscloudNic) DhcpInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudNic) Dhcpv6() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dhcpv6",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudNic) Dhcpv6Input() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dhcpv6Input",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudNic) FirewallActive() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -329,6 +361,46 @@ func (j *jsiiProxy_DataIonoscloudNic) IpsInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"ipsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudNic) Ipv6CidrBlock() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6CidrBlock",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudNic) Ipv6CidrBlockInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6CidrBlockInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudNic) Ipv6Ips() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipv6Ips",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudNic) Ipv6IpsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipv6IpsInput",
 		&returns,
 	)
 	return returns
@@ -505,7 +577,7 @@ func (j *jsiiProxy_DataIonoscloudNic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/nic ionoscloud_nic} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/data-sources/nic ionoscloud_nic} Data Source.
 func NewDataIonoscloudNic(scope constructs.Construct, id *string, config *DataIonoscloudNicConfig) DataIonoscloudNic {
 	_init_.Initialize()
 
@@ -523,7 +595,7 @@ func NewDataIonoscloudNic(scope constructs.Construct, id *string, config *DataIo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/nic ionoscloud_nic} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/data-sources/nic ionoscloud_nic} Data Source.
 func NewDataIonoscloudNic_Override(d DataIonoscloudNic, scope constructs.Construct, id *string, config *DataIonoscloudNicConfig) {
 	_init_.Initialize()
 
@@ -571,6 +643,17 @@ func (j *jsiiProxy_DataIonoscloudNic)SetDhcp(val interface{}) {
 	_jsii_.Set(
 		j,
 		"dhcp",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataIonoscloudNic)SetDhcpv6(val interface{}) {
+	if err := j.validateSetDhcpv6Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dhcpv6",
 		val,
 	)
 }
@@ -623,6 +706,28 @@ func (j *jsiiProxy_DataIonoscloudNic)SetIps(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"ips",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataIonoscloudNic)SetIpv6CidrBlock(val *string) {
+	if err := j.validateSetIpv6CidrBlockParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6CidrBlock",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataIonoscloudNic)SetIpv6Ips(val *[]*string) {
+	if err := j.validateSetIpv6IpsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6Ips",
 		val,
 	)
 }
@@ -964,6 +1069,14 @@ func (d *jsiiProxy_DataIonoscloudNic) ResetDhcp() {
 	)
 }
 
+func (d *jsiiProxy_DataIonoscloudNic) ResetDhcpv6() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDhcpv6",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataIonoscloudNic) ResetFirewallActive() {
 	_jsii_.InvokeVoid(
 		d,
@@ -992,6 +1105,22 @@ func (d *jsiiProxy_DataIonoscloudNic) ResetIps() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetIps",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataIonoscloudNic) ResetIpv6CidrBlock() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIpv6CidrBlock",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataIonoscloudNic) ResetIpv6Ips() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIpv6Ips",
 		nil, // no parameters
 	)
 }

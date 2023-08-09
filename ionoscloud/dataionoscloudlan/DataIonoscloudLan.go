@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/lan ionoscloud_lan}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/data-sources/lan ionoscloud_lan}.
 type DataIonoscloudLan interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -39,6 +39,7 @@ type DataIonoscloudLan interface {
 	SetId(val *string)
 	IdInput() *string
 	IpFailover() DataIonoscloudLanIpFailoverList
+	Ipv6CidrBlock() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -231,6 +232,16 @@ func (j *jsiiProxy_DataIonoscloudLan) IpFailover() DataIonoscloudLanIpFailoverLi
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudLan) Ipv6CidrBlock() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6CidrBlock",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudLan) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -362,7 +373,7 @@ func (j *jsiiProxy_DataIonoscloudLan) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/lan ionoscloud_lan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/data-sources/lan ionoscloud_lan} Data Source.
 func NewDataIonoscloudLan(scope constructs.Construct, id *string, config *DataIonoscloudLanConfig) DataIonoscloudLan {
 	_init_.Initialize()
 
@@ -380,7 +391,7 @@ func NewDataIonoscloudLan(scope constructs.Construct, id *string, config *DataIo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/lan ionoscloud_lan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/data-sources/lan ionoscloud_lan} Data Source.
 func NewDataIonoscloudLan_Override(d DataIonoscloudLan, scope constructs.Construct, id *string, config *DataIonoscloudLanConfig) {
 	_init_.Initialize()
 

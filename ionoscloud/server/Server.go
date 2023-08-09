@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server ionoscloud_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server ionoscloud_server}.
 type Server interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -48,6 +48,9 @@ type Server interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	FirewallruleId() *string
+	FirewallruleIds() *[]*string
+	SetFirewallruleIds(val *[]*string)
+	FirewallruleIdsInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -150,10 +153,12 @@ type Server interface {
 	ResetBootImage()
 	ResetCores()
 	ResetCpuFamily()
+	ResetFirewallruleIds()
 	ResetId()
 	ResetImageName()
 	ResetImagePassword()
 	ResetLabel()
+	ResetNic()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -363,6 +368,26 @@ func (j *jsiiProxy_Server) FirewallruleId() *string {
 	_jsii_.Get(
 		j,
 		"firewallruleId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Server) FirewallruleIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"firewallruleIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Server) FirewallruleIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"firewallruleIdsInput",
 		&returns,
 	)
 	return returns
@@ -769,7 +794,7 @@ func (j *jsiiProxy_Server) VolumeInput() *ServerVolume {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server ionoscloud_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server ionoscloud_server} Resource.
 func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Server {
 	_init_.Initialize()
 
@@ -787,7 +812,7 @@ func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Ser
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server ionoscloud_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server ionoscloud_server} Resource.
 func NewServer_Override(s Server, scope constructs.Construct, id *string, config *ServerConfig) {
 	_init_.Initialize()
 
@@ -890,6 +915,17 @@ func (j *jsiiProxy_Server)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Server)SetFirewallruleIds(val *[]*string) {
+	if err := j.validateSetFirewallruleIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"firewallruleIds",
 		val,
 	)
 }
@@ -1381,6 +1417,14 @@ func (s *jsiiProxy_Server) ResetCpuFamily() {
 	)
 }
 
+func (s *jsiiProxy_Server) ResetFirewallruleIds() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetFirewallruleIds",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_Server) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1409,6 +1453,14 @@ func (s *jsiiProxy_Server) ResetLabel() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetLabel",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Server) ResetNic() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNic",
 		nil, // no parameters
 	)
 }

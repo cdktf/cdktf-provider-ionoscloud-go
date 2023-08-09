@@ -27,6 +27,7 @@ type DataIonoscloudServerNicsOutputReference interface {
 	CreationStack() *[]*string
 	DeviceNumber() *float64
 	Dhcp() cdktf.IResolvable
+	Dhcpv6() cdktf.IResolvable
 	FirewallActive() cdktf.IResolvable
 	FirewallRules() DataIonoscloudServerNicsFirewallRulesList
 	FirewallType() *string
@@ -36,6 +37,8 @@ type DataIonoscloudServerNicsOutputReference interface {
 	InternalValue() *DataIonoscloudServerNics
 	SetInternalValue(val *DataIonoscloudServerNics)
 	Ips() *[]*string
+	Ipv6CidrBlock() *string
+	Ipv6Ips() *[]*string
 	Lan() *float64
 	Mac() *string
 	Name() *string
@@ -137,6 +140,16 @@ func (j *jsiiProxy_DataIonoscloudServerNicsOutputReference) Dhcp() cdktf.IResolv
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudServerNicsOutputReference) Dhcpv6() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"dhcpv6",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudServerNicsOutputReference) FirewallActive() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -202,6 +215,26 @@ func (j *jsiiProxy_DataIonoscloudServerNicsOutputReference) Ips() *[]*string {
 	_jsii_.Get(
 		j,
 		"ips",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudServerNicsOutputReference) Ipv6CidrBlock() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6CidrBlock",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudServerNicsOutputReference) Ipv6Ips() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipv6Ips",
 		&returns,
 	)
 	return returns

@@ -33,8 +33,9 @@ type ServerNicFirewallOutputReference interface {
 	IcmpType() *string
 	SetIcmpType(val *string)
 	IcmpTypeInput() *string
-	InternalValue() *ServerNicFirewall
-	SetInternalValue(val *ServerNicFirewall)
+	Id() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -195,8 +196,18 @@ func (j *jsiiProxy_ServerNicFirewallOutputReference) IcmpTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ServerNicFirewallOutputReference) InternalValue() *ServerNicFirewall {
-	var returns *ServerNicFirewall
+func (j *jsiiProxy_ServerNicFirewallOutputReference) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServerNicFirewallOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -386,29 +397,29 @@ func (j *jsiiProxy_ServerNicFirewallOutputReference) TypeInput() *string {
 }
 
 
-func NewServerNicFirewallOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServerNicFirewallOutputReference {
+func NewServerNicFirewallOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ServerNicFirewallOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewServerNicFirewallOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewServerNicFirewallOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_ServerNicFirewallOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-ionoscloud.server.ServerNicFirewallOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewServerNicFirewallOutputReference_Override(s ServerNicFirewallOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewServerNicFirewallOutputReference_Override(s ServerNicFirewallOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-ionoscloud.server.ServerNicFirewallOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
@@ -457,7 +468,7 @@ func (j *jsiiProxy_ServerNicFirewallOutputReference)SetIcmpType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ServerNicFirewallOutputReference)SetInternalValue(val *ServerNicFirewall) {
+func (j *jsiiProxy_ServerNicFirewallOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

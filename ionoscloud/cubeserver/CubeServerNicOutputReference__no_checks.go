@@ -64,6 +64,10 @@ func (j *jsiiProxy_CubeServerNicOutputReference) validateSetDhcpParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_CubeServerNicOutputReference) validateSetDhcpv6Parameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CubeServerNicOutputReference) validateSetFirewallActiveParameters(val interface{}) error {
 	return nil
 }
@@ -77,6 +81,14 @@ func (j *jsiiProxy_CubeServerNicOutputReference) validateSetInternalValueParamet
 }
 
 func (j *jsiiProxy_CubeServerNicOutputReference) validateSetIpsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CubeServerNicOutputReference) validateSetIpv6CidrBlockParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CubeServerNicOutputReference) validateSetIpv6IpsParameters(val *[]*string) error {
 	return nil
 }
 
