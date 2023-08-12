@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/mongo_cluster ionoscloud_mongo_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster ionoscloud_mongo_cluster}.
 type MongoCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -506,7 +506,7 @@ func (j *jsiiProxy_MongoCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/mongo_cluster ionoscloud_mongo_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster ionoscloud_mongo_cluster} Resource.
 func NewMongoCluster(scope constructs.Construct, id *string, config *MongoClusterConfig) MongoCluster {
 	_init_.Initialize()
 
@@ -524,7 +524,7 @@ func NewMongoCluster(scope constructs.Construct, id *string, config *MongoCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/mongo_cluster ionoscloud_mongo_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster ionoscloud_mongo_cluster} Resource.
 func NewMongoCluster_Override(m MongoCluster, scope constructs.Construct, id *string, config *MongoClusterConfig) {
 	_init_.Initialize()
 

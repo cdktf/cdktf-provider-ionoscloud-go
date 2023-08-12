@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/data-sources/k8s_node_pool_nodes ionoscloud_k8s_node_pool_nodes}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/k8s_node_pool_nodes ionoscloud_k8s_node_pool_nodes}.
 type DataIonoscloudK8SNodePoolNodes interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -339,7 +339,7 @@ func (j *jsiiProxy_DataIonoscloudK8SNodePoolNodes) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/data-sources/k8s_node_pool_nodes ionoscloud_k8s_node_pool_nodes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/k8s_node_pool_nodes ionoscloud_k8s_node_pool_nodes} Data Source.
 func NewDataIonoscloudK8SNodePoolNodes(scope constructs.Construct, id *string, config *DataIonoscloudK8SNodePoolNodesConfig) DataIonoscloudK8SNodePoolNodes {
 	_init_.Initialize()
 
@@ -357,7 +357,7 @@ func NewDataIonoscloudK8SNodePoolNodes(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/data-sources/k8s_node_pool_nodes ionoscloud_k8s_node_pool_nodes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/k8s_node_pool_nodes ionoscloud_k8s_node_pool_nodes} Data Source.
 func NewDataIonoscloudK8SNodePoolNodes_Override(d DataIonoscloudK8SNodePoolNodes, scope constructs.Construct, id *string, config *DataIonoscloudK8SNodePoolNodesConfig) {
 	_init_.Initialize()
 
