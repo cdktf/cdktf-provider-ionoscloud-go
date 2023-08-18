@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/mongo_user ionoscloud_mongo_user}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/mongo_user ionoscloud_mongo_user}.
 type DataIonoscloudMongoUser interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -376,7 +376,7 @@ func (j *jsiiProxy_DataIonoscloudMongoUser) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/mongo_user ionoscloud_mongo_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/mongo_user ionoscloud_mongo_user} Data Source.
 func NewDataIonoscloudMongoUser(scope constructs.Construct, id *string, config *DataIonoscloudMongoUserConfig) DataIonoscloudMongoUser {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewDataIonoscloudMongoUser(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/mongo_user ionoscloud_mongo_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/mongo_user ionoscloud_mongo_user} Data Source.
 func NewDataIonoscloudMongoUser_Override(d DataIonoscloudMongoUser, scope constructs.Construct, id *string, config *DataIonoscloudMongoUserConfig) {
 	_init_.Initialize()
 

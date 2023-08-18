@@ -9,15 +9,18 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/mongo_cluster ionoscloud_mongo_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/mongo_cluster ionoscloud_mongo_cluster}.
 type DataIonoscloudMongoCluster interface {
 	cdktf.TerraformDataSource
+	Backup() DataIonoscloudMongoClusterBackupList
+	BiConnector() DataIonoscloudMongoClusterBiConnectorList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Connections() DataIonoscloudMongoClusterConnectionsList
 	ConnectionString() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	Cores() *float64
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -29,6 +32,7 @@ type DataIonoscloudMongoCluster interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	Edition() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -54,8 +58,12 @@ type DataIonoscloudMongoCluster interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	Ram() *float64
 	// Experimental.
 	RawOverrides() interface{}
+	Shards() *float64
+	StorageSize() *float64
+	StorageType() *string
 	TemplateId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -65,6 +73,7 @@ type DataIonoscloudMongoCluster interface {
 	TerraformResourceType() *string
 	Timeouts() DataIonoscloudMongoClusterTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Type() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -112,6 +121,26 @@ type jsiiProxy_DataIonoscloudMongoCluster struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
+func (j *jsiiProxy_DataIonoscloudMongoCluster) Backup() DataIonoscloudMongoClusterBackupList {
+	var returns DataIonoscloudMongoClusterBackupList
+	_jsii_.Get(
+		j,
+		"backup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudMongoCluster) BiConnector() DataIonoscloudMongoClusterBiConnectorList {
+	var returns DataIonoscloudMongoClusterBiConnectorList
+	_jsii_.Get(
+		j,
+		"biConnector",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudMongoCluster) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -152,6 +181,16 @@ func (j *jsiiProxy_DataIonoscloudMongoCluster) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudMongoCluster) Cores() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cores",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudMongoCluster) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -187,6 +226,16 @@ func (j *jsiiProxy_DataIonoscloudMongoCluster) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudMongoCluster) Edition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edition",
 		&returns,
 	)
 	return returns
@@ -312,11 +361,51 @@ func (j *jsiiProxy_DataIonoscloudMongoCluster) Provider() cdktf.TerraformProvide
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudMongoCluster) Ram() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ram",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudMongoCluster) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudMongoCluster) Shards() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"shards",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudMongoCluster) StorageSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"storageSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudMongoCluster) StorageType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageType",
 		&returns,
 	)
 	return returns
@@ -382,8 +471,18 @@ func (j *jsiiProxy_DataIonoscloudMongoCluster) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudMongoCluster) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/mongo_cluster ionoscloud_mongo_cluster} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/mongo_cluster ionoscloud_mongo_cluster} Data Source.
 func NewDataIonoscloudMongoCluster(scope constructs.Construct, id *string, config *DataIonoscloudMongoClusterConfig) DataIonoscloudMongoCluster {
 	_init_.Initialize()
 
@@ -401,7 +500,7 @@ func NewDataIonoscloudMongoCluster(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/mongo_cluster ionoscloud_mongo_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/mongo_cluster ionoscloud_mongo_cluster} Data Source.
 func NewDataIonoscloudMongoCluster_Override(d DataIonoscloudMongoCluster, scope constructs.Construct, id *string, config *DataIonoscloudMongoClusterConfig) {
 	_init_.Initialize()
 

@@ -21,48 +21,86 @@ type MongoClusterConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// connections block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#connections MongoCluster#connections}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#connections MongoCluster#connections}
 	Connections *MongoClusterConnections `field:"required" json:"connections" yaml:"connections"`
 	// credentials block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#credentials MongoCluster#credentials}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#credentials MongoCluster#credentials}
 	Credentials *MongoClusterCredentials `field:"required" json:"credentials" yaml:"credentials"`
 	// The name of your cluster.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#display_name MongoCluster#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#display_name MongoCluster#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
 	// The total number of instances in the cluster (one master and n-1 standbys).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#instances MongoCluster#instances}
+	// Example: 1, 3, 5, 7. For enterprise edition at least 3.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#instances MongoCluster#instances}
 	Instances *float64 `field:"required" json:"instances" yaml:"instances"`
 	// The physical location where the cluster will be created.
 	//
-	// This will be where all of your instances live. Property cannot be modified after datacenter creation (disallowed in update requests). Available locations: de/txl, gb/lhr, es/vit
+	// This will be where all of your instances live. Property cannot be modified after datacenter creation (disallowed in update requests). Available locations: de/txl, gb/lhr, es/vit. Update forces cluster re-creation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#location MongoCluster#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#location MongoCluster#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
-	// The MongoDB version of your cluster.
+	// The MongoDB version of your cluster. Update forces cluster re-creation.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#mongodb_version MongoCluster#mongodb_version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#mongodb_version MongoCluster#mongodb_version}
 	MongodbVersion *string `field:"required" json:"mongodbVersion" yaml:"mongodbVersion"`
-	// The unique ID of the template, which specifies the number of cores, storage size, and memory.
+	// backup block.
 	//
-	// You cannot downgrade to a smaller template or minor edition (e.g. from business to playground).
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#backup MongoCluster#backup}
+	Backup *MongoClusterBackup `field:"optional" json:"backup" yaml:"backup"`
+	// bi_connector block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#template_id MongoCluster#template_id}
-	TemplateId *string `field:"required" json:"templateId" yaml:"templateId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#id MongoCluster#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#bi_connector MongoCluster#bi_connector}
+	BiConnector *MongoClusterBiConnector `field:"optional" json:"biConnector" yaml:"biConnector"`
+	// The number of CPU cores per instance.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#cores MongoCluster#cores}
+	Cores *float64 `field:"optional" json:"cores" yaml:"cores"`
+	// The cluster edition. Must be one of: playground, business, enterprise.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#edition MongoCluster#edition}
+	Edition *string `field:"optional" json:"edition" yaml:"edition"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#id MongoCluster#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// maintenance_window block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#maintenance_window MongoCluster#maintenance_window}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#maintenance_window MongoCluster#maintenance_window}
 	MaintenanceWindow *MongoClusterMaintenanceWindow `field:"optional" json:"maintenanceWindow" yaml:"maintenanceWindow"`
+	// The amount of memory per instance in megabytes. Multiple of 1024.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#ram MongoCluster#ram}
+	Ram *float64 `field:"optional" json:"ram" yaml:"ram"`
+	// The total number of shards in the cluster.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#shards MongoCluster#shards}
+	Shards *float64 `field:"optional" json:"shards" yaml:"shards"`
+	// The amount of storage per instance in megabytes. At least 5120, at most 2097152.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#storage_size MongoCluster#storage_size}
+	StorageSize *float64 `field:"optional" json:"storageSize" yaml:"storageSize"`
+	// The storage type. One of : HDD, SSD, SSD Standard, SSD Premium.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#storage_type MongoCluster#storage_type}
+	StorageType *string `field:"optional" json:"storageType" yaml:"storageType"`
+	// The unique ID of the template, which specifies the number of cores, storage size, and memory.
+	//
+	// You cannot downgrade to a smaller template or minor edition (e.g. from business to playground). To get a list of all templates to confirm the changes use the /templates endpoint.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#template_id MongoCluster#template_id}
+	TemplateId *string `field:"optional" json:"templateId" yaml:"templateId"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#timeouts MongoCluster#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#timeouts MongoCluster#timeouts}
 	Timeouts *MongoClusterTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+	// The cluster type, either `replicaset` or `sharded-cluster`.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#type MongoCluster#type}
+	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

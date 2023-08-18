@@ -52,6 +52,14 @@ func (m *jsiiProxy_MongoCluster) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (m *jsiiProxy_MongoCluster) validatePutBackupParameters(value *MongoClusterBackup) error {
+	return nil
+}
+
+func (m *jsiiProxy_MongoCluster) validatePutBiConnectorParameters(value *MongoClusterBiConnector) error {
+	return nil
+}
+
 func (m *jsiiProxy_MongoCluster) validatePutConnectionsParameters(value *MongoClusterConnections) error {
 	return nil
 }
@@ -84,11 +92,19 @@ func (j *jsiiProxy_MongoCluster) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_MongoCluster) validateSetCoresParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_MongoCluster) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_MongoCluster) validateSetDisplayNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MongoCluster) validateSetEditionParameters(val *string) error {
 	return nil
 }
 
@@ -116,7 +132,27 @@ func (j *jsiiProxy_MongoCluster) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_MongoCluster) validateSetRamParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MongoCluster) validateSetShardsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MongoCluster) validateSetStorageSizeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MongoCluster) validateSetStorageTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MongoCluster) validateSetTemplateIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MongoCluster) validateSetTypeParameters(val *string) error {
 	return nil
 }
 

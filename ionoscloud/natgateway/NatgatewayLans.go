@@ -4,7 +4,7 @@ package natgateway
 type NatgatewayLans struct {
 	// Id for the LAN connected to the NAT gateway.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/natgateway#id Natgateway#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/natgateway#id Natgateway#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -13,7 +13,7 @@ type NatgatewayLans struct {
 	//
 	// Will be auto-generated if not provided. Should ideally be an IP belonging to the same subnet as the LAN
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/natgateway#gateway_ips Natgateway#gateway_ips}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/natgateway#gateway_ips Natgateway#gateway_ips}
 	GatewayIps *[]*string `field:"optional" json:"gatewayIps" yaml:"gatewayIps"`
 }
 

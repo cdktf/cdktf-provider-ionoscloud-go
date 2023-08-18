@@ -111,6 +111,28 @@ func (m *jsiiProxy_MongoCluster) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (m *jsiiProxy_MongoCluster) validatePutBackupParameters(value *MongoClusterBackup) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MongoCluster) validatePutBiConnectorParameters(value *MongoClusterBiConnector) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MongoCluster) validatePutConnectionsParameters(value *MongoClusterConnections) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -212,6 +234,14 @@ func (j *jsiiProxy_MongoCluster) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_MongoCluster) validateSetCoresParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MongoCluster) validateSetCountParameters(val interface{}) error {
 	switch val.(type) {
 	case *float64:
@@ -270,6 +300,14 @@ func (j *jsiiProxy_MongoCluster) validateSetCountParameters(val interface{}) err
 }
 
 func (j *jsiiProxy_MongoCluster) validateSetDisplayNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MongoCluster) validateSetEditionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -363,7 +401,47 @@ func (j *jsiiProxy_MongoCluster) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_MongoCluster) validateSetRamParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MongoCluster) validateSetShardsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MongoCluster) validateSetStorageSizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MongoCluster) validateSetStorageTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MongoCluster) validateSetTemplateIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MongoCluster) validateSetTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

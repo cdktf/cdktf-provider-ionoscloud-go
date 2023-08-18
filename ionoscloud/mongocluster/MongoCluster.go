@@ -9,9 +9,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster ionoscloud_mongo_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster ionoscloud_mongo_cluster}.
 type MongoCluster interface {
 	cdktf.TerraformResource
+	Backup() MongoClusterBackupOutputReference
+	BackupInput() *MongoClusterBackup
+	BiConnector() MongoClusterBiConnectorOutputReference
+	BiConnectorInput() *MongoClusterBiConnector
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -23,6 +27,9 @@ type MongoCluster interface {
 	ConnectionString() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	Cores() *float64
+	SetCores(val *float64)
+	CoresInput() *float64
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -36,6 +43,9 @@ type MongoCluster interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	Edition() *string
+	SetEdition(val *string)
+	EditionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -72,8 +82,20 @@ type MongoCluster interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	Ram() *float64
+	SetRam(val *float64)
+	RamInput() *float64
 	// Experimental.
 	RawOverrides() interface{}
+	Shards() *float64
+	SetShards(val *float64)
+	ShardsInput() *float64
+	StorageSize() *float64
+	SetStorageSize(val *float64)
+	StorageSizeInput() *float64
+	StorageType() *string
+	SetStorageType(val *string)
+	StorageTypeInput() *string
 	TemplateId() *string
 	SetTemplateId(val *string)
 	TemplateIdInput() *string
@@ -85,6 +107,9 @@ type MongoCluster interface {
 	TerraformResourceType() *string
 	Timeouts() MongoClusterTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -110,16 +135,28 @@ type MongoCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBackup(value *MongoClusterBackup)
+	PutBiConnector(value *MongoClusterBiConnector)
 	PutConnections(value *MongoClusterConnections)
 	PutCredentials(value *MongoClusterCredentials)
 	PutMaintenanceWindow(value *MongoClusterMaintenanceWindow)
 	PutTimeouts(value *MongoClusterTimeouts)
+	ResetBackup()
+	ResetBiConnector()
+	ResetCores()
+	ResetEdition()
 	ResetId()
 	ResetMaintenanceWindow()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRam()
+	ResetShards()
+	ResetStorageSize()
+	ResetStorageType()
+	ResetTemplateId()
 	ResetTimeouts()
+	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -133,6 +170,46 @@ type MongoCluster interface {
 // The jsii proxy struct for MongoCluster
 type jsiiProxy_MongoCluster struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_MongoCluster) Backup() MongoClusterBackupOutputReference {
+	var returns MongoClusterBackupOutputReference
+	_jsii_.Get(
+		j,
+		"backup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongoCluster) BackupInput() *MongoClusterBackup {
+	var returns *MongoClusterBackup
+	_jsii_.Get(
+		j,
+		"backupInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongoCluster) BiConnector() MongoClusterBiConnectorOutputReference {
+	var returns MongoClusterBiConnectorOutputReference
+	_jsii_.Get(
+		j,
+		"biConnector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongoCluster) BiConnectorInput() *MongoClusterBiConnector {
+	var returns *MongoClusterBiConnector
+	_jsii_.Get(
+		j,
+		"biConnectorInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_MongoCluster) CdktfStack() cdktf.TerraformStack {
@@ -195,6 +272,26 @@ func (j *jsiiProxy_MongoCluster) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
+func (j *jsiiProxy_MongoCluster) Cores() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"cores",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongoCluster) CoresInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"coresInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MongoCluster) Count() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -250,6 +347,26 @@ func (j *jsiiProxy_MongoCluster) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongoCluster) Edition() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongoCluster) EditionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"editionInput",
 		&returns,
 	)
 	return returns
@@ -425,11 +542,91 @@ func (j *jsiiProxy_MongoCluster) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MongoCluster) Ram() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ram",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongoCluster) RamInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ramInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MongoCluster) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongoCluster) Shards() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"shards",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongoCluster) ShardsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"shardsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongoCluster) StorageSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"storageSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongoCluster) StorageSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"storageSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongoCluster) StorageType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MongoCluster) StorageTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageTypeInput",
 		&returns,
 	)
 	return returns
@@ -505,8 +702,28 @@ func (j *jsiiProxy_MongoCluster) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MongoCluster) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster ionoscloud_mongo_cluster} Resource.
+func (j *jsiiProxy_MongoCluster) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster ionoscloud_mongo_cluster} Resource.
 func NewMongoCluster(scope constructs.Construct, id *string, config *MongoClusterConfig) MongoCluster {
 	_init_.Initialize()
 
@@ -524,7 +741,7 @@ func NewMongoCluster(scope constructs.Construct, id *string, config *MongoCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster ionoscloud_mongo_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster ionoscloud_mongo_cluster} Resource.
 func NewMongoCluster_Override(m MongoCluster, scope constructs.Construct, id *string, config *MongoClusterConfig) {
 	_init_.Initialize()
 
@@ -542,6 +759,17 @@ func (j *jsiiProxy_MongoCluster)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MongoCluster)SetCores(val *float64) {
+	if err := j.validateSetCoresParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cores",
 		val,
 	)
 }
@@ -572,6 +800,17 @@ func (j *jsiiProxy_MongoCluster)SetDisplayName(val *string) {
 	_jsii_.Set(
 		j,
 		"displayName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MongoCluster)SetEdition(val *string) {
+	if err := j.validateSetEditionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"edition",
 		val,
 	)
 }
@@ -658,6 +897,50 @@ func (j *jsiiProxy_MongoCluster)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_MongoCluster)SetRam(val *float64) {
+	if err := j.validateSetRamParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ram",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MongoCluster)SetShards(val *float64) {
+	if err := j.validateSetShardsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"shards",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MongoCluster)SetStorageSize(val *float64) {
+	if err := j.validateSetStorageSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MongoCluster)SetStorageType(val *string) {
+	if err := j.validateSetStorageTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MongoCluster)SetTemplateId(val *string) {
 	if err := j.validateSetTemplateIdParameters(val); err != nil {
 		panic(err)
@@ -665,6 +948,17 @@ func (j *jsiiProxy_MongoCluster)SetTemplateId(val *string) {
 	_jsii_.Set(
 		j,
 		"templateId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MongoCluster)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -935,6 +1229,28 @@ func (m *jsiiProxy_MongoCluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (m *jsiiProxy_MongoCluster) PutBackup(value *MongoClusterBackup) {
+	if err := m.validatePutBackupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putBackup",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MongoCluster) PutBiConnector(value *MongoClusterBiConnector) {
+	if err := m.validatePutBiConnectorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putBiConnector",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MongoCluster) PutConnections(value *MongoClusterConnections) {
 	if err := m.validatePutConnectionsParameters(value); err != nil {
 		panic(err)
@@ -979,6 +1295,38 @@ func (m *jsiiProxy_MongoCluster) PutTimeouts(value *MongoClusterTimeouts) {
 	)
 }
 
+func (m *jsiiProxy_MongoCluster) ResetBackup() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetBackup",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MongoCluster) ResetBiConnector() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetBiConnector",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MongoCluster) ResetCores() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCores",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MongoCluster) ResetEdition() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetEdition",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MongoCluster) ResetId() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1003,10 +1351,58 @@ func (m *jsiiProxy_MongoCluster) ResetOverrideLogicalId() {
 	)
 }
 
+func (m *jsiiProxy_MongoCluster) ResetRam() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRam",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MongoCluster) ResetShards() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetShards",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MongoCluster) ResetStorageSize() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetStorageSize",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MongoCluster) ResetStorageType() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetStorageType",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MongoCluster) ResetTemplateId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTemplateId",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MongoCluster) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MongoCluster) ResetType() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetType",
 		nil, // no parameters
 	)
 }
