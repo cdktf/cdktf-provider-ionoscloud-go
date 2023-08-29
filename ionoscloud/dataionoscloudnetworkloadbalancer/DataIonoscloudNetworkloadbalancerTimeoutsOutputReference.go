@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package dataionoscloudnetworkloadbalancer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/dataionoscloudnetworkloadbalancer/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9/dataionoscloudnetworkloadbalancer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
