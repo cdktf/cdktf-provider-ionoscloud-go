@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/nic ionoscloud_nic}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/data-sources/nic ionoscloud_nic}.
 type DataIonoscloudNic interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -580,7 +580,7 @@ func (j *jsiiProxy_DataIonoscloudNic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/nic ionoscloud_nic} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/data-sources/nic ionoscloud_nic} Data Source.
 func NewDataIonoscloudNic(scope constructs.Construct, id *string, config *DataIonoscloudNicConfig) DataIonoscloudNic {
 	_init_.Initialize()
 
@@ -598,7 +598,7 @@ func NewDataIonoscloudNic(scope constructs.Construct, id *string, config *DataIo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/nic ionoscloud_nic} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/data-sources/nic ionoscloud_nic} Data Source.
 func NewDataIonoscloudNic_Override(d DataIonoscloudNic, scope constructs.Construct, id *string, config *DataIonoscloudNicConfig) {
 	_init_.Initialize()
 

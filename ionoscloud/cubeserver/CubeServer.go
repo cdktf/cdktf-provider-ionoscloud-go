@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/cube_server ionoscloud_cube_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/resources/cube_server ionoscloud_cube_server}.
 type CubeServer interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -616,7 +616,7 @@ func (j *jsiiProxy_CubeServer) VolumeInput() *CubeServerVolume {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/cube_server ionoscloud_cube_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/resources/cube_server ionoscloud_cube_server} Resource.
 func NewCubeServer(scope constructs.Construct, id *string, config *CubeServerConfig) CubeServer {
 	_init_.Initialize()
 
@@ -634,7 +634,7 @@ func NewCubeServer(scope constructs.Construct, id *string, config *CubeServerCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/cube_server ionoscloud_cube_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/resources/cube_server ionoscloud_cube_server} Resource.
 func NewCubeServer_Override(c CubeServer, scope constructs.Construct, id *string, config *CubeServerConfig) {
 	_init_.Initialize()
 

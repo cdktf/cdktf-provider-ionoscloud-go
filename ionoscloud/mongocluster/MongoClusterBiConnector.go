@@ -7,7 +7,7 @@ package mongocluster
 type MongoClusterBiConnector struct {
 	// Enable or disable the BiConnector.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#enabled MongoCluster#enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/resources/mongo_cluster#enabled MongoCluster#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

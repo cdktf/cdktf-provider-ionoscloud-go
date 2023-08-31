@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/datacenter ionoscloud_datacenter}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/data-sources/datacenter ionoscloud_datacenter}.
 type DataIonoscloudDatacenter interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -399,7 +399,7 @@ func (j *jsiiProxy_DataIonoscloudDatacenter) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/datacenter ionoscloud_datacenter} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/data-sources/datacenter ionoscloud_datacenter} Data Source.
 func NewDataIonoscloudDatacenter(scope constructs.Construct, id *string, config *DataIonoscloudDatacenterConfig) DataIonoscloudDatacenter {
 	_init_.Initialize()
 
@@ -417,7 +417,7 @@ func NewDataIonoscloudDatacenter(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/datacenter ionoscloud_datacenter} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/data-sources/datacenter ionoscloud_datacenter} Data Source.
 func NewDataIonoscloudDatacenter_Override(d DataIonoscloudDatacenter, scope constructs.Construct, id *string, config *DataIonoscloudDatacenterConfig) {
 	_init_.Initialize()
 

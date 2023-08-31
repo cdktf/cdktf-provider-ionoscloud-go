@@ -24,36 +24,36 @@ type TargetGroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Balancing algorithm.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/target_group#algorithm TargetGroup#algorithm}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/resources/target_group#algorithm TargetGroup#algorithm}
 	Algorithm *string `field:"required" json:"algorithm" yaml:"algorithm"`
 	// The name of the target group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/target_group#name TargetGroup#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/resources/target_group#name TargetGroup#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Balancing protocol.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/target_group#protocol TargetGroup#protocol}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/resources/target_group#protocol TargetGroup#protocol}
 	Protocol *string `field:"required" json:"protocol" yaml:"protocol"`
 	// targets block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/target_group#targets TargetGroup#targets}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/resources/target_group#targets TargetGroup#targets}
 	Targets interface{} `field:"required" json:"targets" yaml:"targets"`
 	// health_check block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/target_group#health_check TargetGroup#health_check}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/resources/target_group#health_check TargetGroup#health_check}
 	HealthCheck *TargetGroupHealthCheck `field:"optional" json:"healthCheck" yaml:"healthCheck"`
 	// http_health_check block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/target_group#http_health_check TargetGroup#http_health_check}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/resources/target_group#http_health_check TargetGroup#http_health_check}
 	HttpHealthCheck *TargetGroupHttpHealthCheck `field:"optional" json:"httpHealthCheck" yaml:"httpHealthCheck"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/target_group#id TargetGroup#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/resources/target_group#id TargetGroup#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/target_group#timeouts TargetGroup#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/resources/target_group#timeouts TargetGroup#timeouts}
 	Timeouts *TargetGroupTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 
