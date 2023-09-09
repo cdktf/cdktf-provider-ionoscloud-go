@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/resources/vcpu_server ionoscloud_vcpu_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/vcpu_server ionoscloud_vcpu_server}.
 type VcpuServer interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -721,7 +721,7 @@ func (j *jsiiProxy_VcpuServer) VolumeInput() *VcpuServerVolume {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/resources/vcpu_server ionoscloud_vcpu_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/vcpu_server ionoscloud_vcpu_server} Resource.
 func NewVcpuServer(scope constructs.Construct, id *string, config *VcpuServerConfig) VcpuServer {
 	_init_.Initialize()
 
@@ -739,7 +739,7 @@ func NewVcpuServer(scope constructs.Construct, id *string, config *VcpuServerCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/resources/vcpu_server ionoscloud_vcpu_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/vcpu_server ionoscloud_vcpu_server} Resource.
 func NewVcpuServer_Override(v VcpuServer, scope constructs.Construct, id *string, config *VcpuServerConfig) {
 	_init_.Initialize()
 

@@ -24,22 +24,22 @@ type DataIonoscloudMongoTemplateConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The unique ID of the template.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/data-sources/mongo_template#id DataIonoscloudMongoTemplate#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/mongo_template#id DataIonoscloudMongoTemplate#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The name of the template.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/data-sources/mongo_template#name DataIonoscloudMongoTemplate#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/mongo_template#name DataIonoscloudMongoTemplate#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Whether partial matching is allowed or not when using the name filter.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/data-sources/mongo_template#partial_match DataIonoscloudMongoTemplate#partial_match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/mongo_template#partial_match DataIonoscloudMongoTemplate#partial_match}
 	PartialMatch interface{} `field:"optional" json:"partialMatch" yaml:"partialMatch"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/data-sources/mongo_template#timeouts DataIonoscloudMongoTemplate#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/mongo_template#timeouts DataIonoscloudMongoTemplate#timeouts}
 	Timeouts *DataIonoscloudMongoTemplateTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/data-sources/networkloadbalancer_forwardingrule ionoscloud_networkloadbalancer_forwardingrule}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/networkloadbalancer_forwardingrule ionoscloud_networkloadbalancer_forwardingrule}.
 type DataIonoscloudNetworkloadbalancerForwardingrule interface {
 	cdktf.TerraformDataSource
 	Algorithm() *string
@@ -421,7 +421,7 @@ func (j *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingrule) TimeoutsInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/data-sources/networkloadbalancer_forwardingrule ionoscloud_networkloadbalancer_forwardingrule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/networkloadbalancer_forwardingrule ionoscloud_networkloadbalancer_forwardingrule} Data Source.
 func NewDataIonoscloudNetworkloadbalancerForwardingrule(scope constructs.Construct, id *string, config *DataIonoscloudNetworkloadbalancerForwardingruleConfig) DataIonoscloudNetworkloadbalancerForwardingrule {
 	_init_.Initialize()
 
@@ -439,7 +439,7 @@ func NewDataIonoscloudNetworkloadbalancerForwardingrule(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/data-sources/networkloadbalancer_forwardingrule ionoscloud_networkloadbalancer_forwardingrule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/networkloadbalancer_forwardingrule ionoscloud_networkloadbalancer_forwardingrule} Data Source.
 func NewDataIonoscloudNetworkloadbalancerForwardingrule_Override(d DataIonoscloudNetworkloadbalancerForwardingrule, scope constructs.Construct, id *string, config *DataIonoscloudNetworkloadbalancerForwardingruleConfig) {
 	_init_.Initialize()
 
