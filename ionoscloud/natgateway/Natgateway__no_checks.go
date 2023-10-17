@@ -7,6 +7,10 @@ package natgateway
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_Natgateway) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_Natgateway) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_Natgateway) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (n *jsiiProxy_Natgateway) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_Natgateway) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_Natgateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (n *jsiiProxy_Natgateway) validatePutLansParameters(value interface{}) erro
 }
 
 func (n *jsiiProxy_Natgateway) validatePutTimeoutsParameters(value *NatgatewayTimeouts) error {
+	return nil
+}
+
+func validateNatgateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

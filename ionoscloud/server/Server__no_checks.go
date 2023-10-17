@@ -7,6 +7,10 @@ package server
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_Server) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Server) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_Server) validateGetStringMapAttributeParameters(terraformAttr
 	return nil
 }
 
+func (s *jsiiProxy_Server) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Server) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_Server) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (s *jsiiProxy_Server) validatePutTimeoutsParameters(value *ServerTimeouts) 
 }
 
 func (s *jsiiProxy_Server) validatePutVolumeParameters(value *ServerVolume) error {
+	return nil
+}
+
+func validateServer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

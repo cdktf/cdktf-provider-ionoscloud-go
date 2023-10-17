@@ -7,6 +7,10 @@ package dataplatformcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataplatformCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplatformCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataplatformCluster) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DataplatformCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplatformCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataplatformCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DataplatformCluster) validatePutMaintenanceWindowParameters(v
 }
 
 func (d *jsiiProxy_DataplatformCluster) validatePutTimeoutsParameters(value *DataplatformClusterTimeouts) error {
+	return nil
+}
+
+func validateDataplatformCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

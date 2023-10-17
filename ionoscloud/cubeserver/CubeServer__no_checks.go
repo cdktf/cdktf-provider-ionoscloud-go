@@ -7,6 +7,10 @@ package cubeserver
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CubeServer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CubeServer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CubeServer) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (c *jsiiProxy_CubeServer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CubeServer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CubeServer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_CubeServer) validatePutTimeoutsParameters(value *CubeServerTi
 }
 
 func (c *jsiiProxy_CubeServer) validatePutVolumeParameters(value *CubeServerVolume) error {
+	return nil
+}
+
+func validateCubeServer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

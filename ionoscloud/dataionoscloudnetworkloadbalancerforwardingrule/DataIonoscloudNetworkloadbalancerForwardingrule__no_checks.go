@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingrule) validatePutT
 	return nil
 }
 
+func validateDataIonoscloudNetworkloadbalancerForwardingrule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataIonoscloudNetworkloadbalancerForwardingrule_IsConstructParameters(x interface{}) error {
 	return nil
 }

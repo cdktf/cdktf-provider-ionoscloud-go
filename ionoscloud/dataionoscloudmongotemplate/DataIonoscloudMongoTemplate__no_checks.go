@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataIonoscloudMongoTemplate) validatePutTimeoutsParameters(va
 	return nil
 }
 
+func validateDataIonoscloudMongoTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataIonoscloudMongoTemplate_IsConstructParameters(x interface{}) error {
 	return nil
 }

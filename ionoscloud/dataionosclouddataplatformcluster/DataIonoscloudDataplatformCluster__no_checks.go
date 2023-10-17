@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataIonoscloudDataplatformCluster) validatePutTimeoutsParamet
 	return nil
 }
 
+func validateDataIonoscloudDataplatformCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataIonoscloudDataplatformCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }

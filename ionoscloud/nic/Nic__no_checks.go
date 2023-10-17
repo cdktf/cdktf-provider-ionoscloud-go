@@ -7,6 +7,10 @@ package nic
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_Nic) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_Nic) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_Nic) validateGetStringMapAttributeParameters(terraformAttribu
 	return nil
 }
 
+func (n *jsiiProxy_Nic) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_Nic) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_Nic) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_Nic) validateOverrideLogicalIdParameters(newLogicalId *string
 }
 
 func (n *jsiiProxy_Nic) validatePutTimeoutsParameters(value *NicTimeouts) error {
+	return nil
+}
+
+func validateNic_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

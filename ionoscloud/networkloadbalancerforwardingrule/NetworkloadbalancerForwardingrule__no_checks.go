@@ -7,6 +7,10 @@ package networkloadbalancerforwardingrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkloadbalancerForwardingrule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkloadbalancerForwardingrule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkloadbalancerForwardingrule) validateGetStringMapAttrib
 	return nil
 }
 
+func (n *jsiiProxy_NetworkloadbalancerForwardingrule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkloadbalancerForwardingrule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkloadbalancerForwardingrule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (n *jsiiProxy_NetworkloadbalancerForwardingrule) validatePutTargetsParamete
 }
 
 func (n *jsiiProxy_NetworkloadbalancerForwardingrule) validatePutTimeoutsParameters(value *NetworkloadbalancerForwardingruleTimeouts) error {
+	return nil
+}
+
+func validateNetworkloadbalancerForwardingrule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

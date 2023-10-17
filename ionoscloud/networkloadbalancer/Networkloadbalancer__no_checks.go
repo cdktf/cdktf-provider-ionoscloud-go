@@ -7,6 +7,10 @@ package networkloadbalancer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_Networkloadbalancer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_Networkloadbalancer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_Networkloadbalancer) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (n *jsiiProxy_Networkloadbalancer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_Networkloadbalancer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_Networkloadbalancer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_Networkloadbalancer) validateOverrideLogicalIdParameters(newL
 }
 
 func (n *jsiiProxy_Networkloadbalancer) validatePutTimeoutsParameters(value *NetworkloadbalancerTimeouts) error {
+	return nil
+}
+
+func validateNetworkloadbalancer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

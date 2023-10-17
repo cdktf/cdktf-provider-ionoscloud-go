@@ -15,6 +15,10 @@ func (i *jsiiProxy_IonoscloudProvider) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func validateIonoscloudProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateIonoscloudProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

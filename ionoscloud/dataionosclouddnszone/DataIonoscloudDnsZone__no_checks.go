@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataIonoscloudDnsZone) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func validateDataIonoscloudDnsZone_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataIonoscloudDnsZone_IsConstructParameters(x interface{}) error {
 	return nil
 }

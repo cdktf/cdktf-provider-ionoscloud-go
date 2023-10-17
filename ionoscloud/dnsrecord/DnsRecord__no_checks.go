@@ -7,6 +7,10 @@ package dnsrecord
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DnsRecord) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsRecord) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DnsRecord) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (d *jsiiProxy_DnsRecord) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsRecord) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DnsRecord) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DnsRecord) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (d *jsiiProxy_DnsRecord) validatePutTimeoutsParameters(value *DnsRecordTimeouts) error {
+	return nil
+}
+
+func validateDnsRecord_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

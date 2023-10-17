@@ -7,6 +7,10 @@ package lan
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_Lan) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_Lan) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_Lan) validateGetStringMapAttributeParameters(terraformAttribu
 	return nil
 }
 
+func (l *jsiiProxy_Lan) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_Lan) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_Lan) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (l *jsiiProxy_Lan) validatePutIpFailoverParameters(value interface{}) error
 }
 
 func (l *jsiiProxy_Lan) validatePutTimeoutsParameters(value *LanTimeouts) error {
+	return nil
+}
+
+func validateLan_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

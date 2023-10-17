@@ -7,6 +7,10 @@ package k8scluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_K8SCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_K8SCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_K8SCluster) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (k *jsiiProxy_K8SCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_K8SCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_K8SCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (k *jsiiProxy_K8SCluster) validatePutS3BucketsParameters(value interface{})
 }
 
 func (k *jsiiProxy_K8SCluster) validatePutTimeoutsParameters(value *K8SClusterTimeouts) error {
+	return nil
+}
+
+func validateK8SCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

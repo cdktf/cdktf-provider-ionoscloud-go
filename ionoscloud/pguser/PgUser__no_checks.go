@@ -7,6 +7,10 @@ package pguser
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PgUser) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PgUser) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (p *jsiiProxy_PgUser) validateGetStringMapAttributeParameters(terraformAttr
 	return nil
 }
 
+func (p *jsiiProxy_PgUser) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PgUser) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PgUser) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (p *jsiiProxy_PgUser) validateOverrideLogicalIdParameters(newLogicalId *str
 }
 
 func (p *jsiiProxy_PgUser) validatePutTimeoutsParameters(value *PgUserTimeouts) error {
+	return nil
+}
+
+func validatePgUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

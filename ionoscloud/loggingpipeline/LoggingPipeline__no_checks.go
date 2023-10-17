@@ -7,6 +7,10 @@ package loggingpipeline
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LoggingPipeline) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingPipeline) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LoggingPipeline) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (l *jsiiProxy_LoggingPipeline) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingPipeline) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingPipeline) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (l *jsiiProxy_LoggingPipeline) validatePutLogParameters(value interface{}) 
 }
 
 func (l *jsiiProxy_LoggingPipeline) validatePutTimeoutsParameters(value *LoggingPipelineTimeouts) error {
+	return nil
+}
+
+func validateLoggingPipeline_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

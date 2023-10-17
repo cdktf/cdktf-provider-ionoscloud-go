@@ -7,6 +7,10 @@ package backupunit
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BackupUnit) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupUnit) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BackupUnit) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (b *jsiiProxy_BackupUnit) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupUnit) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BackupUnit) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (b *jsiiProxy_BackupUnit) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func (b *jsiiProxy_BackupUnit) validatePutTimeoutsParameters(value *BackupUnitTimeouts) error {
+	return nil
+}
+
+func validateBackupUnit_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

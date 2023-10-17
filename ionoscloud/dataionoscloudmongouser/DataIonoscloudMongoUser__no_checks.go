@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataIonoscloudMongoUser) validatePutTimeoutsParameters(value 
 	return nil
 }
 
+func validateDataIonoscloudMongoUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataIonoscloudMongoUser_IsConstructParameters(x interface{}) error {
 	return nil
 }

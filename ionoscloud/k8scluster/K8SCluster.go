@@ -5,10 +5,10 @@ package k8scluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9/k8scluster/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8scluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -80,6 +80,9 @@ type K8SCluster interface {
 	Timeouts() K8SClusterTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	ViableNodePoolVersions() *[]*string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -101,7 +104,12 @@ type K8SCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -584,6 +592,25 @@ func (j *jsiiProxy_K8SCluster)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a K8SCluster resource upon running "cdktf plan <stack-name>".
+func K8SCluster_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateK8SCluster_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-ionoscloud.k8SCluster.K8SCluster",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -666,6 +693,17 @@ func K8SCluster_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (k *jsiiProxy_K8SCluster) AddMoveTarget(moveTarget *string) {
+	if err := k.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (k *jsiiProxy_K8SCluster) AddOverride(path *string, value interface{}) {
@@ -823,6 +861,17 @@ func (k *jsiiProxy_K8SCluster) GetStringMapAttribute(terraformAttribute *string)
 	return returns
 }
 
+func (k *jsiiProxy_K8SCluster) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := k.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (k *jsiiProxy_K8SCluster) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -837,6 +886,17 @@ func (k *jsiiProxy_K8SCluster) InterpolationForAttribute(terraformAttribute *str
 	)
 
 	return returns
+}
+
+func (k *jsiiProxy_K8SCluster) MoveTo(moveTarget *string, index interface{}) {
+	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (k *jsiiProxy_K8SCluster) OverrideLogicalId(newLogicalId *string) {

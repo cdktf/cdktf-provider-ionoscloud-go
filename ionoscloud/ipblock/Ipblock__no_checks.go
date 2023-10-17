@@ -7,6 +7,10 @@ package ipblock
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_Ipblock) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Ipblock) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_Ipblock) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (i *jsiiProxy_Ipblock) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Ipblock) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_Ipblock) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (i *jsiiProxy_Ipblock) validatePutIpConsumersParameters(value interface{}) 
 }
 
 func (i *jsiiProxy_Ipblock) validatePutTimeoutsParameters(value *IpblockTimeouts) error {
+	return nil
+}
+
+func validateIpblock_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

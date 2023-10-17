@@ -7,6 +7,10 @@ package vcpuserver
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VcpuServer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VcpuServer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VcpuServer) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (v *jsiiProxy_VcpuServer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VcpuServer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VcpuServer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (v *jsiiProxy_VcpuServer) validatePutTimeoutsParameters(value *VcpuServerTi
 }
 
 func (v *jsiiProxy_VcpuServer) validatePutVolumeParameters(value *VcpuServerVolume) error {
+	return nil
+}
+
+func validateVcpuServer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

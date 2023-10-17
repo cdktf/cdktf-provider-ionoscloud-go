@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataIonoscloudCertificate) validatePutTimeoutsParameters(valu
 	return nil
 }
 
+func validateDataIonoscloudCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataIonoscloudCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }

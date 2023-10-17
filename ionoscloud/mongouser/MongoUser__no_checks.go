@@ -7,6 +7,10 @@ package mongouser
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MongoUser) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MongoUser) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MongoUser) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (m *jsiiProxy_MongoUser) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MongoUser) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MongoUser) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (m *jsiiProxy_MongoUser) validatePutRolesParameters(value interface{}) erro
 }
 
 func (m *jsiiProxy_MongoUser) validatePutTimeoutsParameters(value *MongoUserTimeouts) error {
+	return nil
+}
+
+func validateMongoUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

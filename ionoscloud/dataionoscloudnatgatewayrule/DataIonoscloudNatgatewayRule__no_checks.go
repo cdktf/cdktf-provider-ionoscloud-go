@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataIonoscloudNatgatewayRule) validatePutTimeoutsParameters(v
 	return nil
 }
 
+func validateDataIonoscloudNatgatewayRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataIonoscloudNatgatewayRule_IsConstructParameters(x interface{}) error {
 	return nil
 }

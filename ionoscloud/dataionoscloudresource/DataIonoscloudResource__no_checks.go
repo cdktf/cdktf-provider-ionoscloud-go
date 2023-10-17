@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataIonoscloudResource) validatePutTimeoutsParameters(value *
 	return nil
 }
 
+func validateDataIonoscloudResource_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataIonoscloudResource_IsConstructParameters(x interface{}) error {
 	return nil
 }

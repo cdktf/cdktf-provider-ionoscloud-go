@@ -7,6 +7,10 @@ package k8snodepool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_K8SNodePool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_K8SNodePool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_K8SNodePool) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (k *jsiiProxy_K8SNodePool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_K8SNodePool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_K8SNodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (k *jsiiProxy_K8SNodePool) validatePutMaintenanceWindowParameters(value *K8
 }
 
 func (k *jsiiProxy_K8SNodePool) validatePutTimeoutsParameters(value *K8SNodePoolTimeouts) error {
+	return nil
+}
+
+func validateK8SNodePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -5,9 +5,9 @@ package s3key
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9/s3key/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/s3key/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

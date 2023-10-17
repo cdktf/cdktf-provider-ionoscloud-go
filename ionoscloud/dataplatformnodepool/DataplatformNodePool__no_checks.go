@@ -7,6 +7,10 @@ package dataplatformnodepool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataplatformNodePool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplatformNodePool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DataplatformNodePool) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (d *jsiiProxy_DataplatformNodePool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplatformNodePool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataplatformNodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DataplatformNodePool) validatePutMaintenanceWindowParameters(
 }
 
 func (d *jsiiProxy_DataplatformNodePool) validatePutTimeoutsParameters(value *DataplatformNodePoolTimeouts) error {
+	return nil
+}
+
+func validateDataplatformNodePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 
