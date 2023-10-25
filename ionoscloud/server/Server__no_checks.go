@@ -179,6 +179,10 @@ func (j *jsiiProxy_Server) validateSetTypeParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Server) validateSetVmStateParameters(val *string) error {
+	return nil
+}
+
 func validateNewServerParameters(scope constructs.Construct, id *string, config *ServerConfig) error {
 	return nil
 }

@@ -230,14 +230,6 @@ func (j *jsiiProxy_DataIonoscloudIpfailover) validateSetDatacenterIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataIonoscloudIpfailover) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataIonoscloudIpfailover) validateSetIpParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -257,14 +249,6 @@ func (j *jsiiProxy_DataIonoscloudIpfailover) validateSetLanIdParameters(val *str
 func (j *jsiiProxy_DataIonoscloudIpfailover) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataIonoscloudIpfailover) validateSetNicuuidParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

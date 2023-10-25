@@ -22,32 +22,32 @@ type UserConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/user#email User#email}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/user#email User#email}.
 	Email *string `field:"required" json:"email" yaml:"email"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/user#first_name User#first_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/user#first_name User#first_name}.
 	FirstName *string `field:"required" json:"firstName" yaml:"firstName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/user#last_name User#last_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/user#last_name User#last_name}.
 	LastName *string `field:"required" json:"lastName" yaml:"lastName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/user#password User#password}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/user#password User#password}.
 	Password *string `field:"required" json:"password" yaml:"password"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/user#active User#active}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/user#active User#active}.
 	Active interface{} `field:"optional" json:"active" yaml:"active"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/user#administrator User#administrator}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/user#administrator User#administrator}.
 	Administrator interface{} `field:"optional" json:"administrator" yaml:"administrator"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/user#force_sec_auth User#force_sec_auth}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/user#force_sec_auth User#force_sec_auth}.
 	ForceSecAuth interface{} `field:"optional" json:"forceSecAuth" yaml:"forceSecAuth"`
 	// Ids of the groups that the user is a member of.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/user#group_ids User#group_ids}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/user#group_ids User#group_ids}
 	GroupIds *[]*string `field:"optional" json:"groupIds" yaml:"groupIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/user#id User#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/user#id User#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/user#timeouts User#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/user#timeouts User#timeouts}
 	Timeouts *UserTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

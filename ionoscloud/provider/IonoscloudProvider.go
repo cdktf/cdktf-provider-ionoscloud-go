@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs ionoscloud}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs ionoscloud}.
 type IonoscloudProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -22,6 +22,9 @@ type IonoscloudProvider interface {
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ContractNumber() *string
+	SetContractNumber(val *string)
+	ContractNumberInput() *string
 	Endpoint() *string
 	SetEndpoint(val *string)
 	EndpointInput() *string
@@ -59,6 +62,7 @@ type IonoscloudProvider interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAlias()
+	ResetContractNumber()
 	ResetEndpoint()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -117,6 +121,26 @@ func (j *jsiiProxy_IonoscloudProvider) ConstructNodeMetadata() *map[string]inter
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IonoscloudProvider) ContractNumber() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contractNumber",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IonoscloudProvider) ContractNumberInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contractNumberInput",
 		&returns,
 	)
 	return returns
@@ -303,7 +327,7 @@ func (j *jsiiProxy_IonoscloudProvider) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs ionoscloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs ionoscloud} Resource.
 func NewIonoscloudProvider(scope constructs.Construct, id *string, config *IonoscloudProviderConfig) IonoscloudProvider {
 	_init_.Initialize()
 
@@ -321,7 +345,7 @@ func NewIonoscloudProvider(scope constructs.Construct, id *string, config *Ionos
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs ionoscloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs ionoscloud} Resource.
 func NewIonoscloudProvider_Override(i IonoscloudProvider, scope constructs.Construct, id *string, config *IonoscloudProviderConfig) {
 	_init_.Initialize()
 
@@ -336,6 +360,14 @@ func (j *jsiiProxy_IonoscloudProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IonoscloudProvider)SetContractNumber(val *string) {
+	_jsii_.Set(
+		j,
+		"contractNumber",
 		val,
 	)
 }
@@ -509,6 +541,14 @@ func (i *jsiiProxy_IonoscloudProvider) ResetAlias() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetAlias",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IonoscloudProvider) ResetContractNumber() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetContractNumber",
 		nil, // no parameters
 	)
 }

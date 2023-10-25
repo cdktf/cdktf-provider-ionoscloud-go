@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/backup_unit ionoscloud_backup_unit}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/backup_unit ionoscloud_backup_unit}.
 type BackupUnit interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_BackupUnit) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/backup_unit ionoscloud_backup_unit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/backup_unit ionoscloud_backup_unit} Resource.
 func NewBackupUnit(scope constructs.Construct, id *string, config *BackupUnitConfig) BackupUnit {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewBackupUnit(scope constructs.Construct, id *string, config *BackupUnitCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/backup_unit ionoscloud_backup_unit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/backup_unit ionoscloud_backup_unit} Resource.
 func NewBackupUnit_Override(b BackupUnit, scope constructs.Construct, id *string, config *BackupUnitConfig) {
 	_init_.Initialize()
 

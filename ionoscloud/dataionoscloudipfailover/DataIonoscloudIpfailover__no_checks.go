@@ -83,10 +83,6 @@ func (j *jsiiProxy_DataIonoscloudIpfailover) validateSetDatacenterIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataIonoscloudIpfailover) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataIonoscloudIpfailover) validateSetIpParameters(val *string) error {
 	return nil
 }
@@ -96,10 +92,6 @@ func (j *jsiiProxy_DataIonoscloudIpfailover) validateSetLanIdParameters(val *str
 }
 
 func (j *jsiiProxy_DataIonoscloudIpfailover) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataIonoscloudIpfailover) validateSetNicuuidParameters(val *string) error {
 	return nil
 }
 

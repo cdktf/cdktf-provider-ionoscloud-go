@@ -535,6 +535,14 @@ func (j *jsiiProxy_VcpuServer) validateSetSshKeysParameters(val *[]*string) erro
 	return nil
 }
 
+func (j *jsiiProxy_VcpuServer) validateSetVmStateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewVcpuServerParameters(scope constructs.Construct, id *string, config *VcpuServerConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

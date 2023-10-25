@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/ipfailover ionoscloud_ipfailover}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/ipfailover ionoscloud_ipfailover}.
 type DataIonoscloudIpfailover interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -39,8 +39,6 @@ type DataIonoscloudIpfailover interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	Ip() *string
 	SetIp(val *string)
 	IpInput() *string
@@ -52,8 +50,6 @@ type DataIonoscloudIpfailover interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Nicuuid() *string
-	SetNicuuid(val *string)
-	NicuuidInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -96,9 +92,6 @@ type DataIonoscloudIpfailover interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DataIonoscloudIpfailoverTimeouts)
-	ResetIp()
-	ResetLanId()
-	ResetNicuuid()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -218,16 +211,6 @@ func (j *jsiiProxy_DataIonoscloudIpfailover) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudIpfailover) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataIonoscloudIpfailover) Ip() *string {
 	var returns *string
 	_jsii_.Get(
@@ -283,16 +266,6 @@ func (j *jsiiProxy_DataIonoscloudIpfailover) Nicuuid() *string {
 	_jsii_.Get(
 		j,
 		"nicuuid",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataIonoscloudIpfailover) NicuuidInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nicuuidInput",
 		&returns,
 	)
 	return returns
@@ -379,7 +352,7 @@ func (j *jsiiProxy_DataIonoscloudIpfailover) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/ipfailover ionoscloud_ipfailover} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/ipfailover ionoscloud_ipfailover} Data Source.
 func NewDataIonoscloudIpfailover(scope constructs.Construct, id *string, config *DataIonoscloudIpfailoverConfig) DataIonoscloudIpfailover {
 	_init_.Initialize()
 
@@ -397,7 +370,7 @@ func NewDataIonoscloudIpfailover(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/ipfailover ionoscloud_ipfailover} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/ipfailover ionoscloud_ipfailover} Data Source.
 func NewDataIonoscloudIpfailover_Override(d DataIonoscloudIpfailover, scope constructs.Construct, id *string, config *DataIonoscloudIpfailoverConfig) {
 	_init_.Initialize()
 
@@ -446,17 +419,6 @@ func (j *jsiiProxy_DataIonoscloudIpfailover)SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudIpfailover)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataIonoscloudIpfailover)SetIp(val *string) {
 	if err := j.validateSetIpParameters(val); err != nil {
 		panic(err)
@@ -486,17 +448,6 @@ func (j *jsiiProxy_DataIonoscloudIpfailover)SetLifecycle(val *cdktf.TerraformRes
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataIonoscloudIpfailover)SetNicuuid(val *string) {
-	if err := j.validateSetNicuuidParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"nicuuid",
 		val,
 	)
 }
@@ -802,30 +753,6 @@ func (d *jsiiProxy_DataIonoscloudIpfailover) PutTimeouts(value *DataIonoscloudIp
 		d,
 		"putTimeouts",
 		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataIonoscloudIpfailover) ResetIp() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetIp",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataIonoscloudIpfailover) ResetLanId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetLanId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataIonoscloudIpfailover) ResetNicuuid() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetNicuuid",
-		nil, // no parameters
 	)
 }
 

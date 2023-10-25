@@ -163,6 +163,10 @@ func (j *jsiiProxy_VcpuServer) validateSetSshKeysParameters(val *[]*string) erro
 	return nil
 }
 
+func (j *jsiiProxy_VcpuServer) validateSetVmStateParameters(val *string) error {
+	return nil
+}
+
 func validateNewVcpuServerParameters(scope constructs.Construct, id *string, config *VcpuServerConfig) error {
 	return nil
 }

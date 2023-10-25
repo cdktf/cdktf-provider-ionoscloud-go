@@ -151,6 +151,10 @@ func (j *jsiiProxy_CubeServer) validateSetTemplateUuidParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_CubeServer) validateSetVmStateParameters(val *string) error {
+	return nil
+}
+
 func validateNewCubeServerParameters(scope constructs.Construct, id *string, config *CubeServerConfig) error {
 	return nil
 }

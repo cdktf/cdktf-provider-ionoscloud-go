@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/server ionoscloud_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/server ionoscloud_server}.
 type Server interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -120,6 +120,9 @@ type Server interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	VmState() *string
+	SetVmState(val *string)
+	VmStateInput() *string
 	Volume() ServerVolumeOutputReference
 	VolumeInput() *ServerVolume
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
@@ -179,6 +182,7 @@ type Server interface {
 	ResetTemplateUuid()
 	ResetTimeouts()
 	ResetType()
+	ResetVmState()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -784,6 +788,26 @@ func (j *jsiiProxy_Server) TypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Server) VmState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vmState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Server) VmStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vmStateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Server) Volume() ServerVolumeOutputReference {
 	var returns ServerVolumeOutputReference
 	_jsii_.Get(
@@ -805,7 +829,7 @@ func (j *jsiiProxy_Server) VolumeInput() *ServerVolume {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/server ionoscloud_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/server ionoscloud_server} Resource.
 func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Server {
 	_init_.Initialize()
 
@@ -823,7 +847,7 @@ func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Ser
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/server ionoscloud_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/server ionoscloud_server} Resource.
 func NewServer_Override(s Server, scope constructs.Construct, id *string, config *ServerConfig) {
 	_init_.Initialize()
 
@@ -1074,6 +1098,17 @@ func (j *jsiiProxy_Server)SetType(val *string) {
 	_jsii_.Set(
 		j,
 		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Server)SetVmState(val *string) {
+	if err := j.validateSetVmStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vmState",
 		val,
 	)
 }
@@ -1580,6 +1615,14 @@ func (s *jsiiProxy_Server) ResetType() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Server) ResetVmState() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetVmState",
 		nil, // no parameters
 	)
 }
