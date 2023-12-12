@@ -59,7 +59,15 @@ func (n *jsiiProxy_Natgateway) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (n *jsiiProxy_Natgateway) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_Natgateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_Natgateway) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

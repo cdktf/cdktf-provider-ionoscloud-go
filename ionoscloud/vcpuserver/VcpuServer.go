@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/vcpu_server ionoscloud_vcpu_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/vcpu_server ionoscloud_vcpu_server}.
 type VcpuServer interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -139,12 +139,22 @@ type VcpuServer interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -753,7 +763,7 @@ func (j *jsiiProxy_VcpuServer) VolumeInput() *VcpuServerVolume {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/vcpu_server ionoscloud_vcpu_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/vcpu_server ionoscloud_vcpu_server} Resource.
 func NewVcpuServer(scope constructs.Construct, id *string, config *VcpuServerConfig) VcpuServer {
 	_init_.Initialize()
 
@@ -771,7 +781,7 @@ func NewVcpuServer(scope constructs.Construct, id *string, config *VcpuServerCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/vcpu_server ionoscloud_vcpu_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/vcpu_server ionoscloud_vcpu_server} Resource.
 func NewVcpuServer_Override(v VcpuServer, scope constructs.Construct, id *string, config *VcpuServerConfig) {
 	_init_.Initialize()
 
@@ -1262,6 +1272,19 @@ func (v *jsiiProxy_VcpuServer) GetStringMapAttribute(terraformAttribute *string)
 	return returns
 }
 
+func (v *jsiiProxy_VcpuServer) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		v,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (v *jsiiProxy_VcpuServer) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := v.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1289,6 +1312,17 @@ func (v *jsiiProxy_VcpuServer) InterpolationForAttribute(terraformAttribute *str
 	return returns
 }
 
+func (v *jsiiProxy_VcpuServer) MoveFromId(id *string) {
+	if err := v.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (v *jsiiProxy_VcpuServer) MoveTo(moveTarget *string, index interface{}) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1297,6 +1331,17 @@ func (v *jsiiProxy_VcpuServer) MoveTo(moveTarget *string, index interface{}) {
 		v,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (v *jsiiProxy_VcpuServer) MoveToId(id *string) {
+	if err := v.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DataplatformNodePool) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (d *jsiiProxy_DataplatformNodePool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplatformNodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataplatformNodePool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

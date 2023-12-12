@@ -79,6 +79,10 @@ func (j *jsiiProxy_TargetGroupTargetsOutputReference) validateSetPortParameters(
 	return nil
 }
 
+func (j *jsiiProxy_TargetGroupTargetsOutputReference) validateSetProxyProtocolParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TargetGroupTargetsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -75,6 +75,10 @@ func (j *jsiiProxy_NetworkloadbalancerForwardingruleTargetsOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_NetworkloadbalancerForwardingruleTargetsOutputReference) validateSetProxyProtocolParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkloadbalancerForwardingruleTargetsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

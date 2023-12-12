@@ -246,6 +246,14 @@ func (j *jsiiProxy_TargetGroupTargetsOutputReference) validateSetPortParameters(
 	return nil
 }
 
+func (j *jsiiProxy_TargetGroupTargetsOutputReference) validateSetProxyProtocolParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_TargetGroupTargetsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

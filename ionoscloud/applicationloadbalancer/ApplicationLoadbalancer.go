@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer}.
 type ApplicationLoadbalancer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,6 +34,8 @@ type ApplicationLoadbalancer interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Flowlog() ApplicationLoadbalancerFlowlogOutputReference
+	FlowlogInput() *ApplicationLoadbalancerFlowlog
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -108,16 +110,28 @@ type ApplicationLoadbalancer interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFlowlog(value *ApplicationLoadbalancerFlowlog)
 	PutTimeouts(value *ApplicationLoadbalancerTimeouts)
+	ResetFlowlog()
 	ResetId()
 	ResetIps()
 	ResetLbPrivateIps()
@@ -205,6 +219,26 @@ func (j *jsiiProxy_ApplicationLoadbalancer) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationLoadbalancer) Flowlog() ApplicationLoadbalancerFlowlogOutputReference {
+	var returns ApplicationLoadbalancerFlowlogOutputReference
+	_jsii_.Get(
+		j,
+		"flowlog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApplicationLoadbalancer) FlowlogInput() *ApplicationLoadbalancerFlowlog {
+	var returns *ApplicationLoadbalancerFlowlog
+	_jsii_.Get(
+		j,
+		"flowlogInput",
 		&returns,
 	)
 	return returns
@@ -461,7 +495,7 @@ func (j *jsiiProxy_ApplicationLoadbalancer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer} Resource.
 func NewApplicationLoadbalancer(scope constructs.Construct, id *string, config *ApplicationLoadbalancerConfig) ApplicationLoadbalancer {
 	_init_.Initialize()
 
@@ -479,7 +513,7 @@ func NewApplicationLoadbalancer(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer} Resource.
 func NewApplicationLoadbalancer_Override(a ApplicationLoadbalancer, scope constructs.Construct, id *string, config *ApplicationLoadbalancerConfig) {
 	_init_.Initialize()
 
@@ -904,6 +938,19 @@ func (a *jsiiProxy_ApplicationLoadbalancer) GetStringMapAttribute(terraformAttri
 	return returns
 }
 
+func (a *jsiiProxy_ApplicationLoadbalancer) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_ApplicationLoadbalancer) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -931,6 +978,17 @@ func (a *jsiiProxy_ApplicationLoadbalancer) InterpolationForAttribute(terraformA
 	return returns
 }
 
+func (a *jsiiProxy_ApplicationLoadbalancer) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_ApplicationLoadbalancer) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -939,6 +997,17 @@ func (a *jsiiProxy_ApplicationLoadbalancer) MoveTo(moveTarget *string, index int
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_ApplicationLoadbalancer) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -953,6 +1022,17 @@ func (a *jsiiProxy_ApplicationLoadbalancer) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (a *jsiiProxy_ApplicationLoadbalancer) PutFlowlog(value *ApplicationLoadbalancerFlowlog) {
+	if err := a.validatePutFlowlogParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putFlowlog",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_ApplicationLoadbalancer) PutTimeouts(value *ApplicationLoadbalancerTimeouts) {
 	if err := a.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -961,6 +1041,14 @@ func (a *jsiiProxy_ApplicationLoadbalancer) PutTimeouts(value *ApplicationLoadba
 		a,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ApplicationLoadbalancer) ResetFlowlog() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFlowlog",
+		nil, // no parameters
 	)
 }
 

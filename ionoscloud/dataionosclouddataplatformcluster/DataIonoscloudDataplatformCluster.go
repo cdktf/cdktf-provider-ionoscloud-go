@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/dataplatform_cluster ionoscloud_dataplatform_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/dataplatform_cluster ionoscloud_dataplatform_cluster}.
 type DataIonoscloudDataplatformCluster interface {
 	cdktf.TerraformDataSource
 	CaCrt() *string
@@ -421,7 +421,7 @@ func (j *jsiiProxy_DataIonoscloudDataplatformCluster) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/dataplatform_cluster ionoscloud_dataplatform_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/dataplatform_cluster ionoscloud_dataplatform_cluster} Data Source.
 func NewDataIonoscloudDataplatformCluster(scope constructs.Construct, id *string, config *DataIonoscloudDataplatformClusterConfig) DataIonoscloudDataplatformCluster {
 	_init_.Initialize()
 
@@ -439,7 +439,7 @@ func NewDataIonoscloudDataplatformCluster(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/dataplatform_cluster ionoscloud_dataplatform_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/dataplatform_cluster ionoscloud_dataplatform_cluster} Data Source.
 func NewDataIonoscloudDataplatformCluster_Override(d DataIonoscloudDataplatformCluster, scope constructs.Construct, id *string, config *DataIonoscloudDataplatformClusterConfig) {
 	_init_.Initialize()
 

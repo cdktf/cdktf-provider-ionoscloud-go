@@ -59,7 +59,15 @@ func (p *jsiiProxy_PrivateCrossconnect) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (p *jsiiProxy_PrivateCrossconnect) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivateCrossconnect) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrivateCrossconnect) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (n *jsiiProxy_NetworkloadbalancerForwardingrule) validateInterpolationForAt
 	return nil
 }
 
+func (n *jsiiProxy_NetworkloadbalancerForwardingrule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkloadbalancerForwardingrule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkloadbalancerForwardingrule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -244,6 +244,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ip", GoGetter: "Ip"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceEnabled", GoGetter: "MaintenanceEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
+			_jsii_.MemberProperty{JsiiProperty: "proxyProtocol", GoGetter: "ProxyProtocol"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

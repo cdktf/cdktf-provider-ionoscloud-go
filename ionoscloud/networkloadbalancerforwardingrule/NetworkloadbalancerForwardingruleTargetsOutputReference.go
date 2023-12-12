@@ -40,6 +40,9 @@ type NetworkloadbalancerForwardingruleTargetsOutputReference interface {
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
+	ProxyProtocol() *string
+	SetProxyProtocol(val *string)
+	ProxyProtocolInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -77,6 +80,7 @@ type NetworkloadbalancerForwardingruleTargetsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutHealthCheck(value *NetworkloadbalancerForwardingruleTargetsHealthCheck)
 	ResetHealthCheck()
+	ResetProxyProtocol()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -202,6 +206,26 @@ func (j *jsiiProxy_NetworkloadbalancerForwardingruleTargetsOutputReference) Port
 	return returns
 }
 
+func (j *jsiiProxy_NetworkloadbalancerForwardingruleTargetsOutputReference) ProxyProtocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"proxyProtocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkloadbalancerForwardingruleTargetsOutputReference) ProxyProtocolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"proxyProtocolInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkloadbalancerForwardingruleTargetsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -321,6 +345,17 @@ func (j *jsiiProxy_NetworkloadbalancerForwardingruleTargetsOutputReference)SetPo
 	_jsii_.Set(
 		j,
 		"port",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkloadbalancerForwardingruleTargetsOutputReference)SetProxyProtocol(val *string) {
+	if err := j.validateSetProxyProtocolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"proxyProtocol",
 		val,
 	)
 }
@@ -559,6 +594,14 @@ func (n *jsiiProxy_NetworkloadbalancerForwardingruleTargetsOutputReference) Rese
 	_jsii_.InvokeVoid(
 		n,
 		"resetHealthCheck",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkloadbalancerForwardingruleTargetsOutputReference) ResetProxyProtocol() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetProxyProtocol",
 		nil, // no parameters
 	)
 }

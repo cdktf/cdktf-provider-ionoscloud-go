@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer ionoscloud_networkloadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer ionoscloud_networkloadbalancer}.
 type Networkloadbalancer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,6 +34,8 @@ type Networkloadbalancer interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Flowlog() NetworkloadbalancerFlowlogOutputReference
+	FlowlogInput() *NetworkloadbalancerFlowlog
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -108,16 +110,28 @@ type Networkloadbalancer interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFlowlog(value *NetworkloadbalancerFlowlog)
 	PutTimeouts(value *NetworkloadbalancerTimeouts)
+	ResetFlowlog()
 	ResetId()
 	ResetIps()
 	ResetLbPrivateIps()
@@ -205,6 +219,26 @@ func (j *jsiiProxy_Networkloadbalancer) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Networkloadbalancer) Flowlog() NetworkloadbalancerFlowlogOutputReference {
+	var returns NetworkloadbalancerFlowlogOutputReference
+	_jsii_.Get(
+		j,
+		"flowlog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Networkloadbalancer) FlowlogInput() *NetworkloadbalancerFlowlog {
+	var returns *NetworkloadbalancerFlowlog
+	_jsii_.Get(
+		j,
+		"flowlogInput",
 		&returns,
 	)
 	return returns
@@ -461,7 +495,7 @@ func (j *jsiiProxy_Networkloadbalancer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer ionoscloud_networkloadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer ionoscloud_networkloadbalancer} Resource.
 func NewNetworkloadbalancer(scope constructs.Construct, id *string, config *NetworkloadbalancerConfig) Networkloadbalancer {
 	_init_.Initialize()
 
@@ -479,7 +513,7 @@ func NewNetworkloadbalancer(scope constructs.Construct, id *string, config *Netw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer ionoscloud_networkloadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer ionoscloud_networkloadbalancer} Resource.
 func NewNetworkloadbalancer_Override(n Networkloadbalancer, scope constructs.Construct, id *string, config *NetworkloadbalancerConfig) {
 	_init_.Initialize()
 
@@ -904,6 +938,19 @@ func (n *jsiiProxy_Networkloadbalancer) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (n *jsiiProxy_Networkloadbalancer) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (n *jsiiProxy_Networkloadbalancer) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -931,6 +978,17 @@ func (n *jsiiProxy_Networkloadbalancer) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (n *jsiiProxy_Networkloadbalancer) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_Networkloadbalancer) MoveTo(moveTarget *string, index interface{}) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -939,6 +997,17 @@ func (n *jsiiProxy_Networkloadbalancer) MoveTo(moveTarget *string, index interfa
 		n,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_Networkloadbalancer) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -953,6 +1022,17 @@ func (n *jsiiProxy_Networkloadbalancer) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (n *jsiiProxy_Networkloadbalancer) PutFlowlog(value *NetworkloadbalancerFlowlog) {
+	if err := n.validatePutFlowlogParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putFlowlog",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_Networkloadbalancer) PutTimeouts(value *NetworkloadbalancerTimeouts) {
 	if err := n.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -961,6 +1041,14 @@ func (n *jsiiProxy_Networkloadbalancer) PutTimeouts(value *NetworkloadbalancerTi
 		n,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_Networkloadbalancer) ResetFlowlog() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetFlowlog",
+		nil, // no parameters
 	)
 }
 

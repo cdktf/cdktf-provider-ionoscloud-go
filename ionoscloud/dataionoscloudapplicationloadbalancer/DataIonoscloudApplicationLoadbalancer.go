@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/application_loadbalancer ionoscloud_application_loadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/application_loadbalancer ionoscloud_application_loadbalancer}.
 type DataIonoscloudApplicationLoadbalancer interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -30,6 +30,7 @@ type DataIonoscloudApplicationLoadbalancer interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Flowlog() DataIonoscloudApplicationLoadbalancerFlowlogList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -174,6 +175,16 @@ func (j *jsiiProxy_DataIonoscloudApplicationLoadbalancer) DependsOn() *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudApplicationLoadbalancer) Flowlog() DataIonoscloudApplicationLoadbalancerFlowlogList {
+	var returns DataIonoscloudApplicationLoadbalancerFlowlogList
+	_jsii_.Get(
+		j,
+		"flowlog",
 		&returns,
 	)
 	return returns
@@ -400,7 +411,7 @@ func (j *jsiiProxy_DataIonoscloudApplicationLoadbalancer) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/application_loadbalancer ionoscloud_application_loadbalancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/application_loadbalancer ionoscloud_application_loadbalancer} Data Source.
 func NewDataIonoscloudApplicationLoadbalancer(scope constructs.Construct, id *string, config *DataIonoscloudApplicationLoadbalancerConfig) DataIonoscloudApplicationLoadbalancer {
 	_init_.Initialize()
 
@@ -418,7 +429,7 @@ func NewDataIonoscloudApplicationLoadbalancer(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/application_loadbalancer ionoscloud_application_loadbalancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/application_loadbalancer ionoscloud_application_loadbalancer} Data Source.
 func NewDataIonoscloudApplicationLoadbalancer_Override(d DataIonoscloudApplicationLoadbalancer, scope constructs.Construct, id *string, config *DataIonoscloudApplicationLoadbalancerConfig) {
 	_init_.Initialize()
 

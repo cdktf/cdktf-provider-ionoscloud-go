@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/dataplatform_versions ionoscloud_dataplatform_versions}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/dataplatform_versions ionoscloud_dataplatform_versions}.
 type DataIonoscloudDataplatformVersions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataIonoscloudDataplatformVersions) Versions() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/dataplatform_versions ionoscloud_dataplatform_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/dataplatform_versions ionoscloud_dataplatform_versions} Data Source.
 func NewDataIonoscloudDataplatformVersions(scope constructs.Construct, id *string, config *DataIonoscloudDataplatformVersionsConfig) DataIonoscloudDataplatformVersions {
 	_init_.Initialize()
 
@@ -314,7 +314,7 @@ func NewDataIonoscloudDataplatformVersions(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/dataplatform_versions ionoscloud_dataplatform_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/dataplatform_versions ionoscloud_dataplatform_versions} Data Source.
 func NewDataIonoscloudDataplatformVersions_Override(d DataIonoscloudDataplatformVersions, scope constructs.Construct, id *string, config *DataIonoscloudDataplatformVersionsConfig) {
 	_init_.Initialize()
 

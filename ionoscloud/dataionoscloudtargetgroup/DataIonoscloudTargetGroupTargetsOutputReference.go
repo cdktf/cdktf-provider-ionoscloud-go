@@ -36,6 +36,7 @@ type DataIonoscloudTargetGroupTargetsOutputReference interface {
 	Ip() *string
 	MaintenanceEnabled() cdktf.IResolvable
 	Port() *float64
+	ProxyProtocol() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -169,6 +170,16 @@ func (j *jsiiProxy_DataIonoscloudTargetGroupTargetsOutputReference) Port() *floa
 	_jsii_.Get(
 		j,
 		"port",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudTargetGroupTargetsOutputReference) ProxyProtocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"proxyProtocol",
 		&returns,
 	)
 	return returns

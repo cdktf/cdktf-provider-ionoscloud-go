@@ -59,7 +59,15 @@ func (k *jsiiProxy_K8SNodePool) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (k *jsiiProxy_K8SNodePool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_K8SNodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_K8SNodePool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

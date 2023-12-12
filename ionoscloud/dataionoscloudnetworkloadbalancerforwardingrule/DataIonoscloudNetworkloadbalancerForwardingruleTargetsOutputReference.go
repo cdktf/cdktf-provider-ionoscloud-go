@@ -35,6 +35,7 @@ type DataIonoscloudNetworkloadbalancerForwardingruleTargetsOutputReference inter
 	SetInternalValue(val *DataIonoscloudNetworkloadbalancerForwardingruleTargets)
 	Ip() *string
 	Port() *float64
+	ProxyProtocol() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -158,6 +159,16 @@ func (j *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingruleTargetsOutputR
 	_jsii_.Get(
 		j,
 		"port",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingruleTargetsOutputReference) ProxyProtocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"proxyProtocol",
 		&returns,
 	)
 	return returns

@@ -44,6 +44,9 @@ type TargetGroupTargetsOutputReference interface {
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
+	ProxyProtocol() *string
+	SetProxyProtocol(val *string)
+	ProxyProtocolInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -81,6 +84,7 @@ type TargetGroupTargetsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetHealthCheckEnabled()
 	ResetMaintenanceEnabled()
+	ResetProxyProtocol()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -221,6 +225,26 @@ func (j *jsiiProxy_TargetGroupTargetsOutputReference) PortInput() *float64 {
 	_jsii_.Get(
 		j,
 		"portInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TargetGroupTargetsOutputReference) ProxyProtocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"proxyProtocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TargetGroupTargetsOutputReference) ProxyProtocolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"proxyProtocolInput",
 		&returns,
 	)
 	return returns
@@ -367,6 +391,17 @@ func (j *jsiiProxy_TargetGroupTargetsOutputReference)SetPort(val *float64) {
 	_jsii_.Set(
 		j,
 		"port",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TargetGroupTargetsOutputReference)SetProxyProtocol(val *string) {
+	if err := j.validateSetProxyProtocolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"proxyProtocol",
 		val,
 	)
 }
@@ -602,6 +637,14 @@ func (t *jsiiProxy_TargetGroupTargetsOutputReference) ResetMaintenanceEnabled() 
 	_jsii_.InvokeVoid(
 		t,
 		"resetMaintenanceEnabled",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TargetGroupTargetsOutputReference) ResetProxyProtocol() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetProxyProtocol",
 		nil, // no parameters
 	)
 }

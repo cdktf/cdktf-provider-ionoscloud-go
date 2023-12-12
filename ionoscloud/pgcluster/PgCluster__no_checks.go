@@ -59,7 +59,15 @@ func (p *jsiiProxy_PgCluster) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (p *jsiiProxy_PgCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PgCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PgCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

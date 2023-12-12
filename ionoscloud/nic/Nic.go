@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic ionoscloud_nic}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic ionoscloud_nic}.
 type Nic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -47,6 +47,8 @@ type Nic interface {
 	FirewallType() *string
 	SetFirewallType(val *string)
 	FirewallTypeInput() *string
+	Flowlog() NicFlowlogOutputReference
+	FlowlogInput() *NicFlowlog
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -126,20 +128,32 @@ type Nic interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFlowlog(value *NicFlowlog)
 	PutTimeouts(value *NicTimeouts)
 	ResetDhcp()
 	ResetDhcpv6()
 	ResetFirewallActive()
 	ResetFirewallType()
+	ResetFlowlog()
 	ResetId()
 	ResetIps()
 	ResetIpv6CidrBlock()
@@ -319,6 +333,26 @@ func (j *jsiiProxy_Nic) FirewallTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"firewallTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Nic) Flowlog() NicFlowlogOutputReference {
+	var returns NicFlowlogOutputReference
+	_jsii_.Get(
+		j,
+		"flowlog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Nic) FlowlogInput() *NicFlowlog {
+	var returns *NicFlowlog
+	_jsii_.Get(
+		j,
+		"flowlogInput",
 		&returns,
 	)
 	return returns
@@ -615,7 +649,7 @@ func (j *jsiiProxy_Nic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic ionoscloud_nic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic ionoscloud_nic} Resource.
 func NewNic(scope constructs.Construct, id *string, config *NicConfig) Nic {
 	_init_.Initialize()
 
@@ -633,7 +667,7 @@ func NewNic(scope constructs.Construct, id *string, config *NicConfig) Nic {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic ionoscloud_nic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic ionoscloud_nic} Resource.
 func NewNic_Override(n Nic, scope constructs.Construct, id *string, config *NicConfig) {
 	_init_.Initialize()
 
@@ -1113,6 +1147,19 @@ func (n *jsiiProxy_Nic) GetStringMapAttribute(terraformAttribute *string) *map[s
 	return returns
 }
 
+func (n *jsiiProxy_Nic) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (n *jsiiProxy_Nic) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1140,6 +1187,17 @@ func (n *jsiiProxy_Nic) InterpolationForAttribute(terraformAttribute *string) cd
 	return returns
 }
 
+func (n *jsiiProxy_Nic) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_Nic) MoveTo(moveTarget *string, index interface{}) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1151,6 +1209,17 @@ func (n *jsiiProxy_Nic) MoveTo(moveTarget *string, index interface{}) {
 	)
 }
 
+func (n *jsiiProxy_Nic) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_Nic) OverrideLogicalId(newLogicalId *string) {
 	if err := n.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
 		panic(err)
@@ -1159,6 +1228,17 @@ func (n *jsiiProxy_Nic) OverrideLogicalId(newLogicalId *string) {
 		n,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (n *jsiiProxy_Nic) PutFlowlog(value *NicFlowlog) {
+	if err := n.validatePutFlowlogParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putFlowlog",
+		[]interface{}{value},
 	)
 }
 
@@ -1201,6 +1281,14 @@ func (n *jsiiProxy_Nic) ResetFirewallType() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetFirewallType",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Nic) ResetFlowlog() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetFlowlog",
 		nil, // no parameters
 	)
 }

@@ -59,11 +59,23 @@ func (a *jsiiProxy_ApplicationLoadbalancer) validateInterpolationForAttributePar
 	return nil
 }
 
+func (a *jsiiProxy_ApplicationLoadbalancer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationLoadbalancer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
+func (a *jsiiProxy_ApplicationLoadbalancer) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApplicationLoadbalancer) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApplicationLoadbalancer) validatePutFlowlogParameters(value *ApplicationLoadbalancerFlowlog) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/logging_pipeline ionoscloud_logging_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/logging_pipeline ionoscloud_logging_pipeline}.
 type LoggingPipeline interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -95,12 +95,22 @@ type LoggingPipeline interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -367,7 +377,7 @@ func (j *jsiiProxy_LoggingPipeline) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/logging_pipeline ionoscloud_logging_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/logging_pipeline ionoscloud_logging_pipeline} Resource.
 func NewLoggingPipeline(scope constructs.Construct, id *string, config *LoggingPipelineConfig) LoggingPipeline {
 	_init_.Initialize()
 
@@ -385,7 +395,7 @@ func NewLoggingPipeline(scope constructs.Construct, id *string, config *LoggingP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/logging_pipeline ionoscloud_logging_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/logging_pipeline ionoscloud_logging_pipeline} Resource.
 func NewLoggingPipeline_Override(l LoggingPipeline, scope constructs.Construct, id *string, config *LoggingPipelineConfig) {
 	_init_.Initialize()
 
@@ -755,6 +765,19 @@ func (l *jsiiProxy_LoggingPipeline) GetStringMapAttribute(terraformAttribute *st
 	return returns
 }
 
+func (l *jsiiProxy_LoggingPipeline) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		l,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (l *jsiiProxy_LoggingPipeline) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := l.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -782,6 +805,17 @@ func (l *jsiiProxy_LoggingPipeline) InterpolationForAttribute(terraformAttribute
 	return returns
 }
 
+func (l *jsiiProxy_LoggingPipeline) MoveFromId(id *string) {
+	if err := l.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (l *jsiiProxy_LoggingPipeline) MoveTo(moveTarget *string, index interface{}) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -790,6 +824,17 @@ func (l *jsiiProxy_LoggingPipeline) MoveTo(moveTarget *string, index interface{}
 		l,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (l *jsiiProxy_LoggingPipeline) MoveToId(id *string) {
+	if err := l.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

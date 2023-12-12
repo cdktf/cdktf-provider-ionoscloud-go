@@ -59,11 +59,23 @@ func (n *jsiiProxy_Nic) validateInterpolationForAttributeParameters(terraformAtt
 	return nil
 }
 
+func (n *jsiiProxy_Nic) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_Nic) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
+func (n *jsiiProxy_Nic) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_Nic) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_Nic) validatePutFlowlogParameters(value *NicFlowlog) error {
 	return nil
 }
 

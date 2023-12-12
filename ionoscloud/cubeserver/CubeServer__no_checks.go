@@ -59,7 +59,15 @@ func (c *jsiiProxy_CubeServer) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (c *jsiiProxy_CubeServer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CubeServer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CubeServer) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
