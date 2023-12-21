@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster ionoscloud_k8s_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster ionoscloud_k8s_cluster}.
 type K8SCluster interface {
 	cdktf.TerraformResource
+	AllowReplace() interface{}
+	SetAllowReplace(val interface{})
+	AllowReplaceInput() interface{}
 	ApiSubnetAllowList() *[]*string
 	SetApiSubnetAllowList(val *[]*string)
 	ApiSubnetAllowListInput() *[]*string
@@ -52,13 +55,22 @@ type K8SCluster interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Location() *string
+	SetLocation(val *string)
+	LocationInput() *string
 	MaintenanceWindow() K8SClusterMaintenanceWindowOutputReference
 	MaintenanceWindowInput() *K8SClusterMaintenanceWindow
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NatGatewayIp() *string
+	SetNatGatewayIp(val *string)
+	NatGatewayIpInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NodeSubnet() *string
+	SetNodeSubnet(val *string)
+	NodeSubnetInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -67,6 +79,9 @@ type K8SCluster interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	Public() interface{}
+	SetPublic(val interface{})
+	PublicInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
 	S3Buckets() K8SClusterS3BucketsList
@@ -126,13 +141,18 @@ type K8SCluster interface {
 	PutMaintenanceWindow(value *K8SClusterMaintenanceWindow)
 	PutS3Buckets(value interface{})
 	PutTimeouts(value *K8SClusterTimeouts)
+	ResetAllowReplace()
 	ResetApiSubnetAllowList()
 	ResetId()
 	ResetK8SVersion()
+	ResetLocation()
 	ResetMaintenanceWindow()
+	ResetNatGatewayIp()
+	ResetNodeSubnet()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPublic()
 	ResetS3Buckets()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -148,6 +168,26 @@ type K8SCluster interface {
 // The jsii proxy struct for K8SCluster
 type jsiiProxy_K8SCluster struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_K8SCluster) AllowReplace() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowReplace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_K8SCluster) AllowReplaceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowReplaceInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_K8SCluster) ApiSubnetAllowList() *[]*string {
@@ -300,6 +340,26 @@ func (j *jsiiProxy_K8SCluster) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_K8SCluster) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_K8SCluster) LocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_K8SCluster) MaintenanceWindow() K8SClusterMaintenanceWindowOutputReference {
 	var returns K8SClusterMaintenanceWindowOutputReference
 	_jsii_.Get(
@@ -340,11 +400,51 @@ func (j *jsiiProxy_K8SCluster) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_K8SCluster) NatGatewayIp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"natGatewayIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_K8SCluster) NatGatewayIpInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"natGatewayIpInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_K8SCluster) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_K8SCluster) NodeSubnet() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeSubnet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_K8SCluster) NodeSubnetInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeSubnetInput",
 		&returns,
 	)
 	return returns
@@ -365,6 +465,26 @@ func (j *jsiiProxy_K8SCluster) Provisioners() *[]interface{} {
 	_jsii_.Get(
 		j,
 		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_K8SCluster) Public() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"public",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_K8SCluster) PublicInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publicInput",
 		&returns,
 	)
 	return returns
@@ -461,7 +581,7 @@ func (j *jsiiProxy_K8SCluster) ViableNodePoolVersions() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster ionoscloud_k8s_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster ionoscloud_k8s_cluster} Resource.
 func NewK8SCluster(scope constructs.Construct, id *string, config *K8SClusterConfig) K8SCluster {
 	_init_.Initialize()
 
@@ -479,7 +599,7 @@ func NewK8SCluster(scope constructs.Construct, id *string, config *K8SClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster ionoscloud_k8s_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster ionoscloud_k8s_cluster} Resource.
 func NewK8SCluster_Override(k K8SCluster, scope constructs.Construct, id *string, config *K8SClusterConfig) {
 	_init_.Initialize()
 
@@ -487,6 +607,17 @@ func NewK8SCluster_Override(k K8SCluster, scope constructs.Construct, id *string
 		"@cdktf/provider-ionoscloud.k8SCluster.K8SCluster",
 		[]interface{}{scope, id, config},
 		k,
+	)
+}
+
+func (j *jsiiProxy_K8SCluster)SetAllowReplace(val interface{}) {
+	if err := j.validateSetAllowReplaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowReplace",
+		val,
 	)
 }
 
@@ -572,6 +703,17 @@ func (j *jsiiProxy_K8SCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
+func (j *jsiiProxy_K8SCluster)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"location",
+		val,
+	)
+}
+
 func (j *jsiiProxy_K8SCluster)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -579,6 +721,28 @@ func (j *jsiiProxy_K8SCluster)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_K8SCluster)SetNatGatewayIp(val *string) {
+	if err := j.validateSetNatGatewayIpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"natGatewayIp",
+		val,
+	)
+}
+
+func (j *jsiiProxy_K8SCluster)SetNodeSubnet(val *string) {
+	if err := j.validateSetNodeSubnetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nodeSubnet",
 		val,
 	)
 }
@@ -598,6 +762,17 @@ func (j *jsiiProxy_K8SCluster)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_K8SCluster)SetPublic(val interface{}) {
+	if err := j.validateSetPublicParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"public",
 		val,
 	)
 }
@@ -988,6 +1163,14 @@ func (k *jsiiProxy_K8SCluster) PutTimeouts(value *K8SClusterTimeouts) {
 	)
 }
 
+func (k *jsiiProxy_K8SCluster) ResetAllowReplace() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetAllowReplace",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_K8SCluster) ResetApiSubnetAllowList() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1012,6 +1195,14 @@ func (k *jsiiProxy_K8SCluster) ResetK8SVersion() {
 	)
 }
 
+func (k *jsiiProxy_K8SCluster) ResetLocation() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetLocation",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_K8SCluster) ResetMaintenanceWindow() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1020,10 +1211,34 @@ func (k *jsiiProxy_K8SCluster) ResetMaintenanceWindow() {
 	)
 }
 
+func (k *jsiiProxy_K8SCluster) ResetNatGatewayIp() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetNatGatewayIp",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_K8SCluster) ResetNodeSubnet() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetNodeSubnet",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_K8SCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_K8SCluster) ResetPublic() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetPublic",
 		nil, // no parameters
 	)
 }

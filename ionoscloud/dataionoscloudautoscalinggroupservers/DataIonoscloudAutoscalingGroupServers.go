@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/autoscaling_group_servers ionoscloud_autoscaling_group_servers}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/autoscaling_group_servers ionoscloud_autoscaling_group_servers}.
 type DataIonoscloudAutoscalingGroupServers interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -295,7 +295,7 @@ func (j *jsiiProxy_DataIonoscloudAutoscalingGroupServers) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/autoscaling_group_servers ionoscloud_autoscaling_group_servers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/autoscaling_group_servers ionoscloud_autoscaling_group_servers} Data Source.
 func NewDataIonoscloudAutoscalingGroupServers(scope constructs.Construct, id *string, config *DataIonoscloudAutoscalingGroupServersConfig) DataIonoscloudAutoscalingGroupServers {
 	_init_.Initialize()
 
@@ -313,7 +313,7 @@ func NewDataIonoscloudAutoscalingGroupServers(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/autoscaling_group_servers ionoscloud_autoscaling_group_servers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/autoscaling_group_servers ionoscloud_autoscaling_group_servers} Data Source.
 func NewDataIonoscloudAutoscalingGroupServers_Override(d DataIonoscloudAutoscalingGroupServers, scope constructs.Construct, id *string, config *DataIonoscloudAutoscalingGroupServersConfig) {
 	_init_.Initialize()
 

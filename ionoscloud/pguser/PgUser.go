@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user ionoscloud_pg_user}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user ionoscloud_pg_user}.
 type PgUser interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -45,9 +45,7 @@ type PgUser interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	IsSystemUser() interface{}
-	SetIsSystemUser(val interface{})
-	IsSystemUserInput() interface{}
+	IsSystemUser() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -123,7 +121,6 @@ type PgUser interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *PgUserTimeouts)
 	ResetId()
-	ResetIsSystemUser()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -263,21 +260,11 @@ func (j *jsiiProxy_PgUser) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PgUser) IsSystemUser() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_PgUser) IsSystemUser() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"isSystemUser",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_PgUser) IsSystemUserInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"isSystemUserInput",
 		&returns,
 	)
 	return returns
@@ -424,7 +411,7 @@ func (j *jsiiProxy_PgUser) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user ionoscloud_pg_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user ionoscloud_pg_user} Resource.
 func NewPgUser(scope constructs.Construct, id *string, config *PgUserConfig) PgUser {
 	_init_.Initialize()
 
@@ -442,7 +429,7 @@ func NewPgUser(scope constructs.Construct, id *string, config *PgUserConfig) PgU
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user ionoscloud_pg_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user ionoscloud_pg_user} Resource.
 func NewPgUser_Override(p PgUser, scope constructs.Construct, id *string, config *PgUserConfig) {
 	_init_.Initialize()
 
@@ -509,17 +496,6 @@ func (j *jsiiProxy_PgUser)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
-		val,
-	)
-}
-
-func (j *jsiiProxy_PgUser)SetIsSystemUser(val interface{}) {
-	if err := j.validateSetIsSystemUserParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"isSystemUser",
 		val,
 	)
 }
@@ -944,14 +920,6 @@ func (p *jsiiProxy_PgUser) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (p *jsiiProxy_PgUser) ResetIsSystemUser() {
-	_jsii_.InvokeVoid(
-		p,
-		"resetIsSystemUser",
 		nil, // no parameters
 	)
 }

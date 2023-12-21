@@ -111,10 +111,6 @@ func (j *jsiiProxy_PgUser) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_PgUser) validateSetIsSystemUserParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_PgUser) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

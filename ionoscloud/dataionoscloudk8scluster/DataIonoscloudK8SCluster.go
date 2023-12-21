@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/k8s_cluster ionoscloud_k8s_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/k8s_cluster ionoscloud_k8s_cluster}.
 type DataIonoscloudK8SCluster interface {
 	cdktf.TerraformDataSource
 	ApiSubnetAllowList() *[]*string
@@ -48,17 +48,21 @@ type DataIonoscloudK8SCluster interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Location() *string
 	MaintenanceWindow() DataIonoscloudK8SClusterMaintenanceWindowList
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NatGatewayIp() *string
 	// The tree node.
 	Node() constructs.Node
 	NodePools() *[]*string
+	NodeSubnet() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	Public() cdktf.IResolvable
 	// Experimental.
 	RawOverrides() interface{}
 	S3Buckets() DataIonoscloudK8SClusterS3BucketsList
@@ -281,6 +285,16 @@ func (j *jsiiProxy_DataIonoscloudK8SCluster) Lifecycle() *cdktf.TerraformResourc
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudK8SCluster) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudK8SCluster) MaintenanceWindow() DataIonoscloudK8SClusterMaintenanceWindowList {
 	var returns DataIonoscloudK8SClusterMaintenanceWindowList
 	_jsii_.Get(
@@ -311,6 +325,16 @@ func (j *jsiiProxy_DataIonoscloudK8SCluster) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudK8SCluster) NatGatewayIp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"natGatewayIp",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudK8SCluster) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -331,11 +355,31 @@ func (j *jsiiProxy_DataIonoscloudK8SCluster) NodePools() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudK8SCluster) NodeSubnet() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeSubnet",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudK8SCluster) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudK8SCluster) Public() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"public",
 		&returns,
 	)
 	return returns
@@ -452,7 +496,7 @@ func (j *jsiiProxy_DataIonoscloudK8SCluster) ViableNodePoolVersions() *[]*string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/k8s_cluster ionoscloud_k8s_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/k8s_cluster ionoscloud_k8s_cluster} Data Source.
 func NewDataIonoscloudK8SCluster(scope constructs.Construct, id *string, config *DataIonoscloudK8SClusterConfig) DataIonoscloudK8SCluster {
 	_init_.Initialize()
 
@@ -470,7 +514,7 @@ func NewDataIonoscloudK8SCluster(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/k8s_cluster ionoscloud_k8s_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/k8s_cluster ionoscloud_k8s_cluster} Data Source.
 func NewDataIonoscloudK8SCluster_Override(d DataIonoscloudK8SCluster, scope constructs.Construct, id *string, config *DataIonoscloudK8SClusterConfig) {
 	_init_.Initialize()
 

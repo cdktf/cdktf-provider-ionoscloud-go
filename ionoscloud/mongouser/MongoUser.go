@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/mongo_user ionoscloud_mongo_user}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_user ionoscloud_mongo_user}.
 type MongoUser interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -424,7 +424,7 @@ func (j *jsiiProxy_MongoUser) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/mongo_user ionoscloud_mongo_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_user ionoscloud_mongo_user} Resource.
 func NewMongoUser(scope constructs.Construct, id *string, config *MongoUserConfig) MongoUser {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewMongoUser(scope constructs.Construct, id *string, config *MongoUserConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/mongo_user ionoscloud_mongo_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_user ionoscloud_mongo_user} Resource.
 func NewMongoUser_Override(m MongoUser, scope constructs.Construct, id *string, config *MongoUserConfig) {
 	_init_.Initialize()
 

@@ -103,6 +103,10 @@ func validateK8SCluster_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_K8SCluster) validateSetAllowReplaceParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_K8SCluster) validateSetApiSubnetAllowListParameters(val *[]*string) error {
 	return nil
 }
@@ -127,11 +131,27 @@ func (j *jsiiProxy_K8SCluster) validateSetLifecycleParameters(val *cdktf.Terrafo
 	return nil
 }
 
+func (j *jsiiProxy_K8SCluster) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_K8SCluster) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_K8SCluster) validateSetNatGatewayIpParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_K8SCluster) validateSetNodeSubnetParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_K8SCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_K8SCluster) validateSetPublicParameters(val interface{}) error {
 	return nil
 }
 
