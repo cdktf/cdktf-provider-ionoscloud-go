@@ -7,6 +7,10 @@ package dataionoscloudk8snodepoolnodes
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesNodesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesNodesList) validateGetParameters(index *float64) error {
 	return nil
 }

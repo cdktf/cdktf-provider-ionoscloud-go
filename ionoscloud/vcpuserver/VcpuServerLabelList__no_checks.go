@@ -7,6 +7,10 @@ package vcpuserver
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VcpuServerLabelList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VcpuServerLabelList) validateGetParameters(index *float64) error {
 	return nil
 }

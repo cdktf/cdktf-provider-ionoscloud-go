@@ -7,6 +7,10 @@ package dataionoscloudapplicationloadbalancerforwardingrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataIonoscloudApplicationLoadbalancerForwardingruleHttpRulesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataIonoscloudApplicationLoadbalancerForwardingruleHttpRulesList) validateGetParameters(index *float64) error {
 	return nil
 }

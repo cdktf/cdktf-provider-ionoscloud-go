@@ -7,6 +7,10 @@ package dataionoscloudloggingpipeline
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataIonoscloudLoggingPipelineLogDestinationsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataIonoscloudLoggingPipelineLogDestinationsList) validateGetParameters(index *float64) error {
 	return nil
 }

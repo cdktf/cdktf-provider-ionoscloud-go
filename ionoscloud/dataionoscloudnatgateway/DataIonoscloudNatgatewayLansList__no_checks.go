@@ -7,6 +7,10 @@ package dataionoscloudnatgateway
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataIonoscloudNatgatewayLansList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataIonoscloudNatgatewayLansList) validateGetParameters(index *float64) error {
 	return nil
 }

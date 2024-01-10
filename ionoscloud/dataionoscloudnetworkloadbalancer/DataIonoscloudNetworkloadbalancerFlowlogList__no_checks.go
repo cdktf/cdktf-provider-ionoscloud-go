@@ -7,6 +7,10 @@ package dataionoscloudnetworkloadbalancer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataIonoscloudNetworkloadbalancerFlowlogList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataIonoscloudNetworkloadbalancerFlowlogList) validateGetParameters(index *float64) error {
 	return nil
 }

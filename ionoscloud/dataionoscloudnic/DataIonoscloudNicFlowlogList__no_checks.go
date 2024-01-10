@@ -7,6 +7,10 @@ package dataionoscloudnic
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataIonoscloudNicFlowlogList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataIonoscloudNicFlowlogList) validateGetParameters(index *float64) error {
 	return nil
 }

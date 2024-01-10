@@ -7,6 +7,10 @@ package dataionoscloudvcpuserver
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataIonoscloudVcpuServerVolumesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataIonoscloudVcpuServerVolumesList) validateGetParameters(index *float64) error {
 	return nil
 }

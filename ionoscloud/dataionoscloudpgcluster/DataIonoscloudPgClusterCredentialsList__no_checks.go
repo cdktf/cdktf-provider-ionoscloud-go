@@ -7,6 +7,10 @@ package dataionoscloudpgcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsList) validateGetParameters(index *float64) error {
 	return nil
 }

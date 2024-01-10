@@ -7,6 +7,10 @@ package group
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GroupUsersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GroupUsersList) validateGetParameters(index *float64) error {
 	return nil
 }

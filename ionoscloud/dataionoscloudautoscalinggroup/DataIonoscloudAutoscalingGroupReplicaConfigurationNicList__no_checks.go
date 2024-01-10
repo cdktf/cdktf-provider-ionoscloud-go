@@ -7,6 +7,10 @@ package dataionoscloudautoscalinggroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationNicList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationNicList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package dataionoscloudcontainerregistrytoken
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataIonoscloudContainerRegistryTokenScopesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataIonoscloudContainerRegistryTokenScopesList) validateGetParameters(index *float64) error {
 	return nil
 }

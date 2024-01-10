@@ -7,6 +7,10 @@ package server
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServerNicFirewallList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServerNicFirewallList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package dataionoscloudserver
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataIonoscloudServerCdromsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataIonoscloudServerCdromsList) validateGetParameters(index *float64) error {
 	return nil
 }
