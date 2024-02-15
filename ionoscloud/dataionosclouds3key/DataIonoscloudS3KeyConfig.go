@@ -24,22 +24,22 @@ type DataIonoscloudS3KeyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the user that owns the key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/s3_key#user_id DataIonoscloudS3Key#user_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/s3_key#user_id DataIonoscloudS3Key#user_id}
 	UserId *string `field:"required" json:"userId" yaml:"userId"`
 	// Whether this key should be active or not.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/s3_key#active DataIonoscloudS3Key#active}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/s3_key#active DataIonoscloudS3Key#active}
 	Active interface{} `field:"optional" json:"active" yaml:"active"`
 	// Id of the s3 key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/s3_key#id DataIonoscloudS3Key#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/s3_key#id DataIonoscloudS3Key#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/s3_key#timeouts DataIonoscloudS3Key#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/s3_key#timeouts DataIonoscloudS3Key#timeouts}
 	Timeouts *DataIonoscloudS3KeyTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

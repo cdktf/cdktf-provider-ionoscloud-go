@@ -240,17 +240,6 @@ func (m *jsiiProxy_MongoCluster) validatePutConnectionsParameters(value *MongoCl
 	return nil
 }
 
-func (m *jsiiProxy_MongoCluster) validatePutCredentialsParameters(value *MongoClusterCredentials) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (m *jsiiProxy_MongoCluster) validatePutMaintenanceWindowParameters(value *MongoClusterMaintenanceWindow) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry ionoscloud_container_registry}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry ionoscloud_container_registry}.
 type ContainerRegistry interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,8 @@ type ContainerRegistry interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Features() ContainerRegistryFeaturesOutputReference
+	FeaturesInput() *ContainerRegistryFeatures
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -119,8 +121,10 @@ type ContainerRegistry interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFeatures(value *ContainerRegistryFeatures)
 	PutGarbageCollectionSchedule(value *ContainerRegistryGarbageCollectionSchedule)
 	PutTimeouts(value *ContainerRegistryTimeouts)
+	ResetFeatures()
 	ResetGarbageCollectionSchedule()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -190,6 +194,26 @@ func (j *jsiiProxy_ContainerRegistry) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerRegistry) Features() ContainerRegistryFeaturesOutputReference {
+	var returns ContainerRegistryFeaturesOutputReference
+	_jsii_.Get(
+		j,
+		"features",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerRegistry) FeaturesInput() *ContainerRegistryFeatures {
+	var returns *ContainerRegistryFeatures
+	_jsii_.Get(
+		j,
+		"featuresInput",
 		&returns,
 	)
 	return returns
@@ -426,7 +450,7 @@ func (j *jsiiProxy_ContainerRegistry) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry ionoscloud_container_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry ionoscloud_container_registry} Resource.
 func NewContainerRegistry(scope constructs.Construct, id *string, config *ContainerRegistryConfig) ContainerRegistry {
 	_init_.Initialize()
 
@@ -444,7 +468,7 @@ func NewContainerRegistry(scope constructs.Construct, id *string, config *Contai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry ionoscloud_container_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry ionoscloud_container_registry} Resource.
 func NewContainerRegistry_Override(c ContainerRegistry, scope constructs.Construct, id *string, config *ContainerRegistryConfig) {
 	_init_.Initialize()
 
@@ -909,6 +933,17 @@ func (c *jsiiProxy_ContainerRegistry) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (c *jsiiProxy_ContainerRegistry) PutFeatures(value *ContainerRegistryFeatures) {
+	if err := c.validatePutFeaturesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putFeatures",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ContainerRegistry) PutGarbageCollectionSchedule(value *ContainerRegistryGarbageCollectionSchedule) {
 	if err := c.validatePutGarbageCollectionScheduleParameters(value); err != nil {
 		panic(err)
@@ -928,6 +963,14 @@ func (c *jsiiProxy_ContainerRegistry) PutTimeouts(value *ContainerRegistryTimeou
 		c,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerRegistry) ResetFeatures() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetFeatures",
+		nil, // no parameters
 	)
 }
 

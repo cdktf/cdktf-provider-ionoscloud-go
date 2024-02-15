@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster ionoscloud_mongo_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster ionoscloud_mongo_cluster}.
 type MongoCluster interface {
 	cdktf.TerraformResource
 	Backup() MongoClusterBackupOutputReference
@@ -37,8 +37,6 @@ type MongoCluster interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	Credentials() MongoClusterCredentialsOutputReference
-	CredentialsInput() *MongoClusterCredentials
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -159,7 +157,6 @@ type MongoCluster interface {
 	PutBackup(value *MongoClusterBackup)
 	PutBiConnector(value *MongoClusterBiConnector)
 	PutConnections(value *MongoClusterConnections)
-	PutCredentials(value *MongoClusterCredentials)
 	PutMaintenanceWindow(value *MongoClusterMaintenanceWindow)
 	PutTimeouts(value *MongoClusterTimeouts)
 	ResetBackup()
@@ -321,26 +318,6 @@ func (j *jsiiProxy_MongoCluster) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MongoCluster) Credentials() MongoClusterCredentialsOutputReference {
-	var returns MongoClusterCredentialsOutputReference
-	_jsii_.Get(
-		j,
-		"credentials",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MongoCluster) CredentialsInput() *MongoClusterCredentials {
-	var returns *MongoClusterCredentials
-	_jsii_.Get(
-		j,
-		"credentialsInput",
 		&returns,
 	)
 	return returns
@@ -747,7 +724,7 @@ func (j *jsiiProxy_MongoCluster) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster ionoscloud_mongo_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster ionoscloud_mongo_cluster} Resource.
 func NewMongoCluster(scope constructs.Construct, id *string, config *MongoClusterConfig) MongoCluster {
 	_init_.Initialize()
 
@@ -765,7 +742,7 @@ func NewMongoCluster(scope constructs.Construct, id *string, config *MongoCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster ionoscloud_mongo_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster ionoscloud_mongo_cluster} Resource.
 func NewMongoCluster_Override(m MongoCluster, scope constructs.Construct, id *string, config *MongoClusterConfig) {
 	_init_.Initialize()
 
@@ -1369,17 +1346,6 @@ func (m *jsiiProxy_MongoCluster) PutConnections(value *MongoClusterConnections) 
 	_jsii_.InvokeVoid(
 		m,
 		"putConnections",
-		[]interface{}{value},
-	)
-}
-
-func (m *jsiiProxy_MongoCluster) PutCredentials(value *MongoClusterCredentials) {
-	if err := m.validatePutCredentialsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		m,
-		"putCredentials",
 		[]interface{}{value},
 	)
 }

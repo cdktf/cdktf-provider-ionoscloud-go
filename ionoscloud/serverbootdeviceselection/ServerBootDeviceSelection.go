@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/server_boot_device_selection ionoscloud_server_boot_device_selection}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/server_boot_device_selection ionoscloud_server_boot_device_selection}.
 type ServerBootDeviceSelection interface {
 	cdktf.TerraformResource
 	BootDeviceId() *string
@@ -120,6 +120,7 @@ type ServerBootDeviceSelection interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *ServerBootDeviceSelectionTimeouts)
+	ResetBootDeviceId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -414,7 +415,7 @@ func (j *jsiiProxy_ServerBootDeviceSelection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/server_boot_device_selection ionoscloud_server_boot_device_selection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/server_boot_device_selection ionoscloud_server_boot_device_selection} Resource.
 func NewServerBootDeviceSelection(scope constructs.Construct, id *string, config *ServerBootDeviceSelectionConfig) ServerBootDeviceSelection {
 	_init_.Initialize()
 
@@ -432,7 +433,7 @@ func NewServerBootDeviceSelection(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/server_boot_device_selection ionoscloud_server_boot_device_selection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/server_boot_device_selection ionoscloud_server_boot_device_selection} Resource.
 func NewServerBootDeviceSelection_Override(s ServerBootDeviceSelection, scope constructs.Construct, id *string, config *ServerBootDeviceSelectionConfig) {
 	_init_.Initialize()
 
@@ -916,6 +917,14 @@ func (s *jsiiProxy_ServerBootDeviceSelection) PutTimeouts(value *ServerBootDevic
 		s,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_ServerBootDeviceSelection) ResetBootDeviceId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBootDeviceId",
+		nil, // no parameters
 	)
 }
 

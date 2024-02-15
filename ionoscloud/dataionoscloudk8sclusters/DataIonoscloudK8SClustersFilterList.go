@@ -1,17 +1,17 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
-package dataionoscloudpgcluster
+package dataionoscloudk8sclusters
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudpgcluster/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudk8sclusters/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DataIonoscloudPgClusterCredentialsList interface {
+type DataIonoscloudK8SClustersFilterList interface {
 	cdktf.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -20,6 +20,8 @@ type DataIonoscloudPgClusterCredentialsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -36,7 +38,7 @@ type DataIonoscloudPgClusterCredentialsList interface {
 	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
-	Get(index *float64) DataIonoscloudPgClusterCredentialsOutputReference
+	Get(index *float64) DataIonoscloudK8SClustersFilterOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -47,12 +49,12 @@ type DataIonoscloudPgClusterCredentialsList interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for DataIonoscloudPgClusterCredentialsList
-type jsiiProxy_DataIonoscloudPgClusterCredentialsList struct {
+// The jsii proxy struct for DataIonoscloudK8SClustersFilterList
+type jsiiProxy_DataIonoscloudK8SClustersFilterList struct {
 	internal.Type__cdktfComplexList
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsList) CreationStack() *[]*string {
+func (j *jsiiProxy_DataIonoscloudK8SClustersFilterList) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -62,7 +64,7 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsList) CreationStack() *[]*s
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsList) Fqn() *string {
+func (j *jsiiProxy_DataIonoscloudK8SClustersFilterList) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -72,7 +74,17 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsList) TerraformAttribute() *string {
+func (j *jsiiProxy_DataIonoscloudK8SClustersFilterList) InternalValue() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudK8SClustersFilterList) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -82,7 +94,7 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsList) TerraformAttribute() 
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsList) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_DataIonoscloudK8SClustersFilterList) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -92,7 +104,7 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsList) TerraformResource() c
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsList) WrapsSet() *bool {
+func (j *jsiiProxy_DataIonoscloudK8SClustersFilterList) WrapsSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -103,16 +115,16 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsList) WrapsSet() *bool {
 }
 
 
-func NewDataIonoscloudPgClusterCredentialsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudPgClusterCredentialsList {
+func NewDataIonoscloudK8SClustersFilterList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudK8SClustersFilterList {
 	_init_.Initialize()
 
-	if err := validateNewDataIonoscloudPgClusterCredentialsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+	if err := validateNewDataIonoscloudK8SClustersFilterListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataIonoscloudPgClusterCredentialsList{}
+	j := jsiiProxy_DataIonoscloudK8SClustersFilterList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-ionoscloud.dataIonoscloudPgCluster.DataIonoscloudPgClusterCredentialsList",
+		"@cdktf/provider-ionoscloud.dataIonoscloudK8SClusters.DataIonoscloudK8SClustersFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -120,17 +132,28 @@ func NewDataIonoscloudPgClusterCredentialsList(terraformResource cdktf.IInterpol
 	return &j
 }
 
-func NewDataIonoscloudPgClusterCredentialsList_Override(d DataIonoscloudPgClusterCredentialsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataIonoscloudK8SClustersFilterList_Override(d DataIonoscloudK8SClustersFilterList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-ionoscloud.dataIonoscloudPgCluster.DataIonoscloudPgClusterCredentialsList",
+		"@cdktf/provider-ionoscloud.dataIonoscloudK8SClusters.DataIonoscloudK8SClustersFilterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataIonoscloudK8SClustersFilterList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataIonoscloudK8SClustersFilterList)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -141,7 +164,7 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsList)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataIonoscloudK8SClustersFilterList)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -152,7 +175,7 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsList)SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataIonoscloudK8SClustersFilterList)SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -163,7 +186,7 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsList)SetWrapsSet(val *bool)
 	)
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DataIonoscloudK8SClustersFilterList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
@@ -179,7 +202,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsList) AllWithMapKey(mapKeyA
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsList) ComputeFqn() *string {
+func (d *jsiiProxy_DataIonoscloudK8SClustersFilterList) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -192,11 +215,11 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsList) ComputeFqn() *string 
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsList) Get(index *float64) DataIonoscloudPgClusterCredentialsOutputReference {
+func (d *jsiiProxy_DataIonoscloudK8SClustersFilterList) Get(index *float64) DataIonoscloudK8SClustersFilterOutputReference {
 	if err := d.validateGetParameters(index); err != nil {
 		panic(err)
 	}
-	var returns DataIonoscloudPgClusterCredentialsOutputReference
+	var returns DataIonoscloudK8SClustersFilterOutputReference
 
 	_jsii_.Invoke(
 		d,
@@ -208,7 +231,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsList) Get(index *float64) D
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataIonoscloudK8SClustersFilterList) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -224,7 +247,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsList) Resolve(_context cdkt
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsList) ToString() *string {
+func (d *jsiiProxy_DataIonoscloudK8SClustersFilterList) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

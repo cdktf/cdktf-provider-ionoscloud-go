@@ -75,6 +75,10 @@ func (c *jsiiProxy_ContainerRegistry) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (c *jsiiProxy_ContainerRegistry) validatePutFeaturesParameters(value *ContainerRegistryFeatures) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerRegistry) validatePutGarbageCollectionScheduleParameters(value *ContainerRegistryGarbageCollectionSchedule) error {
 	return nil
 }

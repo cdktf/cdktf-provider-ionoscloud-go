@@ -1,17 +1,17 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
-package mongocluster
+package containerregistry
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mongocluster/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/containerregistry/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type MongoClusterCredentialsOutputReference interface {
+type ContainerRegistryFeaturesOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
@@ -30,11 +30,8 @@ type MongoClusterCredentialsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *MongoClusterCredentials
-	SetInternalValue(val *MongoClusterCredentials)
-	Password() *string
-	SetPassword(val *string)
-	PasswordInput() *string
+	InternalValue() *ContainerRegistryFeatures
+	SetInternalValue(val *ContainerRegistryFeatures)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -43,9 +40,9 @@ type MongoClusterCredentialsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Username() *string
-	SetUsername(val *string)
-	UsernameInput() *string
+	VulnerabilityScanning() interface{}
+	SetVulnerabilityScanning(val interface{})
+	VulnerabilityScanningInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,6 +67,7 @@ type MongoClusterCredentialsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetVulnerabilityScanning()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -80,12 +78,12 @@ type MongoClusterCredentialsOutputReference interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for MongoClusterCredentialsOutputReference
-type jsiiProxy_MongoClusterCredentialsOutputReference struct {
+// The jsii proxy struct for ContainerRegistryFeaturesOutputReference
+type jsiiProxy_ContainerRegistryFeaturesOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_ContainerRegistryFeaturesOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -95,7 +93,7 @@ func (j *jsiiProxy_MongoClusterCredentialsOutputReference) ComplexObjectIndex() 
 	return returns
 }
 
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_ContainerRegistryFeaturesOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -105,7 +103,7 @@ func (j *jsiiProxy_MongoClusterCredentialsOutputReference) ComplexObjectIsFromSe
 	return returns
 }
 
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_ContainerRegistryFeaturesOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -115,7 +113,7 @@ func (j *jsiiProxy_MongoClusterCredentialsOutputReference) CreationStack() *[]*s
 	return returns
 }
 
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference) Fqn() *string {
+func (j *jsiiProxy_ContainerRegistryFeaturesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -125,8 +123,8 @@ func (j *jsiiProxy_MongoClusterCredentialsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference) InternalValue() *MongoClusterCredentials {
-	var returns *MongoClusterCredentials
+func (j *jsiiProxy_ContainerRegistryFeaturesOutputReference) InternalValue() *ContainerRegistryFeatures {
+	var returns *ContainerRegistryFeatures
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -135,27 +133,7 @@ func (j *jsiiProxy_MongoClusterCredentialsOutputReference) InternalValue() *Mong
 	return returns
 }
 
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference) Password() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"password",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference) PasswordInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"passwordInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_ContainerRegistryFeaturesOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -165,7 +143,7 @@ func (j *jsiiProxy_MongoClusterCredentialsOutputReference) TerraformAttribute() 
 	return returns
 }
 
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_ContainerRegistryFeaturesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -175,37 +153,37 @@ func (j *jsiiProxy_MongoClusterCredentialsOutputReference) TerraformResource() c
 	return returns
 }
 
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference) Username() *string {
-	var returns *string
+func (j *jsiiProxy_ContainerRegistryFeaturesOutputReference) VulnerabilityScanning() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"username",
+		"vulnerabilityScanning",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference) UsernameInput() *string {
-	var returns *string
+func (j *jsiiProxy_ContainerRegistryFeaturesOutputReference) VulnerabilityScanningInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
-		"usernameInput",
+		"vulnerabilityScanningInput",
 		&returns,
 	)
 	return returns
 }
 
 
-func NewMongoClusterCredentialsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MongoClusterCredentialsOutputReference {
+func NewContainerRegistryFeaturesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerRegistryFeaturesOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewMongoClusterCredentialsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewContainerRegistryFeaturesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_MongoClusterCredentialsOutputReference{}
+	j := jsiiProxy_ContainerRegistryFeaturesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference",
+		"@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -213,17 +191,17 @@ func NewMongoClusterCredentialsOutputReference(terraformResource cdktf.IInterpol
 	return &j
 }
 
-func NewMongoClusterCredentialsOutputReference_Override(m MongoClusterCredentialsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewContainerRegistryFeaturesOutputReference_Override(c ContainerRegistryFeaturesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference",
+		"@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
-		m,
+		c,
 	)
 }
 
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_ContainerRegistryFeaturesOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -234,7 +212,7 @@ func (j *jsiiProxy_MongoClusterCredentialsOutputReference)SetComplexObjectIndex(
 	)
 }
 
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_ContainerRegistryFeaturesOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -245,7 +223,7 @@ func (j *jsiiProxy_MongoClusterCredentialsOutputReference)SetComplexObjectIsFrom
 	)
 }
 
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference)SetInternalValue(val *MongoClusterCredentials) {
+func (j *jsiiProxy_ContainerRegistryFeaturesOutputReference)SetInternalValue(val *ContainerRegistryFeatures) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -256,18 +234,7 @@ func (j *jsiiProxy_MongoClusterCredentialsOutputReference)SetInternalValue(val *
 	)
 }
 
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference)SetPassword(val *string) {
-	if err := j.validateSetPasswordParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"password",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_ContainerRegistryFeaturesOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -278,7 +245,7 @@ func (j *jsiiProxy_MongoClusterCredentialsOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerRegistryFeaturesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -289,22 +256,22 @@ func (j *jsiiProxy_MongoClusterCredentialsOutputReference)SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference)SetUsername(val *string) {
-	if err := j.validateSetUsernameParameters(val); err != nil {
+func (j *jsiiProxy_ContainerRegistryFeaturesOutputReference)SetVulnerabilityScanning(val interface{}) {
+	if err := j.validateSetVulnerabilityScanningParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"username",
+		"vulnerabilityScanning",
 		val,
 	)
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) ComputeFqn() *string {
+func (c *jsiiProxy_ContainerRegistryFeaturesOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		m,
+		c,
 		"computeFqn",
 		nil, // no parameters
 		&returns,
@@ -313,14 +280,14 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) ComputeFqn() *string 
 	return returns
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
-	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+func (c *jsiiProxy_ContainerRegistryFeaturesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		m,
+		c,
 		"getAnyMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -329,14 +296,14 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) GetAnyMapAttribute(te
 	return returns
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
-	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+func (c *jsiiProxy_ContainerRegistryFeaturesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		m,
+		c,
 		"getBooleanAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -345,14 +312,14 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) GetBooleanAttribute(t
 	return returns
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
-	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+func (c *jsiiProxy_ContainerRegistryFeaturesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
-		m,
+		c,
 		"getBooleanMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -361,14 +328,14 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) GetBooleanMapAttribut
 	return returns
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
-	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+func (c *jsiiProxy_ContainerRegistryFeaturesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
-		m,
+		c,
 		"getListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -377,14 +344,14 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) GetListAttribute(terr
 	return returns
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
-	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+func (c *jsiiProxy_ContainerRegistryFeaturesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *float64
 
 	_jsii_.Invoke(
-		m,
+		c,
 		"getNumberAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -393,14 +360,14 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) GetNumberAttribute(te
 	return returns
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
-	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+func (c *jsiiProxy_ContainerRegistryFeaturesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
-		m,
+		c,
 		"getNumberListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -409,14 +376,14 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) GetNumberListAttribut
 	return returns
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
-	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+func (c *jsiiProxy_ContainerRegistryFeaturesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
-		m,
+		c,
 		"getNumberMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -425,14 +392,14 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) GetNumberMapAttribute
 	return returns
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
-	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+func (c *jsiiProxy_ContainerRegistryFeaturesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *string
 
 	_jsii_.Invoke(
-		m,
+		c,
 		"getStringAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -441,14 +408,14 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) GetStringAttribute(te
 	return returns
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
-	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+func (c *jsiiProxy_ContainerRegistryFeaturesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
-		m,
+		c,
 		"getStringMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -457,11 +424,11 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) GetStringMapAttribute
 	return returns
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (c *jsiiProxy_ContainerRegistryFeaturesOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		m,
+		c,
 		"interpolationAsList",
 		nil, // no parameters
 		&returns,
@@ -470,14 +437,14 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) InterpolationAsList()
 	return returns
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ContainerRegistryFeaturesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		m,
+		c,
 		"interpolationForAttribute",
 		[]interface{}{property},
 		&returns,
@@ -486,14 +453,22 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) InterpolationForAttri
 	return returns
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ContainerRegistryFeaturesOutputReference) ResetVulnerabilityScanning() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetVulnerabilityScanning",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ContainerRegistryFeaturesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
 
 	_jsii_.Invoke(
-		m,
+		c,
 		"resolve",
 		[]interface{}{_context},
 		&returns,
@@ -502,11 +477,11 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) Resolve(_context cdkt
 	return returns
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) ToString() *string {
+func (c *jsiiProxy_ContainerRegistryFeaturesOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		m,
+		c,
 		"toString",
 		nil, // no parameters
 		&returns,

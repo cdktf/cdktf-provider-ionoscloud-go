@@ -3,7 +3,7 @@
 
 //go:build !no_runtime_type_checking
 
-package dataionoscloudpgcluster
+package dataionoscloudk8sclusters
 
 import (
 	"fmt"
@@ -13,7 +13,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigUsersOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -21,7 +21,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigUsersOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -29,7 +29,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigUsersOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -37,7 +37,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigUsersOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -45,7 +45,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigUsersOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -53,7 +53,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigUsersOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -61,7 +61,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigUsersOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -69,7 +69,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigUsersOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -77,7 +77,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigUsersOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -85,7 +85,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigUsersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
 	}
@@ -93,7 +93,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateIn
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigUsersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -101,7 +101,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateRe
 	return nil
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersConfigUsersOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -158,7 +158,7 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersConfigUsersOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -166,7 +166,7 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateSetInternalValueParameters(val *DataIonoscloudPgClusterCredentials) error {
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersConfigUsersOutputReference) validateSetInternalValueParameters(val *DataIonoscloudK8SClustersClustersConfigUsers) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -174,7 +174,7 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersConfigUsersOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersConfigUsersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -190,7 +190,7 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) validateSe
 	return nil
 }
 
-func validateNewDataIonoscloudPgClusterCredentialsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataIonoscloudK8SClustersClustersConfigUsersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

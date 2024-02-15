@@ -87,10 +87,6 @@ func (m *jsiiProxy_MongoCluster) validatePutConnectionsParameters(value *MongoCl
 	return nil
 }
 
-func (m *jsiiProxy_MongoCluster) validatePutCredentialsParameters(value *MongoClusterCredentials) error {
-	return nil
-}
-
 func (m *jsiiProxy_MongoCluster) validatePutMaintenanceWindowParameters(value *MongoClusterMaintenanceWindow) error {
 	return nil
 }

@@ -3,7 +3,7 @@
 
 //go:build !no_runtime_type_checking
 
-package mongocluster
+package dataionoscloudk8sclusters
 
 import (
 	"fmt"
@@ -13,7 +13,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersS3BucketsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -21,7 +21,7 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) validateGetAnyMapAttr
 	return nil
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersS3BucketsOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -29,7 +29,7 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) validateGetBooleanAtt
 	return nil
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersS3BucketsOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -37,7 +37,7 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) validateGetBooleanMap
 	return nil
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersS3BucketsOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -45,7 +45,7 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) validateGetListAttrib
 	return nil
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersS3BucketsOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -53,7 +53,7 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) validateGetNumberAttr
 	return nil
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersS3BucketsOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -61,7 +61,7 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) validateGetNumberList
 	return nil
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersS3BucketsOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -69,7 +69,7 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) validateGetNumberMapA
 	return nil
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersS3BucketsOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -77,7 +77,7 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) validateGetStringAttr
 	return nil
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersS3BucketsOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -85,7 +85,7 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersS3BucketsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
 	}
@@ -93,7 +93,7 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) validateInterpolation
 	return nil
 }
 
-func (m *jsiiProxy_MongoClusterCredentialsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersS3BucketsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
 	}
@@ -101,7 +101,7 @@ func (m *jsiiProxy_MongoClusterCredentialsOutputReference) validateResolveParame
 	return nil
 }
 
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersS3BucketsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
 		// ok
@@ -158,7 +158,7 @@ func (j *jsiiProxy_MongoClusterCredentialsOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersS3BucketsOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -166,7 +166,7 @@ func (j *jsiiProxy_MongoClusterCredentialsOutputReference) validateSetComplexObj
 	return nil
 }
 
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference) validateSetInternalValueParameters(val *MongoClusterCredentials) error {
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersS3BucketsOutputReference) validateSetInternalValueParameters(val *DataIonoscloudK8SClustersClustersS3Buckets) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -174,7 +174,7 @@ func (j *jsiiProxy_MongoClusterCredentialsOutputReference) validateSetInternalVa
 	return nil
 }
 
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference) validateSetPasswordParameters(val *string) error {
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersS3BucketsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -182,7 +182,7 @@ func (j *jsiiProxy_MongoClusterCredentialsOutputReference) validateSetPasswordPa
 	return nil
 }
 
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersS3BucketsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -190,29 +190,21 @@ func (j *jsiiProxy_MongoClusterCredentialsOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_MongoClusterCredentialsOutputReference) validateSetUsernameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func validateNewMongoClusterCredentialsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataIonoscloudK8SClustersClustersS3BucketsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	if complexObjectIndex == nil {
+		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
+	}
+
+	if complexObjectIsFromSet == nil {
+		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

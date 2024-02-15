@@ -1,18 +1,19 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
-package dataionoscloudpgcluster
+package dataionoscloudk8sclusters
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudpgcluster/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudk8sclusters/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DataIonoscloudPgClusterCredentialsOutputReference interface {
+type DataIonoscloudK8SClustersClustersConfigClustersOutputReference interface {
 	cdktf.ComplexObject
+	Cluster() cdktf.StringMap
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,9 +31,9 @@ type DataIonoscloudPgClusterCredentialsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *DataIonoscloudPgClusterCredentials
-	SetInternalValue(val *DataIonoscloudPgClusterCredentials)
-	Password() *string
+	InternalValue() *DataIonoscloudK8SClustersClustersConfigClusters
+	SetInternalValue(val *DataIonoscloudK8SClustersClustersConfigClusters)
+	Name() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -41,7 +42,6 @@ type DataIonoscloudPgClusterCredentialsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Username() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -76,12 +76,22 @@ type DataIonoscloudPgClusterCredentialsOutputReference interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for DataIonoscloudPgClusterCredentialsOutputReference
-type jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference struct {
+// The jsii proxy struct for DataIonoscloudK8SClustersClustersConfigClustersOutputReference
+type jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference struct {
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) ComplexObjectIndex() interface{} {
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) Cluster() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"cluster",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -91,7 +101,7 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) ComplexObj
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) ComplexObjectIsFromSet() *bool {
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) ComplexObjectIsFromSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -101,7 +111,7 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) ComplexObj
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) CreationStack() *[]*string {
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -111,7 +121,7 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) CreationSt
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) Fqn() *string {
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -121,8 +131,8 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) InternalValue() *DataIonoscloudPgClusterCredentials {
-	var returns *DataIonoscloudPgClusterCredentials
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) InternalValue() *DataIonoscloudK8SClustersClustersConfigClusters {
+	var returns *DataIonoscloudK8SClustersClustersConfigClusters
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -131,17 +141,17 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) InternalVa
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) Password() *string {
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"password",
+		"name",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) TerraformAttribute() *string {
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -151,7 +161,7 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -161,27 +171,17 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) TerraformR
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) Username() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"username",
-		&returns,
-	)
-	return returns
-}
 
-
-func NewDataIonoscloudPgClusterCredentialsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataIonoscloudPgClusterCredentialsOutputReference {
+func NewDataIonoscloudK8SClustersClustersConfigClustersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataIonoscloudK8SClustersClustersConfigClustersOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataIonoscloudPgClusterCredentialsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewDataIonoscloudK8SClustersClustersConfigClustersOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference{}
+	j := jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-ionoscloud.dataIonoscloudPgCluster.DataIonoscloudPgClusterCredentialsOutputReference",
+		"@cdktf/provider-ionoscloud.dataIonoscloudK8SClusters.DataIonoscloudK8SClustersClustersConfigClustersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -189,17 +189,17 @@ func NewDataIonoscloudPgClusterCredentialsOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewDataIonoscloudPgClusterCredentialsOutputReference_Override(d DataIonoscloudPgClusterCredentialsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataIonoscloudK8SClustersClustersConfigClustersOutputReference_Override(d DataIonoscloudK8SClustersClustersConfigClustersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-ionoscloud.dataIonoscloudPgCluster.DataIonoscloudPgClusterCredentialsOutputReference",
+		"@cdktf/provider-ionoscloud.dataIonoscloudK8SClusters.DataIonoscloudK8SClustersClustersConfigClustersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference)SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
 	}
@@ -210,7 +210,7 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference)SetComplexObjectIsFromSet(val *bool) {
 	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -221,7 +221,7 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference)SetInternalValue(val *DataIonoscloudPgClusterCredentials) {
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference)SetInternalValue(val *DataIonoscloudK8SClustersClustersConfigClusters) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -232,7 +232,7 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -243,7 +243,7 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -254,7 +254,7 @@ func (j *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference)SetTerrafor
 	)
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) ComputeFqn() *string {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -267,7 +267,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) ComputeFqn
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -283,7 +283,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) GetAnyMapA
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -299,7 +299,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) GetBoolean
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -315,7 +315,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) GetBoolean
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -331,7 +331,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) GetListAtt
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -347,7 +347,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) GetNumberA
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -363,7 +363,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) GetNumberL
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -379,7 +379,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) GetNumberM
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) GetStringAttribute(terraformAttribute *string) *string {
 	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -395,7 +395,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) GetStringA
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -411,7 +411,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) GetStringM
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) InterpolationAsList() cdktf.IResolvable {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) InterpolationAsList() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -424,7 +424,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) Interpolat
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
 		panic(err)
 	}
@@ -440,7 +440,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) Interpolat
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -456,7 +456,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) Resolve(_c
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterCredentialsOutputReference) ToString() *string {
+func (d *jsiiProxy_DataIonoscloudK8SClustersClustersConfigClustersOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

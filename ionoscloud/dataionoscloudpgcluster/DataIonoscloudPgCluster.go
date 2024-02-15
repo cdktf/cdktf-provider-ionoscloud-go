@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/pg_cluster ionoscloud_pg_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/pg_cluster ionoscloud_pg_cluster}.
 type DataIonoscloudPgCluster interface {
 	cdktf.TerraformDataSource
 	BackupLocation() *string
@@ -26,7 +26,6 @@ type DataIonoscloudPgCluster interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	Credentials() DataIonoscloudPgClusterCredentialsList
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -181,16 +180,6 @@ func (j *jsiiProxy_DataIonoscloudPgCluster) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataIonoscloudPgCluster) Credentials() DataIonoscloudPgClusterCredentialsList {
-	var returns DataIonoscloudPgClusterCredentialsList
-	_jsii_.Get(
-		j,
-		"credentials",
 		&returns,
 	)
 	return returns
@@ -467,7 +456,7 @@ func (j *jsiiProxy_DataIonoscloudPgCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/pg_cluster ionoscloud_pg_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/pg_cluster ionoscloud_pg_cluster} Data Source.
 func NewDataIonoscloudPgCluster(scope constructs.Construct, id *string, config *DataIonoscloudPgClusterConfig) DataIonoscloudPgCluster {
 	_init_.Initialize()
 
@@ -485,7 +474,7 @@ func NewDataIonoscloudPgCluster(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/pg_cluster ionoscloud_pg_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/pg_cluster ionoscloud_pg_cluster} Data Source.
 func NewDataIonoscloudPgCluster_Override(d DataIonoscloudPgCluster, scope constructs.Construct, id *string, config *DataIonoscloudPgClusterConfig) {
 	_init_.Initialize()
 

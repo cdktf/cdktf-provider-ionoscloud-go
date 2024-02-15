@@ -1,12 +1,15 @@
-# CDKTF Go bindings for ionos-cloud/ionoscloud provider version 6.4.12
+# CDKTF Go bindings for ionos-cloud/ionoscloud provider version 6.4.13
 
-This repo builds and publishes the [Terraform ionoscloud provider](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform ionoscloud provider](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Go Package
 
 The go package is generated into the [`github.com/cdktf/cdktf-provider-ionoscloud-go`](https://github.com/cdktf/cdktf-provider-ionoscloud-go) package.
 
-`go get github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud`
+`go get github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/<version>`
+
+Where `<version>` is the version of the prebuilt provider you would like to use e.g. `v11`. The full module name can be found
+within the [go.mod](https://github.com/cdktf/cdktf-provider-ionoscloud-go/blob/main/ionoscloud/go.mod#L1) file.
 
 ## Docs
 
@@ -20,7 +23,7 @@ This project is explicitly not tracking the Terraform ionoscloud provider versio
 These are the upstream dependencies:
 
 * [CDK for Terraform](https://cdk.tf)
-* [Terraform ionoscloud provider](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12)
+* [Terraform ionoscloud provider](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
