@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/servers ionoscloud_servers}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/data-sources/servers ionoscloud_servers}.
 type DataIonoscloudServers interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -91,6 +91,7 @@ type DataIonoscloudServers interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value interface{})
 	PutTimeouts(value *DataIonoscloudServersTimeouts)
+	ResetFilter()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -346,7 +347,7 @@ func (j *jsiiProxy_DataIonoscloudServers) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/servers ionoscloud_servers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/data-sources/servers ionoscloud_servers} Data Source.
 func NewDataIonoscloudServers(scope constructs.Construct, id *string, config *DataIonoscloudServersConfig) DataIonoscloudServers {
 	_init_.Initialize()
 
@@ -364,7 +365,7 @@ func NewDataIonoscloudServers(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/servers ionoscloud_servers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/data-sources/servers ionoscloud_servers} Data Source.
 func NewDataIonoscloudServers_Override(d DataIonoscloudServers, scope constructs.Construct, id *string, config *DataIonoscloudServersConfig) {
 	_init_.Initialize()
 
@@ -747,6 +748,14 @@ func (d *jsiiProxy_DataIonoscloudServers) PutTimeouts(value *DataIonoscloudServe
 		d,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataIonoscloudServers) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
+		nil, // no parameters
 	)
 }
 

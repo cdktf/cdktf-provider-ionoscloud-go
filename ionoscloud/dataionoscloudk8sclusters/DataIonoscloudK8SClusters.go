@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/k8s_clusters ionoscloud_k8s_clusters}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/data-sources/k8s_clusters ionoscloud_k8s_clusters}.
 type DataIonoscloudK8SClusters interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -89,6 +89,7 @@ type DataIonoscloudK8SClusters interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutFilter(value interface{})
 	PutTimeouts(value *DataIonoscloudK8SClustersTimeouts)
+	ResetFilter()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -334,7 +335,7 @@ func (j *jsiiProxy_DataIonoscloudK8SClusters) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/k8s_clusters ionoscloud_k8s_clusters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/data-sources/k8s_clusters ionoscloud_k8s_clusters} Data Source.
 func NewDataIonoscloudK8SClusters(scope constructs.Construct, id *string, config *DataIonoscloudK8SClustersConfig) DataIonoscloudK8SClusters {
 	_init_.Initialize()
 
@@ -352,7 +353,7 @@ func NewDataIonoscloudK8SClusters(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/k8s_clusters ionoscloud_k8s_clusters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/data-sources/k8s_clusters ionoscloud_k8s_clusters} Data Source.
 func NewDataIonoscloudK8SClusters_Override(d DataIonoscloudK8SClusters, scope constructs.Construct, id *string, config *DataIonoscloudK8SClustersConfig) {
 	_init_.Initialize()
 
@@ -724,6 +725,14 @@ func (d *jsiiProxy_DataIonoscloudK8SClusters) PutTimeouts(value *DataIonoscloudK
 		d,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataIonoscloudK8SClusters) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
+		nil, // no parameters
 	)
 }
 
