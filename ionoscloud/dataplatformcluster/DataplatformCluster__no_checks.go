@@ -75,6 +75,10 @@ func (d *jsiiProxy_DataplatformCluster) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (d *jsiiProxy_DataplatformCluster) validatePutLansParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplatformCluster) validatePutMaintenanceWindowParameters(value interface{}) error {
 	return nil
 }

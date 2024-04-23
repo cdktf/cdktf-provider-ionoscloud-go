@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster}.
 type DataplatformCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -45,6 +45,8 @@ type DataplatformCluster interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Lans() DataplatformClusterLansList
+	LansInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -120,9 +122,11 @@ type DataplatformCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutLans(value interface{})
 	PutMaintenanceWindow(value interface{})
 	PutTimeouts(value *DataplatformClusterTimeouts)
 	ResetId()
+	ResetLans()
 	ResetMaintenanceWindow()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -262,6 +266,26 @@ func (j *jsiiProxy_DataplatformCluster) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplatformCluster) Lans() DataplatformClusterLansList {
+	var returns DataplatformClusterLansList
+	_jsii_.Get(
+		j,
+		"lans",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplatformCluster) LansInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lansInput",
 		&returns,
 	)
 	return returns
@@ -428,7 +452,7 @@ func (j *jsiiProxy_DataplatformCluster) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster} Resource.
 func NewDataplatformCluster(scope constructs.Construct, id *string, config *DataplatformClusterConfig) DataplatformCluster {
 	_init_.Initialize()
 
@@ -446,7 +470,7 @@ func NewDataplatformCluster(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster} Resource.
 func NewDataplatformCluster_Override(d DataplatformCluster, scope constructs.Construct, id *string, config *DataplatformClusterConfig) {
 	_init_.Initialize()
 
@@ -922,6 +946,17 @@ func (d *jsiiProxy_DataplatformCluster) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (d *jsiiProxy_DataplatformCluster) PutLans(value interface{}) {
+	if err := d.validatePutLansParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putLans",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataplatformCluster) PutMaintenanceWindow(value interface{}) {
 	if err := d.validatePutMaintenanceWindowParameters(value); err != nil {
 		panic(err)
@@ -948,6 +983,14 @@ func (d *jsiiProxy_DataplatformCluster) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataplatformCluster) ResetLans() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLans",
 		nil, // no parameters
 	)
 }

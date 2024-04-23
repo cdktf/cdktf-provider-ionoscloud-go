@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/data-sources/dataplatform_cluster ionoscloud_dataplatform_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/data-sources/dataplatform_cluster ionoscloud_dataplatform_cluster}.
 type DataIonoscloudDataplatformCluster interface {
 	cdktf.TerraformDataSource
 	CaCrt() *string
@@ -42,6 +42,7 @@ type DataIonoscloudDataplatformCluster interface {
 	SetId(val *string)
 	IdInput() *string
 	KubeConfig() *string
+	Lans() DataIonoscloudDataplatformClusterLansList
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -254,6 +255,16 @@ func (j *jsiiProxy_DataIonoscloudDataplatformCluster) KubeConfig() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudDataplatformCluster) Lans() DataIonoscloudDataplatformClusterLansList {
+	var returns DataIonoscloudDataplatformClusterLansList
+	_jsii_.Get(
+		j,
+		"lans",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudDataplatformCluster) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -425,7 +436,7 @@ func (j *jsiiProxy_DataIonoscloudDataplatformCluster) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/data-sources/dataplatform_cluster ionoscloud_dataplatform_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/data-sources/dataplatform_cluster ionoscloud_dataplatform_cluster} Data Source.
 func NewDataIonoscloudDataplatformCluster(scope constructs.Construct, id *string, config *DataIonoscloudDataplatformClusterConfig) DataIonoscloudDataplatformCluster {
 	_init_.Initialize()
 
@@ -443,7 +454,7 @@ func NewDataIonoscloudDataplatformCluster(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/data-sources/dataplatform_cluster ionoscloud_dataplatform_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/data-sources/dataplatform_cluster ionoscloud_dataplatform_cluster} Data Source.
 func NewDataIonoscloudDataplatformCluster_Override(d DataIonoscloudDataplatformCluster, scope constructs.Construct, id *string, config *DataIonoscloudDataplatformClusterConfig) {
 	_init_.Initialize()
 
