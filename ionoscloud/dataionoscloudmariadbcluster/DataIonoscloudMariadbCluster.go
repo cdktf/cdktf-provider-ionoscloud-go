@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/data-sources/mariadb_cluster ionoscloud_mariadb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/data-sources/mariadb_cluster ionoscloud_mariadb_cluster}.
 type DataIonoscloudMariadbCluster interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -49,6 +49,9 @@ type DataIonoscloudMariadbCluster interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Location() *string
+	SetLocation(val *string)
+	LocationInput() *string
 	MaintenanceWindow() DataIonoscloudMariadbClusterMaintenanceWindowList
 	MariadbVersion() *string
 	// The tree node.
@@ -94,6 +97,7 @@ type DataIonoscloudMariadbCluster interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetDisplayName()
 	ResetId()
+	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -276,6 +280,26 @@ func (j *jsiiProxy_DataIonoscloudMariadbCluster) Lifecycle() *cdktf.TerraformRes
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudMariadbCluster) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudMariadbCluster) LocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudMariadbCluster) MaintenanceWindow() DataIonoscloudMariadbClusterMaintenanceWindowList {
 	var returns DataIonoscloudMariadbClusterMaintenanceWindowList
 	_jsii_.Get(
@@ -377,7 +401,7 @@ func (j *jsiiProxy_DataIonoscloudMariadbCluster) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/data-sources/mariadb_cluster ionoscloud_mariadb_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/data-sources/mariadb_cluster ionoscloud_mariadb_cluster} Data Source.
 func NewDataIonoscloudMariadbCluster(scope constructs.Construct, id *string, config *DataIonoscloudMariadbClusterConfig) DataIonoscloudMariadbCluster {
 	_init_.Initialize()
 
@@ -395,7 +419,7 @@ func NewDataIonoscloudMariadbCluster(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/data-sources/mariadb_cluster ionoscloud_mariadb_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/data-sources/mariadb_cluster ionoscloud_mariadb_cluster} Data Source.
 func NewDataIonoscloudMariadbCluster_Override(d DataIonoscloudMariadbCluster, scope constructs.Construct, id *string, config *DataIonoscloudMariadbClusterConfig) {
 	_init_.Initialize()
 
@@ -462,6 +486,17 @@ func (j *jsiiProxy_DataIonoscloudMariadbCluster)SetLifecycle(val *cdktf.Terrafor
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataIonoscloudMariadbCluster)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"location",
 		val,
 	)
 }
@@ -771,6 +806,14 @@ func (d *jsiiProxy_DataIonoscloudMariadbCluster) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataIonoscloudMariadbCluster) ResetLocation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

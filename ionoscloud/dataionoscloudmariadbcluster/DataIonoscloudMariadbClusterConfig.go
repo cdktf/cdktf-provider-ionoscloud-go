@@ -24,14 +24,18 @@ type DataIonoscloudMariadbClusterConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The friendly name of your cluster.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/data-sources/mariadb_cluster#display_name DataIonoscloudMariadbCluster#display_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/data-sources/mariadb_cluster#display_name DataIonoscloudMariadbCluster#display_name}
 	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
 	// The id of your cluster.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/data-sources/mariadb_cluster#id DataIonoscloudMariadbCluster#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/data-sources/mariadb_cluster#id DataIonoscloudMariadbCluster#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// The cluster location.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/data-sources/mariadb_cluster#location DataIonoscloudMariadbCluster#location}
+	Location *string `field:"optional" json:"location" yaml:"location"`
 }
 

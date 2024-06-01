@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataIonoscloudMariadbBackups) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudMariadbBackups) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataIonoscloudMariadbBackupsParameters(scope constructs.Construct, id *string, config *DataIonoscloudMariadbBackupsConfig) error {
 	return nil
 }

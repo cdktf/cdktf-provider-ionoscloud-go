@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/data-sources/k8s_clusters ionoscloud_k8s_clusters}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/data-sources/k8s_clusters ionoscloud_k8s_clusters}.
 type DataIonoscloudK8SClusters interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -335,7 +335,7 @@ func (j *jsiiProxy_DataIonoscloudK8SClusters) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/data-sources/k8s_clusters ionoscloud_k8s_clusters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/data-sources/k8s_clusters ionoscloud_k8s_clusters} Data Source.
 func NewDataIonoscloudK8SClusters(scope constructs.Construct, id *string, config *DataIonoscloudK8SClustersConfig) DataIonoscloudK8SClusters {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewDataIonoscloudK8SClusters(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/data-sources/k8s_clusters ionoscloud_k8s_clusters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/data-sources/k8s_clusters ionoscloud_k8s_clusters} Data Source.
 func NewDataIonoscloudK8SClusters_Override(d DataIonoscloudK8SClusters, scope constructs.Construct, id *string, config *DataIonoscloudK8SClustersConfig) {
 	_init_.Initialize()
 

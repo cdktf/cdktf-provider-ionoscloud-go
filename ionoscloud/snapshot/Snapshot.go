@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot ionoscloud_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot ionoscloud_snapshot}.
 type Snapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,7 +27,9 @@ type Snapshot interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	CpuHotPlug() cdktf.IResolvable
+	CpuHotPlug() interface{}
+	SetCpuHotPlug(val interface{})
+	CpuHotPlugInput() interface{}
 	CpuHotUnplug() cdktf.IResolvable
 	DatacenterId() *string
 	SetDatacenterId(val *string)
@@ -37,10 +39,16 @@ type Snapshot interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	DiscScsiHotPlug() cdktf.IResolvable
 	DiscScsiHotUnplug() cdktf.IResolvable
-	DiscVirtioHotPlug() cdktf.IResolvable
-	DiscVirtioHotUnplug() cdktf.IResolvable
+	DiscVirtioHotPlug() interface{}
+	SetDiscVirtioHotPlug(val interface{})
+	DiscVirtioHotPlugInput() interface{}
+	DiscVirtioHotUnplug() interface{}
+	SetDiscVirtioHotUnplug(val interface{})
+	DiscVirtioHotUnplugInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -53,6 +61,8 @@ type Snapshot interface {
 	SetId(val *string)
 	IdInput() *string
 	LicenceType() *string
+	SetLicenceType(val *string)
+	LicenceTypeInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -61,8 +71,12 @@ type Snapshot interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
-	NicHotPlug() cdktf.IResolvable
-	NicHotUnplug() cdktf.IResolvable
+	NicHotPlug() interface{}
+	SetNicHotPlug(val interface{})
+	NicHotPlugInput() interface{}
+	NicHotUnplug() interface{}
+	SetNicHotUnplug(val interface{})
+	NicHotUnplugInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -73,11 +87,15 @@ type Snapshot interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
-	RamHotPlug() cdktf.IResolvable
+	RamHotPlug() interface{}
+	SetRamHotPlug(val interface{})
+	RamHotPlugInput() interface{}
 	RamHotUnplug() cdktf.IResolvable
 	// Experimental.
 	RawOverrides() interface{}
-	SecAuthProtection() cdktf.IResolvable
+	SecAuthProtection() interface{}
+	SetSecAuthProtection(val interface{})
+	SecAuthProtectionInput() interface{}
 	Size() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -134,10 +152,19 @@ type Snapshot interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *SnapshotTimeouts)
+	ResetCpuHotPlug()
+	ResetDescription()
+	ResetDiscVirtioHotPlug()
+	ResetDiscVirtioHotUnplug()
 	ResetId()
+	ResetLicenceType()
+	ResetNicHotPlug()
+	ResetNicHotUnplug()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRamHotPlug()
+	ResetSecAuthProtection()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -197,11 +224,21 @@ func (j *jsiiProxy_Snapshot) Count() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Snapshot) CpuHotPlug() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_Snapshot) CpuHotPlug() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"cpuHotPlug",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Snapshot) CpuHotPlugInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cpuHotPlugInput",
 		&returns,
 	)
 	return returns
@@ -257,6 +294,16 @@ func (j *jsiiProxy_Snapshot) Description() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Snapshot) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Snapshot) DiscScsiHotPlug() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -277,8 +324,8 @@ func (j *jsiiProxy_Snapshot) DiscScsiHotUnplug() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_Snapshot) DiscVirtioHotPlug() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_Snapshot) DiscVirtioHotPlug() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"discVirtioHotPlug",
@@ -287,11 +334,31 @@ func (j *jsiiProxy_Snapshot) DiscVirtioHotPlug() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_Snapshot) DiscVirtioHotUnplug() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_Snapshot) DiscVirtioHotPlugInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"discVirtioHotPlugInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Snapshot) DiscVirtioHotUnplug() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"discVirtioHotUnplug",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Snapshot) DiscVirtioHotUnplugInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"discVirtioHotUnplugInput",
 		&returns,
 	)
 	return returns
@@ -357,6 +424,16 @@ func (j *jsiiProxy_Snapshot) LicenceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Snapshot) LicenceTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"licenceTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Snapshot) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -397,8 +474,8 @@ func (j *jsiiProxy_Snapshot) NameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Snapshot) NicHotPlug() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_Snapshot) NicHotPlug() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"nicHotPlug",
@@ -407,11 +484,31 @@ func (j *jsiiProxy_Snapshot) NicHotPlug() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_Snapshot) NicHotUnplug() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_Snapshot) NicHotPlugInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nicHotPlugInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Snapshot) NicHotUnplug() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"nicHotUnplug",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Snapshot) NicHotUnplugInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nicHotUnplugInput",
 		&returns,
 	)
 	return returns
@@ -447,11 +544,21 @@ func (j *jsiiProxy_Snapshot) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Snapshot) RamHotPlug() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_Snapshot) RamHotPlug() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"ramHotPlug",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Snapshot) RamHotPlugInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ramHotPlugInput",
 		&returns,
 	)
 	return returns
@@ -477,11 +584,21 @@ func (j *jsiiProxy_Snapshot) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Snapshot) SecAuthProtection() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_Snapshot) SecAuthProtection() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"secAuthProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Snapshot) SecAuthProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secAuthProtectionInput",
 		&returns,
 	)
 	return returns
@@ -568,7 +685,7 @@ func (j *jsiiProxy_Snapshot) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot ionoscloud_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot ionoscloud_snapshot} Resource.
 func NewSnapshot(scope constructs.Construct, id *string, config *SnapshotConfig) Snapshot {
 	_init_.Initialize()
 
@@ -586,7 +703,7 @@ func NewSnapshot(scope constructs.Construct, id *string, config *SnapshotConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot ionoscloud_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot ionoscloud_snapshot} Resource.
 func NewSnapshot_Override(s Snapshot, scope constructs.Construct, id *string, config *SnapshotConfig) {
 	_init_.Initialize()
 
@@ -619,6 +736,17 @@ func (j *jsiiProxy_Snapshot)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Snapshot)SetCpuHotPlug(val interface{}) {
+	if err := j.validateSetCpuHotPlugParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cpuHotPlug",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Snapshot)SetDatacenterId(val *string) {
 	if err := j.validateSetDatacenterIdParameters(val); err != nil {
 		panic(err)
@@ -638,6 +766,39 @@ func (j *jsiiProxy_Snapshot)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_Snapshot)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Snapshot)SetDiscVirtioHotPlug(val interface{}) {
+	if err := j.validateSetDiscVirtioHotPlugParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"discVirtioHotPlug",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Snapshot)SetDiscVirtioHotUnplug(val interface{}) {
+	if err := j.validateSetDiscVirtioHotUnplugParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"discVirtioHotUnplug",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Snapshot)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -653,6 +814,17 @@ func (j *jsiiProxy_Snapshot)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Snapshot)SetLicenceType(val *string) {
+	if err := j.validateSetLicenceTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"licenceType",
 		val,
 	)
 }
@@ -679,6 +851,28 @@ func (j *jsiiProxy_Snapshot)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_Snapshot)SetNicHotPlug(val interface{}) {
+	if err := j.validateSetNicHotPlugParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nicHotPlug",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Snapshot)SetNicHotUnplug(val interface{}) {
+	if err := j.validateSetNicHotUnplugParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nicHotUnplug",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Snapshot)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -694,6 +888,28 @@ func (j *jsiiProxy_Snapshot)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Snapshot)SetRamHotPlug(val interface{}) {
+	if err := j.validateSetRamHotPlugParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ramHotPlug",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Snapshot)SetSecAuthProtection(val interface{}) {
+	if err := j.validateSetSecAuthProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secAuthProtection",
 		val,
 	)
 }
@@ -1073,6 +1289,38 @@ func (s *jsiiProxy_Snapshot) PutTimeouts(value *SnapshotTimeouts) {
 	)
 }
 
+func (s *jsiiProxy_Snapshot) ResetCpuHotPlug() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCpuHotPlug",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Snapshot) ResetDescription() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Snapshot) ResetDiscVirtioHotPlug() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDiscVirtioHotPlug",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Snapshot) ResetDiscVirtioHotUnplug() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDiscVirtioHotUnplug",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_Snapshot) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1081,10 +1329,50 @@ func (s *jsiiProxy_Snapshot) ResetId() {
 	)
 }
 
+func (s *jsiiProxy_Snapshot) ResetLicenceType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetLicenceType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Snapshot) ResetNicHotPlug() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNicHotPlug",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Snapshot) ResetNicHotUnplug() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNicHotUnplug",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_Snapshot) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Snapshot) ResetRamHotPlug() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRamHotPlug",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Snapshot) ResetSecAuthProtection() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSecAuthProtection",
 		nil, // no parameters
 	)
 }

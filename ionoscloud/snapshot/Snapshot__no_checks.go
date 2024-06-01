@@ -103,11 +103,31 @@ func (j *jsiiProxy_Snapshot) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Snapshot) validateSetCpuHotPlugParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Snapshot) validateSetDatacenterIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Snapshot) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Snapshot) validateSetDiscVirtioHotPlugParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Snapshot) validateSetDiscVirtioHotUnplugParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Snapshot) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Snapshot) validateSetLicenceTypeParameters(val *string) error {
 	return nil
 }
 
@@ -119,7 +139,23 @@ func (j *jsiiProxy_Snapshot) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Snapshot) validateSetNicHotPlugParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Snapshot) validateSetNicHotUnplugParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Snapshot) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Snapshot) validateSetRamHotPlugParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Snapshot) validateSetSecAuthProtectionParameters(val interface{}) error {
 	return nil
 }
 

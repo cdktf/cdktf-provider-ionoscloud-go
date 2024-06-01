@@ -135,6 +135,10 @@ func (j *jsiiProxy_MariadbCluster) validateSetLifecycleParameters(val *cdktf.Ter
 	return nil
 }
 
+func (j *jsiiProxy_MariadbCluster) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MariadbCluster) validateSetMariadbVersionParameters(val *string) error {
 	return nil
 }

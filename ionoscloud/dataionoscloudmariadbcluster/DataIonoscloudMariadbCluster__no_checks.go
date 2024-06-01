@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataIonoscloudMariadbCluster) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudMariadbCluster) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataIonoscloudMariadbClusterParameters(scope constructs.Construct, id *string, config *DataIonoscloudMariadbClusterConfig) error {
 	return nil
 }
