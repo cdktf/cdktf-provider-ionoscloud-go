@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/data-sources/private_crossconnect ionoscloud_private_crossconnect}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/data-sources/private_crossconnect ionoscloud_private_crossconnect}.
 type DataIonoscloudPrivateCrossconnect interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -359,7 +359,7 @@ func (j *jsiiProxy_DataIonoscloudPrivateCrossconnect) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/data-sources/private_crossconnect ionoscloud_private_crossconnect} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/data-sources/private_crossconnect ionoscloud_private_crossconnect} Data Source.
 func NewDataIonoscloudPrivateCrossconnect(scope constructs.Construct, id *string, config *DataIonoscloudPrivateCrossconnectConfig) DataIonoscloudPrivateCrossconnect {
 	_init_.Initialize()
 
@@ -377,7 +377,7 @@ func NewDataIonoscloudPrivateCrossconnect(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/data-sources/private_crossconnect ionoscloud_private_crossconnect} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/data-sources/private_crossconnect ionoscloud_private_crossconnect} Data Source.
 func NewDataIonoscloudPrivateCrossconnect_Override(d DataIonoscloudPrivateCrossconnect, scope constructs.Construct, id *string, config *DataIonoscloudPrivateCrossconnectConfig) {
 	_init_.Initialize()
 

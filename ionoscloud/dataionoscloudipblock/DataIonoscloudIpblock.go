@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/data-sources/ipblock ionoscloud_ipblock}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/data-sources/ipblock ionoscloud_ipblock}.
 type DataIonoscloudIpblock interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -396,7 +396,7 @@ func (j *jsiiProxy_DataIonoscloudIpblock) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/data-sources/ipblock ionoscloud_ipblock} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/data-sources/ipblock ionoscloud_ipblock} Data Source.
 func NewDataIonoscloudIpblock(scope constructs.Construct, id *string, config *DataIonoscloudIpblockConfig) DataIonoscloudIpblock {
 	_init_.Initialize()
 
@@ -414,7 +414,7 @@ func NewDataIonoscloudIpblock(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/data-sources/ipblock ionoscloud_ipblock} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/data-sources/ipblock ionoscloud_ipblock} Data Source.
 func NewDataIonoscloudIpblock_Override(d DataIonoscloudIpblock, scope constructs.Construct, id *string, config *DataIonoscloudIpblockConfig) {
 	_init_.Initialize()
 
