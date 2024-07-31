@@ -24,44 +24,40 @@ type AutoscalingGroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Unique identifier for the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/resources/autoscaling_group#datacenter_id AutoscalingGroup#datacenter_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/autoscaling_group#datacenter_id AutoscalingGroup#datacenter_id}
 	DatacenterId *string `field:"required" json:"datacenterId" yaml:"datacenterId"`
-	// Location of the data center.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/resources/autoscaling_group#location AutoscalingGroup#location}
-	Location *string `field:"required" json:"location" yaml:"location"`
 	// The maximum value for the number of replicas on a VM Auto Scaling Group.
 	//
 	// Must be >= 0 and <= 200. Will be enforced for both automatic and manual changes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/resources/autoscaling_group#max_replica_count AutoscalingGroup#max_replica_count}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/autoscaling_group#max_replica_count AutoscalingGroup#max_replica_count}
 	MaxReplicaCount *float64 `field:"required" json:"maxReplicaCount" yaml:"maxReplicaCount"`
 	// The minimum value for the number of replicas on a VM Auto Scaling Group.
 	//
 	// Must be >= 0 and <= 200. Will be enforced for both automatic and manual changes
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/resources/autoscaling_group#min_replica_count AutoscalingGroup#min_replica_count}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/autoscaling_group#min_replica_count AutoscalingGroup#min_replica_count}
 	MinReplicaCount *float64 `field:"required" json:"minReplicaCount" yaml:"minReplicaCount"`
 	// User-defined name for the Autoscaling Group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/resources/autoscaling_group#name AutoscalingGroup#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/autoscaling_group#name AutoscalingGroup#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// policy block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/resources/autoscaling_group#policy AutoscalingGroup#policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/autoscaling_group#policy AutoscalingGroup#policy}
 	Policy *AutoscalingGroupPolicy `field:"required" json:"policy" yaml:"policy"`
 	// replica_configuration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/resources/autoscaling_group#replica_configuration AutoscalingGroup#replica_configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/autoscaling_group#replica_configuration AutoscalingGroup#replica_configuration}
 	ReplicaConfiguration *AutoscalingGroupReplicaConfiguration `field:"required" json:"replicaConfiguration" yaml:"replicaConfiguration"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/resources/autoscaling_group#id AutoscalingGroup#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/autoscaling_group#id AutoscalingGroup#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/resources/autoscaling_group#timeouts AutoscalingGroup#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/autoscaling_group#timeouts AutoscalingGroup#timeouts}
 	Timeouts *AutoscalingGroupTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

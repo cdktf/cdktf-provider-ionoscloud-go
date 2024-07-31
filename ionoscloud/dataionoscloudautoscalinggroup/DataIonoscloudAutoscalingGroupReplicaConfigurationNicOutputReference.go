@@ -29,12 +29,17 @@ type DataIonoscloudAutoscalingGroupReplicaConfigurationNicOutputReference interf
 	// Experimental.
 	CreationStack() *[]*string
 	Dhcp() cdktf.IResolvable
+	FirewallActive() cdktf.IResolvable
+	FirewallRule() DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRuleList
+	FirewallType() *string
+	FlowLog() DataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLogList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataIonoscloudAutoscalingGroupReplicaConfigurationNic
 	SetInternalValue(val *DataIonoscloudAutoscalingGroupReplicaConfigurationNic)
 	Lan() *float64
 	Name() *string
+	TargetGroup() DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroupList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -122,6 +127,46 @@ func (j *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationNicOutputRe
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationNicOutputReference) FirewallActive() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"firewallActive",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationNicOutputReference) FirewallRule() DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRuleList {
+	var returns DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRuleList
+	_jsii_.Get(
+		j,
+		"firewallRule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationNicOutputReference) FirewallType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firewallType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationNicOutputReference) FlowLog() DataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLogList {
+	var returns DataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLogList
+	_jsii_.Get(
+		j,
+		"flowLog",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationNicOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -157,6 +202,16 @@ func (j *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationNicOutputRe
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationNicOutputReference) TargetGroup() DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroupList {
+	var returns DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroupList
+	_jsii_.Get(
+		j,
+		"targetGroup",
 		&returns,
 	)
 	return returns

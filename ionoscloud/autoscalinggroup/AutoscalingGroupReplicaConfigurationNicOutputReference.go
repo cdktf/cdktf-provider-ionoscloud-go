@@ -31,6 +31,16 @@ type AutoscalingGroupReplicaConfigurationNicOutputReference interface {
 	Dhcp() interface{}
 	SetDhcp(val interface{})
 	DhcpInput() interface{}
+	FirewallActive() interface{}
+	SetFirewallActive(val interface{})
+	FirewallActiveInput() interface{}
+	FirewallRule() AutoscalingGroupReplicaConfigurationNicFirewallRuleList
+	FirewallRuleInput() interface{}
+	FirewallType() *string
+	SetFirewallType(val *string)
+	FirewallTypeInput() *string
+	FlowLog() AutoscalingGroupReplicaConfigurationNicFlowLogList
+	FlowLogInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -41,6 +51,8 @@ type AutoscalingGroupReplicaConfigurationNicOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	TargetGroup() AutoscalingGroupReplicaConfigurationNicTargetGroupOutputReference
+	TargetGroupInput() *AutoscalingGroupReplicaConfigurationNicTargetGroup
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,7 +85,15 @@ type AutoscalingGroupReplicaConfigurationNicOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutFirewallRule(value interface{})
+	PutFlowLog(value interface{})
+	PutTargetGroup(value *AutoscalingGroupReplicaConfigurationNicTargetGroup)
 	ResetDhcp()
+	ResetFirewallActive()
+	ResetFirewallRule()
+	ResetFirewallType()
+	ResetFlowLog()
+	ResetTargetGroup()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -139,6 +159,86 @@ func (j *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) DhcpI
 	return returns
 }
 
+func (j *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) FirewallActive() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"firewallActive",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) FirewallActiveInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"firewallActiveInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) FirewallRule() AutoscalingGroupReplicaConfigurationNicFirewallRuleList {
+	var returns AutoscalingGroupReplicaConfigurationNicFirewallRuleList
+	_jsii_.Get(
+		j,
+		"firewallRule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) FirewallRuleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"firewallRuleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) FirewallType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firewallType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) FirewallTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firewallTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) FlowLog() AutoscalingGroupReplicaConfigurationNicFlowLogList {
+	var returns AutoscalingGroupReplicaConfigurationNicFlowLogList
+	_jsii_.Get(
+		j,
+		"flowLog",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) FlowLogInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"flowLogInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -194,6 +294,26 @@ func (j *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) NameI
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) TargetGroup() AutoscalingGroupReplicaConfigurationNicTargetGroupOutputReference {
+	var returns AutoscalingGroupReplicaConfigurationNicTargetGroupOutputReference
+	_jsii_.Get(
+		j,
+		"targetGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) TargetGroupInput() *AutoscalingGroupReplicaConfigurationNicTargetGroup {
+	var returns *AutoscalingGroupReplicaConfigurationNicTargetGroup
+	_jsii_.Get(
+		j,
+		"targetGroupInput",
 		&returns,
 	)
 	return returns
@@ -276,6 +396,28 @@ func (j *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference)SetDhc
 	_jsii_.Set(
 		j,
 		"dhcp",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference)SetFirewallActive(val interface{}) {
+	if err := j.validateSetFirewallActiveParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"firewallActive",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference)SetFirewallType(val *string) {
+	if err := j.validateSetFirewallTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"firewallType",
 		val,
 	)
 }
@@ -521,10 +663,83 @@ func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) Inter
 	return returns
 }
 
+func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) PutFirewallRule(value interface{}) {
+	if err := a.validatePutFirewallRuleParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putFirewallRule",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) PutFlowLog(value interface{}) {
+	if err := a.validatePutFlowLogParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putFlowLog",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) PutTargetGroup(value *AutoscalingGroupReplicaConfigurationNicTargetGroup) {
+	if err := a.validatePutTargetGroupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putTargetGroup",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) ResetDhcp() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDhcp",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) ResetFirewallActive() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFirewallActive",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) ResetFirewallRule() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFirewallRule",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) ResetFirewallType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFirewallType",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) ResetFlowLog() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFlowLog",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) ResetTargetGroup() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTargetGroup",
 		nil, // no parameters
 	)
 }

@@ -47,6 +47,18 @@ func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) valid
 	return nil
 }
 
+func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) validatePutFirewallRuleParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) validatePutFlowLogParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) validatePutTargetGroupParameters(value *AutoscalingGroupReplicaConfigurationNicTargetGroup) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -60,6 +72,14 @@ func (j *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) valid
 }
 
 func (j *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) validateSetDhcpParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) validateSetFirewallActiveParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) validateSetFirewallTypeParameters(val *string) error {
 	return nil
 }
 

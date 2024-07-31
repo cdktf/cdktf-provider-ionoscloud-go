@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/resources/natgateway_rule ionoscloud_natgateway_rule}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/natgateway_rule ionoscloud_natgateway_rule}.
 type NatgatewayRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -545,7 +545,7 @@ func (j *jsiiProxy_NatgatewayRule) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/resources/natgateway_rule ionoscloud_natgateway_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/natgateway_rule ionoscloud_natgateway_rule} Resource.
 func NewNatgatewayRule(scope constructs.Construct, id *string, config *NatgatewayRuleConfig) NatgatewayRule {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewNatgatewayRule(scope constructs.Construct, id *string, config *Natgatewa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/resources/natgateway_rule ionoscloud_natgateway_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/natgateway_rule ionoscloud_natgateway_rule} Resource.
 func NewNatgatewayRule_Override(n NatgatewayRule, scope constructs.Construct, id *string, config *NatgatewayRuleConfig) {
 	_init_.Initialize()
 

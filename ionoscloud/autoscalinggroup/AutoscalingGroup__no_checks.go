@@ -123,10 +123,6 @@ func (j *jsiiProxy_AutoscalingGroup) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroup) validateSetLocationParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AutoscalingGroup) validateSetMaxReplicaCountParameters(val *float64) error {
 	return nil
 }

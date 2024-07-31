@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs ionoscloud}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs ionoscloud}.
 type IonoscloudProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -44,6 +44,15 @@ type IonoscloudProvider interface {
 	Retries() *float64
 	SetRetries(val *float64)
 	RetriesInput() *float64
+	S3AccessKey() *string
+	SetS3AccessKey(val *string)
+	S3AccessKeyInput() *string
+	S3Region() *string
+	SetS3Region(val *string)
+	S3RegionInput() *string
+	S3SecretKey() *string
+	SetS3SecretKey(val *string)
+	S3SecretKeyInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -69,6 +78,9 @@ type IonoscloudProvider interface {
 	ResetOverrideLogicalId()
 	ResetPassword()
 	ResetRetries()
+	ResetS3AccessKey()
+	ResetS3Region()
+	ResetS3SecretKey()
 	ResetToken()
 	ResetUsername()
 	SynthesizeAttributes() *map[string]interface{}
@@ -259,6 +271,66 @@ func (j *jsiiProxy_IonoscloudProvider) RetriesInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_IonoscloudProvider) S3AccessKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"s3AccessKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IonoscloudProvider) S3AccessKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"s3AccessKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IonoscloudProvider) S3Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"s3Region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IonoscloudProvider) S3RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"s3RegionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IonoscloudProvider) S3SecretKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"s3SecretKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IonoscloudProvider) S3SecretKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"s3SecretKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IonoscloudProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -330,7 +402,7 @@ func (j *jsiiProxy_IonoscloudProvider) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs ionoscloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs ionoscloud} Resource.
 func NewIonoscloudProvider(scope constructs.Construct, id *string, config *IonoscloudProviderConfig) IonoscloudProvider {
 	_init_.Initialize()
 
@@ -348,7 +420,7 @@ func NewIonoscloudProvider(scope constructs.Construct, id *string, config *Ionos
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs ionoscloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs ionoscloud} Resource.
 func NewIonoscloudProvider_Override(i IonoscloudProvider, scope constructs.Construct, id *string, config *IonoscloudProviderConfig) {
 	_init_.Initialize()
 
@@ -395,6 +467,30 @@ func (j *jsiiProxy_IonoscloudProvider)SetRetries(val *float64) {
 	_jsii_.Set(
 		j,
 		"retries",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IonoscloudProvider)SetS3AccessKey(val *string) {
+	_jsii_.Set(
+		j,
+		"s3AccessKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IonoscloudProvider)SetS3Region(val *string) {
+	_jsii_.Set(
+		j,
+		"s3Region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IonoscloudProvider)SetS3SecretKey(val *string) {
+	_jsii_.Set(
+		j,
+		"s3SecretKey",
 		val,
 	)
 }
@@ -584,6 +680,30 @@ func (i *jsiiProxy_IonoscloudProvider) ResetRetries() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetRetries",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IonoscloudProvider) ResetS3AccessKey() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetS3AccessKey",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IonoscloudProvider) ResetS3Region() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetS3Region",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IonoscloudProvider) ResetS3SecretKey() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetS3SecretKey",
 		nil, // no parameters
 	)
 }
