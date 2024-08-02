@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/target_group ionoscloud_target_group}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/target_group ionoscloud_target_group}.
 type TargetGroup interface {
 	cdktf.TerraformResource
 	Algorithm() *string
@@ -61,6 +61,9 @@ type TargetGroup interface {
 	Protocol() *string
 	SetProtocol(val *string)
 	ProtocolInput() *string
+	ProtocolVersion() *string
+	SetProtocolVersion(val *string)
+	ProtocolVersionInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -374,6 +377,26 @@ func (j *jsiiProxy_TargetGroup) ProtocolInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_TargetGroup) ProtocolVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protocolVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TargetGroup) ProtocolVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protocolVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TargetGroup) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -475,7 +498,7 @@ func (j *jsiiProxy_TargetGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/target_group ionoscloud_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/target_group ionoscloud_target_group} Resource.
 func NewTargetGroup(scope constructs.Construct, id *string, config *TargetGroupConfig) TargetGroup {
 	_init_.Initialize()
 
@@ -493,7 +516,7 @@ func NewTargetGroup(scope constructs.Construct, id *string, config *TargetGroupC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/target_group ionoscloud_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/target_group ionoscloud_target_group} Resource.
 func NewTargetGroup_Override(t TargetGroup, scope constructs.Construct, id *string, config *TargetGroupConfig) {
 	_init_.Initialize()
 
@@ -593,6 +616,17 @@ func (j *jsiiProxy_TargetGroup)SetProtocol(val *string) {
 	_jsii_.Set(
 		j,
 		"protocol",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TargetGroup)SetProtocolVersion(val *string) {
+	if err := j.validateSetProtocolVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"protocolVersion",
 		val,
 	)
 }

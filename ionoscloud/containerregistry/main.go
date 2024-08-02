@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "apiSubnetAllowList", GoGetter: "ApiSubnetAllowList"},
+			_jsii_.MemberProperty{JsiiProperty: "apiSubnetAllowListInput", GoGetter: "ApiSubnetAllowListInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
@@ -59,6 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putGarbageCollectionSchedule", GoMethod: "PutGarbageCollectionSchedule"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetApiSubnetAllowList", GoMethod: "ResetApiSubnetAllowList"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFeatures", GoMethod: "ResetFeatures"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGarbageCollectionSchedule", GoMethod: "ResetGarbageCollectionSchedule"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},

@@ -103,6 +103,10 @@ func validateContainerRegistry_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_ContainerRegistry) validateSetApiSubnetAllowListParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ContainerRegistry) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

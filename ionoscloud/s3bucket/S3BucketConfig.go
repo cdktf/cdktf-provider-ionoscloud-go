@@ -24,11 +24,11 @@ type S3BucketConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/s3_bucket#name S3Bucket#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/s3_bucket#name S3Bucket#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The region of the bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/s3_bucket#region S3Bucket#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/s3_bucket#region S3Bucket#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 }
 

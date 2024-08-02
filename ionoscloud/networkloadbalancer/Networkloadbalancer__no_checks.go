@@ -99,6 +99,10 @@ func validateNetworkloadbalancer_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_Networkloadbalancer) validateSetCentralLoggingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Networkloadbalancer) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -128,6 +132,10 @@ func (j *jsiiProxy_Networkloadbalancer) validateSetLifecycleParameters(val *cdkt
 }
 
 func (j *jsiiProxy_Networkloadbalancer) validateSetListenerLanParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_Networkloadbalancer) validateSetLoggingFormatParameters(val *string) error {
 	return nil
 }
 

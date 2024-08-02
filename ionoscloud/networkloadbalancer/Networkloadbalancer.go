@@ -12,11 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/networkloadbalancer ionoscloud_networkloadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/networkloadbalancer ionoscloud_networkloadbalancer}.
 type Networkloadbalancer interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CentralLogging() interface{}
+	SetCentralLogging(val interface{})
+	CentralLoggingInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -60,6 +63,9 @@ type Networkloadbalancer interface {
 	ListenerLan() *float64
 	SetListenerLan(val *float64)
 	ListenerLanInput() *float64
+	LoggingFormat() *string
+	SetLoggingFormat(val *string)
+	LoggingFormatInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -131,10 +137,12 @@ type Networkloadbalancer interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutFlowlog(value *NetworkloadbalancerFlowlog)
 	PutTimeouts(value *NetworkloadbalancerTimeouts)
+	ResetCentralLogging()
 	ResetFlowlog()
 	ResetId()
 	ResetIps()
 	ResetLbPrivateIps()
+	ResetLoggingFormat()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -162,6 +170,26 @@ func (j *jsiiProxy_Networkloadbalancer) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Networkloadbalancer) CentralLogging() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"centralLogging",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Networkloadbalancer) CentralLoggingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"centralLoggingInput",
 		&returns,
 	)
 	return returns
@@ -367,6 +395,26 @@ func (j *jsiiProxy_Networkloadbalancer) ListenerLanInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_Networkloadbalancer) LoggingFormat() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loggingFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Networkloadbalancer) LoggingFormatInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loggingFormatInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Networkloadbalancer) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -498,7 +546,7 @@ func (j *jsiiProxy_Networkloadbalancer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/networkloadbalancer ionoscloud_networkloadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/networkloadbalancer ionoscloud_networkloadbalancer} Resource.
 func NewNetworkloadbalancer(scope constructs.Construct, id *string, config *NetworkloadbalancerConfig) Networkloadbalancer {
 	_init_.Initialize()
 
@@ -516,7 +564,7 @@ func NewNetworkloadbalancer(scope constructs.Construct, id *string, config *Netw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/networkloadbalancer ionoscloud_networkloadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/networkloadbalancer ionoscloud_networkloadbalancer} Resource.
 func NewNetworkloadbalancer_Override(n Networkloadbalancer, scope constructs.Construct, id *string, config *NetworkloadbalancerConfig) {
 	_init_.Initialize()
 
@@ -524,6 +572,17 @@ func NewNetworkloadbalancer_Override(n Networkloadbalancer, scope constructs.Con
 		"@cdktf/provider-ionoscloud.networkloadbalancer.Networkloadbalancer",
 		[]interface{}{scope, id, config},
 		n,
+	)
+}
+
+func (j *jsiiProxy_Networkloadbalancer)SetCentralLogging(val interface{}) {
+	if err := j.validateSetCentralLoggingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"centralLogging",
+		val,
 	)
 }
 
@@ -627,6 +686,17 @@ func (j *jsiiProxy_Networkloadbalancer)SetListenerLan(val *float64) {
 	_jsii_.Set(
 		j,
 		"listenerLan",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Networkloadbalancer)SetLoggingFormat(val *string) {
+	if err := j.validateSetLoggingFormatParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"loggingFormat",
 		val,
 	)
 }
@@ -1047,6 +1117,14 @@ func (n *jsiiProxy_Networkloadbalancer) PutTimeouts(value *NetworkloadbalancerTi
 	)
 }
 
+func (n *jsiiProxy_Networkloadbalancer) ResetCentralLogging() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetCentralLogging",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_Networkloadbalancer) ResetFlowlog() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1075,6 +1153,14 @@ func (n *jsiiProxy_Networkloadbalancer) ResetLbPrivateIps() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetLbPrivateIps",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Networkloadbalancer) ResetLoggingFormat() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetLoggingFormat",
 		nil, // no parameters
 	)
 }

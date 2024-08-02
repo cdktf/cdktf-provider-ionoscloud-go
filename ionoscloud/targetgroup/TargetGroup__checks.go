@@ -441,6 +441,14 @@ func (j *jsiiProxy_TargetGroup) validateSetProtocolParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_TargetGroup) validateSetProtocolVersionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_TargetGroup) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {

@@ -135,6 +135,10 @@ func (j *jsiiProxy_TargetGroup) validateSetProtocolParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_TargetGroup) validateSetProtocolVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TargetGroup) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

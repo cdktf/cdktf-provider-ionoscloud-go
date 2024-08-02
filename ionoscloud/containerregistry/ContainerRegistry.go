@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/container_registry ionoscloud_container_registry}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/container_registry ionoscloud_container_registry}.
 type ContainerRegistry interface {
 	cdktf.TerraformResource
+	ApiSubnetAllowList() *[]*string
+	SetApiSubnetAllowList(val *[]*string)
+	ApiSubnetAllowListInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -124,6 +127,7 @@ type ContainerRegistry interface {
 	PutFeatures(value *ContainerRegistryFeatures)
 	PutGarbageCollectionSchedule(value *ContainerRegistryGarbageCollectionSchedule)
 	PutTimeouts(value *ContainerRegistryTimeouts)
+	ResetApiSubnetAllowList()
 	ResetFeatures()
 	ResetGarbageCollectionSchedule()
 	ResetId()
@@ -147,6 +151,26 @@ type ContainerRegistry interface {
 // The jsii proxy struct for ContainerRegistry
 type jsiiProxy_ContainerRegistry struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ContainerRegistry) ApiSubnetAllowList() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"apiSubnetAllowList",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ContainerRegistry) ApiSubnetAllowListInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"apiSubnetAllowListInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ContainerRegistry) CdktfStack() cdktf.TerraformStack {
@@ -450,7 +474,7 @@ func (j *jsiiProxy_ContainerRegistry) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/container_registry ionoscloud_container_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/container_registry ionoscloud_container_registry} Resource.
 func NewContainerRegistry(scope constructs.Construct, id *string, config *ContainerRegistryConfig) ContainerRegistry {
 	_init_.Initialize()
 
@@ -468,7 +492,7 @@ func NewContainerRegistry(scope constructs.Construct, id *string, config *Contai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/container_registry ionoscloud_container_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/container_registry ionoscloud_container_registry} Resource.
 func NewContainerRegistry_Override(c ContainerRegistry, scope constructs.Construct, id *string, config *ContainerRegistryConfig) {
 	_init_.Initialize()
 
@@ -476,6 +500,17 @@ func NewContainerRegistry_Override(c ContainerRegistry, scope constructs.Constru
 		"@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry",
 		[]interface{}{scope, id, config},
 		c,
+	)
+}
+
+func (j *jsiiProxy_ContainerRegistry)SetApiSubnetAllowList(val *[]*string) {
+	if err := j.validateSetApiSubnetAllowListParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"apiSubnetAllowList",
+		val,
 	)
 }
 
@@ -963,6 +998,14 @@ func (c *jsiiProxy_ContainerRegistry) PutTimeouts(value *ContainerRegistryTimeou
 		c,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ContainerRegistry) ResetApiSubnetAllowList() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetApiSubnetAllowList",
+		nil, // no parameters
 	)
 }
 
