@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/data-sources/s3_bucket_public_access_block ionoscloud_s3_bucket_public_access_block}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/s3_bucket_public_access_block ionoscloud_s3_bucket_public_access_block}.
 type DataIonoscloudS3BucketPublicAccessBlock interface {
 	cdktf.TerraformDataSource
 	BlockPublicAcls() interface{}
@@ -360,7 +360,7 @@ func (j *jsiiProxy_DataIonoscloudS3BucketPublicAccessBlock) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/data-sources/s3_bucket_public_access_block ionoscloud_s3_bucket_public_access_block} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/s3_bucket_public_access_block ionoscloud_s3_bucket_public_access_block} Data Source.
 func NewDataIonoscloudS3BucketPublicAccessBlock(scope constructs.Construct, id *string, config *DataIonoscloudS3BucketPublicAccessBlockConfig) DataIonoscloudS3BucketPublicAccessBlock {
 	_init_.Initialize()
 
@@ -378,7 +378,7 @@ func NewDataIonoscloudS3BucketPublicAccessBlock(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/data-sources/s3_bucket_public_access_block ionoscloud_s3_bucket_public_access_block} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/s3_bucket_public_access_block ionoscloud_s3_bucket_public_access_block} Data Source.
 func NewDataIonoscloudS3BucketPublicAccessBlock_Override(d DataIonoscloudS3BucketPublicAccessBlock, scope constructs.Construct, id *string, config *DataIonoscloudS3BucketPublicAccessBlockConfig) {
 	_init_.Initialize()
 

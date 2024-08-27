@@ -79,6 +79,10 @@ func (v *jsiiProxy_VpnWireguardPeer) validatePutEndpointParameters(value *VpnWir
 	return nil
 }
 
+func (v *jsiiProxy_VpnWireguardPeer) validatePutTimeoutsParameters(value *VpnWireguardPeerTimeouts) error {
+	return nil
+}
+
 func validateVpnWireguardPeer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

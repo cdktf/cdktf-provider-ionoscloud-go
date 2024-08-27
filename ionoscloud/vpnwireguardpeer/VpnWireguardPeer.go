@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer ionoscloud_vpn_wireguard_peer}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/vpn_wireguard_peer ionoscloud_vpn_wireguard_peer}.
 type VpnWireguardPeer interface {
 	cdktf.TerraformResource
 	AllowedIps() *[]*string
@@ -85,6 +85,8 @@ type VpnWireguardPeer interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() VpnWireguardPeerTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -129,12 +131,14 @@ type VpnWireguardPeer interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEndpoint(value *VpnWireguardPeerEndpoint)
+	PutTimeouts(value *VpnWireguardPeerTimeouts)
 	ResetDescription()
 	ResetEndpoint()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -483,8 +487,28 @@ func (j *jsiiProxy_VpnWireguardPeer) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VpnWireguardPeer) Timeouts() VpnWireguardPeerTimeoutsOutputReference {
+	var returns VpnWireguardPeerTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer ionoscloud_vpn_wireguard_peer} Resource.
+func (j *jsiiProxy_VpnWireguardPeer) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/vpn_wireguard_peer ionoscloud_vpn_wireguard_peer} Resource.
 func NewVpnWireguardPeer(scope constructs.Construct, id *string, config *VpnWireguardPeerConfig) VpnWireguardPeer {
 	_init_.Initialize()
 
@@ -502,7 +526,7 @@ func NewVpnWireguardPeer(scope constructs.Construct, id *string, config *VpnWire
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer ionoscloud_vpn_wireguard_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/vpn_wireguard_peer ionoscloud_vpn_wireguard_peer} Resource.
 func NewVpnWireguardPeer_Override(v VpnWireguardPeer, scope constructs.Construct, id *string, config *VpnWireguardPeerConfig) {
 	_init_.Initialize()
 
@@ -1022,6 +1046,17 @@ func (v *jsiiProxy_VpnWireguardPeer) PutEndpoint(value *VpnWireguardPeerEndpoint
 	)
 }
 
+func (v *jsiiProxy_VpnWireguardPeer) PutTimeouts(value *VpnWireguardPeerTimeouts) {
+	if err := v.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VpnWireguardPeer) ResetDescription() {
 	_jsii_.InvokeVoid(
 		v,
@@ -1050,6 +1085,14 @@ func (v *jsiiProxy_VpnWireguardPeer) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpnWireguardPeer) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

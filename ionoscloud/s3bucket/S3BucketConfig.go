@@ -24,11 +24,17 @@ type S3BucketConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/s3_bucket#name S3Bucket#name}
-	Name *string `field:"required" json:"name" yaml:"name"`
-	// The region of the bucket.
+	// It must start and end with a letter or number and contain only lowercase alphanumeric characters, hyphens, periods and underscores.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/s3_bucket#region S3Bucket#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_bucket#name S3Bucket#name}
+	Name *string `field:"required" json:"name" yaml:"name"`
+	// The region of the bucket. Defaults to eu-central-3.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_bucket#region S3Bucket#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
+	// timeouts block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_bucket#timeouts S3Bucket#timeouts}
+	Timeouts *S3BucketTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/s3_bucket ionoscloud_s3_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_bucket ionoscloud_s3_bucket}.
 type S3Bucket interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -39,6 +39,7 @@ type S3Bucket interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -67,6 +68,8 @@ type S3Bucket interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() S3BucketTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -110,10 +113,12 @@ type S3Bucket interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *S3BucketTimeouts)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -207,6 +212,16 @@ func (j *jsiiProxy_S3Bucket) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3Bucket) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
 		&returns,
 	)
 	return returns
@@ -332,8 +347,28 @@ func (j *jsiiProxy_S3Bucket) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_S3Bucket) Timeouts() S3BucketTimeoutsOutputReference {
+	var returns S3BucketTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/s3_bucket ionoscloud_s3_bucket} Resource.
+func (j *jsiiProxy_S3Bucket) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_bucket ionoscloud_s3_bucket} Resource.
 func NewS3Bucket(scope constructs.Construct, id *string, config *S3BucketConfig) S3Bucket {
 	_init_.Initialize()
 
@@ -351,7 +386,7 @@ func NewS3Bucket(scope constructs.Construct, id *string, config *S3BucketConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/s3_bucket ionoscloud_s3_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_bucket ionoscloud_s3_bucket} Resource.
 func NewS3Bucket_Override(s S3Bucket, scope constructs.Construct, id *string, config *S3BucketConfig) {
 	_init_.Initialize()
 
@@ -805,6 +840,17 @@ func (s *jsiiProxy_S3Bucket) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_S3Bucket) PutTimeouts(value *S3BucketTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_S3Bucket) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -817,6 +863,14 @@ func (s *jsiiProxy_S3Bucket) ResetRegion() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3Bucket) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

@@ -46,7 +46,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "partialMatchInput", GoGetter: "PartialMatchInput"},
 			_jsii_.MemberProperty{JsiiProperty: "paths", GoGetter: "Paths"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
-			_jsii_.MemberProperty{JsiiProperty: "publicEndpoint", GoGetter: "PublicEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},

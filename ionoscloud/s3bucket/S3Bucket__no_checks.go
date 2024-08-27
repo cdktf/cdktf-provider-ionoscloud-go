@@ -75,6 +75,10 @@ func (s *jsiiProxy_S3Bucket) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
+func (s *jsiiProxy_S3Bucket) validatePutTimeoutsParameters(value *S3BucketTimeouts) error {
+	return nil
+}
+
 func validateS3Bucket_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

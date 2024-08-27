@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/nfs_cluster ionoscloud_nfs_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/nfs_cluster ionoscloud_nfs_cluster}.
 type NfsCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_NfsCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/nfs_cluster ionoscloud_nfs_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/nfs_cluster ionoscloud_nfs_cluster} Resource.
 func NewNfsCluster(scope constructs.Construct, id *string, config *NfsClusterConfig) NfsCluster {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewNfsCluster(scope constructs.Construct, id *string, config *NfsClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/nfs_cluster ionoscloud_nfs_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/nfs_cluster ionoscloud_nfs_cluster} Resource.
 func NewNfsCluster_Override(n NfsCluster, scope constructs.Construct, id *string, config *NfsClusterConfig) {
 	_init_.Initialize()
 
