@@ -127,10 +127,6 @@ func (j *jsiiProxy_S3Object) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_S3Object) validateSetEtagParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_S3Object) validateSetExpiresParameters(val *string) error {
 	return nil
 }
@@ -152,6 +148,18 @@ func (j *jsiiProxy_S3Object) validateSetMetadataParameters(val *map[string]*stri
 }
 
 func (j *jsiiProxy_S3Object) validateSetMfaParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_S3Object) validateSetObjectLockLegalHoldParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_S3Object) validateSetObjectLockModeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_S3Object) validateSetObjectLockRetainUntilDateParameters(val *string) error {
 	return nil
 }
 
@@ -192,10 +200,6 @@ func (j *jsiiProxy_S3Object) validateSetStorageClassParameters(val *string) erro
 }
 
 func (j *jsiiProxy_S3Object) validateSetTagsParameters(val *map[string]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_S3Object) validateSetVersionIdParameters(val *string) error {
 	return nil
 }
 

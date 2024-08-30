@@ -103,6 +103,10 @@ func (j *jsiiProxy_S3Bucket) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_S3Bucket) validateSetForceDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3Bucket) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -111,11 +115,19 @@ func (j *jsiiProxy_S3Bucket) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_S3Bucket) validateSetObjectLockEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3Bucket) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_S3Bucket) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_S3Bucket) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

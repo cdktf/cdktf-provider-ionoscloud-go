@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/snapshot ionoscloud_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/snapshot ionoscloud_snapshot}.
 type DataIonoscloudSnapshot interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -504,7 +504,7 @@ func (j *jsiiProxy_DataIonoscloudSnapshot) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/snapshot ionoscloud_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/snapshot ionoscloud_snapshot} Data Source.
 func NewDataIonoscloudSnapshot(scope constructs.Construct, id *string, config *DataIonoscloudSnapshotConfig) DataIonoscloudSnapshot {
 	_init_.Initialize()
 
@@ -522,7 +522,7 @@ func NewDataIonoscloudSnapshot(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/snapshot ionoscloud_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/snapshot ionoscloud_snapshot} Data Source.
 func NewDataIonoscloudSnapshot_Override(d DataIonoscloudSnapshot, scope constructs.Construct, id *string, config *DataIonoscloudSnapshotConfig) {
 	_init_.Initialize()
 

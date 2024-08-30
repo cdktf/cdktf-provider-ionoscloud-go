@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/template ionoscloud_template}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/template ionoscloud_template}.
 type DataIonoscloudTemplate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -372,7 +372,7 @@ func (j *jsiiProxy_DataIonoscloudTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/template ionoscloud_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/template ionoscloud_template} Data Source.
 func NewDataIonoscloudTemplate(scope constructs.Construct, id *string, config *DataIonoscloudTemplateConfig) DataIonoscloudTemplate {
 	_init_.Initialize()
 
@@ -390,7 +390,7 @@ func NewDataIonoscloudTemplate(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/template ionoscloud_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/template ionoscloud_template} Data Source.
 func NewDataIonoscloudTemplate_Override(d DataIonoscloudTemplate, scope constructs.Construct, id *string, config *DataIonoscloudTemplateConfig) {
 	_init_.Initialize()
 

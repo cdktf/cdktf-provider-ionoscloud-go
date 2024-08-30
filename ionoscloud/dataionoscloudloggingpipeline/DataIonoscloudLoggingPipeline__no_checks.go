@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataIonoscloudLoggingPipeline) validateSetLifecycleParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudLoggingPipeline) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudLoggingPipeline) validateSetNameParameters(val *string) error {
 	return nil
 }

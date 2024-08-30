@@ -393,14 +393,6 @@ func (j *jsiiProxy_S3Object) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_S3Object) validateSetEtagParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_S3Object) validateSetExpiresParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -454,6 +446,30 @@ func (j *jsiiProxy_S3Object) validateSetMetadataParameters(val *map[string]*stri
 }
 
 func (j *jsiiProxy_S3Object) validateSetMfaParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_S3Object) validateSetObjectLockLegalHoldParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_S3Object) validateSetObjectLockModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_S3Object) validateSetObjectLockRetainUntilDateParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -572,14 +588,6 @@ func (j *jsiiProxy_S3Object) validateSetStorageClassParameters(val *string) erro
 }
 
 func (j *jsiiProxy_S3Object) validateSetTagsParameters(val *map[string]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_S3Object) validateSetVersionIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

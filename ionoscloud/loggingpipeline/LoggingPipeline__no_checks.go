@@ -115,6 +115,10 @@ func (j *jsiiProxy_LoggingPipeline) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
+func (j *jsiiProxy_LoggingPipeline) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoggingPipeline) validateSetNameParameters(val *string) error {
 	return nil
 }

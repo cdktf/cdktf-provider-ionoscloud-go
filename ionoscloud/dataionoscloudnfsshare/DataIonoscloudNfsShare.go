@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/nfs_share ionoscloud_nfs_share}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/nfs_share ionoscloud_nfs_share}.
 type DataIonoscloudNfsShare interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -466,7 +466,7 @@ func (j *jsiiProxy_DataIonoscloudNfsShare) UidInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/nfs_share ionoscloud_nfs_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/nfs_share ionoscloud_nfs_share} Data Source.
 func NewDataIonoscloudNfsShare(scope constructs.Construct, id *string, config *DataIonoscloudNfsShareConfig) DataIonoscloudNfsShare {
 	_init_.Initialize()
 
@@ -484,7 +484,7 @@ func NewDataIonoscloudNfsShare(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/nfs_share ionoscloud_nfs_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/nfs_share ionoscloud_nfs_share} Data Source.
 func NewDataIonoscloudNfsShare_Override(d DataIonoscloudNfsShare, scope constructs.Construct, id *string, config *DataIonoscloudNfsShareConfig) {
 	_init_.Initialize()
 

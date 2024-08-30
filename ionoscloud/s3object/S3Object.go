@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object ionoscloud_s3_object}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object ionoscloud_s3_object}.
 type S3Object interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -53,8 +53,6 @@ type S3Object interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Etag() *string
-	SetEtag(val *string)
-	EtagInput() *string
 	Expires() *string
 	SetExpires(val *string)
 	ExpiresInput() *string
@@ -84,6 +82,15 @@ type S3Object interface {
 	MfaInput() *string
 	// The tree node.
 	Node() constructs.Node
+	ObjectLockLegalHold() *string
+	SetObjectLockLegalHold(val *string)
+	ObjectLockLegalHoldInput() *string
+	ObjectLockMode() *string
+	SetObjectLockMode(val *string)
+	ObjectLockModeInput() *string
+	ObjectLockRetainUntilDate() *string
+	SetObjectLockRetainUntilDate(val *string)
+	ObjectLockRetainUntilDateInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -128,8 +135,6 @@ type S3Object interface {
 	// Experimental.
 	TerraformResourceType() *string
 	VersionId() *string
-	SetVersionId(val *string)
-	VersionIdInput() *string
 	WebsiteRedirect() *string
 	SetWebsiteRedirect(val *string)
 	WebsiteRedirectInput() *string
@@ -182,11 +187,13 @@ type S3Object interface {
 	ResetContentEncoding()
 	ResetContentLanguage()
 	ResetContentType()
-	ResetEtag()
 	ResetExpires()
 	ResetForceDestroy()
 	ResetMetadata()
 	ResetMfa()
+	ResetObjectLockLegalHold()
+	ResetObjectLockMode()
+	ResetObjectLockRetainUntilDate()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -199,7 +206,6 @@ type S3Object interface {
 	ResetSource()
 	ResetStorageClass()
 	ResetTags()
-	ResetVersionId()
 	ResetWebsiteRedirect()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -419,16 +425,6 @@ func (j *jsiiProxy_S3Object) Etag() *string {
 	return returns
 }
 
-func (j *jsiiProxy_S3Object) EtagInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"etagInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_S3Object) Expires() *string {
 	var returns *string
 	_jsii_.Get(
@@ -574,6 +570,66 @@ func (j *jsiiProxy_S3Object) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3Object) ObjectLockLegalHold() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"objectLockLegalHold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3Object) ObjectLockLegalHoldInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"objectLockLegalHoldInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3Object) ObjectLockMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"objectLockMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3Object) ObjectLockModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"objectLockModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3Object) ObjectLockRetainUntilDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"objectLockRetainUntilDate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3Object) ObjectLockRetainUntilDateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"objectLockRetainUntilDateInput",
 		&returns,
 	)
 	return returns
@@ -829,16 +885,6 @@ func (j *jsiiProxy_S3Object) VersionId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_S3Object) VersionIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"versionIdInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_S3Object) WebsiteRedirect() *string {
 	var returns *string
 	_jsii_.Get(
@@ -860,7 +906,7 @@ func (j *jsiiProxy_S3Object) WebsiteRedirectInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object ionoscloud_s3_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object ionoscloud_s3_object} Resource.
 func NewS3Object(scope constructs.Construct, id *string, config *S3ObjectConfig) S3Object {
 	_init_.Initialize()
 
@@ -878,7 +924,7 @@ func NewS3Object(scope constructs.Construct, id *string, config *S3ObjectConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object ionoscloud_s3_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object ionoscloud_s3_object} Resource.
 func NewS3Object_Override(s S3Object, scope constructs.Construct, id *string, config *S3ObjectConfig) {
 	_init_.Initialize()
 
@@ -996,17 +1042,6 @@ func (j *jsiiProxy_S3Object)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_S3Object)SetEtag(val *string) {
-	if err := j.validateSetEtagParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"etag",
-		val,
-	)
-}
-
 func (j *jsiiProxy_S3Object)SetExpires(val *string) {
 	if err := j.validateSetExpiresParameters(val); err != nil {
 		panic(err)
@@ -1077,6 +1112,39 @@ func (j *jsiiProxy_S3Object)SetMfa(val *string) {
 	_jsii_.Set(
 		j,
 		"mfa",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3Object)SetObjectLockLegalHold(val *string) {
+	if err := j.validateSetObjectLockLegalHoldParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"objectLockLegalHold",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3Object)SetObjectLockMode(val *string) {
+	if err := j.validateSetObjectLockModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"objectLockMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3Object)SetObjectLockRetainUntilDate(val *string) {
+	if err := j.validateSetObjectLockRetainUntilDateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"objectLockRetainUntilDate",
 		val,
 	)
 }
@@ -1195,17 +1263,6 @@ func (j *jsiiProxy_S3Object)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
-		val,
-	)
-}
-
-func (j *jsiiProxy_S3Object)SetVersionId(val *string) {
-	if err := j.validateSetVersionIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"versionId",
 		val,
 	)
 }
@@ -1622,14 +1679,6 @@ func (s *jsiiProxy_S3Object) ResetContentType() {
 	)
 }
 
-func (s *jsiiProxy_S3Object) ResetEtag() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetEtag",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_S3Object) ResetExpires() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1658,6 +1707,30 @@ func (s *jsiiProxy_S3Object) ResetMfa() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetMfa",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3Object) ResetObjectLockLegalHold() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetObjectLockLegalHold",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3Object) ResetObjectLockMode() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetObjectLockMode",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3Object) ResetObjectLockRetainUntilDate() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetObjectLockRetainUntilDate",
 		nil, // no parameters
 	)
 }
@@ -1738,14 +1811,6 @@ func (s *jsiiProxy_S3Object) ResetTags() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTags",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_S3Object) ResetVersionId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetVersionId",
 		nil, // no parameters
 	)
 }
