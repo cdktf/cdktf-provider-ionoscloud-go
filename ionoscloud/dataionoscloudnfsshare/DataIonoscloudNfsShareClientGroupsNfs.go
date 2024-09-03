@@ -9,7 +9,7 @@ type DataIonoscloudNfsShareClientGroupsNfs struct {
 	//
 	// The squash mode can be: none - No squash mode. no mapping, root-anonymous - Map root user to anonymous uid, all-anonymous - Map all users to anonymous uid.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/nfs_share#squash DataIonoscloudNfsShare#squash}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/nfs_share#squash DataIonoscloudNfsShare#squash}
 	Squash *string `field:"optional" json:"squash" yaml:"squash"`
 }
 

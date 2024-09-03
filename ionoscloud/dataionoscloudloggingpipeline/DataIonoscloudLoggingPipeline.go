@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/logging_pipeline ionoscloud_logging_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/logging_pipeline ionoscloud_logging_pipeline}.
 type DataIonoscloudLoggingPipeline interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -90,6 +90,7 @@ type DataIonoscloudLoggingPipeline interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetLocation()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -334,7 +335,7 @@ func (j *jsiiProxy_DataIonoscloudLoggingPipeline) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/logging_pipeline ionoscloud_logging_pipeline} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/logging_pipeline ionoscloud_logging_pipeline} Data Source.
 func NewDataIonoscloudLoggingPipeline(scope constructs.Construct, id *string, config *DataIonoscloudLoggingPipelineConfig) DataIonoscloudLoggingPipeline {
 	_init_.Initialize()
 
@@ -352,7 +353,7 @@ func NewDataIonoscloudLoggingPipeline(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/logging_pipeline ionoscloud_logging_pipeline} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/logging_pipeline ionoscloud_logging_pipeline} Data Source.
 func NewDataIonoscloudLoggingPipeline_Override(d DataIonoscloudLoggingPipeline, scope constructs.Construct, id *string, config *DataIonoscloudLoggingPipelineConfig) {
 	_init_.Initialize()
 
@@ -731,6 +732,14 @@ func (d *jsiiProxy_DataIonoscloudLoggingPipeline) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataIonoscloudLoggingPipeline) ResetLocation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

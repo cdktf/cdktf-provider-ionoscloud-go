@@ -22,13 +22,13 @@ type DataIonoscloudPgUserConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/pg_user#cluster_id DataIonoscloudPgUser#cluster_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/pg_user#cluster_id DataIonoscloudPgUser#cluster_id}.
 	ClusterId *string `field:"required" json:"clusterId" yaml:"clusterId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/pg_user#username DataIonoscloudPgUser#username}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/pg_user#username DataIonoscloudPgUser#username}.
 	Username *string `field:"required" json:"username" yaml:"username"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/pg_user#timeouts DataIonoscloudPgUser#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/pg_user#timeouts DataIonoscloudPgUser#timeouts}
 	Timeouts *DataIonoscloudPgUserTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

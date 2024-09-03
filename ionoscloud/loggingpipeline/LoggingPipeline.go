@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline ionoscloud_logging_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline ionoscloud_logging_pipeline}.
 type LoggingPipeline interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -121,6 +121,7 @@ type LoggingPipeline interface {
 	PutLog(value interface{})
 	PutTimeouts(value *LoggingPipelineTimeouts)
 	ResetId()
+	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -414,7 +415,7 @@ func (j *jsiiProxy_LoggingPipeline) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline ionoscloud_logging_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline ionoscloud_logging_pipeline} Resource.
 func NewLoggingPipeline(scope constructs.Construct, id *string, config *LoggingPipelineConfig) LoggingPipeline {
 	_init_.Initialize()
 
@@ -432,7 +433,7 @@ func NewLoggingPipeline(scope constructs.Construct, id *string, config *LoggingP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline ionoscloud_logging_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline ionoscloud_logging_pipeline} Resource.
 func NewLoggingPipeline_Override(l LoggingPipeline, scope constructs.Construct, id *string, config *LoggingPipelineConfig) {
 	_init_.Initialize()
 
@@ -923,6 +924,14 @@ func (l *jsiiProxy_LoggingPipeline) ResetId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoggingPipeline) ResetLocation() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetLocation",
 		nil, // no parameters
 	)
 }
