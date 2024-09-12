@@ -24,35 +24,35 @@ type ApigatewayRouteConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the API Gateway that the route belongs to.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/apigateway_route#gateway_id ApigatewayRoute#gateway_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/apigateway_route#gateway_id ApigatewayRoute#gateway_id}
 	GatewayId *string `field:"required" json:"gatewayId" yaml:"gatewayId"`
 	// The HTTP methods that the route should match.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/apigateway_route#methods ApigatewayRoute#methods}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/apigateway_route#methods ApigatewayRoute#methods}
 	Methods *[]*string `field:"required" json:"methods" yaml:"methods"`
 	// The name of the API Gateway Route.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/apigateway_route#name ApigatewayRoute#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/apigateway_route#name ApigatewayRoute#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The paths that the route should match.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/apigateway_route#paths ApigatewayRoute#paths}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/apigateway_route#paths ApigatewayRoute#paths}
 	Paths *[]*string `field:"required" json:"paths" yaml:"paths"`
 	// upstreams block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/apigateway_route#upstreams ApigatewayRoute#upstreams}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/apigateway_route#upstreams ApigatewayRoute#upstreams}
 	Upstreams interface{} `field:"required" json:"upstreams" yaml:"upstreams"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/apigateway_route#timeouts ApigatewayRoute#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/apigateway_route#timeouts ApigatewayRoute#timeouts}
 	Timeouts *ApigatewayRouteTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// This field specifies the protocol used by the ingress to route traffic to the backend service.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/apigateway_route#type ApigatewayRoute#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/apigateway_route#type ApigatewayRoute#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 	// To enable websocket support.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/apigateway_route#websocket ApigatewayRoute#websocket}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/apigateway_route#websocket ApigatewayRoute#websocket}
 	Websocket interface{} `field:"optional" json:"websocket" yaml:"websocket"`
 }
 

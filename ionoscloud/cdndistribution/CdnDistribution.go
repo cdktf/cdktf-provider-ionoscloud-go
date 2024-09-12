@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/cdn_distribution ionoscloud_cdn_distribution}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/cdn_distribution ionoscloud_cdn_distribution}.
 type CdnDistribution interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_CdnDistribution) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/cdn_distribution ionoscloud_cdn_distribution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/cdn_distribution ionoscloud_cdn_distribution} Resource.
 func NewCdnDistribution(scope constructs.Construct, id *string, config *CdnDistributionConfig) CdnDistribution {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewCdnDistribution(scope constructs.Construct, id *string, config *CdnDistr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/cdn_distribution ionoscloud_cdn_distribution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/cdn_distribution ionoscloud_cdn_distribution} Resource.
 func NewCdnDistribution_Override(c CdnDistribution, scope constructs.Construct, id *string, config *CdnDistributionConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/lan ionoscloud_lan}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/lan ionoscloud_lan}.
 type Lan interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -477,7 +477,7 @@ func (j *jsiiProxy_Lan) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/lan ionoscloud_lan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/lan ionoscloud_lan} Resource.
 func NewLan(scope constructs.Construct, id *string, config *LanConfig) Lan {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewLan(scope constructs.Construct, id *string, config *LanConfig) Lan {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/lan ionoscloud_lan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/lan ionoscloud_lan} Resource.
 func NewLan_Override(l Lan, scope constructs.Construct, id *string, config *LanConfig) {
 	_init_.Initialize()
 

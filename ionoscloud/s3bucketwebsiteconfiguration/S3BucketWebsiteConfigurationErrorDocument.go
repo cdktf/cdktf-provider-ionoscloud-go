@@ -7,7 +7,7 @@ package s3bucketwebsiteconfiguration
 type S3BucketWebsiteConfigurationErrorDocument struct {
 	// The object key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/s3_bucket_website_configuration#key S3BucketWebsiteConfiguration#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration#key S3BucketWebsiteConfiguration#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
 }
 
