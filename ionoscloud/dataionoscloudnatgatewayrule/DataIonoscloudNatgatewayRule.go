@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/natgateway_rule ionoscloud_natgateway_rule}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/natgateway_rule ionoscloud_natgateway_rule}.
 type DataIonoscloudNatgatewayRule interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_DataIonoscloudNatgatewayRule) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/natgateway_rule ionoscloud_natgateway_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/natgateway_rule ionoscloud_natgateway_rule} Data Source.
 func NewDataIonoscloudNatgatewayRule(scope constructs.Construct, id *string, config *DataIonoscloudNatgatewayRuleConfig) DataIonoscloudNatgatewayRule {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewDataIonoscloudNatgatewayRule(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/natgateway_rule ionoscloud_natgateway_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/natgateway_rule ionoscloud_natgateway_rule} Data Source.
 func NewDataIonoscloudNatgatewayRule_Override(d DataIonoscloudNatgatewayRule, scope constructs.Construct, id *string, config *DataIonoscloudNatgatewayRuleConfig) {
 	_init_.Initialize()
 

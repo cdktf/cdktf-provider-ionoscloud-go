@@ -82,8 +82,10 @@ type S3BucketLifecycleConfigurationRuleOutputReference interface {
 	PutAbortIncompleteMultipartUpload(value *S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload)
 	PutExpiration(value *S3BucketLifecycleConfigurationRuleExpiration)
 	PutNoncurrentVersionExpiration(value *S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration)
+	ResetAbortIncompleteMultipartUpload()
 	ResetExpiration()
 	ResetId()
+	ResetNoncurrentVersionExpiration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -624,6 +626,14 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) PutNoncurr
 	)
 }
 
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) ResetAbortIncompleteMultipartUpload() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAbortIncompleteMultipartUpload",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) ResetExpiration() {
 	_jsii_.InvokeVoid(
 		s,
@@ -636,6 +646,14 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) ResetId() 
 	_jsii_.InvokeVoid(
 		s,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) ResetNoncurrentVersionExpiration() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNoncurrentVersionExpiration",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/application_loadbalancer_forwardingrule ionoscloud_application_loadbalancer_forwardingrule}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/application_loadbalancer_forwardingrule ionoscloud_application_loadbalancer_forwardingrule}.
 type DataIonoscloudApplicationLoadbalancerForwardingrule interface {
 	cdktf.TerraformDataSource
 	ApplicationLoadbalancerId() *string
@@ -449,7 +449,7 @@ func (j *jsiiProxy_DataIonoscloudApplicationLoadbalancerForwardingrule) Timeouts
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/application_loadbalancer_forwardingrule ionoscloud_application_loadbalancer_forwardingrule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/application_loadbalancer_forwardingrule ionoscloud_application_loadbalancer_forwardingrule} Data Source.
 func NewDataIonoscloudApplicationLoadbalancerForwardingrule(scope constructs.Construct, id *string, config *DataIonoscloudApplicationLoadbalancerForwardingruleConfig) DataIonoscloudApplicationLoadbalancerForwardingrule {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewDataIonoscloudApplicationLoadbalancerForwardingrule(scope constructs.Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/application_loadbalancer_forwardingrule ionoscloud_application_loadbalancer_forwardingrule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/application_loadbalancer_forwardingrule ionoscloud_application_loadbalancer_forwardingrule} Data Source.
 func NewDataIonoscloudApplicationLoadbalancerForwardingrule_Override(d DataIonoscloudApplicationLoadbalancerForwardingrule, scope constructs.Construct, id *string, config *DataIonoscloudApplicationLoadbalancerForwardingruleConfig) {
 	_init_.Initialize()
 

@@ -67,6 +67,7 @@ type S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReferenc
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetNoncurrentDays()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference) ResetNoncurrentDays() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNoncurrentDays",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

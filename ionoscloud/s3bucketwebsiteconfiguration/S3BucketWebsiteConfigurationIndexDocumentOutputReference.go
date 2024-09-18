@@ -67,6 +67,7 @@ type S3BucketWebsiteConfigurationIndexDocumentOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetSuffix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (s *jsiiProxy_S3BucketWebsiteConfigurationIndexDocumentOutputReference) Int
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfigurationIndexDocumentOutputReference) ResetSuffix() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSuffix",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_S3BucketWebsiteConfigurationIndexDocumentOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

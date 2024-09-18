@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration ionoscloud_s3_bucket_website_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration ionoscloud_s3_bucket_website_configuration}.
 type S3BucketWebsiteConfiguration interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -119,6 +119,8 @@ type S3BucketWebsiteConfiguration interface {
 	PutIndexDocument(value *S3BucketWebsiteConfigurationIndexDocument)
 	PutRedirectAllRequestsTo(value *S3BucketWebsiteConfigurationRedirectAllRequestsTo)
 	PutRoutingRule(value interface{})
+	ResetErrorDocument()
+	ResetIndexDocument()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -403,7 +405,7 @@ func (j *jsiiProxy_S3BucketWebsiteConfiguration) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration ionoscloud_s3_bucket_website_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration ionoscloud_s3_bucket_website_configuration} Resource.
 func NewS3BucketWebsiteConfiguration(scope constructs.Construct, id *string, config *S3BucketWebsiteConfigurationConfig) S3BucketWebsiteConfiguration {
 	_init_.Initialize()
 
@@ -421,7 +423,7 @@ func NewS3BucketWebsiteConfiguration(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration ionoscloud_s3_bucket_website_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration ionoscloud_s3_bucket_website_configuration} Resource.
 func NewS3BucketWebsiteConfiguration_Override(s S3BucketWebsiteConfiguration, scope constructs.Construct, id *string, config *S3BucketWebsiteConfigurationConfig) {
 	_init_.Initialize()
 
@@ -905,6 +907,22 @@ func (s *jsiiProxy_S3BucketWebsiteConfiguration) PutRoutingRule(value interface{
 		s,
 		"putRoutingRule",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) ResetErrorDocument() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetErrorDocument",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) ResetIndexDocument() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIndexDocument",
+		nil, // no parameters
 	)
 }
 

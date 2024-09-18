@@ -22,19 +22,19 @@ type DataIonoscloudS3ObjectsConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/s3_objects#bucket DataIonoscloudS3Objects#bucket}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/s3_objects#bucket DataIonoscloudS3Objects#bucket}.
 	Bucket *string `field:"required" json:"bucket" yaml:"bucket"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/s3_objects#delimiter DataIonoscloudS3Objects#delimiter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/s3_objects#delimiter DataIonoscloudS3Objects#delimiter}.
 	Delimiter *string `field:"optional" json:"delimiter" yaml:"delimiter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/s3_objects#encoding_type DataIonoscloudS3Objects#encoding_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/s3_objects#encoding_type DataIonoscloudS3Objects#encoding_type}.
 	EncodingType *string `field:"optional" json:"encodingType" yaml:"encodingType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/s3_objects#fetch_owner DataIonoscloudS3Objects#fetch_owner}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/s3_objects#fetch_owner DataIonoscloudS3Objects#fetch_owner}.
 	FetchOwner interface{} `field:"optional" json:"fetchOwner" yaml:"fetchOwner"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/s3_objects#max_keys DataIonoscloudS3Objects#max_keys}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/s3_objects#max_keys DataIonoscloudS3Objects#max_keys}.
 	MaxKeys *float64 `field:"optional" json:"maxKeys" yaml:"maxKeys"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/s3_objects#prefix DataIonoscloudS3Objects#prefix}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/s3_objects#prefix DataIonoscloudS3Objects#prefix}.
 	Prefix *string `field:"optional" json:"prefix" yaml:"prefix"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/s3_objects#start_after DataIonoscloudS3Objects#start_after}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/s3_objects#start_after DataIonoscloudS3Objects#start_after}.
 	StartAfter *string `field:"optional" json:"startAfter" yaml:"startAfter"`
 }
 
