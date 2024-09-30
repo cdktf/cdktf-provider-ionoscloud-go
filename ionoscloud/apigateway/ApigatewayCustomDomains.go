@@ -5,13 +5,13 @@ package apigateway
 
 
 type ApigatewayCustomDomains struct {
-	// The certificate ID for the domain.
-	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/apigateway#certificate_id Apigateway#certificate_id}
-	CertificateId *string `field:"required" json:"certificateId" yaml:"certificateId"`
 	// The domain name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/apigateway#name Apigateway#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/apigateway#name Apigateway#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
+	// The certificate ID for the domain.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/apigateway#certificate_id Apigateway#certificate_id}
+	CertificateId *string `field:"optional" json:"certificateId" yaml:"certificateId"`
 }
 

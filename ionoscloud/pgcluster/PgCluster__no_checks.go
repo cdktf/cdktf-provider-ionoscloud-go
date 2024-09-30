@@ -75,6 +75,10 @@ func (p *jsiiProxy_PgCluster) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
+func (p *jsiiProxy_PgCluster) validatePutConnectionPoolerParameters(value *PgClusterConnectionPooler) error {
+	return nil
+}
+
 func (p *jsiiProxy_PgCluster) validatePutConnectionsParameters(value *PgClusterConnections) error {
 	return nil
 }

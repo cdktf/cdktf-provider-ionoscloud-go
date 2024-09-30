@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster ionoscloud_pg_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster ionoscloud_pg_cluster}.
 type PgCluster interface {
 	cdktf.TerraformResource
 	BackupLocation() *string
@@ -24,6 +24,8 @@ type PgCluster interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
+	ConnectionPooler() PgClusterConnectionPoolerOutputReference
+	ConnectionPoolerInput() *PgClusterConnectionPooler
 	Connections() PgClusterConnectionsOutputReference
 	ConnectionsInput() *PgClusterConnections
 	// Experimental.
@@ -148,12 +150,14 @@ type PgCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutConnectionPooler(value *PgClusterConnectionPooler)
 	PutConnections(value *PgClusterConnections)
 	PutCredentials(value *PgClusterCredentials)
 	PutFromBackup(value *PgClusterFromBackup)
 	PutMaintenanceWindow(value *PgClusterMaintenanceWindow)
 	PutTimeouts(value *PgClusterTimeouts)
 	ResetBackupLocation()
+	ResetConnectionPooler()
 	ResetConnections()
 	ResetFromBackup()
 	ResetId()
@@ -215,6 +219,26 @@ func (j *jsiiProxy_PgCluster) Connection() interface{} {
 	_jsii_.Get(
 		j,
 		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PgCluster) ConnectionPooler() PgClusterConnectionPoolerOutputReference {
+	var returns PgClusterConnectionPoolerOutputReference
+	_jsii_.Get(
+		j,
+		"connectionPooler",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PgCluster) ConnectionPoolerInput() *PgClusterConnectionPooler {
+	var returns *PgClusterConnectionPooler
+	_jsii_.Get(
+		j,
+		"connectionPoolerInput",
 		&returns,
 	)
 	return returns
@@ -671,7 +695,7 @@ func (j *jsiiProxy_PgCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster ionoscloud_pg_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster ionoscloud_pg_cluster} Resource.
 func NewPgCluster(scope constructs.Construct, id *string, config *PgClusterConfig) PgCluster {
 	_init_.Initialize()
 
@@ -689,7 +713,7 @@ func NewPgCluster(scope constructs.Construct, id *string, config *PgClusterConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster ionoscloud_pg_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster ionoscloud_pg_cluster} Resource.
 func NewPgCluster_Override(p PgCluster, scope constructs.Construct, id *string, config *PgClusterConfig) {
 	_init_.Initialize()
 
@@ -1242,6 +1266,17 @@ func (p *jsiiProxy_PgCluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (p *jsiiProxy_PgCluster) PutConnectionPooler(value *PgClusterConnectionPooler) {
+	if err := p.validatePutConnectionPoolerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putConnectionPooler",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PgCluster) PutConnections(value *PgClusterConnections) {
 	if err := p.validatePutConnectionsParameters(value); err != nil {
 		panic(err)
@@ -1301,6 +1336,14 @@ func (p *jsiiProxy_PgCluster) ResetBackupLocation() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetBackupLocation",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PgCluster) ResetConnectionPooler() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetConnectionPooler",
 		nil, // no parameters
 	)
 }

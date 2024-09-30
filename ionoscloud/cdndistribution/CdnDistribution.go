@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/cdn_distribution ionoscloud_cdn_distribution}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/cdn_distribution ionoscloud_cdn_distribution}.
 type CdnDistribution interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -62,8 +62,11 @@ type CdnDistribution interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicEndpointV4() *string
+	PublicEndpointV6() *string
 	// Experimental.
 	RawOverrides() interface{}
+	ResourceUrn() *string
 	RoutingRules() CdnDistributionRoutingRulesList
 	RoutingRulesInput() interface{}
 	// Experimental.
@@ -323,11 +326,41 @@ func (j *jsiiProxy_CdnDistribution) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CdnDistribution) PublicEndpointV4() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicEndpointV4",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistribution) PublicEndpointV6() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicEndpointV6",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CdnDistribution) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistribution) ResourceUrn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceUrn",
 		&returns,
 	)
 	return returns
@@ -404,7 +437,7 @@ func (j *jsiiProxy_CdnDistribution) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/cdn_distribution ionoscloud_cdn_distribution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/cdn_distribution ionoscloud_cdn_distribution} Resource.
 func NewCdnDistribution(scope constructs.Construct, id *string, config *CdnDistributionConfig) CdnDistribution {
 	_init_.Initialize()
 
@@ -422,7 +455,7 @@ func NewCdnDistribution(scope constructs.Construct, id *string, config *CdnDistr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/cdn_distribution ionoscloud_cdn_distribution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/cdn_distribution ionoscloud_cdn_distribution} Resource.
 func NewCdnDistribution_Override(c CdnDistribution, scope constructs.Construct, id *string, config *CdnDistributionConfig) {
 	_init_.Initialize()
 
