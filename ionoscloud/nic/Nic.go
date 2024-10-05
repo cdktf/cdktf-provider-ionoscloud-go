@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/nic ionoscloud_nic}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/resources/nic ionoscloud_nic}.
 type Nic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -652,7 +652,7 @@ func (j *jsiiProxy_Nic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/nic ionoscloud_nic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/resources/nic ionoscloud_nic} Resource.
 func NewNic(scope constructs.Construct, id *string, config *NicConfig) Nic {
 	_init_.Initialize()
 
@@ -670,7 +670,7 @@ func NewNic(scope constructs.Construct, id *string, config *NicConfig) Nic {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/nic ionoscloud_nic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/resources/nic ionoscloud_nic} Resource.
 func NewNic_Override(n Nic, scope constructs.Construct, id *string, config *NicConfig) {
 	_init_.Initialize()
 

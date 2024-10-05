@@ -24,32 +24,32 @@ type AutoCertificateProviderConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The email address of the certificate requester.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/auto_certificate_provider#email AutoCertificateProvider#email}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/resources/auto_certificate_provider#email AutoCertificateProvider#email}
 	Email *string `field:"required" json:"email" yaml:"email"`
 	// The location of the certificate provider.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/auto_certificate_provider#location AutoCertificateProvider#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/resources/auto_certificate_provider#location AutoCertificateProvider#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// The name of the certificate provider.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/auto_certificate_provider#name AutoCertificateProvider#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/resources/auto_certificate_provider#name AutoCertificateProvider#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The URL of the certificate provider.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/auto_certificate_provider#server AutoCertificateProvider#server}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/resources/auto_certificate_provider#server AutoCertificateProvider#server}
 	Server *string `field:"required" json:"server" yaml:"server"`
 	// external_account_binding block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/auto_certificate_provider#external_account_binding AutoCertificateProvider#external_account_binding}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/resources/auto_certificate_provider#external_account_binding AutoCertificateProvider#external_account_binding}
 	ExternalAccountBinding *AutoCertificateProviderExternalAccountBinding `field:"optional" json:"externalAccountBinding" yaml:"externalAccountBinding"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/auto_certificate_provider#id AutoCertificateProvider#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/resources/auto_certificate_provider#id AutoCertificateProvider#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/auto_certificate_provider#timeouts AutoCertificateProvider#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/resources/auto_certificate_provider#timeouts AutoCertificateProvider#timeouts}
 	Timeouts *AutoCertificateProviderTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -24,11 +24,11 @@ type S3BucketPolicyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the S3 bucket to which this policy will be applied.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/s3_bucket_policy#bucket S3BucketPolicy#bucket}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/resources/s3_bucket_policy#bucket S3BucketPolicy#bucket}
 	Bucket *string `field:"required" json:"bucket" yaml:"bucket"`
 	// Text of the policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/s3_bucket_policy#policy S3BucketPolicy#policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/resources/s3_bucket_policy#policy S3BucketPolicy#policy}
 	Policy *string `field:"required" json:"policy" yaml:"policy"`
 }
 
