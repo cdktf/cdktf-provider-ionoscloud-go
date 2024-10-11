@@ -5,13 +5,13 @@ package dataionoscloudcdndistribution
 
 
 type DataIonoscloudCdnDistributionTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/data-sources/cdn_distribution#create DataIonoscloudCdnDistribution#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/cdn_distribution#create DataIonoscloudCdnDistribution#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/data-sources/cdn_distribution#default DataIonoscloudCdnDistribution#default}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/cdn_distribution#default DataIonoscloudCdnDistribution#default}.
 	Default *string `field:"optional" json:"default" yaml:"default"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/data-sources/cdn_distribution#delete DataIonoscloudCdnDistribution#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/cdn_distribution#delete DataIonoscloudCdnDistribution#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/data-sources/cdn_distribution#update DataIonoscloudCdnDistribution#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/cdn_distribution#update DataIonoscloudCdnDistribution#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

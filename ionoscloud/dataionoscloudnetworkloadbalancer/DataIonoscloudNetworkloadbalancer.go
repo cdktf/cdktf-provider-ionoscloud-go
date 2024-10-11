@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/data-sources/networkloadbalancer ionoscloud_networkloadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/networkloadbalancer ionoscloud_networkloadbalancer}.
 type DataIonoscloudNetworkloadbalancer interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -413,7 +413,7 @@ func (j *jsiiProxy_DataIonoscloudNetworkloadbalancer) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/data-sources/networkloadbalancer ionoscloud_networkloadbalancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/networkloadbalancer ionoscloud_networkloadbalancer} Data Source.
 func NewDataIonoscloudNetworkloadbalancer(scope constructs.Construct, id *string, config *DataIonoscloudNetworkloadbalancerConfig) DataIonoscloudNetworkloadbalancer {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewDataIonoscloudNetworkloadbalancer(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/data-sources/networkloadbalancer ionoscloud_networkloadbalancer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/networkloadbalancer ionoscloud_networkloadbalancer} Data Source.
 func NewDataIonoscloudNetworkloadbalancer_Override(d DataIonoscloudNetworkloadbalancer, scope constructs.Construct, id *string, config *DataIonoscloudNetworkloadbalancerConfig) {
 	_init_.Initialize()
 

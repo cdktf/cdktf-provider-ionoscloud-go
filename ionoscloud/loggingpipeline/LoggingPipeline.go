@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/resources/logging_pipeline ionoscloud_logging_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/logging_pipeline ionoscloud_logging_pipeline}.
 type LoggingPipeline interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_LoggingPipeline) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/resources/logging_pipeline ionoscloud_logging_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/logging_pipeline ionoscloud_logging_pipeline} Resource.
 func NewLoggingPipeline(scope constructs.Construct, id *string, config *LoggingPipelineConfig) LoggingPipeline {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewLoggingPipeline(scope constructs.Construct, id *string, config *LoggingP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/resources/logging_pipeline ionoscloud_logging_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/logging_pipeline ionoscloud_logging_pipeline} Resource.
 func NewLoggingPipeline_Override(l LoggingPipeline, scope constructs.Construct, id *string, config *LoggingPipelineConfig) {
 	_init_.Initialize()
 

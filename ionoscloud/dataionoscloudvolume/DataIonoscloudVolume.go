@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/data-sources/volume ionoscloud_volume}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/volume ionoscloud_volume}.
 type DataIonoscloudVolume interface {
 	cdktf.TerraformDataSource
 	AvailabilityZone() *string
@@ -51,7 +51,6 @@ type DataIonoscloudVolume interface {
 	SetId(val *string)
 	IdInput() *string
 	Image() *string
-	ImageAlias() *string
 	ImagePassword() *string
 	LicenceType() *string
 	// Experimental.
@@ -344,16 +343,6 @@ func (j *jsiiProxy_DataIonoscloudVolume) Image() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudVolume) ImageAlias() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"imageAlias",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataIonoscloudVolume) ImagePassword() *string {
 	var returns *string
 	_jsii_.Get(
@@ -545,7 +534,7 @@ func (j *jsiiProxy_DataIonoscloudVolume) UserData() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/data-sources/volume ionoscloud_volume} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/volume ionoscloud_volume} Data Source.
 func NewDataIonoscloudVolume(scope constructs.Construct, id *string, config *DataIonoscloudVolumeConfig) DataIonoscloudVolume {
 	_init_.Initialize()
 
@@ -563,7 +552,7 @@ func NewDataIonoscloudVolume(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/data-sources/volume ionoscloud_volume} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/volume ionoscloud_volume} Data Source.
 func NewDataIonoscloudVolume_Override(d DataIonoscloudVolume, scope constructs.Construct, id *string, config *DataIonoscloudVolumeConfig) {
 	_init_.Initialize()
 

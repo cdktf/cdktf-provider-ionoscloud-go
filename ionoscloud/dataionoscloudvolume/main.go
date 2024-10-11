@@ -45,7 +45,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "image", GoGetter: "Image"},
-			_jsii_.MemberProperty{JsiiProperty: "imageAlias", GoGetter: "ImageAlias"},
 			_jsii_.MemberProperty{JsiiProperty: "imagePassword", GoGetter: "ImagePassword"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "licenceType", GoGetter: "LicenceType"},

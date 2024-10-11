@@ -24,11 +24,11 @@ type S3BucketVersioningConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/resources/s3_bucket_versioning#bucket S3BucketVersioning#bucket}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/s3_bucket_versioning#bucket S3BucketVersioning#bucket}
 	Bucket *string `field:"required" json:"bucket" yaml:"bucket"`
 	// versioning_configuration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/resources/s3_bucket_versioning#versioning_configuration S3BucketVersioning#versioning_configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/s3_bucket_versioning#versioning_configuration S3BucketVersioning#versioning_configuration}
 	VersioningConfiguration *S3BucketVersioningVersioningConfiguration `field:"optional" json:"versioningConfiguration" yaml:"versioningConfiguration"`
 }
 
