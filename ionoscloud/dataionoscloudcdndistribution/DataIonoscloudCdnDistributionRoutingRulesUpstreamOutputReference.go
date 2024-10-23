@@ -36,6 +36,7 @@ type DataIonoscloudCdnDistributionRoutingRulesUpstreamOutputReference interface 
 	InternalValue() *DataIonoscloudCdnDistributionRoutingRulesUpstream
 	SetInternalValue(val *DataIonoscloudCdnDistributionRoutingRulesUpstream)
 	RateLimitClass() *string
+	SniMode() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -169,6 +170,16 @@ func (j *jsiiProxy_DataIonoscloudCdnDistributionRoutingRulesUpstreamOutputRefere
 	_jsii_.Get(
 		j,
 		"rateLimitClass",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudCdnDistributionRoutingRulesUpstreamOutputReference) SniMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sniMode",
 		&returns,
 	)
 	return returns

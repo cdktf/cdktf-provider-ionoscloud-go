@@ -24,24 +24,24 @@ type CdnDistributionConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The domain of the distribution.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#domain CdnDistribution#domain}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#domain CdnDistribution#domain}
 	Domain *string `field:"required" json:"domain" yaml:"domain"`
 	// routing_rules block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#routing_rules CdnDistribution#routing_rules}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#routing_rules CdnDistribution#routing_rules}
 	RoutingRules interface{} `field:"required" json:"routingRules" yaml:"routingRules"`
 	// The ID of the certificate to use for the distribution.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#certificate_id CdnDistribution#certificate_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#certificate_id CdnDistribution#certificate_id}
 	CertificateId *string `field:"optional" json:"certificateId" yaml:"certificateId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#id CdnDistribution#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#id CdnDistribution#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#timeouts CdnDistribution#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#timeouts CdnDistribution#timeouts}
 	Timeouts *CdnDistributionTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -79,6 +79,10 @@ func (j *jsiiProxy_CdnDistributionRoutingRulesUpstreamOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_CdnDistributionRoutingRulesUpstreamOutputReference) validateSetSniModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CdnDistributionRoutingRulesUpstreamOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

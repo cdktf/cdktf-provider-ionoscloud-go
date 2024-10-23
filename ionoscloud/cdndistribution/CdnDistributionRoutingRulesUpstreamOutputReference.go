@@ -43,6 +43,9 @@ type CdnDistributionRoutingRulesUpstreamOutputReference interface {
 	RateLimitClass() *string
 	SetRateLimitClass(val *string)
 	RateLimitClassInput() *string
+	SniMode() *string
+	SetSniMode(val *string)
+	SniModeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -225,6 +228,26 @@ func (j *jsiiProxy_CdnDistributionRoutingRulesUpstreamOutputReference) RateLimit
 	return returns
 }
 
+func (j *jsiiProxy_CdnDistributionRoutingRulesUpstreamOutputReference) SniMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sniMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CdnDistributionRoutingRulesUpstreamOutputReference) SniModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sniModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CdnDistributionRoutingRulesUpstreamOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -355,6 +378,17 @@ func (j *jsiiProxy_CdnDistributionRoutingRulesUpstreamOutputReference)SetRateLim
 	_jsii_.Set(
 		j,
 		"rateLimitClass",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CdnDistributionRoutingRulesUpstreamOutputReference)SetSniMode(val *string) {
+	if err := j.validateSetSniModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sniMode",
 		val,
 	)
 }

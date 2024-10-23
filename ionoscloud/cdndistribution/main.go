@@ -227,6 +227,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rateLimitClassInput", GoGetter: "RateLimitClassInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGeoRestrictions", GoMethod: "ResetGeoRestrictions"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sniMode", GoGetter: "SniMode"},
+			_jsii_.MemberProperty{JsiiProperty: "sniModeInput", GoGetter: "SniModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},

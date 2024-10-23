@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/apigateway_route ionoscloud_apigateway_route}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/apigateway_route ionoscloud_apigateway_route}.
 type DataIonoscloudApigatewayRoute interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_DataIonoscloudApigatewayRoute) Websocket() cdktf.IResolvable 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/apigateway_route ionoscloud_apigateway_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/apigateway_route ionoscloud_apigateway_route} Data Source.
 func NewDataIonoscloudApigatewayRoute(scope constructs.Construct, id *string, config *DataIonoscloudApigatewayRouteConfig) DataIonoscloudApigatewayRoute {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewDataIonoscloudApigatewayRoute(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/apigateway_route ionoscloud_apigateway_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/apigateway_route ionoscloud_apigateway_route} Data Source.
 func NewDataIonoscloudApigatewayRoute_Override(d DataIonoscloudApigatewayRoute, scope constructs.Construct, id *string, config *DataIonoscloudApigatewayRouteConfig) {
 	_init_.Initialize()
 

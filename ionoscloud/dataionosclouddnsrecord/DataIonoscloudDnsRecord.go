@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/dns_record ionoscloud_dns_record}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/dns_record ionoscloud_dns_record}.
 type DataIonoscloudDnsRecord interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_DataIonoscloudDnsRecord) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/dns_record ionoscloud_dns_record} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/dns_record ionoscloud_dns_record} Data Source.
 func NewDataIonoscloudDnsRecord(scope constructs.Construct, id *string, config *DataIonoscloudDnsRecordConfig) DataIonoscloudDnsRecord {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewDataIonoscloudDnsRecord(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/dns_record ionoscloud_dns_record} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/dns_record ionoscloud_dns_record} Data Source.
 func NewDataIonoscloudDnsRecord_Override(d DataIonoscloudDnsRecord, scope constructs.Construct, id *string, config *DataIonoscloudDnsRecordConfig) {
 	_init_.Initialize()
 
