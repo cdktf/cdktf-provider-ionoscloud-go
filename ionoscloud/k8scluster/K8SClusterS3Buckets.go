@@ -5,9 +5,9 @@ package k8scluster
 
 
 type K8SClusterS3Buckets struct {
-	// Name of the S3 bucket.
+	// Name of the Object Storage bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/k8s_cluster#name K8SCluster#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/k8s_cluster#name K8SCluster#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 
