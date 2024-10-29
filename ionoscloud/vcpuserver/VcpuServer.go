@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vcpu_server ionoscloud_vcpu_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vcpu_server ionoscloud_vcpu_server}.
 type VcpuServer interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -60,6 +60,9 @@ type VcpuServer interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Hostname() *string
+	SetHostname(val *string)
+	HostnameInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -166,6 +169,7 @@ type VcpuServer interface {
 	ResetBootCdrom()
 	ResetBootImage()
 	ResetFirewallruleIds()
+	ResetHostname()
 	ResetId()
 	ResetImageName()
 	ResetImagePassword()
@@ -420,6 +424,26 @@ func (j *jsiiProxy_VcpuServer) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VcpuServer) Hostname() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostname",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VcpuServer) HostnameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostnameInput",
 		&returns,
 	)
 	return returns
@@ -766,7 +790,7 @@ func (j *jsiiProxy_VcpuServer) VolumeInput() *VcpuServerVolume {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vcpu_server ionoscloud_vcpu_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vcpu_server ionoscloud_vcpu_server} Resource.
 func NewVcpuServer(scope constructs.Construct, id *string, config *VcpuServerConfig) VcpuServer {
 	_init_.Initialize()
 
@@ -784,7 +808,7 @@ func NewVcpuServer(scope constructs.Construct, id *string, config *VcpuServerCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vcpu_server ionoscloud_vcpu_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vcpu_server ionoscloud_vcpu_server} Resource.
 func NewVcpuServer_Override(v VcpuServer, scope constructs.Construct, id *string, config *VcpuServerConfig) {
 	_init_.Initialize()
 
@@ -895,6 +919,17 @@ func (j *jsiiProxy_VcpuServer)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VcpuServer)SetHostname(val *string) {
+	if err := j.validateSetHostnameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hostname",
 		val,
 	)
 }
@@ -1431,6 +1466,14 @@ func (v *jsiiProxy_VcpuServer) ResetFirewallruleIds() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetFirewallruleIds",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VcpuServer) ResetHostname() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetHostname",
 		nil, // no parameters
 	)
 }

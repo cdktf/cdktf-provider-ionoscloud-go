@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/cube_server ionoscloud_cube_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/cube_server ionoscloud_cube_server}.
 type CubeServer interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -53,6 +53,9 @@ type CubeServer interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Hostname() *string
+	SetHostname(val *string)
+	HostnameInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -154,6 +157,7 @@ type CubeServer interface {
 	ResetAvailabilityZone()
 	ResetBootCdrom()
 	ResetBootImage()
+	ResetHostname()
 	ResetId()
 	ResetImageName()
 	ResetImagePassword()
@@ -356,6 +360,26 @@ func (j *jsiiProxy_CubeServer) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CubeServer) Hostname() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostname",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CubeServer) HostnameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostnameInput",
 		&returns,
 	)
 	return returns
@@ -672,7 +696,7 @@ func (j *jsiiProxy_CubeServer) VolumeInput() *CubeServerVolume {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/cube_server ionoscloud_cube_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/cube_server ionoscloud_cube_server} Resource.
 func NewCubeServer(scope constructs.Construct, id *string, config *CubeServerConfig) CubeServer {
 	_init_.Initialize()
 
@@ -690,7 +714,7 @@ func NewCubeServer(scope constructs.Construct, id *string, config *CubeServerCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/cube_server ionoscloud_cube_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/cube_server ionoscloud_cube_server} Resource.
 func NewCubeServer_Override(c CubeServer, scope constructs.Construct, id *string, config *CubeServerConfig) {
 	_init_.Initialize()
 
@@ -779,6 +803,17 @@ func (j *jsiiProxy_CubeServer)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CubeServer)SetHostname(val *string) {
+	if err := j.validateSetHostnameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hostname",
 		val,
 	)
 }
@@ -1296,6 +1331,14 @@ func (c *jsiiProxy_CubeServer) ResetBootImage() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetBootImage",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CubeServer) ResetHostname() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetHostname",
 		nil, // no parameters
 	)
 }

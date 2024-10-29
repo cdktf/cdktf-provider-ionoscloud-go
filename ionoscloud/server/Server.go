@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/server ionoscloud_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/server ionoscloud_server}.
 type Server interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -62,6 +62,9 @@ type Server interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Hostname() *string
+	SetHostname(val *string)
+	HostnameInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -178,6 +181,7 @@ type Server interface {
 	ResetCores()
 	ResetCpuFamily()
 	ResetFirewallruleIds()
+	ResetHostname()
 	ResetId()
 	ResetImageName()
 	ResetImagePassword()
@@ -446,6 +450,26 @@ func (j *jsiiProxy_Server) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Server) Hostname() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostname",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Server) HostnameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostnameInput",
 		&returns,
 	)
 	return returns
@@ -842,7 +866,7 @@ func (j *jsiiProxy_Server) VolumeInput() *ServerVolume {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/server ionoscloud_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/server ionoscloud_server} Resource.
 func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Server {
 	_init_.Initialize()
 
@@ -860,7 +884,7 @@ func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Ser
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/server ionoscloud_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/server ionoscloud_server} Resource.
 func NewServer_Override(s Server, scope constructs.Construct, id *string, config *ServerConfig) {
 	_init_.Initialize()
 
@@ -982,6 +1006,17 @@ func (j *jsiiProxy_Server)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Server)SetHostname(val *string) {
+	if err := j.validateSetHostnameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hostname",
 		val,
 	)
 }
@@ -1567,6 +1602,14 @@ func (s *jsiiProxy_Server) ResetFirewallruleIds() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetFirewallruleIds",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Server) ResetHostname() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetHostname",
 		nil, // no parameters
 	)
 }

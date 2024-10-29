@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_object_lock_configuration ionoscloud_s3_bucket_object_lock_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_object_lock_configuration ionoscloud_s3_bucket_object_lock_configuration}.
 type S3BucketObjectLockConfiguration interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -357,7 +357,7 @@ func (j *jsiiProxy_S3BucketObjectLockConfiguration) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_object_lock_configuration ionoscloud_s3_bucket_object_lock_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_object_lock_configuration ionoscloud_s3_bucket_object_lock_configuration} Resource.
 func NewS3BucketObjectLockConfiguration(scope constructs.Construct, id *string, config *S3BucketObjectLockConfigurationConfig) S3BucketObjectLockConfiguration {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewS3BucketObjectLockConfiguration(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_object_lock_configuration ionoscloud_s3_bucket_object_lock_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_object_lock_configuration ionoscloud_s3_bucket_object_lock_configuration} Resource.
 func NewS3BucketObjectLockConfiguration_Override(s S3BucketObjectLockConfiguration, scope constructs.Construct, id *string, config *S3BucketObjectLockConfigurationConfig) {
 	_init_.Initialize()
 

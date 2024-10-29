@@ -37,6 +37,7 @@ type DataIonoscloudServersServersOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Hostname() *string
 	Id() *string
 	InternalValue() *DataIonoscloudServersServers
 	SetInternalValue(val *DataIonoscloudServersServers)
@@ -201,6 +202,16 @@ func (j *jsiiProxy_DataIonoscloudServersServersOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudServersServersOutputReference) Hostname() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostname",
 		&returns,
 	)
 	return returns

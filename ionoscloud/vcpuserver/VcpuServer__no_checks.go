@@ -139,6 +139,10 @@ func (j *jsiiProxy_VcpuServer) validateSetFirewallruleIdsParameters(val *[]*stri
 	return nil
 }
 
+func (j *jsiiProxy_VcpuServer) validateSetHostnameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VcpuServer) validateSetIdParameters(val *string) error {
 	return nil
 }

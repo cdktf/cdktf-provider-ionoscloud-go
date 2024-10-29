@@ -402,6 +402,14 @@ func (j *jsiiProxy_CubeServer) validateSetDatacenterIdParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_CubeServer) validateSetHostnameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CubeServer) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

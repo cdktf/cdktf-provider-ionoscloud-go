@@ -127,6 +127,10 @@ func (j *jsiiProxy_CubeServer) validateSetDatacenterIdParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_CubeServer) validateSetHostnameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CubeServer) validateSetIdParameters(val *string) error {
 	return nil
 }

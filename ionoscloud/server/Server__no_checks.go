@@ -143,6 +143,10 @@ func (j *jsiiProxy_Server) validateSetFirewallruleIdsParameters(val *[]*string) 
 	return nil
 }
 
+func (j *jsiiProxy_Server) validateSetHostnameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Server) validateSetIdParameters(val *string) error {
 	return nil
 }

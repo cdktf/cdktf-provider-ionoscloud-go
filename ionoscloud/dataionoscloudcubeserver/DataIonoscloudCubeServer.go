@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/cube_server ionoscloud_cube_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/cube_server ionoscloud_cube_server}.
 type DataIonoscloudCubeServer interface {
 	cdktf.TerraformDataSource
 	AvailabilityZone() *string
@@ -45,6 +45,7 @@ type DataIonoscloudCubeServer interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Hostname() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -291,6 +292,16 @@ func (j *jsiiProxy_DataIonoscloudCubeServer) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudCubeServer) Hostname() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostname",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudCubeServer) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -492,7 +503,7 @@ func (j *jsiiProxy_DataIonoscloudCubeServer) Volumes() DataIonoscloudCubeServerV
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/cube_server ionoscloud_cube_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/cube_server ionoscloud_cube_server} Data Source.
 func NewDataIonoscloudCubeServer(scope constructs.Construct, id *string, config *DataIonoscloudCubeServerConfig) DataIonoscloudCubeServer {
 	_init_.Initialize()
 
@@ -510,7 +521,7 @@ func NewDataIonoscloudCubeServer(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/cube_server ionoscloud_cube_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/cube_server ionoscloud_cube_server} Data Source.
 func NewDataIonoscloudCubeServer_Override(d DataIonoscloudCubeServer, scope constructs.Construct, id *string, config *DataIonoscloudCubeServerConfig) {
 	_init_.Initialize()
 
