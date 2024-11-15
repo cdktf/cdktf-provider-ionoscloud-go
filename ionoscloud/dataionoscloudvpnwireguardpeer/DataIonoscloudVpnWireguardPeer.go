@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/vpn_wireguard_peer ionoscloud_vpn_wireguard_peer}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/vpn_wireguard_peer ionoscloud_vpn_wireguard_peer}.
 type DataIonoscloudVpnWireguardPeer interface {
 	cdktf.TerraformDataSource
 	AllowedIps() *[]*string
@@ -96,6 +96,7 @@ type DataIonoscloudVpnWireguardPeer interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetLocation()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -390,7 +391,7 @@ func (j *jsiiProxy_DataIonoscloudVpnWireguardPeer) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/vpn_wireguard_peer ionoscloud_vpn_wireguard_peer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/vpn_wireguard_peer ionoscloud_vpn_wireguard_peer} Data Source.
 func NewDataIonoscloudVpnWireguardPeer(scope constructs.Construct, id *string, config *DataIonoscloudVpnWireguardPeerConfig) DataIonoscloudVpnWireguardPeer {
 	_init_.Initialize()
 
@@ -408,7 +409,7 @@ func NewDataIonoscloudVpnWireguardPeer(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/vpn_wireguard_peer ionoscloud_vpn_wireguard_peer} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/vpn_wireguard_peer ionoscloud_vpn_wireguard_peer} Data Source.
 func NewDataIonoscloudVpnWireguardPeer_Override(d DataIonoscloudVpnWireguardPeer, scope constructs.Construct, id *string, config *DataIonoscloudVpnWireguardPeerConfig) {
 	_init_.Initialize()
 
@@ -798,6 +799,14 @@ func (d *jsiiProxy_DataIonoscloudVpnWireguardPeer) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataIonoscloudVpnWireguardPeer) ResetLocation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

@@ -175,6 +175,10 @@ func (j *jsiiProxy_Server) validateSetRamParameters(val *float64) error {
 	return nil
 }
 
+func (j *jsiiProxy_Server) validateSetSecurityGroupsIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Server) validateSetSshKeyPathParameters(val *[]*string) error {
 	return nil
 }

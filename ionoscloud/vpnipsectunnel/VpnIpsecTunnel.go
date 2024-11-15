@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel ionoscloud_vpn_ipsec_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/vpn_ipsec_tunnel ionoscloud_vpn_ipsec_tunnel}.
 type VpnIpsecTunnel interface {
 	cdktf.TerraformResource
 	Auth() VpnIpsecTunnelAuthOutputReference
@@ -142,6 +142,7 @@ type VpnIpsecTunnel interface {
 	PutTimeouts(value *VpnIpsecTunnelTimeouts)
 	ResetDescription()
 	ResetId()
+	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -565,7 +566,7 @@ func (j *jsiiProxy_VpnIpsecTunnel) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel ionoscloud_vpn_ipsec_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/vpn_ipsec_tunnel ionoscloud_vpn_ipsec_tunnel} Resource.
 func NewVpnIpsecTunnel(scope constructs.Construct, id *string, config *VpnIpsecTunnelConfig) VpnIpsecTunnel {
 	_init_.Initialize()
 
@@ -583,7 +584,7 @@ func NewVpnIpsecTunnel(scope constructs.Construct, id *string, config *VpnIpsecT
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel ionoscloud_vpn_ipsec_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/vpn_ipsec_tunnel ionoscloud_vpn_ipsec_tunnel} Resource.
 func NewVpnIpsecTunnel_Override(v VpnIpsecTunnel, scope constructs.Construct, id *string, config *VpnIpsecTunnelConfig) {
 	_init_.Initialize()
 
@@ -1159,6 +1160,14 @@ func (v *jsiiProxy_VpnIpsecTunnel) ResetId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpnIpsecTunnel) ResetLocation() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

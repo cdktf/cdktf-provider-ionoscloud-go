@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/vpn_ipsec_tunnel ionoscloud_vpn_ipsec_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/vpn_ipsec_tunnel ionoscloud_vpn_ipsec_tunnel}.
 type DataIonoscloudVpnIpsecTunnel interface {
 	cdktf.TerraformDataSource
 	Auth() DataIonoscloudVpnIpsecTunnelAuthList
@@ -98,6 +98,7 @@ type DataIonoscloudVpnIpsecTunnel interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetLocation()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -412,7 +413,7 @@ func (j *jsiiProxy_DataIonoscloudVpnIpsecTunnel) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/vpn_ipsec_tunnel ionoscloud_vpn_ipsec_tunnel} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/vpn_ipsec_tunnel ionoscloud_vpn_ipsec_tunnel} Data Source.
 func NewDataIonoscloudVpnIpsecTunnel(scope constructs.Construct, id *string, config *DataIonoscloudVpnIpsecTunnelConfig) DataIonoscloudVpnIpsecTunnel {
 	_init_.Initialize()
 
@@ -430,7 +431,7 @@ func NewDataIonoscloudVpnIpsecTunnel(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/vpn_ipsec_tunnel ionoscloud_vpn_ipsec_tunnel} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/vpn_ipsec_tunnel ionoscloud_vpn_ipsec_tunnel} Data Source.
 func NewDataIonoscloudVpnIpsecTunnel_Override(d DataIonoscloudVpnIpsecTunnel, scope constructs.Construct, id *string, config *DataIonoscloudVpnIpsecTunnelConfig) {
 	_init_.Initialize()
 
@@ -820,6 +821,14 @@ func (d *jsiiProxy_DataIonoscloudVpnIpsecTunnel) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataIonoscloudVpnIpsecTunnel) ResetLocation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

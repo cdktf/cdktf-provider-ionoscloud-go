@@ -46,6 +46,7 @@ type DataIonoscloudVcpuServerNicsOutputReference interface {
 	Mac() *string
 	Name() *string
 	PciSlot() *float64
+	SecurityGroupsIds() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -278,6 +279,16 @@ func (j *jsiiProxy_DataIonoscloudVcpuServerNicsOutputReference) PciSlot() *float
 	_jsii_.Get(
 		j,
 		"pciSlot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudVcpuServerNicsOutputReference) SecurityGroupsIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupsIds",
 		&returns,
 	)
 	return returns

@@ -155,6 +155,10 @@ func (j *jsiiProxy_CubeServer) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_CubeServer) validateSetSecurityGroupsIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CubeServer) validateSetSshKeyPathParameters(val *[]*string) error {
 	return nil
 }

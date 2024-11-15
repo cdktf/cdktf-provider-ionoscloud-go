@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/mariadb_cluster ionoscloud_mariadb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/mariadb_cluster ionoscloud_mariadb_cluster}.
 type MariadbCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -577,7 +577,7 @@ func (j *jsiiProxy_MariadbCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/mariadb_cluster ionoscloud_mariadb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/mariadb_cluster ionoscloud_mariadb_cluster} Resource.
 func NewMariadbCluster(scope constructs.Construct, id *string, config *MariadbClusterConfig) MariadbCluster {
 	_init_.Initialize()
 
@@ -595,7 +595,7 @@ func NewMariadbCluster(scope constructs.Construct, id *string, config *MariadbCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/mariadb_cluster ionoscloud_mariadb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/mariadb_cluster ionoscloud_mariadb_cluster} Resource.
 func NewMariadbCluster_Override(m MariadbCluster, scope constructs.Construct, id *string, config *MariadbClusterConfig) {
 	_init_.Initialize()
 

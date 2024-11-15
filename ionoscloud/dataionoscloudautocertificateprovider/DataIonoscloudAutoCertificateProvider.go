@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/auto_certificate_provider ionoscloud_auto_certificate_provider}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/auto_certificate_provider ionoscloud_auto_certificate_provider}.
 type DataIonoscloudAutoCertificateProvider interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -94,6 +94,7 @@ type DataIonoscloudAutoCertificateProvider interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DataIonoscloudAutoCertificateProviderTimeouts)
 	ResetId()
+	ResetLocation()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -369,7 +370,7 @@ func (j *jsiiProxy_DataIonoscloudAutoCertificateProvider) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/auto_certificate_provider ionoscloud_auto_certificate_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/auto_certificate_provider ionoscloud_auto_certificate_provider} Data Source.
 func NewDataIonoscloudAutoCertificateProvider(scope constructs.Construct, id *string, config *DataIonoscloudAutoCertificateProviderConfig) DataIonoscloudAutoCertificateProvider {
 	_init_.Initialize()
 
@@ -387,7 +388,7 @@ func NewDataIonoscloudAutoCertificateProvider(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/auto_certificate_provider ionoscloud_auto_certificate_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/auto_certificate_provider ionoscloud_auto_certificate_provider} Data Source.
 func NewDataIonoscloudAutoCertificateProvider_Override(d DataIonoscloudAutoCertificateProvider, scope constructs.Construct, id *string, config *DataIonoscloudAutoCertificateProviderConfig) {
 	_init_.Initialize()
 
@@ -777,6 +778,14 @@ func (d *jsiiProxy_DataIonoscloudAutoCertificateProvider) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataIonoscloudAutoCertificateProvider) ResetLocation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

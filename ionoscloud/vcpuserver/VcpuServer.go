@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vcpu_server ionoscloud_vcpu_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/vcpu_server ionoscloud_vcpu_server}.
 type VcpuServer interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -101,6 +101,9 @@ type VcpuServer interface {
 	RamInput() *float64
 	// Experimental.
 	RawOverrides() interface{}
+	SecurityGroupsIds() *[]*string
+	SetSecurityGroupsIds(val *[]*string)
+	SecurityGroupsIdsInput() *[]*string
 	SshKeys() *[]*string
 	SetSshKeys(val *[]*string)
 	SshKeysInput() *[]*string
@@ -178,6 +181,7 @@ type VcpuServer interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSecurityGroupsIds()
 	ResetSshKeys()
 	ResetTimeouts()
 	ResetVmState()
@@ -669,6 +673,26 @@ func (j *jsiiProxy_VcpuServer) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VcpuServer) SecurityGroupsIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupsIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VcpuServer) SecurityGroupsIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupsIdsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VcpuServer) SshKeys() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -790,7 +814,7 @@ func (j *jsiiProxy_VcpuServer) VolumeInput() *VcpuServerVolume {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vcpu_server ionoscloud_vcpu_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/vcpu_server ionoscloud_vcpu_server} Resource.
 func NewVcpuServer(scope constructs.Construct, id *string, config *VcpuServerConfig) VcpuServer {
 	_init_.Initialize()
 
@@ -808,7 +832,7 @@ func NewVcpuServer(scope constructs.Construct, id *string, config *VcpuServerCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vcpu_server ionoscloud_vcpu_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/vcpu_server ionoscloud_vcpu_server} Resource.
 func NewVcpuServer_Override(v VcpuServer, scope constructs.Construct, id *string, config *VcpuServerConfig) {
 	_init_.Initialize()
 
@@ -1015,6 +1039,17 @@ func (j *jsiiProxy_VcpuServer)SetRam(val *float64) {
 	_jsii_.Set(
 		j,
 		"ram",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VcpuServer)SetSecurityGroupsIds(val *[]*string) {
+	if err := j.validateSetSecurityGroupsIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityGroupsIds",
 		val,
 	)
 }
@@ -1522,6 +1557,14 @@ func (v *jsiiProxy_VcpuServer) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VcpuServer) ResetSecurityGroupsIds() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetSecurityGroupsIds",
 		nil, // no parameters
 	)
 }

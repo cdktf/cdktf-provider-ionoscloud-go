@@ -103,6 +103,10 @@ func (j *jsiiProxy_CubeServerNicOutputReference) validateSetNameParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_CubeServerNicOutputReference) validateSetSecurityGroupsIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CubeServerNicOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

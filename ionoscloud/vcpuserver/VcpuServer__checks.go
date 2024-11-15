@@ -551,6 +551,14 @@ func (j *jsiiProxy_VcpuServer) validateSetRamParameters(val *float64) error {
 	return nil
 }
 
+func (j *jsiiProxy_VcpuServer) validateSetSecurityGroupsIdsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VcpuServer) validateSetSshKeysParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

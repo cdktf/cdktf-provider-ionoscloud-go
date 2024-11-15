@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/cube_server ionoscloud_cube_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server ionoscloud_cube_server}.
 type CubeServer interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -89,6 +89,9 @@ type CubeServer interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SecurityGroupsIds() *[]*string
+	SetSecurityGroupsIds(val *[]*string)
+	SecurityGroupsIdsInput() *[]*string
 	SshKeyPath() *[]*string
 	SetSshKeyPath(val *[]*string)
 	SshKeyPathInput() *[]*string
@@ -164,6 +167,7 @@ type CubeServer interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSecurityGroupsIds()
 	ResetSshKeyPath()
 	ResetTimeouts()
 	ResetVmState()
@@ -565,6 +569,26 @@ func (j *jsiiProxy_CubeServer) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CubeServer) SecurityGroupsIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupsIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CubeServer) SecurityGroupsIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupsIdsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CubeServer) SshKeyPath() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -696,7 +720,7 @@ func (j *jsiiProxy_CubeServer) VolumeInput() *CubeServerVolume {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/cube_server ionoscloud_cube_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server ionoscloud_cube_server} Resource.
 func NewCubeServer(scope constructs.Construct, id *string, config *CubeServerConfig) CubeServer {
 	_init_.Initialize()
 
@@ -714,7 +738,7 @@ func NewCubeServer(scope constructs.Construct, id *string, config *CubeServerCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/cube_server ionoscloud_cube_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server ionoscloud_cube_server} Resource.
 func NewCubeServer_Override(c CubeServer, scope constructs.Construct, id *string, config *CubeServerConfig) {
 	_init_.Initialize()
 
@@ -888,6 +912,17 @@ func (j *jsiiProxy_CubeServer)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CubeServer)SetSecurityGroupsIds(val *[]*string) {
+	if err := j.validateSetSecurityGroupsIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityGroupsIds",
 		val,
 	)
 }
@@ -1371,6 +1406,14 @@ func (c *jsiiProxy_CubeServer) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CubeServer) ResetSecurityGroupsIds() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSecurityGroupsIds",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_wireguard_gateway ionoscloud_vpn_wireguard_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/vpn_wireguard_gateway ionoscloud_vpn_wireguard_gateway}.
 type VpnWireguardGateway interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -144,6 +144,7 @@ type VpnWireguardGateway interface {
 	ResetInterfaceIpv4Cidr()
 	ResetInterfaceIpv6Cidr()
 	ResetListenPort()
+	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -567,7 +568,7 @@ func (j *jsiiProxy_VpnWireguardGateway) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_wireguard_gateway ionoscloud_vpn_wireguard_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/vpn_wireguard_gateway ionoscloud_vpn_wireguard_gateway} Resource.
 func NewVpnWireguardGateway(scope constructs.Construct, id *string, config *VpnWireguardGatewayConfig) VpnWireguardGateway {
 	_init_.Initialize()
 
@@ -585,7 +586,7 @@ func NewVpnWireguardGateway(scope constructs.Construct, id *string, config *VpnW
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_wireguard_gateway ionoscloud_vpn_wireguard_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/vpn_wireguard_gateway ionoscloud_vpn_wireguard_gateway} Resource.
 func NewVpnWireguardGateway_Override(v VpnWireguardGateway, scope constructs.Construct, id *string, config *VpnWireguardGatewayConfig) {
 	_init_.Initialize()
 
@@ -1174,6 +1175,14 @@ func (v *jsiiProxy_VpnWireguardGateway) ResetListenPort() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetListenPort",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpnWireguardGateway) ResetLocation() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

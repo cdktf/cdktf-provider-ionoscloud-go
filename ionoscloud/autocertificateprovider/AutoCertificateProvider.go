@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/auto_certificate_provider ionoscloud_auto_certificate_provider}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/auto_certificate_provider ionoscloud_auto_certificate_provider}.
 type AutoCertificateProvider interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -127,6 +127,7 @@ type AutoCertificateProvider interface {
 	PutTimeouts(value *AutoCertificateProviderTimeouts)
 	ResetExternalAccountBinding()
 	ResetId()
+	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -450,7 +451,7 @@ func (j *jsiiProxy_AutoCertificateProvider) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/auto_certificate_provider ionoscloud_auto_certificate_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/auto_certificate_provider ionoscloud_auto_certificate_provider} Resource.
 func NewAutoCertificateProvider(scope constructs.Construct, id *string, config *AutoCertificateProviderConfig) AutoCertificateProvider {
 	_init_.Initialize()
 
@@ -468,7 +469,7 @@ func NewAutoCertificateProvider(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/auto_certificate_provider ionoscloud_auto_certificate_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/auto_certificate_provider ionoscloud_auto_certificate_provider} Resource.
 func NewAutoCertificateProvider_Override(a AutoCertificateProvider, scope constructs.Construct, id *string, config *AutoCertificateProviderConfig) {
 	_init_.Initialize()
 
@@ -989,6 +990,14 @@ func (a *jsiiProxy_AutoCertificateProvider) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutoCertificateProvider) ResetLocation() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

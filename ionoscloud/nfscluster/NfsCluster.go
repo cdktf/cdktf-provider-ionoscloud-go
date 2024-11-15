@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/nfs_cluster ionoscloud_nfs_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/nfs_cluster ionoscloud_nfs_cluster}.
 type NfsCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -123,6 +123,7 @@ type NfsCluster interface {
 	PutConnections(value *NfsClusterConnections)
 	PutNfs(value *NfsClusterNfs)
 	PutTimeouts(value *NfsClusterTimeouts)
+	ResetLocation()
 	ResetNfs()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -437,7 +438,7 @@ func (j *jsiiProxy_NfsCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/nfs_cluster ionoscloud_nfs_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/nfs_cluster ionoscloud_nfs_cluster} Resource.
 func NewNfsCluster(scope constructs.Construct, id *string, config *NfsClusterConfig) NfsCluster {
 	_init_.Initialize()
 
@@ -455,7 +456,7 @@ func NewNfsCluster(scope constructs.Construct, id *string, config *NfsClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/nfs_cluster ionoscloud_nfs_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/nfs_cluster ionoscloud_nfs_cluster} Resource.
 func NewNfsCluster_Override(n NfsCluster, scope constructs.Construct, id *string, config *NfsClusterConfig) {
 	_init_.Initialize()
 
@@ -950,6 +951,14 @@ func (n *jsiiProxy_NfsCluster) PutTimeouts(value *NfsClusterTimeouts) {
 		n,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NfsCluster) ResetLocation() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetLocation",
+		nil, // no parameters
 	)
 }
 

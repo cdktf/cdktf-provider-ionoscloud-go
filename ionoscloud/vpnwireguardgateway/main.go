@@ -73,6 +73,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetInterfaceIpv4Cidr", GoMethod: "ResetInterfaceIpv4Cidr"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInterfaceIpv6Cidr", GoMethod: "ResetInterfaceIpv6Cidr"},
 			_jsii_.MemberMethod{JsiiMethod: "resetListenPort", GoMethod: "ResetListenPort"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLocation", GoMethod: "ResetLocation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},

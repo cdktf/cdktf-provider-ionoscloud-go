@@ -103,6 +103,10 @@ func (j *jsiiProxy_VcpuServerNicOutputReference) validateSetNameParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_VcpuServerNicOutputReference) validateSetSecurityGroupsIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VcpuServerNicOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

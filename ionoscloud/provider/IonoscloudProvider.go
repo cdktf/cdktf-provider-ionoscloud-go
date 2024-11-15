@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs ionoscloud}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs ionoscloud}.
 type IonoscloudProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -32,6 +32,9 @@ type IonoscloudProvider interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Insecure() interface{}
+	SetInsecure(val interface{})
+	InsecureInput() interface{}
 	// Experimental.
 	MetaAttributes() *map[string]interface{}
 	// The tree node.
@@ -73,6 +76,7 @@ type IonoscloudProvider interface {
 	ResetAlias()
 	ResetContractNumber()
 	ResetEndpoint()
+	ResetInsecure()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -196,6 +200,26 @@ func (j *jsiiProxy_IonoscloudProvider) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IonoscloudProvider) Insecure() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"insecure",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IonoscloudProvider) InsecureInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"insecureInput",
 		&returns,
 	)
 	return returns
@@ -402,7 +426,7 @@ func (j *jsiiProxy_IonoscloudProvider) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs ionoscloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs ionoscloud} Resource.
 func NewIonoscloudProvider(scope constructs.Construct, id *string, config *IonoscloudProviderConfig) IonoscloudProvider {
 	_init_.Initialize()
 
@@ -420,7 +444,7 @@ func NewIonoscloudProvider(scope constructs.Construct, id *string, config *Ionos
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs ionoscloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs ionoscloud} Resource.
 func NewIonoscloudProvider_Override(i IonoscloudProvider, scope constructs.Construct, id *string, config *IonoscloudProviderConfig) {
 	_init_.Initialize()
 
@@ -451,6 +475,17 @@ func (j *jsiiProxy_IonoscloudProvider)SetEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"endpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IonoscloudProvider)SetInsecure(val interface{}) {
+	if err := j.validateSetInsecureParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"insecure",
 		val,
 	)
 }
@@ -656,6 +691,14 @@ func (i *jsiiProxy_IonoscloudProvider) ResetEndpoint() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IonoscloudProvider) ResetInsecure() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetInsecure",
 		nil, // no parameters
 	)
 }

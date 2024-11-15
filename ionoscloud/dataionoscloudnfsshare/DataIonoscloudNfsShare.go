@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/nfs_share ionoscloud_nfs_share}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/nfs_share ionoscloud_nfs_share}.
 type DataIonoscloudNfsShare interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -109,6 +109,7 @@ type DataIonoscloudNfsShare interface {
 	ResetClientGroups()
 	ResetGid()
 	ResetId()
+	ResetLocation()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -466,7 +467,7 @@ func (j *jsiiProxy_DataIonoscloudNfsShare) UidInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/nfs_share ionoscloud_nfs_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/nfs_share ionoscloud_nfs_share} Data Source.
 func NewDataIonoscloudNfsShare(scope constructs.Construct, id *string, config *DataIonoscloudNfsShareConfig) DataIonoscloudNfsShare {
 	_init_.Initialize()
 
@@ -484,7 +485,7 @@ func NewDataIonoscloudNfsShare(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/nfs_share ionoscloud_nfs_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/nfs_share ionoscloud_nfs_share} Data Source.
 func NewDataIonoscloudNfsShare_Override(d DataIonoscloudNfsShare, scope constructs.Construct, id *string, config *DataIonoscloudNfsShareConfig) {
 	_init_.Initialize()
 
@@ -945,6 +946,14 @@ func (d *jsiiProxy_DataIonoscloudNfsShare) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataIonoscloudNfsShare) ResetLocation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

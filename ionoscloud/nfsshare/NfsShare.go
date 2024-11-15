@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/nfs_share ionoscloud_nfs_share}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/nfs_share ionoscloud_nfs_share}.
 type NfsShare interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -131,6 +131,7 @@ type NfsShare interface {
 	PutClientGroups(value interface{})
 	PutTimeouts(value *NfsShareTimeouts)
 	ResetGid()
+	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -496,7 +497,7 @@ func (j *jsiiProxy_NfsShare) UidInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/nfs_share ionoscloud_nfs_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/nfs_share ionoscloud_nfs_share} Resource.
 func NewNfsShare(scope constructs.Construct, id *string, config *NfsShareConfig) NfsShare {
 	_init_.Initialize()
 
@@ -514,7 +515,7 @@ func NewNfsShare(scope constructs.Construct, id *string, config *NfsShareConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/nfs_share ionoscloud_nfs_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/nfs_share ionoscloud_nfs_share} Resource.
 func NewNfsShare_Override(n NfsShare, scope constructs.Construct, id *string, config *NfsShareConfig) {
 	_init_.Initialize()
 
@@ -1038,6 +1039,14 @@ func (n *jsiiProxy_NfsShare) ResetGid() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetGid",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NfsShare) ResetLocation() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

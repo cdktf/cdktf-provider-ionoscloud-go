@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster ionoscloud_kafka_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster ionoscloud_kafka_cluster}.
 type KafkaCluster interface {
 	cdktf.TerraformResource
 	BrokerAddresses() *[]*string
@@ -124,6 +124,7 @@ type KafkaCluster interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutConnections(value *KafkaClusterConnections)
 	PutTimeouts(value *KafkaClusterTimeouts)
+	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -447,7 +448,7 @@ func (j *jsiiProxy_KafkaCluster) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster ionoscloud_kafka_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster ionoscloud_kafka_cluster} Resource.
 func NewKafkaCluster(scope constructs.Construct, id *string, config *KafkaClusterConfig) KafkaCluster {
 	_init_.Initialize()
 
@@ -465,7 +466,7 @@ func NewKafkaCluster(scope constructs.Construct, id *string, config *KafkaCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster ionoscloud_kafka_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster ionoscloud_kafka_cluster} Resource.
 func NewKafkaCluster_Override(k KafkaCluster, scope constructs.Construct, id *string, config *KafkaClusterConfig) {
 	_init_.Initialize()
 
@@ -960,6 +961,14 @@ func (k *jsiiProxy_KafkaCluster) PutTimeouts(value *KafkaClusterTimeouts) {
 		k,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (k *jsiiProxy_KafkaCluster) ResetLocation() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetLocation",
+		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway}.
 type DataIonoscloudVpnIpsecGateway interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -94,6 +94,7 @@ type DataIonoscloudVpnIpsecGateway interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetLocation()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -369,7 +370,7 @@ func (j *jsiiProxy_DataIonoscloudVpnIpsecGateway) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway} Data Source.
 func NewDataIonoscloudVpnIpsecGateway(scope constructs.Construct, id *string, config *DataIonoscloudVpnIpsecGatewayConfig) DataIonoscloudVpnIpsecGateway {
 	_init_.Initialize()
 
@@ -387,7 +388,7 @@ func NewDataIonoscloudVpnIpsecGateway(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway} Data Source.
 func NewDataIonoscloudVpnIpsecGateway_Override(d DataIonoscloudVpnIpsecGateway, scope constructs.Construct, id *string, config *DataIonoscloudVpnIpsecGatewayConfig) {
 	_init_.Initialize()
 
@@ -777,6 +778,14 @@ func (d *jsiiProxy_DataIonoscloudVpnIpsecGateway) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataIonoscloudVpnIpsecGateway) ResetLocation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

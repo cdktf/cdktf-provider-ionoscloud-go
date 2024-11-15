@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/server ionoscloud_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/server ionoscloud_server}.
 type Server interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -103,6 +103,9 @@ type Server interface {
 	RamInput() *float64
 	// Experimental.
 	RawOverrides() interface{}
+	SecurityGroupsIds() *[]*string
+	SetSecurityGroupsIds(val *[]*string)
+	SecurityGroupsIdsInput() *[]*string
 	SshKeyPath() *[]*string
 	SetSshKeyPath(val *[]*string)
 	SshKeyPathInput() *[]*string
@@ -191,6 +194,7 @@ type Server interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRam()
+	ResetSecurityGroupsIds()
 	ResetSshKeyPath()
 	ResetSshKeys()
 	ResetTemplateUuid()
@@ -695,6 +699,26 @@ func (j *jsiiProxy_Server) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Server) SecurityGroupsIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupsIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Server) SecurityGroupsIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupsIdsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Server) SshKeyPath() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -866,7 +890,7 @@ func (j *jsiiProxy_Server) VolumeInput() *ServerVolume {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/server ionoscloud_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/server ionoscloud_server} Resource.
 func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Server {
 	_init_.Initialize()
 
@@ -884,7 +908,7 @@ func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Ser
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/server ionoscloud_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/server ionoscloud_server} Resource.
 func NewServer_Override(s Server, scope constructs.Construct, id *string, config *ServerConfig) {
 	_init_.Initialize()
 
@@ -1102,6 +1126,17 @@ func (j *jsiiProxy_Server)SetRam(val *float64) {
 	_jsii_.Set(
 		j,
 		"ram",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Server)SetSecurityGroupsIds(val *[]*string) {
+	if err := j.validateSetSecurityGroupsIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityGroupsIds",
 		val,
 	)
 }
@@ -1666,6 +1701,14 @@ func (s *jsiiProxy_Server) ResetRam() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRam",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Server) ResetSecurityGroupsIds() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSecurityGroupsIds",
 		nil, // no parameters
 	)
 }

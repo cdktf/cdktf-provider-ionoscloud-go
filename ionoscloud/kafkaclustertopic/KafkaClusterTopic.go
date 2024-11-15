@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic ionoscloud_kafka_cluster_topic}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic ionoscloud_kafka_cluster_topic}.
 type KafkaClusterTopic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -129,6 +129,7 @@ type KafkaClusterTopic interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *KafkaClusterTopicTimeouts)
+	ResetLocation()
 	ResetNumberOfPartitions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -486,7 +487,7 @@ func (j *jsiiProxy_KafkaClusterTopic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic ionoscloud_kafka_cluster_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic ionoscloud_kafka_cluster_topic} Resource.
 func NewKafkaClusterTopic(scope constructs.Construct, id *string, config *KafkaClusterTopicConfig) KafkaClusterTopic {
 	_init_.Initialize()
 
@@ -504,7 +505,7 @@ func NewKafkaClusterTopic(scope constructs.Construct, id *string, config *KafkaC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic ionoscloud_kafka_cluster_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic ionoscloud_kafka_cluster_topic} Resource.
 func NewKafkaClusterTopic_Override(k KafkaClusterTopic, scope constructs.Construct, id *string, config *KafkaClusterTopicConfig) {
 	_init_.Initialize()
 
@@ -1021,6 +1022,14 @@ func (k *jsiiProxy_KafkaClusterTopic) PutTimeouts(value *KafkaClusterTopicTimeou
 		k,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (k *jsiiProxy_KafkaClusterTopic) ResetLocation() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetLocation",
+		nil, // no parameters
 	)
 }
 

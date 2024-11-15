@@ -64,6 +64,9 @@ type CubeServerNicOutputReference interface {
 	SetName(val *string)
 	NameInput() *string
 	PciSlot() *float64
+	SecurityGroupsIds() *[]*string
+	SetSecurityGroupsIds(val *[]*string)
+	SecurityGroupsIdsInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -106,6 +109,7 @@ type CubeServerNicOutputReference interface {
 	ResetIpv6CidrBlock()
 	ResetIpv6Ips()
 	ResetName()
+	ResetSecurityGroupsIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -401,6 +405,26 @@ func (j *jsiiProxy_CubeServerNicOutputReference) PciSlot() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_CubeServerNicOutputReference) SecurityGroupsIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupsIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CubeServerNicOutputReference) SecurityGroupsIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupsIdsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CubeServerNicOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -577,6 +601,17 @@ func (j *jsiiProxy_CubeServerNicOutputReference)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CubeServerNicOutputReference)SetSecurityGroupsIds(val *[]*string) {
+	if err := j.validateSetSecurityGroupsIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityGroupsIds",
 		val,
 	)
 }
@@ -868,6 +903,14 @@ func (c *jsiiProxy_CubeServerNicOutputReference) ResetName() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CubeServerNicOutputReference) ResetSecurityGroupsIds() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSecurityGroupsIds",
 		nil, // no parameters
 	)
 }

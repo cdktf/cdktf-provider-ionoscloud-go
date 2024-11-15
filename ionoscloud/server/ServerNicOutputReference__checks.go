@@ -313,6 +313,14 @@ func (j *jsiiProxy_ServerNicOutputReference) validateSetNameParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_ServerNicOutputReference) validateSetSecurityGroupsIdsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ServerNicOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/nic ionoscloud_nic}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/nic ionoscloud_nic}.
 type DataIonoscloudNic interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -84,6 +84,7 @@ type DataIonoscloudNic interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	SecurityGroupsIds() *[]*string
 	ServerId() *string
 	SetServerId(val *string)
 	ServerIdInput() *string
@@ -524,6 +525,16 @@ func (j *jsiiProxy_DataIonoscloudNic) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudNic) SecurityGroupsIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupsIds",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudNic) ServerId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -595,7 +606,7 @@ func (j *jsiiProxy_DataIonoscloudNic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/nic ionoscloud_nic} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/nic ionoscloud_nic} Data Source.
 func NewDataIonoscloudNic(scope constructs.Construct, id *string, config *DataIonoscloudNicConfig) DataIonoscloudNic {
 	_init_.Initialize()
 
@@ -613,7 +624,7 @@ func NewDataIonoscloudNic(scope constructs.Construct, id *string, config *DataIo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/nic ionoscloud_nic} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/nic ionoscloud_nic} Data Source.
 func NewDataIonoscloudNic_Override(d DataIonoscloudNic, scope constructs.Construct, id *string, config *DataIonoscloudNicConfig) {
 	_init_.Initialize()
 

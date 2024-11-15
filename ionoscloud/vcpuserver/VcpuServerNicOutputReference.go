@@ -65,6 +65,9 @@ type VcpuServerNicOutputReference interface {
 	SetName(val *string)
 	NameInput() *string
 	PciSlot() *float64
+	SecurityGroupsIds() *[]*string
+	SetSecurityGroupsIds(val *[]*string)
+	SecurityGroupsIdsInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -107,6 +110,7 @@ type VcpuServerNicOutputReference interface {
 	ResetIpv6CidrBlock()
 	ResetIpv6Ips()
 	ResetName()
+	ResetSecurityGroupsIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -412,6 +416,26 @@ func (j *jsiiProxy_VcpuServerNicOutputReference) PciSlot() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_VcpuServerNicOutputReference) SecurityGroupsIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupsIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VcpuServerNicOutputReference) SecurityGroupsIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupsIdsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VcpuServerNicOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -588,6 +612,17 @@ func (j *jsiiProxy_VcpuServerNicOutputReference)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VcpuServerNicOutputReference)SetSecurityGroupsIds(val *[]*string) {
+	if err := j.validateSetSecurityGroupsIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityGroupsIds",
 		val,
 	)
 }
@@ -879,6 +914,14 @@ func (v *jsiiProxy_VcpuServerNicOutputReference) ResetName() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VcpuServerNicOutputReference) ResetSecurityGroupsIds() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetSecurityGroupsIds",
 		nil, // no parameters
 	)
 }

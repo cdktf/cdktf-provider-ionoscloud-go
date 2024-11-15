@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/nic ionoscloud_nic}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/nic ionoscloud_nic}.
 type Nic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -93,6 +93,9 @@ type Nic interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SecurityGroupsIds() *[]*string
+	SetSecurityGroupsIds(val *[]*string)
+	SecurityGroupsIdsInput() *[]*string
 	ServerId() *string
 	SetServerId(val *string)
 	ServerIdInput() *string
@@ -162,6 +165,7 @@ type Nic interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSecurityGroupsIds()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -581,6 +585,26 @@ func (j *jsiiProxy_Nic) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Nic) SecurityGroupsIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupsIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Nic) SecurityGroupsIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupsIdsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Nic) ServerId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -652,7 +676,7 @@ func (j *jsiiProxy_Nic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/nic ionoscloud_nic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/nic ionoscloud_nic} Resource.
 func NewNic(scope constructs.Construct, id *string, config *NicConfig) Nic {
 	_init_.Initialize()
 
@@ -670,7 +694,7 @@ func NewNic(scope constructs.Construct, id *string, config *NicConfig) Nic {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/nic ionoscloud_nic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/nic ionoscloud_nic} Resource.
 func NewNic_Override(n Nic, scope constructs.Construct, id *string, config *NicConfig) {
 	_init_.Initialize()
 
@@ -866,6 +890,17 @@ func (j *jsiiProxy_Nic)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Nic)SetSecurityGroupsIds(val *[]*string) {
+	if err := j.validateSetSecurityGroupsIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityGroupsIds",
 		val,
 	)
 }
@@ -1340,6 +1375,14 @@ func (n *jsiiProxy_Nic) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Nic) ResetSecurityGroupsIds() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetSecurityGroupsIds",
 		nil, // no parameters
 	)
 }
