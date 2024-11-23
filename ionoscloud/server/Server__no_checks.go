@@ -107,6 +107,10 @@ func validateServer_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Server) validateSetAllowReplaceParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Server) validateSetAvailabilityZoneParameters(val *string) error {
 	return nil
 }

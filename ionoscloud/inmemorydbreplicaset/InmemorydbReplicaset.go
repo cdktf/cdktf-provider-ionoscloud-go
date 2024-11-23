@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/inmemorydb_replicaset ionoscloud_inmemorydb_replicaset}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/inmemorydb_replicaset ionoscloud_inmemorydb_replicaset}.
 type InmemorydbReplicaset interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -601,7 +601,7 @@ func (j *jsiiProxy_InmemorydbReplicaset) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/inmemorydb_replicaset ionoscloud_inmemorydb_replicaset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/inmemorydb_replicaset ionoscloud_inmemorydb_replicaset} Resource.
 func NewInmemorydbReplicaset(scope constructs.Construct, id *string, config *InmemorydbReplicasetConfig) InmemorydbReplicaset {
 	_init_.Initialize()
 
@@ -619,7 +619,7 @@ func NewInmemorydbReplicaset(scope constructs.Construct, id *string, config *Inm
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/inmemorydb_replicaset ionoscloud_inmemorydb_replicaset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/inmemorydb_replicaset ionoscloud_inmemorydb_replicaset} Resource.
 func NewInmemorydbReplicaset_Override(i InmemorydbReplicaset, scope constructs.Construct, id *string, config *InmemorydbReplicasetConfig) {
 	_init_.Initialize()
 

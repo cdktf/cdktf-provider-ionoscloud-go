@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataIonoscloudIpblock) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudIpblock) validatePutIpConsumersParameters(value interface{}) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataIonoscloudIpblock) validatePutTimeoutsParameters(value *DataIonoscloudIpblockTimeouts) error {
 	return nil
 }

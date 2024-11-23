@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataIonoscloudIpblockIpConsumersOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_DataIonoscloudIpblockIpConsumersOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataIonoscloudIpblockIpConsumersOutputReference) validateSetInternalValueParameters(val *DataIonoscloudIpblockIpConsumers) error {
 	return nil
 }
 

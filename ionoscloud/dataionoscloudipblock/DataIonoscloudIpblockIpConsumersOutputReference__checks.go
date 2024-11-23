@@ -166,25 +166,9 @@ func (j *jsiiProxy_DataIonoscloudIpblockIpConsumersOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_DataIonoscloudIpblockIpConsumersOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataIonoscloudIpblockIpConsumers:
-		val := val.(*DataIonoscloudIpblockIpConsumers)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataIonoscloudIpblockIpConsumers:
-		val_ := val.(DataIonoscloudIpblockIpConsumers)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataIonoscloudIpblockIpConsumers; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataIonoscloudIpblockIpConsumersOutputReference) validateSetInternalValueParameters(val *DataIonoscloudIpblockIpConsumers) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server ionoscloud_cube_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server ionoscloud_cube_server}.
 type CubeServer interface {
 	cdktf.TerraformResource
+	AllowReplace() interface{}
+	SetAllowReplace(val interface{})
+	AllowReplaceInput() interface{}
 	AvailabilityZone() *string
 	SetAvailabilityZone(val *string)
 	AvailabilityZoneInput() *string
@@ -157,6 +160,7 @@ type CubeServer interface {
 	PutNic(value *CubeServerNic)
 	PutTimeouts(value *CubeServerTimeouts)
 	PutVolume(value *CubeServerVolume)
+	ResetAllowReplace()
 	ResetAvailabilityZone()
 	ResetBootCdrom()
 	ResetBootImage()
@@ -187,6 +191,26 @@ type CubeServer interface {
 // The jsii proxy struct for CubeServer
 type jsiiProxy_CubeServer struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_CubeServer) AllowReplace() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowReplace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CubeServer) AllowReplaceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowReplaceInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CubeServer) AvailabilityZone() *string {
@@ -720,7 +744,7 @@ func (j *jsiiProxy_CubeServer) VolumeInput() *CubeServerVolume {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server ionoscloud_cube_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server ionoscloud_cube_server} Resource.
 func NewCubeServer(scope constructs.Construct, id *string, config *CubeServerConfig) CubeServer {
 	_init_.Initialize()
 
@@ -738,7 +762,7 @@ func NewCubeServer(scope constructs.Construct, id *string, config *CubeServerCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server ionoscloud_cube_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server ionoscloud_cube_server} Resource.
 func NewCubeServer_Override(c CubeServer, scope constructs.Construct, id *string, config *CubeServerConfig) {
 	_init_.Initialize()
 
@@ -746,6 +770,17 @@ func NewCubeServer_Override(c CubeServer, scope constructs.Construct, id *string
 		"@cdktf/provider-ionoscloud.cubeServer.CubeServer",
 		[]interface{}{scope, id, config},
 		c,
+	)
+}
+
+func (j *jsiiProxy_CubeServer)SetAllowReplace(val interface{}) {
+	if err := j.validateSetAllowReplaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowReplace",
+		val,
 	)
 }
 
@@ -1343,6 +1378,14 @@ func (c *jsiiProxy_CubeServer) PutVolume(value *CubeServerVolume) {
 		c,
 		"putVolume",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CubeServer) ResetAllowReplace() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAllowReplace",
+		nil, // no parameters
 	)
 }
 

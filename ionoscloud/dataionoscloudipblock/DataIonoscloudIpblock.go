@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/ipblock ionoscloud_ipblock}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/ipblock ionoscloud_ipblock}.
 type DataIonoscloudIpblock interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -39,7 +39,6 @@ type DataIonoscloudIpblock interface {
 	SetId(val *string)
 	IdInput() *string
 	IpConsumers() DataIonoscloudIpblockIpConsumersList
-	IpConsumersInput() interface{}
 	Ips() *[]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -95,10 +94,8 @@ type DataIonoscloudIpblock interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutIpConsumers(value interface{})
 	PutTimeouts(value *DataIonoscloudIpblockTimeouts)
 	ResetId()
-	ResetIpConsumers()
 	ResetLocation()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -220,16 +217,6 @@ func (j *jsiiProxy_DataIonoscloudIpblock) IpConsumers() DataIonoscloudIpblockIpC
 	_jsii_.Get(
 		j,
 		"ipConsumers",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataIonoscloudIpblock) IpConsumersInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"ipConsumersInput",
 		&returns,
 	)
 	return returns
@@ -396,7 +383,7 @@ func (j *jsiiProxy_DataIonoscloudIpblock) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/ipblock ionoscloud_ipblock} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/ipblock ionoscloud_ipblock} Data Source.
 func NewDataIonoscloudIpblock(scope constructs.Construct, id *string, config *DataIonoscloudIpblockConfig) DataIonoscloudIpblock {
 	_init_.Initialize()
 
@@ -414,7 +401,7 @@ func NewDataIonoscloudIpblock(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/ipblock ionoscloud_ipblock} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/ipblock ionoscloud_ipblock} Data Source.
 func NewDataIonoscloudIpblock_Override(d DataIonoscloudIpblock, scope constructs.Construct, id *string, config *DataIonoscloudIpblockConfig) {
 	_init_.Initialize()
 
@@ -800,17 +787,6 @@ func (d *jsiiProxy_DataIonoscloudIpblock) OverrideLogicalId(newLogicalId *string
 	)
 }
 
-func (d *jsiiProxy_DataIonoscloudIpblock) PutIpConsumers(value interface{}) {
-	if err := d.validatePutIpConsumersParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putIpConsumers",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataIonoscloudIpblock) PutTimeouts(value *DataIonoscloudIpblockTimeouts) {
 	if err := d.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -826,14 +802,6 @@ func (d *jsiiProxy_DataIonoscloudIpblock) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataIonoscloudIpblock) ResetIpConsumers() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetIpConsumers",
 		nil, // no parameters
 	)
 }

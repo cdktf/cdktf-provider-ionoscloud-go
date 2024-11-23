@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/server ionoscloud_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/server ionoscloud_server}.
 type Server interface {
 	cdktf.TerraformResource
+	AllowReplace() interface{}
+	SetAllowReplace(val interface{})
+	AllowReplaceInput() interface{}
 	AvailabilityZone() *string
 	SetAvailabilityZone(val *string)
 	AvailabilityZoneInput() *string
@@ -178,6 +181,7 @@ type Server interface {
 	PutNic(value *ServerNic)
 	PutTimeouts(value *ServerTimeouts)
 	PutVolume(value *ServerVolume)
+	ResetAllowReplace()
 	ResetAvailabilityZone()
 	ResetBootCdrom()
 	ResetBootImage()
@@ -217,6 +221,26 @@ type Server interface {
 // The jsii proxy struct for Server
 type jsiiProxy_Server struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_Server) AllowReplace() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowReplace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Server) AllowReplaceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowReplaceInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Server) AvailabilityZone() *string {
@@ -890,7 +914,7 @@ func (j *jsiiProxy_Server) VolumeInput() *ServerVolume {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/server ionoscloud_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/server ionoscloud_server} Resource.
 func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Server {
 	_init_.Initialize()
 
@@ -908,7 +932,7 @@ func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Ser
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/server ionoscloud_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/server ionoscloud_server} Resource.
 func NewServer_Override(s Server, scope constructs.Construct, id *string, config *ServerConfig) {
 	_init_.Initialize()
 
@@ -916,6 +940,17 @@ func NewServer_Override(s Server, scope constructs.Construct, id *string, config
 		"@cdktf/provider-ionoscloud.server.Server",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_Server)SetAllowReplace(val interface{}) {
+	if err := j.validateSetAllowReplaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowReplace",
+		val,
 	)
 }
 
@@ -1590,6 +1625,14 @@ func (s *jsiiProxy_Server) PutVolume(value *ServerVolume) {
 		s,
 		"putVolume",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_Server) ResetAllowReplace() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAllowReplace",
+		nil, // no parameters
 	)
 }
 

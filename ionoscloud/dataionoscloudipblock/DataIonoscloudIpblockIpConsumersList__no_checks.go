@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataIonoscloudIpblockIpConsumersList) validateResolveParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataIonoscloudIpblockIpConsumersList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataIonoscloudIpblockIpConsumersList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

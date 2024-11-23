@@ -12,12 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/s3_key ionoscloud_s3_key}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/s3_key ionoscloud_s3_key}.
 type DataIonoscloudS3Key interface {
 	cdktf.TerraformDataSource
-	Active() interface{}
-	SetActive(val interface{})
-	ActiveInput() interface{}
+	Active() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -91,8 +89,6 @@ type DataIonoscloudS3Key interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DataIonoscloudS3KeyTimeouts)
-	ResetActive()
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -116,21 +112,11 @@ type jsiiProxy_DataIonoscloudS3Key struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
-func (j *jsiiProxy_DataIonoscloudS3Key) Active() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataIonoscloudS3Key) Active() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"active",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataIonoscloudS3Key) ActiveInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"activeInput",
 		&returns,
 	)
 	return returns
@@ -347,7 +333,7 @@ func (j *jsiiProxy_DataIonoscloudS3Key) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/s3_key ionoscloud_s3_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/s3_key ionoscloud_s3_key} Data Source.
 func NewDataIonoscloudS3Key(scope constructs.Construct, id *string, config *DataIonoscloudS3KeyConfig) DataIonoscloudS3Key {
 	_init_.Initialize()
 
@@ -365,7 +351,7 @@ func NewDataIonoscloudS3Key(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/s3_key ionoscloud_s3_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/s3_key ionoscloud_s3_key} Data Source.
 func NewDataIonoscloudS3Key_Override(d DataIonoscloudS3Key, scope constructs.Construct, id *string, config *DataIonoscloudS3KeyConfig) {
 	_init_.Initialize()
 
@@ -373,17 +359,6 @@ func NewDataIonoscloudS3Key_Override(d DataIonoscloudS3Key, scope constructs.Con
 		"@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key",
 		[]interface{}{scope, id, config},
 		d,
-	)
-}
-
-func (j *jsiiProxy_DataIonoscloudS3Key)SetActive(val interface{}) {
-	if err := j.validateSetActiveParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"active",
-		val,
 	)
 }
 
@@ -748,22 +723,6 @@ func (d *jsiiProxy_DataIonoscloudS3Key) PutTimeouts(value *DataIonoscloudS3KeyTi
 		d,
 		"putTimeouts",
 		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataIonoscloudS3Key) ResetActive() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetActive",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataIonoscloudS3Key) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

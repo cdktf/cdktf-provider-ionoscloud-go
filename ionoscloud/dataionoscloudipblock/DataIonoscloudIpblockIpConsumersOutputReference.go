@@ -32,8 +32,8 @@ type DataIonoscloudIpblockIpConsumersOutputReference interface {
 	DatacenterName() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataIonoscloudIpblockIpConsumers
+	SetInternalValue(val *DataIonoscloudIpblockIpConsumers)
 	Ip() *string
 	K8SClusterUuid() *string
 	K8SNodepoolUuid() *string
@@ -148,8 +148,8 @@ func (j *jsiiProxy_DataIonoscloudIpblockIpConsumersOutputReference) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudIpblockIpConsumersOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataIonoscloudIpblockIpConsumersOutputReference) InternalValue() *DataIonoscloudIpblockIpConsumers {
+	var returns *DataIonoscloudIpblockIpConsumers
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -298,7 +298,7 @@ func (j *jsiiProxy_DataIonoscloudIpblockIpConsumersOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudIpblockIpConsumersOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataIonoscloudIpblockIpConsumersOutputReference)SetInternalValue(val *DataIonoscloudIpblockIpConsumers) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

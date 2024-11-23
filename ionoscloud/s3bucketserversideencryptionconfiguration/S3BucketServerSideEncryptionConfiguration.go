@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/s3_bucket_server_side_encryption_configuration ionoscloud_s3_bucket_server_side_encryption_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/s3_bucket_server_side_encryption_configuration ionoscloud_s3_bucket_server_side_encryption_configuration}.
 type S3BucketServerSideEncryptionConfiguration interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -333,7 +333,7 @@ func (j *jsiiProxy_S3BucketServerSideEncryptionConfiguration) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/s3_bucket_server_side_encryption_configuration ionoscloud_s3_bucket_server_side_encryption_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/s3_bucket_server_side_encryption_configuration ionoscloud_s3_bucket_server_side_encryption_configuration} Resource.
 func NewS3BucketServerSideEncryptionConfiguration(scope constructs.Construct, id *string, config *S3BucketServerSideEncryptionConfigurationConfig) S3BucketServerSideEncryptionConfiguration {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewS3BucketServerSideEncryptionConfiguration(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/s3_bucket_server_side_encryption_configuration ionoscloud_s3_bucket_server_side_encryption_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/s3_bucket_server_side_encryption_configuration ionoscloud_s3_bucket_server_side_encryption_configuration} Resource.
 func NewS3BucketServerSideEncryptionConfiguration_Override(s S3BucketServerSideEncryptionConfiguration, scope constructs.Construct, id *string, config *S3BucketServerSideEncryptionConfigurationConfig) {
 	_init_.Initialize()
 

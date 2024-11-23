@@ -103,6 +103,10 @@ func validateCubeServer_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_CubeServer) validateSetAllowReplaceParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CubeServer) validateSetAvailabilityZoneParameters(val *string) error {
 	return nil
 }

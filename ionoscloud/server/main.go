@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "allowReplace", GoGetter: "AllowReplace"},
+			_jsii_.MemberProperty{JsiiProperty: "allowReplaceInput", GoGetter: "AllowReplaceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZone", GoGetter: "AvailabilityZone"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZoneInput", GoGetter: "AvailabilityZoneInput"},
 			_jsii_.MemberProperty{JsiiProperty: "bootCdrom", GoGetter: "BootCdrom"},
@@ -84,6 +86,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ram", GoGetter: "Ram"},
 			_jsii_.MemberProperty{JsiiProperty: "ramInput", GoGetter: "RamInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowReplace", GoMethod: "ResetAllowReplace"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAvailabilityZone", GoMethod: "ResetAvailabilityZone"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBootCdrom", GoMethod: "ResetBootCdrom"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBootImage", GoMethod: "ResetBootImage"},
