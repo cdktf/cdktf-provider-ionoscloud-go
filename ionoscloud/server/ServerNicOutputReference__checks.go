@@ -305,6 +305,14 @@ func (j *jsiiProxy_ServerNicOutputReference) validateSetLanParameters(val *float
 	return nil
 }
 
+func (j *jsiiProxy_ServerNicOutputReference) validateSetMacParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ServerNicOutputReference) validateSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

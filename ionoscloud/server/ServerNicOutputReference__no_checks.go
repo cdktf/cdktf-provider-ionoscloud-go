@@ -99,6 +99,10 @@ func (j *jsiiProxy_ServerNicOutputReference) validateSetLanParameters(val *float
 	return nil
 }
 
+func (j *jsiiProxy_ServerNicOutputReference) validateSetMacParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServerNicOutputReference) validateSetNameParameters(val *string) error {
 	return nil
 }

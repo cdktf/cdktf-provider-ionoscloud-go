@@ -61,6 +61,8 @@ type ServerNicOutputReference interface {
 	SetLan(val *float64)
 	LanInput() *float64
 	Mac() *string
+	SetMac(val *string)
+	MacInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -109,6 +111,7 @@ type ServerNicOutputReference interface {
 	ResetIps()
 	ResetIpv6CidrBlock()
 	ResetIpv6Ips()
+	ResetMac()
 	ResetName()
 	ResetSecurityGroupsIds()
 	// Produce the Token's value at resolution time.
@@ -386,6 +389,16 @@ func (j *jsiiProxy_ServerNicOutputReference) Mac() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ServerNicOutputReference) MacInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"macInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ServerNicOutputReference) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -601,6 +614,17 @@ func (j *jsiiProxy_ServerNicOutputReference)SetLan(val *float64) {
 	_jsii_.Set(
 		j,
 		"lan",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServerNicOutputReference)SetMac(val *string) {
+	if err := j.validateSetMacParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mac",
 		val,
 	)
 }
@@ -906,6 +930,14 @@ func (s *jsiiProxy_ServerNicOutputReference) ResetIpv6Ips() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetIpv6Ips",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServerNicOutputReference) ResetMac() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetMac",
 		nil, // no parameters
 	)
 }

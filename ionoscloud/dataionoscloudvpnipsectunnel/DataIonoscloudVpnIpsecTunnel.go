@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/vpn_ipsec_tunnel ionoscloud_vpn_ipsec_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/vpn_ipsec_tunnel ionoscloud_vpn_ipsec_tunnel}.
 type DataIonoscloudVpnIpsecTunnel interface {
 	cdktf.TerraformDataSource
 	Auth() DataIonoscloudVpnIpsecTunnelAuthList
@@ -413,7 +413,7 @@ func (j *jsiiProxy_DataIonoscloudVpnIpsecTunnel) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/vpn_ipsec_tunnel ionoscloud_vpn_ipsec_tunnel} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/vpn_ipsec_tunnel ionoscloud_vpn_ipsec_tunnel} Data Source.
 func NewDataIonoscloudVpnIpsecTunnel(scope constructs.Construct, id *string, config *DataIonoscloudVpnIpsecTunnelConfig) DataIonoscloudVpnIpsecTunnel {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewDataIonoscloudVpnIpsecTunnel(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/vpn_ipsec_tunnel ionoscloud_vpn_ipsec_tunnel} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/vpn_ipsec_tunnel ionoscloud_vpn_ipsec_tunnel} Data Source.
 func NewDataIonoscloudVpnIpsecTunnel_Override(d DataIonoscloudVpnIpsecTunnel, scope constructs.Construct, id *string, config *DataIonoscloudVpnIpsecTunnelConfig) {
 	_init_.Initialize()
 

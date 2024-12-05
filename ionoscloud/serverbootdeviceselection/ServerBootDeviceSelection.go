@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/server_boot_device_selection ionoscloud_server_boot_device_selection}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/server_boot_device_selection ionoscloud_server_boot_device_selection}.
 type ServerBootDeviceSelection interface {
 	cdktf.TerraformResource
 	BootDeviceId() *string
@@ -415,7 +415,7 @@ func (j *jsiiProxy_ServerBootDeviceSelection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/server_boot_device_selection ionoscloud_server_boot_device_selection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/server_boot_device_selection ionoscloud_server_boot_device_selection} Resource.
 func NewServerBootDeviceSelection(scope constructs.Construct, id *string, config *ServerBootDeviceSelectionConfig) ServerBootDeviceSelection {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewServerBootDeviceSelection(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/server_boot_device_selection ionoscloud_server_boot_device_selection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/server_boot_device_selection ionoscloud_server_boot_device_selection} Resource.
 func NewServerBootDeviceSelection_Override(s ServerBootDeviceSelection, scope constructs.Construct, id *string, config *ServerBootDeviceSelectionConfig) {
 	_init_.Initialize()
 

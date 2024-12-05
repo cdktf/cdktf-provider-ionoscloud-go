@@ -24,22 +24,22 @@ type DataIonoscloudAutoCertificateConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The location of the auto-certificate.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/auto_certificate#location DataIonoscloudAutoCertificate#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/auto_certificate#location DataIonoscloudAutoCertificate#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// The ID of the auto-certificate.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/auto_certificate#id DataIonoscloudAutoCertificate#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/auto_certificate#id DataIonoscloudAutoCertificate#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The name of the auto-certificate.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/auto_certificate#name DataIonoscloudAutoCertificate#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/auto_certificate#name DataIonoscloudAutoCertificate#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/auto_certificate#timeouts DataIonoscloudAutoCertificate#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/auto_certificate#timeouts DataIonoscloudAutoCertificate#timeouts}
 	Timeouts *DataIonoscloudAutoCertificateTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

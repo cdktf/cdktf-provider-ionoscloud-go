@@ -79,15 +79,7 @@ func (j *jsiiProxy_DataIonoscloudShare) validateSetCountParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_DataIonoscloudShare) validateSetEditPrivilegeParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataIonoscloudShare) validateSetGroupIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataIonoscloudShare) validateSetIdParameters(val *string) error {
 	return nil
 }
 
@@ -96,10 +88,6 @@ func (j *jsiiProxy_DataIonoscloudShare) validateSetLifecycleParameters(val *cdkt
 }
 
 func (j *jsiiProxy_DataIonoscloudShare) validateSetResourceIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataIonoscloudShare) validateSetSharePrivilegeParameters(val interface{}) error {
 	return nil
 }
 

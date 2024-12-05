@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/nic ionoscloud_nic}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/nic ionoscloud_nic}.
 type Nic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -77,6 +77,8 @@ type Nic interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Mac() *string
+	SetMac(val *string)
+	MacInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -161,6 +163,7 @@ type Nic interface {
 	ResetIps()
 	ResetIpv6CidrBlock()
 	ResetIpv6Ips()
+	ResetMac()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -515,6 +518,16 @@ func (j *jsiiProxy_Nic) Mac() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Nic) MacInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"macInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Nic) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -676,7 +689,7 @@ func (j *jsiiProxy_Nic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/nic ionoscloud_nic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/nic ionoscloud_nic} Resource.
 func NewNic(scope constructs.Construct, id *string, config *NicConfig) Nic {
 	_init_.Initialize()
 
@@ -694,7 +707,7 @@ func NewNic(scope constructs.Construct, id *string, config *NicConfig) Nic {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/nic ionoscloud_nic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/nic ionoscloud_nic} Resource.
 func NewNic_Override(n Nic, scope constructs.Construct, id *string, config *NicConfig) {
 	_init_.Initialize()
 
@@ -860,6 +873,17 @@ func (j *jsiiProxy_Nic)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Nic)SetMac(val *string) {
+	if err := j.validateSetMacParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mac",
 		val,
 	)
 }
@@ -1359,6 +1383,14 @@ func (n *jsiiProxy_Nic) ResetIpv6Ips() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetIpv6Ips",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_Nic) ResetMac() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetMac",
 		nil, // no parameters
 	)
 }

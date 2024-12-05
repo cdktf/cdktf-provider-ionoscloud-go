@@ -99,6 +99,10 @@ func (j *jsiiProxy_VcpuServerNicOutputReference) validateSetLanParameters(val *f
 	return nil
 }
 
+func (j *jsiiProxy_VcpuServerNicOutputReference) validateSetMacParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VcpuServerNicOutputReference) validateSetNameParameters(val *string) error {
 	return nil
 }

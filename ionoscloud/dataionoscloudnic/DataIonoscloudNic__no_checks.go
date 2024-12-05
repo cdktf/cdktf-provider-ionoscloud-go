@@ -83,39 +83,7 @@ func (j *jsiiProxy_DataIonoscloudNic) validateSetDatacenterIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_DataIonoscloudNic) validateSetDhcpParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataIonoscloudNic) validateSetDhcpv6Parameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataIonoscloudNic) validateSetFirewallActiveParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataIonoscloudNic) validateSetFirewallTypeParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataIonoscloudNic) validateSetIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataIonoscloudNic) validateSetIpsParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataIonoscloudNic) validateSetIpv6CidrBlockParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataIonoscloudNic) validateSetIpv6IpsParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataIonoscloudNic) validateSetLanParameters(val *float64) error {
 	return nil
 }
 

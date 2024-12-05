@@ -151,6 +151,10 @@ func (j *jsiiProxy_Nic) validateSetLifecycleParameters(val *cdktf.TerraformResou
 	return nil
 }
 
+func (j *jsiiProxy_Nic) validateSetMacParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Nic) validateSetNameParameters(val *string) error {
 	return nil
 }

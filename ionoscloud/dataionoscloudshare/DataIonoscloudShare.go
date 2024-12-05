@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/share ionoscloud_share}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/share ionoscloud_share}.
 type DataIonoscloudShare interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -27,9 +27,7 @@ type DataIonoscloudShare interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	EditPrivilege() interface{}
-	SetEditPrivilege(val interface{})
-	EditPrivilegeInput() interface{}
+	EditPrivilege() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -42,8 +40,6 @@ type DataIonoscloudShare interface {
 	SetGroupId(val *string)
 	GroupIdInput() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -59,9 +55,7 @@ type DataIonoscloudShare interface {
 	ResourceId() *string
 	SetResourceId(val *string)
 	ResourceIdInput() *string
-	SharePrivilege() interface{}
-	SetSharePrivilege(val interface{})
-	SharePrivilegeInput() interface{}
+	SharePrivilege() cdktf.IResolvable
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -96,11 +90,9 @@ type DataIonoscloudShare interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DataIonoscloudShareTimeouts)
-	ResetEditPrivilege()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetSharePrivilege()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -161,21 +153,11 @@ func (j *jsiiProxy_DataIonoscloudShare) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudShare) EditPrivilege() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataIonoscloudShare) EditPrivilege() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"editPrivilege",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataIonoscloudShare) EditPrivilegeInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"editPrivilegeInput",
 		&returns,
 	)
 	return returns
@@ -241,16 +223,6 @@ func (j *jsiiProxy_DataIonoscloudShare) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudShare) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataIonoscloudShare) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -311,21 +283,11 @@ func (j *jsiiProxy_DataIonoscloudShare) ResourceIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataIonoscloudShare) SharePrivilege() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataIonoscloudShare) SharePrivilege() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"sharePrivilege",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataIonoscloudShare) SharePrivilegeInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"sharePrivilegeInput",
 		&returns,
 	)
 	return returns
@@ -382,7 +344,7 @@ func (j *jsiiProxy_DataIonoscloudShare) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/share ionoscloud_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/share ionoscloud_share} Data Source.
 func NewDataIonoscloudShare(scope constructs.Construct, id *string, config *DataIonoscloudShareConfig) DataIonoscloudShare {
 	_init_.Initialize()
 
@@ -400,7 +362,7 @@ func NewDataIonoscloudShare(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/share ionoscloud_share} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/share ionoscloud_share} Data Source.
 func NewDataIonoscloudShare_Override(d DataIonoscloudShare, scope constructs.Construct, id *string, config *DataIonoscloudShareConfig) {
 	_init_.Initialize()
 
@@ -430,17 +392,6 @@ func (j *jsiiProxy_DataIonoscloudShare)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataIonoscloudShare)SetEditPrivilege(val interface{}) {
-	if err := j.validateSetEditPrivilegeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"editPrivilege",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataIonoscloudShare)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -456,17 +407,6 @@ func (j *jsiiProxy_DataIonoscloudShare)SetGroupId(val *string) {
 	_jsii_.Set(
 		j,
 		"groupId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataIonoscloudShare)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -497,17 +437,6 @@ func (j *jsiiProxy_DataIonoscloudShare)SetResourceId(val *string) {
 	_jsii_.Set(
 		j,
 		"resourceId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataIonoscloudShare)SetSharePrivilege(val interface{}) {
-	if err := j.validateSetSharePrivilegeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"sharePrivilege",
 		val,
 	)
 }
@@ -808,26 +737,10 @@ func (d *jsiiProxy_DataIonoscloudShare) PutTimeouts(value *DataIonoscloudShareTi
 	)
 }
 
-func (d *jsiiProxy_DataIonoscloudShare) ResetEditPrivilege() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetEditPrivilege",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataIonoscloudShare) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataIonoscloudShare) ResetSharePrivilege() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSharePrivilege",
 		nil, // no parameters
 	)
 }

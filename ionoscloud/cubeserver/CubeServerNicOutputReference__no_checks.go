@@ -99,6 +99,10 @@ func (j *jsiiProxy_CubeServerNicOutputReference) validateSetLanParameters(val *f
 	return nil
 }
 
+func (j *jsiiProxy_CubeServerNicOutputReference) validateSetMacParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CubeServerNicOutputReference) validateSetNameParameters(val *string) error {
 	return nil
 }
