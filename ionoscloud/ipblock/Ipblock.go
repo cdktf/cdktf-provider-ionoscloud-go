@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/ipblock ionoscloud_ipblock}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/ipblock ionoscloud_ipblock}.
 type Ipblock interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -439,7 +439,7 @@ func (j *jsiiProxy_Ipblock) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/ipblock ionoscloud_ipblock} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/ipblock ionoscloud_ipblock} Resource.
 func NewIpblock(scope constructs.Construct, id *string, config *IpblockConfig) Ipblock {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewIpblock(scope constructs.Construct, id *string, config *IpblockConfig) I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/ipblock ionoscloud_ipblock} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/ipblock ionoscloud_ipblock} Resource.
 func NewIpblock_Override(i Ipblock, scope constructs.Construct, id *string, config *IpblockConfig) {
 	_init_.Initialize()
 

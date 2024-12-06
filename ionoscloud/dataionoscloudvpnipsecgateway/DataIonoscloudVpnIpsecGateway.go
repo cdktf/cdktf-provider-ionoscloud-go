@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/data-sources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway}.
 type DataIonoscloudVpnIpsecGateway interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -48,6 +48,7 @@ type DataIonoscloudVpnIpsecGateway interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	MaintenanceWindow() DataIonoscloudVpnIpsecGatewayMaintenanceWindowList
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -65,6 +66,7 @@ type DataIonoscloudVpnIpsecGateway interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Tier() *string
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
@@ -269,6 +271,16 @@ func (j *jsiiProxy_DataIonoscloudVpnIpsecGateway) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudVpnIpsecGateway) MaintenanceWindow() DataIonoscloudVpnIpsecGatewayMaintenanceWindowList {
+	var returns DataIonoscloudVpnIpsecGatewayMaintenanceWindowList
+	_jsii_.Get(
+		j,
+		"maintenanceWindow",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudVpnIpsecGateway) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -349,6 +361,16 @@ func (j *jsiiProxy_DataIonoscloudVpnIpsecGateway) TerraformResourceType() *strin
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudVpnIpsecGateway) Tier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tier",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudVpnIpsecGateway) Version() *string {
 	var returns *string
 	_jsii_.Get(
@@ -370,7 +392,7 @@ func (j *jsiiProxy_DataIonoscloudVpnIpsecGateway) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/data-sources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway} Data Source.
 func NewDataIonoscloudVpnIpsecGateway(scope constructs.Construct, id *string, config *DataIonoscloudVpnIpsecGatewayConfig) DataIonoscloudVpnIpsecGateway {
 	_init_.Initialize()
 
@@ -388,7 +410,7 @@ func NewDataIonoscloudVpnIpsecGateway(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/data-sources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway} Data Source.
 func NewDataIonoscloudVpnIpsecGateway_Override(d DataIonoscloudVpnIpsecGateway, scope constructs.Construct, id *string, config *DataIonoscloudVpnIpsecGatewayConfig) {
 	_init_.Initialize()
 

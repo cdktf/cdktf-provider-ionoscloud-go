@@ -79,6 +79,10 @@ func (v *jsiiProxy_VpnIpsecGateway) validatePutConnectionsParameters(value inter
 	return nil
 }
 
+func (v *jsiiProxy_VpnIpsecGateway) validatePutMaintenanceWindowParameters(value *VpnIpsecGatewayMaintenanceWindow) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpnIpsecGateway) validatePutTimeoutsParameters(value *VpnIpsecGatewayTimeouts) error {
 	return nil
 }
@@ -132,6 +136,10 @@ func (j *jsiiProxy_VpnIpsecGateway) validateSetNameParameters(val *string) error
 }
 
 func (j *jsiiProxy_VpnIpsecGateway) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_VpnIpsecGateway) validateSetTierParameters(val *string) error {
 	return nil
 }
 

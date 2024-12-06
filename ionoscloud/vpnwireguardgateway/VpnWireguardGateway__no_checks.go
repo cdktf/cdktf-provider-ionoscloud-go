@@ -79,6 +79,10 @@ func (v *jsiiProxy_VpnWireguardGateway) validatePutConnectionsParameters(value i
 	return nil
 }
 
+func (v *jsiiProxy_VpnWireguardGateway) validatePutMaintenanceWindowParameters(value *VpnWireguardGatewayMaintenanceWindow) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpnWireguardGateway) validatePutTimeoutsParameters(value *VpnWireguardGatewayTimeouts) error {
 	return nil
 }
@@ -148,6 +152,10 @@ func (j *jsiiProxy_VpnWireguardGateway) validateSetPrivateKeyParameters(val *str
 }
 
 func (j *jsiiProxy_VpnWireguardGateway) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_VpnWireguardGateway) validateSetTierParameters(val *string) error {
 	return nil
 }
 

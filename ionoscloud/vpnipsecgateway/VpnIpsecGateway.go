@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway}.
 type VpnIpsecGateway interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -57,6 +57,8 @@ type VpnIpsecGateway interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	MaintenanceWindow() VpnIpsecGatewayMaintenanceWindowOutputReference
+	MaintenanceWindowInput() *VpnIpsecGatewayMaintenanceWindow
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -78,6 +80,9 @@ type VpnIpsecGateway interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Tier() *string
+	SetTier(val *string)
+	TierInput() *string
 	Timeouts() VpnIpsecGatewayTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	Version() *string
@@ -127,12 +132,16 @@ type VpnIpsecGateway interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutConnections(value interface{})
+	PutMaintenanceWindow(value *VpnIpsecGatewayMaintenanceWindow)
 	PutTimeouts(value *VpnIpsecGatewayTimeouts)
 	ResetDescription()
 	ResetId()
+	ResetLocation()
+	ResetMaintenanceWindow()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTier()
 	ResetTimeouts()
 	ResetVersion()
 	SynthesizeAttributes() *map[string]interface{}
@@ -343,6 +352,26 @@ func (j *jsiiProxy_VpnIpsecGateway) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VpnIpsecGateway) MaintenanceWindow() VpnIpsecGatewayMaintenanceWindowOutputReference {
+	var returns VpnIpsecGatewayMaintenanceWindowOutputReference
+	_jsii_.Get(
+		j,
+		"maintenanceWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpnIpsecGateway) MaintenanceWindowInput() *VpnIpsecGatewayMaintenanceWindow {
+	var returns *VpnIpsecGatewayMaintenanceWindow
+	_jsii_.Get(
+		j,
+		"maintenanceWindowInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpnIpsecGateway) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -433,6 +462,26 @@ func (j *jsiiProxy_VpnIpsecGateway) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VpnIpsecGateway) Tier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpnIpsecGateway) TierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tierInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpnIpsecGateway) Timeouts() VpnIpsecGatewayTimeoutsOutputReference {
 	var returns VpnIpsecGatewayTimeoutsOutputReference
 	_jsii_.Get(
@@ -474,7 +523,7 @@ func (j *jsiiProxy_VpnIpsecGateway) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway} Resource.
 func NewVpnIpsecGateway(scope constructs.Construct, id *string, config *VpnIpsecGatewayConfig) VpnIpsecGateway {
 	_init_.Initialize()
 
@@ -492,7 +541,7 @@ func NewVpnIpsecGateway(scope constructs.Construct, id *string, config *VpnIpsec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway} Resource.
 func NewVpnIpsecGateway_Override(v VpnIpsecGateway, scope constructs.Construct, id *string, config *VpnIpsecGatewayConfig) {
 	_init_.Initialize()
 
@@ -622,6 +671,17 @@ func (j *jsiiProxy_VpnIpsecGateway)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpnIpsecGateway)SetTier(val *string) {
+	if err := j.validateSetTierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tier",
 		val,
 	)
 }
@@ -1001,6 +1061,17 @@ func (v *jsiiProxy_VpnIpsecGateway) PutConnections(value interface{}) {
 	)
 }
 
+func (v *jsiiProxy_VpnIpsecGateway) PutMaintenanceWindow(value *VpnIpsecGatewayMaintenanceWindow) {
+	if err := v.validatePutMaintenanceWindowParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putMaintenanceWindow",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VpnIpsecGateway) PutTimeouts(value *VpnIpsecGatewayTimeouts) {
 	if err := v.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1028,10 +1099,34 @@ func (v *jsiiProxy_VpnIpsecGateway) ResetId() {
 	)
 }
 
+func (v *jsiiProxy_VpnIpsecGateway) ResetLocation() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetLocation",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpnIpsecGateway) ResetMaintenanceWindow() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetMaintenanceWindow",
+		nil, // no parameters
+	)
+}
+
 func (v *jsiiProxy_VpnIpsecGateway) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpnIpsecGateway) ResetTier() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetTier",
 		nil, // no parameters
 	)
 }
