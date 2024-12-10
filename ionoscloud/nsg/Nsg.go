@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/nsg ionoscloud_nsg}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/nsg ionoscloud_nsg}.
 type Nsg interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_Nsg) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/nsg ionoscloud_nsg} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/nsg ionoscloud_nsg} Resource.
 func NewNsg(scope constructs.Construct, id *string, config *NsgConfig) Nsg {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewNsg(scope constructs.Construct, id *string, config *NsgConfig) Nsg {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/nsg ionoscloud_nsg} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/nsg ionoscloud_nsg} Resource.
 func NewNsg_Override(n Nsg, scope constructs.Construct, id *string, config *NsgConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/s3_bucket_cors_configuration ionoscloud_s3_bucket_cors_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/s3_bucket_cors_configuration ionoscloud_s3_bucket_cors_configuration}.
 type S3BucketCorsConfiguration interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -333,7 +333,7 @@ func (j *jsiiProxy_S3BucketCorsConfiguration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/s3_bucket_cors_configuration ionoscloud_s3_bucket_cors_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/s3_bucket_cors_configuration ionoscloud_s3_bucket_cors_configuration} Resource.
 func NewS3BucketCorsConfiguration(scope constructs.Construct, id *string, config *S3BucketCorsConfigurationConfig) S3BucketCorsConfiguration {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewS3BucketCorsConfiguration(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/s3_bucket_cors_configuration ionoscloud_s3_bucket_cors_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/s3_bucket_cors_configuration ionoscloud_s3_bucket_cors_configuration} Resource.
 func NewS3BucketCorsConfiguration_Override(s S3BucketCorsConfiguration, scope constructs.Construct, id *string, config *S3BucketCorsConfigurationConfig) {
 	_init_.Initialize()
 
