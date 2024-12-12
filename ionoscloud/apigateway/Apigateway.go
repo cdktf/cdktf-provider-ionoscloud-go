@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/apigateway ionoscloud_apigateway}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/apigateway ionoscloud_apigateway}.
 type Apigateway interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_Apigateway) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/apigateway ionoscloud_apigateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/apigateway ionoscloud_apigateway} Resource.
 func NewApigateway(scope constructs.Construct, id *string, config *ApigatewayConfig) Apigateway {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewApigateway(scope constructs.Construct, id *string, config *ApigatewayCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/apigateway ionoscloud_apigateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/apigateway ionoscloud_apigateway} Resource.
 func NewApigateway_Override(a Apigateway, scope constructs.Construct, id *string, config *ApigatewayConfig) {
 	_init_.Initialize()
 

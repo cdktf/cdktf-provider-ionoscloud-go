@@ -12,10 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/dataplatform_node_pool ionoscloud_dataplatform_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/dataplatform_node_pool ionoscloud_dataplatform_node_pool}.
 type DataIonoscloudDataplatformNodePool interface {
 	cdktf.TerraformDataSource
 	Annotations() cdktf.StringMap
+	AutoScaling() DataIonoscloudDataplatformNodePoolAutoScalingList
 	AvailabilityZone() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -136,6 +137,16 @@ func (j *jsiiProxy_DataIonoscloudDataplatformNodePool) Annotations() cdktf.Strin
 	_jsii_.Get(
 		j,
 		"annotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudDataplatformNodePool) AutoScaling() DataIonoscloudDataplatformNodePoolAutoScalingList {
+	var returns DataIonoscloudDataplatformNodePoolAutoScalingList
+	_jsii_.Get(
+		j,
+		"autoScaling",
 		&returns,
 	)
 	return returns
@@ -492,7 +503,7 @@ func (j *jsiiProxy_DataIonoscloudDataplatformNodePool) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/dataplatform_node_pool ionoscloud_dataplatform_node_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/dataplatform_node_pool ionoscloud_dataplatform_node_pool} Data Source.
 func NewDataIonoscloudDataplatformNodePool(scope constructs.Construct, id *string, config *DataIonoscloudDataplatformNodePoolConfig) DataIonoscloudDataplatformNodePool {
 	_init_.Initialize()
 
@@ -510,7 +521,7 @@ func NewDataIonoscloudDataplatformNodePool(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/dataplatform_node_pool ionoscloud_dataplatform_node_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/dataplatform_node_pool ionoscloud_dataplatform_node_pool} Data Source.
 func NewDataIonoscloudDataplatformNodePool_Override(d DataIonoscloudDataplatformNodePool, scope constructs.Construct, id *string, config *DataIonoscloudDataplatformNodePoolConfig) {
 	_init_.Initialize()
 

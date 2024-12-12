@@ -12,12 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool ionoscloud_dataplatform_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool ionoscloud_dataplatform_node_pool}.
 type DataplatformNodePool interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
+	AutoScaling() DataplatformNodePoolAutoScalingOutputReference
+	AutoScalingInput() *DataplatformNodePoolAutoScaling
 	AvailabilityZone() *string
 	SetAvailabilityZone(val *string)
 	AvailabilityZoneInput() *string
@@ -146,9 +148,11 @@ type DataplatformNodePool interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAutoScaling(value *DataplatformNodePoolAutoScaling)
 	PutMaintenanceWindow(value interface{})
 	PutTimeouts(value *DataplatformNodePoolTimeouts)
 	ResetAnnotations()
+	ResetAutoScaling()
 	ResetAvailabilityZone()
 	ResetCoresCount()
 	ResetCpuFamily()
@@ -195,6 +199,26 @@ func (j *jsiiProxy_DataplatformNodePool) AnnotationsInput() *map[string]*string 
 	_jsii_.Get(
 		j,
 		"annotationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplatformNodePool) AutoScaling() DataplatformNodePoolAutoScalingOutputReference {
+	var returns DataplatformNodePoolAutoScalingOutputReference
+	_jsii_.Get(
+		j,
+		"autoScaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataplatformNodePool) AutoScalingInput() *DataplatformNodePoolAutoScaling {
+	var returns *DataplatformNodePoolAutoScaling
+	_jsii_.Get(
+		j,
+		"autoScalingInput",
 		&returns,
 	)
 	return returns
@@ -641,7 +665,7 @@ func (j *jsiiProxy_DataplatformNodePool) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool ionoscloud_dataplatform_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool ionoscloud_dataplatform_node_pool} Resource.
 func NewDataplatformNodePool(scope constructs.Construct, id *string, config *DataplatformNodePoolConfig) DataplatformNodePool {
 	_init_.Initialize()
 
@@ -659,7 +683,7 @@ func NewDataplatformNodePool(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool ionoscloud_dataplatform_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool ionoscloud_dataplatform_node_pool} Resource.
 func NewDataplatformNodePool_Override(d DataplatformNodePool, scope constructs.Construct, id *string, config *DataplatformNodePoolConfig) {
 	_init_.Initialize()
 
@@ -1223,6 +1247,17 @@ func (d *jsiiProxy_DataplatformNodePool) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
+func (d *jsiiProxy_DataplatformNodePool) PutAutoScaling(value *DataplatformNodePoolAutoScaling) {
+	if err := d.validatePutAutoScalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAutoScaling",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataplatformNodePool) PutMaintenanceWindow(value interface{}) {
 	if err := d.validatePutMaintenanceWindowParameters(value); err != nil {
 		panic(err)
@@ -1249,6 +1284,14 @@ func (d *jsiiProxy_DataplatformNodePool) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataplatformNodePool) ResetAutoScaling() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAutoScaling",
 		nil, // no parameters
 	)
 }

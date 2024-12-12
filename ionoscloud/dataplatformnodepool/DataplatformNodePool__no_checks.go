@@ -75,6 +75,10 @@ func (d *jsiiProxy_DataplatformNodePool) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (d *jsiiProxy_DataplatformNodePool) validatePutAutoScalingParameters(value *DataplatformNodePoolAutoScaling) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplatformNodePool) validatePutMaintenanceWindowParameters(value interface{}) error {
 	return nil
 }
