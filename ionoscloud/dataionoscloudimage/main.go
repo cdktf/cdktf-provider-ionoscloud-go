@@ -29,6 +29,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "discScsiHotUnplug", GoGetter: "DiscScsiHotUnplug"},
 			_jsii_.MemberProperty{JsiiProperty: "discVirtioHotPlug", GoGetter: "DiscVirtioHotPlug"},
 			_jsii_.MemberProperty{JsiiProperty: "discVirtioHotUnplug", GoGetter: "DiscVirtioHotUnplug"},
+			_jsii_.MemberProperty{JsiiProperty: "exposeSerial", GoGetter: "ExposeSerial"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},

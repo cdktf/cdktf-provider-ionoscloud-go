@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/location ionoscloud_location}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/data-sources/location ionoscloud_location}.
 type DataIonoscloudLocation interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -359,7 +359,7 @@ func (j *jsiiProxy_DataIonoscloudLocation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/location ionoscloud_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/data-sources/location ionoscloud_location} Data Source.
 func NewDataIonoscloudLocation(scope constructs.Construct, id *string, config *DataIonoscloudLocationConfig) DataIonoscloudLocation {
 	_init_.Initialize()
 
@@ -377,7 +377,7 @@ func NewDataIonoscloudLocation(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/location ionoscloud_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/data-sources/location ionoscloud_location} Data Source.
 func NewDataIonoscloudLocation_Override(d DataIonoscloudLocation, scope constructs.Construct, id *string, config *DataIonoscloudLocationConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/image ionoscloud_image}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/data-sources/image ionoscloud_image}.
 type DataIonoscloudImage interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -39,6 +39,7 @@ type DataIonoscloudImage interface {
 	DiscScsiHotUnplug() cdktf.IResolvable
 	DiscVirtioHotPlug() cdktf.IResolvable
 	DiscVirtioHotUnplug() cdktf.IResolvable
+	ExposeSerial() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -285,6 +286,16 @@ func (j *jsiiProxy_DataIonoscloudImage) DiscVirtioHotUnplug() cdktf.IResolvable 
 	_jsii_.Get(
 		j,
 		"discVirtioHotUnplug",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudImage) ExposeSerial() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"exposeSerial",
 		&returns,
 	)
 	return returns
@@ -611,7 +622,7 @@ func (j *jsiiProxy_DataIonoscloudImage) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/image ionoscloud_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/data-sources/image ionoscloud_image} Data Source.
 func NewDataIonoscloudImage(scope constructs.Construct, id *string, config *DataIonoscloudImageConfig) DataIonoscloudImage {
 	_init_.Initialize()
 
@@ -629,7 +640,7 @@ func NewDataIonoscloudImage(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/image ionoscloud_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/data-sources/image ionoscloud_image} Data Source.
 func NewDataIonoscloudImage_Override(d DataIonoscloudImage, scope constructs.Construct, id *string, config *DataIonoscloudImageConfig) {
 	_init_.Initialize()
 
