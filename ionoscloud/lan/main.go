@@ -42,6 +42,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "ipFailover", GoGetter: "IpFailover"},
 			_jsii_.MemberProperty{JsiiProperty: "ipFailoverInput", GoGetter: "IpFailoverInput"},
+			_jsii_.MemberProperty{JsiiProperty: "ipv4CidrBlock", GoGetter: "Ipv4CidrBlock"},
 			_jsii_.MemberProperty{JsiiProperty: "ipv6CidrBlock", GoGetter: "Ipv6CidrBlock"},
 			_jsii_.MemberProperty{JsiiProperty: "ipv6CidrBlockInput", GoGetter: "Ipv6CidrBlockInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},

@@ -5,9 +5,9 @@ package dataionoscloudk8sclusters
 
 
 type DataIonoscloudK8SClustersFilter struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/data-sources/k8s_clusters#name DataIonoscloudK8SClusters#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/data-sources/k8s_clusters#name DataIonoscloudK8SClusters#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/data-sources/k8s_clusters#value DataIonoscloudK8SClusters#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/data-sources/k8s_clusters#value DataIonoscloudK8SClusters#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

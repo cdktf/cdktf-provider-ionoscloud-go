@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "allowReplace", GoGetter: "AllowReplace"},
+			_jsii_.MemberProperty{JsiiProperty: "allowReplaceInput", GoGetter: "AllowReplaceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "backupLocation", GoGetter: "BackupLocation"},
 			_jsii_.MemberProperty{JsiiProperty: "backupLocationInput", GoGetter: "BackupLocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -78,6 +80,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ram", GoGetter: "Ram"},
 			_jsii_.MemberProperty{JsiiProperty: "ramInput", GoGetter: "RamInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowReplace", GoMethod: "ResetAllowReplace"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackupLocation", GoMethod: "ResetBackupLocation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectionPooler", GoMethod: "ResetConnectionPooler"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnections", GoMethod: "ResetConnections"},

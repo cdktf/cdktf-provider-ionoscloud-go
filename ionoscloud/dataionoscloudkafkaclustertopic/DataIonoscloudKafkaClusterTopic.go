@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/data-sources/kafka_cluster_topic ionoscloud_kafka_cluster_topic}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/data-sources/kafka_cluster_topic ionoscloud_kafka_cluster_topic}.
 type DataIonoscloudKafkaClusterTopic interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_DataIonoscloudKafkaClusterTopic) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/data-sources/kafka_cluster_topic ionoscloud_kafka_cluster_topic} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/data-sources/kafka_cluster_topic ionoscloud_kafka_cluster_topic} Data Source.
 func NewDataIonoscloudKafkaClusterTopic(scope constructs.Construct, id *string, config *DataIonoscloudKafkaClusterTopicConfig) DataIonoscloudKafkaClusterTopic {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewDataIonoscloudKafkaClusterTopic(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/data-sources/kafka_cluster_topic ionoscloud_kafka_cluster_topic} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/data-sources/kafka_cluster_topic ionoscloud_kafka_cluster_topic} Data Source.
 func NewDataIonoscloudKafkaClusterTopic_Override(d DataIonoscloudKafkaClusterTopic, scope constructs.Construct, id *string, config *DataIonoscloudKafkaClusterTopicConfig) {
 	_init_.Initialize()
 

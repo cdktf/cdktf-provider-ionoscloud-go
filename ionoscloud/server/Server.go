@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/server ionoscloud_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/server ionoscloud_server}.
 type Server interface {
 	cdktf.TerraformResource
 	AllowReplace() interface{}
@@ -205,6 +205,7 @@ type Server interface {
 	ResetTimeouts()
 	ResetType()
 	ResetVmState()
+	ResetVolume()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -914,7 +915,7 @@ func (j *jsiiProxy_Server) VolumeInput() *ServerVolume {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/server ionoscloud_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/server ionoscloud_server} Resource.
 func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Server {
 	_init_.Initialize()
 
@@ -932,7 +933,7 @@ func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Ser
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/server ionoscloud_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/server ionoscloud_server} Resource.
 func NewServer_Override(s Server, scope constructs.Construct, id *string, config *ServerConfig) {
 	_init_.Initialize()
 
@@ -1800,6 +1801,14 @@ func (s *jsiiProxy_Server) ResetVmState() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetVmState",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Server) ResetVolume() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetVolume",
 		nil, // no parameters
 	)
 }

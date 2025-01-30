@@ -108,6 +108,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetType", GoMethod: "ResetType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVmState", GoMethod: "ResetVmState"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVolume", GoMethod: "ResetVolume"},
 			_jsii_.MemberProperty{JsiiProperty: "securityGroupsIds", GoGetter: "SecurityGroupsIds"},
 			_jsii_.MemberProperty{JsiiProperty: "securityGroupsIdsInput", GoGetter: "SecurityGroupsIdsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sshKeyPath", GoGetter: "SshKeyPath"},

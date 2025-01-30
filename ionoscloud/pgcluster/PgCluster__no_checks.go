@@ -115,6 +115,10 @@ func validatePgCluster_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_PgCluster) validateSetAllowReplaceParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PgCluster) validateSetBackupLocationParameters(val *string) error {
 	return nil
 }

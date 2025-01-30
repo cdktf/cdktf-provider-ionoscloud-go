@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/lan ionoscloud_lan}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/lan ionoscloud_lan}.
 type Lan interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -47,6 +47,7 @@ type Lan interface {
 	IdInput() *string
 	IpFailover() LanIpFailoverList
 	IpFailoverInput() interface{}
+	Ipv4CidrBlock() *string
 	Ipv6CidrBlock() *string
 	SetIpv6CidrBlock(val *string)
 	Ipv6CidrBlockInput() *string
@@ -296,6 +297,16 @@ func (j *jsiiProxy_Lan) IpFailoverInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Lan) Ipv4CidrBlock() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv4CidrBlock",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Lan) Ipv6CidrBlock() *string {
 	var returns *string
 	_jsii_.Get(
@@ -477,7 +488,7 @@ func (j *jsiiProxy_Lan) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/lan ionoscloud_lan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/lan ionoscloud_lan} Resource.
 func NewLan(scope constructs.Construct, id *string, config *LanConfig) Lan {
 	_init_.Initialize()
 
@@ -495,7 +506,7 @@ func NewLan(scope constructs.Construct, id *string, config *LanConfig) Lan {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/lan ionoscloud_lan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/lan ionoscloud_lan} Resource.
 func NewLan_Override(l Lan, scope constructs.Construct, id *string, config *LanConfig) {
 	_init_.Initialize()
 
