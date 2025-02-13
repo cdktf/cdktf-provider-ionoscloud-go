@@ -22,29 +22,29 @@ type ApplicationLoadbalancerConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/application_loadbalancer#datacenter_id ApplicationLoadbalancer#datacenter_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/application_loadbalancer#datacenter_id ApplicationLoadbalancer#datacenter_id}.
 	DatacenterId *string `field:"required" json:"datacenterId" yaml:"datacenterId"`
 	// ID of the listening (inbound) LAN.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/application_loadbalancer#listener_lan ApplicationLoadbalancer#listener_lan}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/application_loadbalancer#listener_lan ApplicationLoadbalancer#listener_lan}
 	ListenerLan *float64 `field:"required" json:"listenerLan" yaml:"listenerLan"`
 	// The name of the Application Load Balancer.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/application_loadbalancer#name ApplicationLoadbalancer#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/application_loadbalancer#name ApplicationLoadbalancer#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// ID of the balanced private target LAN (outbound).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/application_loadbalancer#target_lan ApplicationLoadbalancer#target_lan}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/application_loadbalancer#target_lan ApplicationLoadbalancer#target_lan}
 	TargetLan *float64 `field:"required" json:"targetLan" yaml:"targetLan"`
 	// Turn logging on and off for this product. Default value is 'false'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/application_loadbalancer#central_logging ApplicationLoadbalancer#central_logging}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/application_loadbalancer#central_logging ApplicationLoadbalancer#central_logging}
 	CentralLogging interface{} `field:"optional" json:"centralLogging" yaml:"centralLogging"`
 	// flowlog block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/application_loadbalancer#flowlog ApplicationLoadbalancer#flowlog}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/application_loadbalancer#flowlog ApplicationLoadbalancer#flowlog}
 	Flowlog *ApplicationLoadbalancerFlowlog `field:"optional" json:"flowlog" yaml:"flowlog"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/application_loadbalancer#id ApplicationLoadbalancer#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/application_loadbalancer#id ApplicationLoadbalancer#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -53,21 +53,21 @@ type ApplicationLoadbalancerConfig struct {
 	//
 	// (Inbound and outbound) IPs of the listenerLan are customer-reserved public IPs for the public Load Balancers, and private IPs for the private Load Balancers.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/application_loadbalancer#ips ApplicationLoadbalancer#ips}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/application_loadbalancer#ips ApplicationLoadbalancer#ips}
 	Ips *[]*string `field:"optional" json:"ips" yaml:"ips"`
 	// Collection of private IP addresses with the subnet mask of the Application Load Balancer.
 	//
 	// IPs must contain valid a subnet mask. If no IP is provided, the system will generate an IP with /24 subnet.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/application_loadbalancer#lb_private_ips ApplicationLoadbalancer#lb_private_ips}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/application_loadbalancer#lb_private_ips ApplicationLoadbalancer#lb_private_ips}
 	LbPrivateIps *[]*string `field:"optional" json:"lbPrivateIps" yaml:"lbPrivateIps"`
 	// Specifies the format of the logs.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/application_loadbalancer#logging_format ApplicationLoadbalancer#logging_format}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/application_loadbalancer#logging_format ApplicationLoadbalancer#logging_format}
 	LoggingFormat *string `field:"optional" json:"loggingFormat" yaml:"loggingFormat"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/application_loadbalancer#timeouts ApplicationLoadbalancer#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/application_loadbalancer#timeouts ApplicationLoadbalancer#timeouts}
 	Timeouts *ApplicationLoadbalancerTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

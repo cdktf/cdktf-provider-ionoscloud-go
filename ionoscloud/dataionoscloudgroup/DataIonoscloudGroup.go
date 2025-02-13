@@ -12,12 +12,21 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/data-sources/group ionoscloud_group}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/data-sources/group ionoscloud_group}.
 type DataIonoscloudGroup interface {
 	cdktf.TerraformDataSource
 	AccessActivityLog() cdktf.IResolvable
+	AccessAndManageAiModelHub() cdktf.IResolvable
+	AccessAndManageApiGateway() cdktf.IResolvable
+	AccessAndManageCdn() cdktf.IResolvable
 	AccessAndManageCertificates() cdktf.IResolvable
+	AccessAndManageDns() cdktf.IResolvable
+	AccessAndManageIamResources() cdktf.IResolvable
+	AccessAndManageKaas() cdktf.IResolvable
+	AccessAndManageLogging() cdktf.IResolvable
 	AccessAndManageMonitoring() cdktf.IResolvable
+	AccessAndManageNetworkFileStorage() cdktf.IResolvable
+	AccessAndManageVpn() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -31,6 +40,7 @@ type DataIonoscloudGroup interface {
 	CreateFlowLog() cdktf.IResolvable
 	CreateInternetAccess() cdktf.IResolvable
 	CreateK8SCluster() cdktf.IResolvable
+	CreateNetworkSecurityGroups() cdktf.IResolvable
 	CreatePcc() cdktf.IResolvable
 	CreateSnapshot() cdktf.IResolvable
 	// Experimental.
@@ -52,7 +62,9 @@ type DataIonoscloudGroup interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ManageDataplatform() cdktf.IResolvable
 	ManageDbaas() cdktf.IResolvable
+	ManageRegistry() cdktf.IResolvable
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -136,6 +148,36 @@ func (j *jsiiProxy_DataIonoscloudGroup) AccessActivityLog() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudGroup) AccessAndManageAiModelHub() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"accessAndManageAiModelHub",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudGroup) AccessAndManageApiGateway() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"accessAndManageApiGateway",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudGroup) AccessAndManageCdn() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"accessAndManageCdn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudGroup) AccessAndManageCertificates() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -146,11 +188,71 @@ func (j *jsiiProxy_DataIonoscloudGroup) AccessAndManageCertificates() cdktf.IRes
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudGroup) AccessAndManageDns() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"accessAndManageDns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudGroup) AccessAndManageIamResources() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"accessAndManageIamResources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudGroup) AccessAndManageKaas() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"accessAndManageKaas",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudGroup) AccessAndManageLogging() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"accessAndManageLogging",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudGroup) AccessAndManageMonitoring() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"accessAndManageMonitoring",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudGroup) AccessAndManageNetworkFileStorage() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"accessAndManageNetworkFileStorage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudGroup) AccessAndManageVpn() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"accessAndManageVpn",
 		&returns,
 	)
 	return returns
@@ -231,6 +333,16 @@ func (j *jsiiProxy_DataIonoscloudGroup) CreateK8SCluster() cdktf.IResolvable {
 	_jsii_.Get(
 		j,
 		"createK8SCluster",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudGroup) CreateNetworkSecurityGroups() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"createNetworkSecurityGroups",
 		&returns,
 	)
 	return returns
@@ -326,11 +438,31 @@ func (j *jsiiProxy_DataIonoscloudGroup) Lifecycle() *cdktf.TerraformResourceLife
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudGroup) ManageDataplatform() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"manageDataplatform",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudGroup) ManageDbaas() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"manageDbaas",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudGroup) ManageRegistry() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"manageRegistry",
 		&returns,
 	)
 	return returns
@@ -467,7 +599,7 @@ func (j *jsiiProxy_DataIonoscloudGroup) Users() DataIonoscloudGroupUsersList {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/data-sources/group ionoscloud_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/data-sources/group ionoscloud_group} Data Source.
 func NewDataIonoscloudGroup(scope constructs.Construct, id *string, config *DataIonoscloudGroupConfig) DataIonoscloudGroup {
 	_init_.Initialize()
 
@@ -485,7 +617,7 @@ func NewDataIonoscloudGroup(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/data-sources/group ionoscloud_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/data-sources/group ionoscloud_group} Data Source.
 func NewDataIonoscloudGroup_Override(d DataIonoscloudGroup, scope constructs.Construct, id *string, config *DataIonoscloudGroupConfig) {
 	_init_.Initialize()
 

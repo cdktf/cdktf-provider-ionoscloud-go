@@ -12,18 +12,45 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group ionoscloud_group}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group ionoscloud_group}.
 type Group interface {
 	cdktf.TerraformResource
 	AccessActivityLog() interface{}
 	SetAccessActivityLog(val interface{})
 	AccessActivityLogInput() interface{}
+	AccessAndManageAiModelHub() interface{}
+	SetAccessAndManageAiModelHub(val interface{})
+	AccessAndManageAiModelHubInput() interface{}
+	AccessAndManageApiGateway() interface{}
+	SetAccessAndManageApiGateway(val interface{})
+	AccessAndManageApiGatewayInput() interface{}
+	AccessAndManageCdn() interface{}
+	SetAccessAndManageCdn(val interface{})
+	AccessAndManageCdnInput() interface{}
 	AccessAndManageCertificates() interface{}
 	SetAccessAndManageCertificates(val interface{})
 	AccessAndManageCertificatesInput() interface{}
+	AccessAndManageDns() interface{}
+	SetAccessAndManageDns(val interface{})
+	AccessAndManageDnsInput() interface{}
+	AccessAndManageIamResources() interface{}
+	SetAccessAndManageIamResources(val interface{})
+	AccessAndManageIamResourcesInput() interface{}
+	AccessAndManageKaas() interface{}
+	SetAccessAndManageKaas(val interface{})
+	AccessAndManageKaasInput() interface{}
+	AccessAndManageLogging() interface{}
+	SetAccessAndManageLogging(val interface{})
+	AccessAndManageLoggingInput() interface{}
 	AccessAndManageMonitoring() interface{}
 	SetAccessAndManageMonitoring(val interface{})
 	AccessAndManageMonitoringInput() interface{}
+	AccessAndManageNetworkFileStorage() interface{}
+	SetAccessAndManageNetworkFileStorage(val interface{})
+	AccessAndManageNetworkFileStorageInput() interface{}
+	AccessAndManageVpn() interface{}
+	SetAccessAndManageVpn(val interface{})
+	AccessAndManageVpnInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -51,6 +78,9 @@ type Group interface {
 	CreateK8SCluster() interface{}
 	SetCreateK8SCluster(val interface{})
 	CreateK8SClusterInput() interface{}
+	CreateNetworkSecurityGroups() interface{}
+	SetCreateNetworkSecurityGroups(val interface{})
+	CreateNetworkSecurityGroupsInput() interface{}
 	CreatePcc() interface{}
 	SetCreatePcc(val interface{})
 	CreatePccInput() interface{}
@@ -76,9 +106,15 @@ type Group interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ManageDataplatform() interface{}
+	SetManageDataplatform(val interface{})
+	ManageDataplatformInput() interface{}
 	ManageDbaas() interface{}
 	SetManageDbaas(val interface{})
 	ManageDbaasInput() interface{}
+	ManageRegistry() interface{}
+	SetManageRegistry(val interface{})
+	ManageRegistryInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -160,17 +196,29 @@ type Group interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GroupTimeouts)
 	ResetAccessActivityLog()
+	ResetAccessAndManageAiModelHub()
+	ResetAccessAndManageApiGateway()
+	ResetAccessAndManageCdn()
 	ResetAccessAndManageCertificates()
+	ResetAccessAndManageDns()
+	ResetAccessAndManageIamResources()
+	ResetAccessAndManageKaas()
+	ResetAccessAndManageLogging()
 	ResetAccessAndManageMonitoring()
+	ResetAccessAndManageNetworkFileStorage()
+	ResetAccessAndManageVpn()
 	ResetCreateBackupUnit()
 	ResetCreateDatacenter()
 	ResetCreateFlowLog()
 	ResetCreateInternetAccess()
 	ResetCreateK8SCluster()
+	ResetCreateNetworkSecurityGroups()
 	ResetCreatePcc()
 	ResetCreateSnapshot()
 	ResetId()
+	ResetManageDataplatform()
 	ResetManageDbaas()
+	ResetManageRegistry()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -217,6 +265,66 @@ func (j *jsiiProxy_Group) AccessActivityLogInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Group) AccessAndManageAiModelHub() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessAndManageAiModelHub",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AccessAndManageAiModelHubInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessAndManageAiModelHubInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AccessAndManageApiGateway() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessAndManageApiGateway",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AccessAndManageApiGatewayInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessAndManageApiGatewayInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AccessAndManageCdn() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessAndManageCdn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AccessAndManageCdnInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessAndManageCdnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Group) AccessAndManageCertificates() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -237,6 +345,86 @@ func (j *jsiiProxy_Group) AccessAndManageCertificatesInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Group) AccessAndManageDns() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessAndManageDns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AccessAndManageDnsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessAndManageDnsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AccessAndManageIamResources() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessAndManageIamResources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AccessAndManageIamResourcesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessAndManageIamResourcesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AccessAndManageKaas() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessAndManageKaas",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AccessAndManageKaasInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessAndManageKaasInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AccessAndManageLogging() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessAndManageLogging",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AccessAndManageLoggingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessAndManageLoggingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Group) AccessAndManageMonitoring() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -252,6 +440,46 @@ func (j *jsiiProxy_Group) AccessAndManageMonitoringInput() interface{} {
 	_jsii_.Get(
 		j,
 		"accessAndManageMonitoringInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AccessAndManageNetworkFileStorage() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessAndManageNetworkFileStorage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AccessAndManageNetworkFileStorageInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessAndManageNetworkFileStorageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AccessAndManageVpn() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessAndManageVpn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) AccessAndManageVpnInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"accessAndManageVpnInput",
 		&returns,
 	)
 	return returns
@@ -397,6 +625,26 @@ func (j *jsiiProxy_Group) CreateK8SClusterInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Group) CreateNetworkSecurityGroups() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createNetworkSecurityGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) CreateNetworkSecurityGroupsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createNetworkSecurityGroupsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Group) CreatePcc() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -507,6 +755,26 @@ func (j *jsiiProxy_Group) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_Group) ManageDataplatform() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageDataplatform",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) ManageDataplatformInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageDataplatformInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Group) ManageDbaas() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -522,6 +790,26 @@ func (j *jsiiProxy_Group) ManageDbaasInput() interface{} {
 	_jsii_.Get(
 		j,
 		"manageDbaasInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) ManageRegistry() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageRegistry",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) ManageRegistryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageRegistryInput",
 		&returns,
 	)
 	return returns
@@ -728,7 +1016,7 @@ func (j *jsiiProxy_Group) Users() GroupUsersList {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group ionoscloud_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group ionoscloud_group} Resource.
 func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group {
 	_init_.Initialize()
 
@@ -746,7 +1034,7 @@ func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group ionoscloud_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group ionoscloud_group} Resource.
 func NewGroup_Override(g Group, scope constructs.Construct, id *string, config *GroupConfig) {
 	_init_.Initialize()
 
@@ -768,6 +1056,39 @@ func (j *jsiiProxy_Group)SetAccessActivityLog(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Group)SetAccessAndManageAiModelHub(val interface{}) {
+	if err := j.validateSetAccessAndManageAiModelHubParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessAndManageAiModelHub",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Group)SetAccessAndManageApiGateway(val interface{}) {
+	if err := j.validateSetAccessAndManageApiGatewayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessAndManageApiGateway",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Group)SetAccessAndManageCdn(val interface{}) {
+	if err := j.validateSetAccessAndManageCdnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessAndManageCdn",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Group)SetAccessAndManageCertificates(val interface{}) {
 	if err := j.validateSetAccessAndManageCertificatesParameters(val); err != nil {
 		panic(err)
@@ -779,6 +1100,50 @@ func (j *jsiiProxy_Group)SetAccessAndManageCertificates(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Group)SetAccessAndManageDns(val interface{}) {
+	if err := j.validateSetAccessAndManageDnsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessAndManageDns",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Group)SetAccessAndManageIamResources(val interface{}) {
+	if err := j.validateSetAccessAndManageIamResourcesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessAndManageIamResources",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Group)SetAccessAndManageKaas(val interface{}) {
+	if err := j.validateSetAccessAndManageKaasParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessAndManageKaas",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Group)SetAccessAndManageLogging(val interface{}) {
+	if err := j.validateSetAccessAndManageLoggingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessAndManageLogging",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Group)SetAccessAndManageMonitoring(val interface{}) {
 	if err := j.validateSetAccessAndManageMonitoringParameters(val); err != nil {
 		panic(err)
@@ -786,6 +1151,28 @@ func (j *jsiiProxy_Group)SetAccessAndManageMonitoring(val interface{}) {
 	_jsii_.Set(
 		j,
 		"accessAndManageMonitoring",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Group)SetAccessAndManageNetworkFileStorage(val interface{}) {
+	if err := j.validateSetAccessAndManageNetworkFileStorageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessAndManageNetworkFileStorage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Group)SetAccessAndManageVpn(val interface{}) {
+	if err := j.validateSetAccessAndManageVpnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessAndManageVpn",
 		val,
 	)
 }
@@ -867,6 +1254,17 @@ func (j *jsiiProxy_Group)SetCreateK8SCluster(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Group)SetCreateNetworkSecurityGroups(val interface{}) {
+	if err := j.validateSetCreateNetworkSecurityGroupsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createNetworkSecurityGroups",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Group)SetCreatePcc(val interface{}) {
 	if err := j.validateSetCreatePccParameters(val); err != nil {
 		panic(err)
@@ -927,6 +1325,17 @@ func (j *jsiiProxy_Group)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
+func (j *jsiiProxy_Group)SetManageDataplatform(val interface{}) {
+	if err := j.validateSetManageDataplatformParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"manageDataplatform",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Group)SetManageDbaas(val interface{}) {
 	if err := j.validateSetManageDbaasParameters(val); err != nil {
 		panic(err)
@@ -934,6 +1343,17 @@ func (j *jsiiProxy_Group)SetManageDbaas(val interface{}) {
 	_jsii_.Set(
 		j,
 		"manageDbaas",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Group)SetManageRegistry(val interface{}) {
+	if err := j.validateSetManageRegistryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"manageRegistry",
 		val,
 	)
 }
@@ -1384,6 +1804,30 @@ func (g *jsiiProxy_Group) ResetAccessActivityLog() {
 	)
 }
 
+func (g *jsiiProxy_Group) ResetAccessAndManageAiModelHub() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAccessAndManageAiModelHub",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetAccessAndManageApiGateway() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAccessAndManageApiGateway",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetAccessAndManageCdn() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAccessAndManageCdn",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_Group) ResetAccessAndManageCertificates() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1392,10 +1836,58 @@ func (g *jsiiProxy_Group) ResetAccessAndManageCertificates() {
 	)
 }
 
+func (g *jsiiProxy_Group) ResetAccessAndManageDns() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAccessAndManageDns",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetAccessAndManageIamResources() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAccessAndManageIamResources",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetAccessAndManageKaas() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAccessAndManageKaas",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetAccessAndManageLogging() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAccessAndManageLogging",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_Group) ResetAccessAndManageMonitoring() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAccessAndManageMonitoring",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetAccessAndManageNetworkFileStorage() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAccessAndManageNetworkFileStorage",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetAccessAndManageVpn() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAccessAndManageVpn",
 		nil, // no parameters
 	)
 }
@@ -1440,6 +1932,14 @@ func (g *jsiiProxy_Group) ResetCreateK8SCluster() {
 	)
 }
 
+func (g *jsiiProxy_Group) ResetCreateNetworkSecurityGroups() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCreateNetworkSecurityGroups",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_Group) ResetCreatePcc() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1464,10 +1964,26 @@ func (g *jsiiProxy_Group) ResetId() {
 	)
 }
 
+func (g *jsiiProxy_Group) ResetManageDataplatform() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetManageDataplatform",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_Group) ResetManageDbaas() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetManageDbaas",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetManageRegistry() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetManageRegistry",
 		nil, // no parameters
 	)
 }

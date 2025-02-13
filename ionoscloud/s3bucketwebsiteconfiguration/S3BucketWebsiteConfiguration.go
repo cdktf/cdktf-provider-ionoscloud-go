@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/s3_bucket_website_configuration ionoscloud_s3_bucket_website_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/s3_bucket_website_configuration ionoscloud_s3_bucket_website_configuration}.
 type S3BucketWebsiteConfiguration interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -405,7 +405,7 @@ func (j *jsiiProxy_S3BucketWebsiteConfiguration) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/s3_bucket_website_configuration ionoscloud_s3_bucket_website_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/s3_bucket_website_configuration ionoscloud_s3_bucket_website_configuration} Resource.
 func NewS3BucketWebsiteConfiguration(scope constructs.Construct, id *string, config *S3BucketWebsiteConfigurationConfig) S3BucketWebsiteConfiguration {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewS3BucketWebsiteConfiguration(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/s3_bucket_website_configuration ionoscloud_s3_bucket_website_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/s3_bucket_website_configuration ionoscloud_s3_bucket_website_configuration} Resource.
 func NewS3BucketWebsiteConfiguration_Override(s S3BucketWebsiteConfiguration, scope constructs.Construct, id *string, config *S3BucketWebsiteConfigurationConfig) {
 	_init_.Initialize()
 

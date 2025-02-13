@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/data-sources/pg_cluster ionoscloud_pg_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/data-sources/pg_cluster ionoscloud_pg_cluster}.
 type DataIonoscloudPgCluster interface {
 	cdktf.TerraformDataSource
 	BackupLocation() *string
@@ -467,7 +467,7 @@ func (j *jsiiProxy_DataIonoscloudPgCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/data-sources/pg_cluster ionoscloud_pg_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/data-sources/pg_cluster ionoscloud_pg_cluster} Data Source.
 func NewDataIonoscloudPgCluster(scope constructs.Construct, id *string, config *DataIonoscloudPgClusterConfig) DataIonoscloudPgCluster {
 	_init_.Initialize()
 
@@ -485,7 +485,7 @@ func NewDataIonoscloudPgCluster(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/data-sources/pg_cluster ionoscloud_pg_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/data-sources/pg_cluster ionoscloud_pg_cluster} Data Source.
 func NewDataIonoscloudPgCluster_Override(d DataIonoscloudPgCluster, scope constructs.Construct, id *string, config *DataIonoscloudPgClusterConfig) {
 	_init_.Initialize()
 

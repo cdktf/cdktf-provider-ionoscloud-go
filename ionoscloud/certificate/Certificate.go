@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/certificate ionoscloud_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/certificate ionoscloud_certificate}.
 type Certificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_Certificate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/certificate ionoscloud_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/certificate ionoscloud_certificate} Resource.
 func NewCertificate(scope constructs.Construct, id *string, config *CertificateConfig) Certificate {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewCertificate(scope constructs.Construct, id *string, config *CertificateC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/certificate ionoscloud_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/certificate ionoscloud_certificate} Resource.
 func NewCertificate_Override(c Certificate, scope constructs.Construct, id *string, config *CertificateConfig) {
 	_init_.Initialize()
 

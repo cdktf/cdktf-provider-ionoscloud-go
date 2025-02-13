@@ -99,11 +99,47 @@ func (j *jsiiProxy_Group) validateSetAccessActivityLogParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_Group) validateSetAccessAndManageAiModelHubParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Group) validateSetAccessAndManageApiGatewayParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Group) validateSetAccessAndManageCdnParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Group) validateSetAccessAndManageCertificatesParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Group) validateSetAccessAndManageDnsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Group) validateSetAccessAndManageIamResourcesParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Group) validateSetAccessAndManageKaasParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Group) validateSetAccessAndManageLoggingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Group) validateSetAccessAndManageMonitoringParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Group) validateSetAccessAndManageNetworkFileStorageParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Group) validateSetAccessAndManageVpnParameters(val interface{}) error {
 	return nil
 }
 
@@ -135,6 +171,10 @@ func (j *jsiiProxy_Group) validateSetCreateK8SClusterParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_Group) validateSetCreateNetworkSecurityGroupsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Group) validateSetCreatePccParameters(val interface{}) error {
 	return nil
 }
@@ -151,7 +191,15 @@ func (j *jsiiProxy_Group) validateSetLifecycleParameters(val *cdktf.TerraformRes
 	return nil
 }
 
+func (j *jsiiProxy_Group) validateSetManageDataplatformParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Group) validateSetManageDbaasParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Group) validateSetManageRegistryParameters(val interface{}) error {
 	return nil
 }
 
