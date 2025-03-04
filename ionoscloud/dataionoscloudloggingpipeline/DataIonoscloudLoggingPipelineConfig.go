@@ -24,18 +24,18 @@ type DataIonoscloudLoggingPipelineConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The ID of the Logging pipeline.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/data-sources/logging_pipeline#id DataIonoscloudLoggingPipeline#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/data-sources/logging_pipeline#id DataIonoscloudLoggingPipeline#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The location of your logging pipeline. Default: de/txl. Supported locations: de/fra, de/txl, es/vit, gb/lhr, fr/par.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/data-sources/logging_pipeline#location DataIonoscloudLoggingPipeline#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/data-sources/logging_pipeline#location DataIonoscloudLoggingPipeline#location}
 	Location *string `field:"optional" json:"location" yaml:"location"`
 	// The name of the Logging pipeline.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/data-sources/logging_pipeline#name DataIonoscloudLoggingPipeline#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/data-sources/logging_pipeline#name DataIonoscloudLoggingPipeline#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 
