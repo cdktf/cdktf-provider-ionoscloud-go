@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/data-sources/pg_databases ionoscloud_pg_databases}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/data-sources/pg_databases ionoscloud_pg_databases}.
 type DataIonoscloudPgDatabases interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -347,7 +347,7 @@ func (j *jsiiProxy_DataIonoscloudPgDatabases) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/data-sources/pg_databases ionoscloud_pg_databases} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/data-sources/pg_databases ionoscloud_pg_databases} Data Source.
 func NewDataIonoscloudPgDatabases(scope constructs.Construct, id *string, config *DataIonoscloudPgDatabasesConfig) DataIonoscloudPgDatabases {
 	_init_.Initialize()
 
@@ -365,7 +365,7 @@ func NewDataIonoscloudPgDatabases(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/data-sources/pg_databases ionoscloud_pg_databases} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/data-sources/pg_databases ionoscloud_pg_databases} Data Source.
 func NewDataIonoscloudPgDatabases_Override(d DataIonoscloudPgDatabases, scope constructs.Construct, id *string, config *DataIonoscloudPgDatabasesConfig) {
 	_init_.Initialize()
 
