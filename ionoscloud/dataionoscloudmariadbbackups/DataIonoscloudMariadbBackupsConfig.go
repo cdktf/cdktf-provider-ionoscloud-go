@@ -24,24 +24,24 @@ type DataIonoscloudMariadbBackupsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The unique ID of the backup.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/data-sources/mariadb_backups#backup_id DataIonoscloudMariadbBackups#backup_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/data-sources/mariadb_backups#backup_id DataIonoscloudMariadbBackups#backup_id}
 	BackupId *string `field:"optional" json:"backupId" yaml:"backupId"`
 	// The unique ID of the cluster that was backed up.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/data-sources/mariadb_backups#cluster_id DataIonoscloudMariadbBackups#cluster_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/data-sources/mariadb_backups#cluster_id DataIonoscloudMariadbBackups#cluster_id}
 	ClusterId *string `field:"optional" json:"clusterId" yaml:"clusterId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/data-sources/mariadb_backups#id DataIonoscloudMariadbBackups#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/data-sources/mariadb_backups#id DataIonoscloudMariadbBackups#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The cluster location.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/data-sources/mariadb_backups#location DataIonoscloudMariadbBackups#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/data-sources/mariadb_backups#location DataIonoscloudMariadbBackups#location}
 	Location *string `field:"optional" json:"location" yaml:"location"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/data-sources/mariadb_backups#timeouts DataIonoscloudMariadbBackups#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/data-sources/mariadb_backups#timeouts DataIonoscloudMariadbBackups#timeouts}
 	Timeouts *DataIonoscloudMariadbBackupsTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/kafka_cluster_topic ionoscloud_kafka_cluster_topic}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/kafka_cluster_topic ionoscloud_kafka_cluster_topic}.
 type KafkaClusterTopic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -487,7 +487,7 @@ func (j *jsiiProxy_KafkaClusterTopic) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/kafka_cluster_topic ionoscloud_kafka_cluster_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/kafka_cluster_topic ionoscloud_kafka_cluster_topic} Resource.
 func NewKafkaClusterTopic(scope constructs.Construct, id *string, config *KafkaClusterTopicConfig) KafkaClusterTopic {
 	_init_.Initialize()
 
@@ -505,7 +505,7 @@ func NewKafkaClusterTopic(scope constructs.Construct, id *string, config *KafkaC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/kafka_cluster_topic ionoscloud_kafka_cluster_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/kafka_cluster_topic ionoscloud_kafka_cluster_topic} Resource.
 func NewKafkaClusterTopic_Override(k KafkaClusterTopic, scope constructs.Construct, id *string, config *KafkaClusterTopicConfig) {
 	_init_.Initialize()
 

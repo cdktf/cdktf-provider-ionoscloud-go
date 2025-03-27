@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/vpn_wireguard_peer ionoscloud_vpn_wireguard_peer}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/vpn_wireguard_peer ionoscloud_vpn_wireguard_peer}.
 type VpnWireguardPeer interface {
 	cdktf.TerraformResource
 	AllowedIps() *[]*string
@@ -509,7 +509,7 @@ func (j *jsiiProxy_VpnWireguardPeer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/vpn_wireguard_peer ionoscloud_vpn_wireguard_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/vpn_wireguard_peer ionoscloud_vpn_wireguard_peer} Resource.
 func NewVpnWireguardPeer(scope constructs.Construct, id *string, config *VpnWireguardPeerConfig) VpnWireguardPeer {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewVpnWireguardPeer(scope constructs.Construct, id *string, config *VpnWire
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/vpn_wireguard_peer ionoscloud_vpn_wireguard_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/vpn_wireguard_peer ionoscloud_vpn_wireguard_peer} Resource.
 func NewVpnWireguardPeer_Override(v VpnWireguardPeer, scope constructs.Construct, id *string, config *VpnWireguardPeerConfig) {
 	_init_.Initialize()
 

@@ -7,7 +7,7 @@ package containerregistry
 type ContainerRegistryFeatures struct {
 	// Enables vulnerability scanning for images in the container registry. Note: this feature can incur additional charges.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/container_registry#vulnerability_scanning ContainerRegistry#vulnerability_scanning}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/container_registry#vulnerability_scanning ContainerRegistry#vulnerability_scanning}
 	VulnerabilityScanning interface{} `field:"optional" json:"vulnerabilityScanning" yaml:"vulnerabilityScanning"`
 }
 

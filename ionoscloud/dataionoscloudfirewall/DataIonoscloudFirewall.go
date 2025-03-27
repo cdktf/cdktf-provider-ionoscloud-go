@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/data-sources/firewall ionoscloud_firewall}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/data-sources/firewall ionoscloud_firewall}.
 type DataIonoscloudFirewall interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -481,7 +481,7 @@ func (j *jsiiProxy_DataIonoscloudFirewall) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/data-sources/firewall ionoscloud_firewall} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/data-sources/firewall ionoscloud_firewall} Data Source.
 func NewDataIonoscloudFirewall(scope constructs.Construct, id *string, config *DataIonoscloudFirewallConfig) DataIonoscloudFirewall {
 	_init_.Initialize()
 
@@ -499,7 +499,7 @@ func NewDataIonoscloudFirewall(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/data-sources/firewall ionoscloud_firewall} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/data-sources/firewall ionoscloud_firewall} Data Source.
 func NewDataIonoscloudFirewall_Override(d DataIonoscloudFirewall, scope constructs.Construct, id *string, config *DataIonoscloudFirewallConfig) {
 	_init_.Initialize()
 
