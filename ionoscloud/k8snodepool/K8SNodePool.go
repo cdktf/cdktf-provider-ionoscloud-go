@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/k8s_node_pool ionoscloud_k8s_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/k8s_node_pool ionoscloud_k8s_node_pool}.
 type K8SNodePool interface {
 	cdktf.TerraformResource
 	AllowReplace() interface{}
@@ -103,6 +103,9 @@ type K8SNodePool interface {
 	RamSizeInput() *float64
 	// Experimental.
 	RawOverrides() interface{}
+	ServerType() *string
+	SetServerType(val *string)
+	ServerTypeInput() *string
 	StorageSize() *float64
 	SetStorageSize(val *float64)
 	StorageSizeInput() *float64
@@ -167,6 +170,7 @@ type K8SNodePool interface {
 	ResetAllowReplace()
 	ResetAnnotations()
 	ResetAutoScaling()
+	ResetCpuFamily()
 	ResetId()
 	ResetLabels()
 	ResetLans()
@@ -175,6 +179,7 @@ type K8SNodePool interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPublicIps()
+	ResetServerType()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -664,6 +669,26 @@ func (j *jsiiProxy_K8SNodePool) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_K8SNodePool) ServerType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_K8SNodePool) ServerTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_K8SNodePool) StorageSize() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -755,7 +780,7 @@ func (j *jsiiProxy_K8SNodePool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/k8s_node_pool ionoscloud_k8s_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/k8s_node_pool ionoscloud_k8s_node_pool} Resource.
 func NewK8SNodePool(scope constructs.Construct, id *string, config *K8SNodePoolConfig) K8SNodePool {
 	_init_.Initialize()
 
@@ -773,7 +798,7 @@ func NewK8SNodePool(scope constructs.Construct, id *string, config *K8SNodePoolC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/k8s_node_pool ionoscloud_k8s_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/k8s_node_pool ionoscloud_k8s_node_pool} Resource.
 func NewK8SNodePool_Override(k K8SNodePool, scope constructs.Construct, id *string, config *K8SNodePoolConfig) {
 	_init_.Initialize()
 
@@ -1002,6 +1027,17 @@ func (j *jsiiProxy_K8SNodePool)SetRamSize(val *float64) {
 	_jsii_.Set(
 		j,
 		"ramSize",
+		val,
+	)
+}
+
+func (j *jsiiProxy_K8SNodePool)SetServerType(val *string) {
+	if err := j.validateSetServerTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverType",
 		val,
 	)
 }
@@ -1449,6 +1485,14 @@ func (k *jsiiProxy_K8SNodePool) ResetAutoScaling() {
 	)
 }
 
+func (k *jsiiProxy_K8SNodePool) ResetCpuFamily() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetCpuFamily",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_K8SNodePool) ResetId() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1493,6 +1537,14 @@ func (k *jsiiProxy_K8SNodePool) ResetPublicIps() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetPublicIps",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_K8SNodePool) ResetServerType() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetServerType",
 		nil, // no parameters
 	)
 }

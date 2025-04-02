@@ -179,6 +179,10 @@ func (j *jsiiProxy_K8SNodePool) validateSetRamSizeParameters(val *float64) error
 	return nil
 }
 
+func (j *jsiiProxy_K8SNodePool) validateSetServerTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_K8SNodePool) validateSetStorageSizeParameters(val *float64) error {
 	return nil
 }

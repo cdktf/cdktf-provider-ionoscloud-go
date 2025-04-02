@@ -143,6 +143,14 @@ func (j *jsiiProxy_User) validateSetPasswordParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_User) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_User) validateSetPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_User) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

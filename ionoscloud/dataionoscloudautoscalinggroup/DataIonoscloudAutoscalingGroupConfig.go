@@ -24,18 +24,18 @@ type DataIonoscloudAutoscalingGroupConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// UUID of the Autoscaling Group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/data-sources/autoscaling_group#id DataIonoscloudAutoscalingGroup#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/data-sources/autoscaling_group#id DataIonoscloudAutoscalingGroup#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// User-defined name for the Autoscaling Group.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/data-sources/autoscaling_group#name DataIonoscloudAutoscalingGroup#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/data-sources/autoscaling_group#name DataIonoscloudAutoscalingGroup#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/data-sources/autoscaling_group#timeouts DataIonoscloudAutoscalingGroup#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/data-sources/autoscaling_group#timeouts DataIonoscloudAutoscalingGroup#timeouts}
 	Timeouts *DataIonoscloudAutoscalingGroupTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 
