@@ -1,17 +1,17 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
-package dataplatformnodepool
+package dataionoscloudcontracts
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataplatformnodepool/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudcontracts/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DataplatformNodePoolMaintenanceWindowList interface {
+type DataIonoscloudContractsContractsList interface {
 	cdktf.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -20,8 +20,6 @@ type DataplatformNodePoolMaintenanceWindowList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +36,7 @@ type DataplatformNodePoolMaintenanceWindowList interface {
 	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
-	Get(index *float64) DataplatformNodePoolMaintenanceWindowOutputReference
+	Get(index *float64) DataIonoscloudContractsContractsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -49,12 +47,12 @@ type DataplatformNodePoolMaintenanceWindowList interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for DataplatformNodePoolMaintenanceWindowList
-type jsiiProxy_DataplatformNodePoolMaintenanceWindowList struct {
+// The jsii proxy struct for DataIonoscloudContractsContractsList
+type jsiiProxy_DataIonoscloudContractsContractsList struct {
 	internal.Type__cdktfComplexList
 }
 
-func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowList) CreationStack() *[]*string {
+func (j *jsiiProxy_DataIonoscloudContractsContractsList) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -64,7 +62,7 @@ func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowList) CreationStack() *[
 	return returns
 }
 
-func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowList) Fqn() *string {
+func (j *jsiiProxy_DataIonoscloudContractsContractsList) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -74,17 +72,7 @@ func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowList) InternalValue() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowList) TerraformAttribute() *string {
+func (j *jsiiProxy_DataIonoscloudContractsContractsList) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -94,7 +82,7 @@ func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowList) TerraformAttribute
 	return returns
 }
 
-func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowList) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_DataIonoscloudContractsContractsList) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -104,7 +92,7 @@ func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowList) TerraformResource(
 	return returns
 }
 
-func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowList) WrapsSet() *bool {
+func (j *jsiiProxy_DataIonoscloudContractsContractsList) WrapsSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -115,16 +103,16 @@ func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowList) WrapsSet() *bool {
 }
 
 
-func NewDataplatformNodePoolMaintenanceWindowList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataplatformNodePoolMaintenanceWindowList {
+func NewDataIonoscloudContractsContractsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudContractsContractsList {
 	_init_.Initialize()
 
-	if err := validateNewDataplatformNodePoolMaintenanceWindowListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+	if err := validateNewDataIonoscloudContractsContractsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataplatformNodePoolMaintenanceWindowList{}
+	j := jsiiProxy_DataIonoscloudContractsContractsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolMaintenanceWindowList",
+		"@cdktf/provider-ionoscloud.dataIonoscloudContracts.DataIonoscloudContractsContractsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,28 +120,17 @@ func NewDataplatformNodePoolMaintenanceWindowList(terraformResource cdktf.IInter
 	return &j
 }
 
-func NewDataplatformNodePoolMaintenanceWindowList_Override(d DataplatformNodePoolMaintenanceWindowList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataIonoscloudContractsContractsList_Override(d DataIonoscloudContractsContractsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolMaintenanceWindowList",
+		"@cdktf/provider-ionoscloud.dataIonoscloudContracts.DataIonoscloudContractsContractsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowList)SetInternalValue(val interface{}) {
-	if err := j.validateSetInternalValueParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataIonoscloudContractsContractsList)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -164,7 +141,7 @@ func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowList)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataIonoscloudContractsContractsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -175,7 +152,7 @@ func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowList)SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataIonoscloudContractsContractsList)SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,7 +163,7 @@ func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowList)SetWrapsSet(val *bo
 	)
 }
 
-func (d *jsiiProxy_DataplatformNodePoolMaintenanceWindowList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DataIonoscloudContractsContractsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
@@ -202,7 +179,7 @@ func (d *jsiiProxy_DataplatformNodePoolMaintenanceWindowList) AllWithMapKey(mapK
 	return returns
 }
 
-func (d *jsiiProxy_DataplatformNodePoolMaintenanceWindowList) ComputeFqn() *string {
+func (d *jsiiProxy_DataIonoscloudContractsContractsList) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -215,11 +192,11 @@ func (d *jsiiProxy_DataplatformNodePoolMaintenanceWindowList) ComputeFqn() *stri
 	return returns
 }
 
-func (d *jsiiProxy_DataplatformNodePoolMaintenanceWindowList) Get(index *float64) DataplatformNodePoolMaintenanceWindowOutputReference {
+func (d *jsiiProxy_DataIonoscloudContractsContractsList) Get(index *float64) DataIonoscloudContractsContractsOutputReference {
 	if err := d.validateGetParameters(index); err != nil {
 		panic(err)
 	}
-	var returns DataplatformNodePoolMaintenanceWindowOutputReference
+	var returns DataIonoscloudContractsContractsOutputReference
 
 	_jsii_.Invoke(
 		d,
@@ -231,7 +208,7 @@ func (d *jsiiProxy_DataplatformNodePoolMaintenanceWindowList) Get(index *float64
 	return returns
 }
 
-func (d *jsiiProxy_DataplatformNodePoolMaintenanceWindowList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataIonoscloudContractsContractsList) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -247,7 +224,7 @@ func (d *jsiiProxy_DataplatformNodePoolMaintenanceWindowList) Resolve(_context c
 	return returns
 }
 
-func (d *jsiiProxy_DataplatformNodePoolMaintenanceWindowList) ToString() *string {
+func (d *jsiiProxy_DataIonoscloudContractsContractsList) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

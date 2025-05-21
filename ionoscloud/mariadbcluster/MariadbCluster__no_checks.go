@@ -75,6 +75,10 @@ func (m *jsiiProxy_MariadbCluster) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (m *jsiiProxy_MariadbCluster) validatePutBackupParameters(value *MariadbClusterBackup) error {
+	return nil
+}
+
 func (m *jsiiProxy_MariadbCluster) validatePutConnectionsParameters(value *MariadbClusterConnections) error {
 	return nil
 }

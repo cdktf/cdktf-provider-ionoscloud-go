@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster ionoscloud_mariadb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster ionoscloud_mariadb_cluster}.
 type MariadbCluster interface {
 	cdktf.TerraformResource
+	Backup() MariadbClusterBackupOutputReference
+	BackupInput() *MariadbClusterBackup
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -137,10 +139,12 @@ type MariadbCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBackup(value *MariadbClusterBackup)
 	PutConnections(value *MariadbClusterConnections)
 	PutCredentials(value *MariadbClusterCredentials)
 	PutMaintenanceWindow(value *MariadbClusterMaintenanceWindow)
 	PutTimeouts(value *MariadbClusterTimeouts)
+	ResetBackup()
 	ResetId()
 	ResetLocation()
 	ResetMaintenanceWindow()
@@ -164,6 +168,26 @@ type MariadbCluster interface {
 // The jsii proxy struct for MariadbCluster
 type jsiiProxy_MariadbCluster struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_MariadbCluster) Backup() MariadbClusterBackupOutputReference {
+	var returns MariadbClusterBackupOutputReference
+	_jsii_.Get(
+		j,
+		"backup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MariadbCluster) BackupInput() *MariadbClusterBackup {
+	var returns *MariadbClusterBackup
+	_jsii_.Get(
+		j,
+		"backupInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_MariadbCluster) CdktfStack() cdktf.TerraformStack {
@@ -577,7 +601,7 @@ func (j *jsiiProxy_MariadbCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster ionoscloud_mariadb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster ionoscloud_mariadb_cluster} Resource.
 func NewMariadbCluster(scope constructs.Construct, id *string, config *MariadbClusterConfig) MariadbCluster {
 	_init_.Initialize()
 
@@ -595,7 +619,7 @@ func NewMariadbCluster(scope constructs.Construct, id *string, config *MariadbCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster ionoscloud_mariadb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster ionoscloud_mariadb_cluster} Resource.
 func NewMariadbCluster_Override(m MariadbCluster, scope constructs.Construct, id *string, config *MariadbClusterConfig) {
 	_init_.Initialize()
 
@@ -1115,6 +1139,17 @@ func (m *jsiiProxy_MariadbCluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (m *jsiiProxy_MariadbCluster) PutBackup(value *MariadbClusterBackup) {
+	if err := m.validatePutBackupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putBackup",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MariadbCluster) PutConnections(value *MariadbClusterConnections) {
 	if err := m.validatePutConnectionsParameters(value); err != nil {
 		panic(err)
@@ -1156,6 +1191,14 @@ func (m *jsiiProxy_MariadbCluster) PutTimeouts(value *MariadbClusterTimeouts) {
 		m,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MariadbCluster) ResetBackup() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetBackup",
+		nil, // no parameters
 	)
 }
 

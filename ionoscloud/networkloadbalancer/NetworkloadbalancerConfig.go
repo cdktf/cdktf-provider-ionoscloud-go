@@ -22,29 +22,29 @@ type NetworkloadbalancerConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/networkloadbalancer#datacenter_id Networkloadbalancer#datacenter_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/networkloadbalancer#datacenter_id Networkloadbalancer#datacenter_id}.
 	DatacenterId *string `field:"required" json:"datacenterId" yaml:"datacenterId"`
 	// Id of the listening LAN. (inbound).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/networkloadbalancer#listener_lan Networkloadbalancer#listener_lan}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/networkloadbalancer#listener_lan Networkloadbalancer#listener_lan}
 	ListenerLan *float64 `field:"required" json:"listenerLan" yaml:"listenerLan"`
 	// A name of that Network Load Balancer.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/networkloadbalancer#name Networkloadbalancer#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/networkloadbalancer#name Networkloadbalancer#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Id of the balanced private target LAN. (outbound).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/networkloadbalancer#target_lan Networkloadbalancer#target_lan}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/networkloadbalancer#target_lan Networkloadbalancer#target_lan}
 	TargetLan *float64 `field:"required" json:"targetLan" yaml:"targetLan"`
 	// Turn logging on and off for this product. Default value is 'false'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/networkloadbalancer#central_logging Networkloadbalancer#central_logging}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/networkloadbalancer#central_logging Networkloadbalancer#central_logging}
 	CentralLogging interface{} `field:"optional" json:"centralLogging" yaml:"centralLogging"`
 	// flowlog block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/networkloadbalancer#flowlog Networkloadbalancer#flowlog}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/networkloadbalancer#flowlog Networkloadbalancer#flowlog}
 	Flowlog *NetworkloadbalancerFlowlog `field:"optional" json:"flowlog" yaml:"flowlog"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/networkloadbalancer#id Networkloadbalancer#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/networkloadbalancer#id Networkloadbalancer#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -53,21 +53,21 @@ type NetworkloadbalancerConfig struct {
 	//
 	// (inbound and outbound) IP of the listenerLan must be a customer reserved IP for the public load balancer and private IP for the private load balancer.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/networkloadbalancer#ips Networkloadbalancer#ips}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/networkloadbalancer#ips Networkloadbalancer#ips}
 	Ips *[]*string `field:"optional" json:"ips" yaml:"ips"`
 	// Collection of private IP addresses with subnet mask of the Network Load Balancer.
 	//
 	// IPs must contain valid subnet mask. If user will not provide any IP then the system will generate one IP with /24 subnet.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/networkloadbalancer#lb_private_ips Networkloadbalancer#lb_private_ips}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/networkloadbalancer#lb_private_ips Networkloadbalancer#lb_private_ips}
 	LbPrivateIps *[]*string `field:"optional" json:"lbPrivateIps" yaml:"lbPrivateIps"`
 	// Specifies the format of the logs.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/networkloadbalancer#logging_format Networkloadbalancer#logging_format}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/networkloadbalancer#logging_format Networkloadbalancer#logging_format}
 	LoggingFormat *string `field:"optional" json:"loggingFormat" yaml:"loggingFormat"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/networkloadbalancer#timeouts Networkloadbalancer#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/networkloadbalancer#timeouts Networkloadbalancer#timeouts}
 	Timeouts *NetworkloadbalancerTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -218,32 +218,12 @@ func (d *jsiiProxy_DataplatformNodePool) validatePutAutoScalingParameters(value 
 	return nil
 }
 
-func (d *jsiiProxy_DataplatformNodePool) validatePutMaintenanceWindowParameters(value interface{}) error {
+func (d *jsiiProxy_DataplatformNodePool) validatePutMaintenanceWindowParameters(value *DataplatformNodePoolMaintenanceWindow) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataplatformNodePoolMaintenanceWindow:
-		value := value.(*[]*DataplatformNodePoolMaintenanceWindow)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataplatformNodePoolMaintenanceWindow:
-		value_ := value.([]*DataplatformNodePoolMaintenanceWindow)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataplatformNodePoolMaintenanceWindow; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

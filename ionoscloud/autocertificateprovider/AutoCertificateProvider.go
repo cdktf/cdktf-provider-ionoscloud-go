@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/auto_certificate_provider ionoscloud_auto_certificate_provider}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/auto_certificate_provider ionoscloud_auto_certificate_provider}.
 type AutoCertificateProvider interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_AutoCertificateProvider) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/auto_certificate_provider ionoscloud_auto_certificate_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/auto_certificate_provider ionoscloud_auto_certificate_provider} Resource.
 func NewAutoCertificateProvider(scope constructs.Construct, id *string, config *AutoCertificateProviderConfig) AutoCertificateProvider {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewAutoCertificateProvider(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/auto_certificate_provider ionoscloud_auto_certificate_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/auto_certificate_provider ionoscloud_auto_certificate_provider} Resource.
 func NewAutoCertificateProvider_Override(a AutoCertificateProvider, scope constructs.Construct, id *string, config *AutoCertificateProviderConfig) {
 	_init_.Initialize()
 

@@ -63,7 +63,7 @@ func (j *jsiiProxy_DataplatformClusterMaintenanceWindowOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataplatformClusterMaintenanceWindowOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataplatformClusterMaintenanceWindowOutputReference) validateSetInternalValueParameters(val *DataplatformClusterMaintenanceWindow) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_DataplatformClusterMaintenanceWindowOutputReference) validate
 	return nil
 }
 
-func validateNewDataplatformClusterMaintenanceWindowOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataplatformClusterMaintenanceWindowOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

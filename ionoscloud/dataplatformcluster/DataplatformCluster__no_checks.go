@@ -79,7 +79,7 @@ func (d *jsiiProxy_DataplatformCluster) validatePutLansParameters(value interfac
 	return nil
 }
 
-func (d *jsiiProxy_DataplatformCluster) validatePutMaintenanceWindowParameters(value interface{}) error {
+func (d *jsiiProxy_DataplatformCluster) validatePutMaintenanceWindowParameters(value *DataplatformClusterMaintenanceWindow) error {
 	return nil
 }
 

@@ -1,17 +1,17 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
-package dataplatformcluster
+package dataionoscloudmariadbcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataplatformcluster/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudmariadbcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DataplatformClusterMaintenanceWindowList interface {
+type DataIonoscloudMariadbClusterBackupList interface {
 	cdktf.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -20,8 +20,6 @@ type DataplatformClusterMaintenanceWindowList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
 	// The attribute on the parent resource this class is referencing.
 	TerraformAttribute() *string
 	SetTerraformAttribute(val *string)
@@ -38,7 +36,7 @@ type DataplatformClusterMaintenanceWindowList interface {
 	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
-	Get(index *float64) DataplatformClusterMaintenanceWindowOutputReference
+	Get(index *float64) DataIonoscloudMariadbClusterBackupOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -49,12 +47,12 @@ type DataplatformClusterMaintenanceWindowList interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for DataplatformClusterMaintenanceWindowList
-type jsiiProxy_DataplatformClusterMaintenanceWindowList struct {
+// The jsii proxy struct for DataIonoscloudMariadbClusterBackupList
+type jsiiProxy_DataIonoscloudMariadbClusterBackupList struct {
 	internal.Type__cdktfComplexList
 }
 
-func (j *jsiiProxy_DataplatformClusterMaintenanceWindowList) CreationStack() *[]*string {
+func (j *jsiiProxy_DataIonoscloudMariadbClusterBackupList) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -64,7 +62,7 @@ func (j *jsiiProxy_DataplatformClusterMaintenanceWindowList) CreationStack() *[]
 	return returns
 }
 
-func (j *jsiiProxy_DataplatformClusterMaintenanceWindowList) Fqn() *string {
+func (j *jsiiProxy_DataIonoscloudMariadbClusterBackupList) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -74,17 +72,7 @@ func (j *jsiiProxy_DataplatformClusterMaintenanceWindowList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataplatformClusterMaintenanceWindowList) InternalValue() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataplatformClusterMaintenanceWindowList) TerraformAttribute() *string {
+func (j *jsiiProxy_DataIonoscloudMariadbClusterBackupList) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -94,7 +82,7 @@ func (j *jsiiProxy_DataplatformClusterMaintenanceWindowList) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_DataplatformClusterMaintenanceWindowList) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_DataIonoscloudMariadbClusterBackupList) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -104,7 +92,7 @@ func (j *jsiiProxy_DataplatformClusterMaintenanceWindowList) TerraformResource()
 	return returns
 }
 
-func (j *jsiiProxy_DataplatformClusterMaintenanceWindowList) WrapsSet() *bool {
+func (j *jsiiProxy_DataIonoscloudMariadbClusterBackupList) WrapsSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -115,16 +103,16 @@ func (j *jsiiProxy_DataplatformClusterMaintenanceWindowList) WrapsSet() *bool {
 }
 
 
-func NewDataplatformClusterMaintenanceWindowList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataplatformClusterMaintenanceWindowList {
+func NewDataIonoscloudMariadbClusterBackupList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudMariadbClusterBackupList {
 	_init_.Initialize()
 
-	if err := validateNewDataplatformClusterMaintenanceWindowListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+	if err := validateNewDataIonoscloudMariadbClusterBackupListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataplatformClusterMaintenanceWindowList{}
+	j := jsiiProxy_DataIonoscloudMariadbClusterBackupList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterMaintenanceWindowList",
+		"@cdktf/provider-ionoscloud.dataIonoscloudMariadbCluster.DataIonoscloudMariadbClusterBackupList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -132,28 +120,17 @@ func NewDataplatformClusterMaintenanceWindowList(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewDataplatformClusterMaintenanceWindowList_Override(d DataplatformClusterMaintenanceWindowList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataIonoscloudMariadbClusterBackupList_Override(d DataIonoscloudMariadbClusterBackupList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterMaintenanceWindowList",
+		"@cdktf/provider-ionoscloud.dataIonoscloudMariadbCluster.DataIonoscloudMariadbClusterBackupList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataplatformClusterMaintenanceWindowList)SetInternalValue(val interface{}) {
-	if err := j.validateSetInternalValueParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataplatformClusterMaintenanceWindowList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataIonoscloudMariadbClusterBackupList)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -164,7 +141,7 @@ func (j *jsiiProxy_DataplatformClusterMaintenanceWindowList)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DataplatformClusterMaintenanceWindowList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataIonoscloudMariadbClusterBackupList)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -175,7 +152,7 @@ func (j *jsiiProxy_DataplatformClusterMaintenanceWindowList)SetTerraformResource
 	)
 }
 
-func (j *jsiiProxy_DataplatformClusterMaintenanceWindowList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DataIonoscloudMariadbClusterBackupList)SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -186,7 +163,7 @@ func (j *jsiiProxy_DataplatformClusterMaintenanceWindowList)SetWrapsSet(val *boo
 	)
 }
 
-func (d *jsiiProxy_DataplatformClusterMaintenanceWindowList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DataIonoscloudMariadbClusterBackupList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
@@ -202,7 +179,7 @@ func (d *jsiiProxy_DataplatformClusterMaintenanceWindowList) AllWithMapKey(mapKe
 	return returns
 }
 
-func (d *jsiiProxy_DataplatformClusterMaintenanceWindowList) ComputeFqn() *string {
+func (d *jsiiProxy_DataIonoscloudMariadbClusterBackupList) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -215,11 +192,11 @@ func (d *jsiiProxy_DataplatformClusterMaintenanceWindowList) ComputeFqn() *strin
 	return returns
 }
 
-func (d *jsiiProxy_DataplatformClusterMaintenanceWindowList) Get(index *float64) DataplatformClusterMaintenanceWindowOutputReference {
+func (d *jsiiProxy_DataIonoscloudMariadbClusterBackupList) Get(index *float64) DataIonoscloudMariadbClusterBackupOutputReference {
 	if err := d.validateGetParameters(index); err != nil {
 		panic(err)
 	}
-	var returns DataplatformClusterMaintenanceWindowOutputReference
+	var returns DataIonoscloudMariadbClusterBackupOutputReference
 
 	_jsii_.Invoke(
 		d,
@@ -231,7 +208,7 @@ func (d *jsiiProxy_DataplatformClusterMaintenanceWindowList) Get(index *float64)
 	return returns
 }
 
-func (d *jsiiProxy_DataplatformClusterMaintenanceWindowList) Resolve(_context cdktf.IResolveContext) interface{} {
+func (d *jsiiProxy_DataIonoscloudMariadbClusterBackupList) Resolve(_context cdktf.IResolveContext) interface{} {
 	if err := d.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
@@ -247,7 +224,7 @@ func (d *jsiiProxy_DataplatformClusterMaintenanceWindowList) Resolve(_context cd
 	return returns
 }
 
-func (d *jsiiProxy_DataplatformClusterMaintenanceWindowList) ToString() *string {
+func (d *jsiiProxy_DataIonoscloudMariadbClusterBackupList) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

@@ -79,7 +79,7 @@ func (d *jsiiProxy_DataplatformNodePool) validatePutAutoScalingParameters(value 
 	return nil
 }
 
-func (d *jsiiProxy_DataplatformNodePool) validatePutMaintenanceWindowParameters(value interface{}) error {
+func (d *jsiiProxy_DataplatformNodePool) validatePutMaintenanceWindowParameters(value *DataplatformNodePoolMaintenanceWindow) error {
 	return nil
 }
 

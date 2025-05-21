@@ -7,19 +7,19 @@ package applicationloadbalancer
 type ApplicationLoadbalancerFlowlog struct {
 	// Specifies the traffic direction pattern. Valid values: ACCEPTED, REJECTED, ALL. Immutable, forces re-recreation of the nic resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/application_loadbalancer#action ApplicationLoadbalancer#action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/application_loadbalancer#action ApplicationLoadbalancer#action}
 	Action *string `field:"required" json:"action" yaml:"action"`
 	// The bucket name of an existing IONOS Object Storage bucket. Immutable, forces re-recreation of the nic resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/application_loadbalancer#bucket ApplicationLoadbalancer#bucket}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/application_loadbalancer#bucket ApplicationLoadbalancer#bucket}
 	Bucket *string `field:"required" json:"bucket" yaml:"bucket"`
 	// Specifies the traffic direction pattern. Valid values: INGRESS, EGRESS, BIDIRECTIONAL. Immutable, forces re-recreation of the nic resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/application_loadbalancer#direction ApplicationLoadbalancer#direction}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/application_loadbalancer#direction ApplicationLoadbalancer#direction}
 	Direction *string `field:"required" json:"direction" yaml:"direction"`
 	// The resource name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/application_loadbalancer#name ApplicationLoadbalancer#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/application_loadbalancer#name ApplicationLoadbalancer#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

@@ -33,8 +33,8 @@ type DataplatformNodePoolMaintenanceWindowOutputReference interface {
 	DayOfTheWeekInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataplatformNodePoolMaintenanceWindow
+	SetInternalValue(val *DataplatformNodePoolMaintenanceWindow)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -145,8 +145,8 @@ func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowOutputReference) InternalValue() *DataplatformNodePoolMaintenanceWindow {
+	var returns *DataplatformNodePoolMaintenanceWindow
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -196,29 +196,29 @@ func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowOutputReference) TimeInp
 }
 
 
-func NewDataplatformNodePoolMaintenanceWindowOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataplatformNodePoolMaintenanceWindowOutputReference {
+func NewDataplatformNodePoolMaintenanceWindowOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataplatformNodePoolMaintenanceWindowOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataplatformNodePoolMaintenanceWindowOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewDataplatformNodePoolMaintenanceWindowOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataplatformNodePoolMaintenanceWindowOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolMaintenanceWindowOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataplatformNodePoolMaintenanceWindowOutputReference_Override(d DataplatformNodePoolMaintenanceWindowOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataplatformNodePoolMaintenanceWindowOutputReference_Override(d DataplatformNodePoolMaintenanceWindowOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolMaintenanceWindowOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
 }
@@ -256,7 +256,7 @@ func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowOutputReference)SetDayOf
 	)
 }
 
-func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowOutputReference)SetInternalValue(val *DataplatformNodePoolMaintenanceWindow) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

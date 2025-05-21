@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster}.
 type DataplatformCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -51,8 +51,8 @@ type DataplatformCluster interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MaintenanceWindow() DataplatformClusterMaintenanceWindowList
-	MaintenanceWindowInput() interface{}
+	MaintenanceWindow() DataplatformClusterMaintenanceWindowOutputReference
+	MaintenanceWindowInput() *DataplatformClusterMaintenanceWindow
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -123,7 +123,7 @@ type DataplatformCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLans(value interface{})
-	PutMaintenanceWindow(value interface{})
+	PutMaintenanceWindow(value *DataplatformClusterMaintenanceWindow)
 	PutTimeouts(value *DataplatformClusterTimeouts)
 	ResetId()
 	ResetLans()
@@ -301,8 +301,8 @@ func (j *jsiiProxy_DataplatformCluster) Lifecycle() *cdktf.TerraformResourceLife
 	return returns
 }
 
-func (j *jsiiProxy_DataplatformCluster) MaintenanceWindow() DataplatformClusterMaintenanceWindowList {
-	var returns DataplatformClusterMaintenanceWindowList
+func (j *jsiiProxy_DataplatformCluster) MaintenanceWindow() DataplatformClusterMaintenanceWindowOutputReference {
+	var returns DataplatformClusterMaintenanceWindowOutputReference
 	_jsii_.Get(
 		j,
 		"maintenanceWindow",
@@ -311,8 +311,8 @@ func (j *jsiiProxy_DataplatformCluster) MaintenanceWindow() DataplatformClusterM
 	return returns
 }
 
-func (j *jsiiProxy_DataplatformCluster) MaintenanceWindowInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataplatformCluster) MaintenanceWindowInput() *DataplatformClusterMaintenanceWindow {
+	var returns *DataplatformClusterMaintenanceWindow
 	_jsii_.Get(
 		j,
 		"maintenanceWindowInput",
@@ -452,7 +452,7 @@ func (j *jsiiProxy_DataplatformCluster) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster} Resource.
 func NewDataplatformCluster(scope constructs.Construct, id *string, config *DataplatformClusterConfig) DataplatformCluster {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewDataplatformCluster(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster} Resource.
 func NewDataplatformCluster_Override(d DataplatformCluster, scope constructs.Construct, id *string, config *DataplatformClusterConfig) {
 	_init_.Initialize()
 
@@ -957,7 +957,7 @@ func (d *jsiiProxy_DataplatformCluster) PutLans(value interface{}) {
 	)
 }
 
-func (d *jsiiProxy_DataplatformCluster) PutMaintenanceWindow(value interface{}) {
+func (d *jsiiProxy_DataplatformCluster) PutMaintenanceWindow(value *DataplatformClusterMaintenanceWindow) {
 	if err := d.validatePutMaintenanceWindowParameters(value); err != nil {
 		panic(err)
 	}

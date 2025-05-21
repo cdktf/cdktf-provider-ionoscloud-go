@@ -63,7 +63,7 @@ func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowOutputReference) validateSetInternalValueParameters(val *DataplatformNodePoolMaintenanceWindow) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_DataplatformNodePoolMaintenanceWindowOutputReference) validat
 	return nil
 }
 
-func validateNewDataplatformNodePoolMaintenanceWindowOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataplatformNodePoolMaintenanceWindowOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 
