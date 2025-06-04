@@ -5,10 +5,10 @@ package dataionosclouddnsrecord
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouddnsrecord/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/dataionosclouddnsrecord/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

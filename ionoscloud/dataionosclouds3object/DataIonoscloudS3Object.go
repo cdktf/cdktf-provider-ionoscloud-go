@@ -5,10 +5,10 @@ package dataionosclouds3object
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouds3object/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/dataionosclouds3object/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

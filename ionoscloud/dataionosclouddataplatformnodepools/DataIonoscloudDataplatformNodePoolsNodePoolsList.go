@@ -5,9 +5,9 @@ package dataionosclouddataplatformnodepools
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/jsii"
 
-	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouddataplatformnodepools/internal"
+	"github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/dataionosclouddataplatformnodepools/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
