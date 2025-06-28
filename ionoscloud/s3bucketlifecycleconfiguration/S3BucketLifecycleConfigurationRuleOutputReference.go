@@ -32,6 +32,8 @@ type S3BucketLifecycleConfigurationRuleOutputReference interface {
 	CreationStack() *[]*string
 	Expiration() S3BucketLifecycleConfigurationRuleExpirationOutputReference
 	ExpirationInput() interface{}
+	Filter() S3BucketLifecycleConfigurationRuleFilterOutputReference
+	FilterInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -81,11 +83,14 @@ type S3BucketLifecycleConfigurationRuleOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAbortIncompleteMultipartUpload(value *S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload)
 	PutExpiration(value *S3BucketLifecycleConfigurationRuleExpiration)
+	PutFilter(value *S3BucketLifecycleConfigurationRuleFilter)
 	PutNoncurrentVersionExpiration(value *S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration)
 	ResetAbortIncompleteMultipartUpload()
 	ResetExpiration()
+	ResetFilter()
 	ResetId()
 	ResetNoncurrentVersionExpiration()
+	ResetPrefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -166,6 +171,26 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) Expiration
 	_jsii_.Get(
 		j,
 		"expirationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) Filter() S3BucketLifecycleConfigurationRuleFilterOutputReference {
+	var returns S3BucketLifecycleConfigurationRuleFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) FilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -615,6 +640,17 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) PutExpirat
 	)
 }
 
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) PutFilter(value *S3BucketLifecycleConfigurationRuleFilter) {
+	if err := s.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) PutNoncurrentVersionExpiration(value *S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration) {
 	if err := s.validatePutNoncurrentVersionExpirationParameters(value); err != nil {
 		panic(err)
@@ -642,6 +678,14 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) ResetExpir
 	)
 }
 
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) ResetFilter() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetFilter",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -654,6 +698,14 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) ResetNoncu
 	_jsii_.InvokeVoid(
 		s,
 		"resetNoncurrentVersionExpiration",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) ResetPrefix() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPrefix",
 		nil, // no parameters
 	)
 }

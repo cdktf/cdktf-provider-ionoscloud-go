@@ -115,6 +115,17 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePu
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutFilterParameters(value *S3BucketLifecycleConfigurationRuleFilter) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutNoncurrentVersionExpirationParameters(value *S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/data-sources/mariadb_cluster ionoscloud_mariadb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/data-sources/mariadb_cluster ionoscloud_mariadb_cluster}.
 type DataIonoscloudMariadbCluster interface {
 	cdktf.TerraformDataSource
 	Backup() DataIonoscloudMariadbClusterBackupList
@@ -412,7 +412,7 @@ func (j *jsiiProxy_DataIonoscloudMariadbCluster) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/data-sources/mariadb_cluster ionoscloud_mariadb_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/data-sources/mariadb_cluster ionoscloud_mariadb_cluster} Data Source.
 func NewDataIonoscloudMariadbCluster(scope constructs.Construct, id *string, config *DataIonoscloudMariadbClusterConfig) DataIonoscloudMariadbCluster {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewDataIonoscloudMariadbCluster(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/data-sources/mariadb_cluster ionoscloud_mariadb_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/data-sources/mariadb_cluster ionoscloud_mariadb_cluster} Data Source.
 func NewDataIonoscloudMariadbCluster_Override(d DataIonoscloudMariadbCluster, scope constructs.Construct, id *string, config *DataIonoscloudMariadbClusterConfig) {
 	_init_.Initialize()
 

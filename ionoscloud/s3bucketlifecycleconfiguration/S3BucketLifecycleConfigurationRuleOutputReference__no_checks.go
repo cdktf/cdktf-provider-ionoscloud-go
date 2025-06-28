@@ -55,6 +55,10 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePu
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutFilterParameters(value *S3BucketLifecycleConfigurationRuleFilter) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleOutputReference) validatePutNoncurrentVersionExpirationParameters(value *S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration) error {
 	return nil
 }

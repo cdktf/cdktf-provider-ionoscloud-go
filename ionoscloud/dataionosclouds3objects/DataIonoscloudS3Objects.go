@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/data-sources/s3_objects ionoscloud_s3_objects}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/data-sources/s3_objects ionoscloud_s3_objects}.
 type DataIonoscloudS3Objects interface {
 	cdktf.TerraformDataSource
 	Bucket() *string
@@ -441,7 +441,7 @@ func (j *jsiiProxy_DataIonoscloudS3Objects) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/data-sources/s3_objects ionoscloud_s3_objects} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/data-sources/s3_objects ionoscloud_s3_objects} Data Source.
 func NewDataIonoscloudS3Objects(scope constructs.Construct, id *string, config *DataIonoscloudS3ObjectsConfig) DataIonoscloudS3Objects {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewDataIonoscloudS3Objects(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/data-sources/s3_objects ionoscloud_s3_objects} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/data-sources/s3_objects ionoscloud_s3_objects} Data Source.
 func NewDataIonoscloudS3Objects_Override(d DataIonoscloudS3Objects, scope constructs.Construct, id *string, config *DataIonoscloudS3ObjectsConfig) {
 	_init_.Initialize()
 
