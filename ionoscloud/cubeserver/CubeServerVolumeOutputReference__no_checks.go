@@ -75,6 +75,10 @@ func (j *jsiiProxy_CubeServerVolumeOutputReference) validateSetDiskTypeParameter
 	return nil
 }
 
+func (j *jsiiProxy_CubeServerVolumeOutputReference) validateSetExposeSerialParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CubeServerVolumeOutputReference) validateSetImagePasswordParameters(val *string) error {
 	return nil
 }

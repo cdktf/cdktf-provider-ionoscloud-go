@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/volume ionoscloud_volume}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.10/docs/resources/volume ionoscloud_volume}.
 type Volume interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -51,6 +51,9 @@ type Volume interface {
 	DiskType() *string
 	SetDiskType(val *string)
 	DiskTypeInput() *string
+	ExposeSerial() interface{}
+	SetExposeSerial(val interface{})
+	ExposeSerialInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -167,6 +170,7 @@ type Volume interface {
 	ResetAvailabilityZone()
 	ResetBackupUnitId()
 	ResetBus()
+	ResetExposeSerial()
 	ResetId()
 	ResetImageName()
 	ResetImagePassword()
@@ -392,6 +396,26 @@ func (j *jsiiProxy_Volume) DiskTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"diskTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Volume) ExposeSerial() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exposeSerial",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Volume) ExposeSerialInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exposeSerialInput",
 		&returns,
 	)
 	return returns
@@ -798,7 +822,7 @@ func (j *jsiiProxy_Volume) UserDataInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/volume ionoscloud_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.10/docs/resources/volume ionoscloud_volume} Resource.
 func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Volume {
 	_init_.Initialize()
 
@@ -816,7 +840,7 @@ func NewVolume(scope constructs.Construct, id *string, config *VolumeConfig) Vol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/volume ionoscloud_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.10/docs/resources/volume ionoscloud_volume} Resource.
 func NewVolume_Override(v Volume, scope constructs.Construct, id *string, config *VolumeConfig) {
 	_init_.Initialize()
 
@@ -908,6 +932,17 @@ func (j *jsiiProxy_Volume)SetDiskType(val *string) {
 	_jsii_.Set(
 		j,
 		"diskType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Volume)SetExposeSerial(val interface{}) {
+	if err := j.validateSetExposeSerialParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"exposeSerial",
 		val,
 	)
 }
@@ -1444,6 +1479,14 @@ func (v *jsiiProxy_Volume) ResetBus() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetBus",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_Volume) ResetExposeSerial() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetExposeSerial",
 		nil, // no parameters
 	)
 }

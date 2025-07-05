@@ -45,6 +45,9 @@ type CubeServerVolumeOutputReference interface {
 	DiskType() *string
 	SetDiskType(val *string)
 	DiskTypeInput() *string
+	ExposeSerial() interface{}
+	SetExposeSerial(val interface{})
+	ExposeSerialInput() interface{}
 	// Experimental.
 	Fqn() *string
 	ImagePassword() *string
@@ -103,6 +106,7 @@ type CubeServerVolumeOutputReference interface {
 	ResetAvailabilityZone()
 	ResetBackupUnitId()
 	ResetBus()
+	ResetExposeSerial()
 	ResetImagePassword()
 	ResetLicenceType()
 	ResetName()
@@ -278,6 +282,26 @@ func (j *jsiiProxy_CubeServerVolumeOutputReference) DiskTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"diskTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CubeServerVolumeOutputReference) ExposeSerial() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exposeSerial",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CubeServerVolumeOutputReference) ExposeSerialInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exposeSerialInput",
 		&returns,
 	)
 	return returns
@@ -553,6 +577,17 @@ func (j *jsiiProxy_CubeServerVolumeOutputReference)SetDiskType(val *string) {
 	_jsii_.Set(
 		j,
 		"diskType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CubeServerVolumeOutputReference)SetExposeSerial(val interface{}) {
+	if err := j.validateSetExposeSerialParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"exposeSerial",
 		val,
 	)
 }
@@ -851,6 +886,14 @@ func (c *jsiiProxy_CubeServerVolumeOutputReference) ResetBus() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetBus",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CubeServerVolumeOutputReference) ResetExposeSerial() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExposeSerial",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/data-sources/volume ionoscloud_volume}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.10/docs/data-sources/volume ionoscloud_volume}.
 type DataIonoscloudVolume interface {
 	cdktf.TerraformDataSource
 	AvailabilityZone() *string
@@ -39,6 +39,7 @@ type DataIonoscloudVolume interface {
 	DiscVirtioHotPlug() cdktf.IResolvable
 	DiscVirtioHotUnplug() cdktf.IResolvable
 	DiskType() *string
+	ExposeSerial() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -278,6 +279,16 @@ func (j *jsiiProxy_DataIonoscloudVolume) DiskType() *string {
 	_jsii_.Get(
 		j,
 		"diskType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudVolume) ExposeSerial() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"exposeSerial",
 		&returns,
 	)
 	return returns
@@ -534,7 +545,7 @@ func (j *jsiiProxy_DataIonoscloudVolume) UserData() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/data-sources/volume ionoscloud_volume} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.10/docs/data-sources/volume ionoscloud_volume} Data Source.
 func NewDataIonoscloudVolume(scope constructs.Construct, id *string, config *DataIonoscloudVolumeConfig) DataIonoscloudVolume {
 	_init_.Initialize()
 
@@ -552,7 +563,7 @@ func NewDataIonoscloudVolume(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/data-sources/volume ionoscloud_volume} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.10/docs/data-sources/volume ionoscloud_volume} Data Source.
 func NewDataIonoscloudVolume_Override(d DataIonoscloudVolume, scope constructs.Construct, id *string, config *DataIonoscloudVolumeConfig) {
 	_init_.Initialize()
 

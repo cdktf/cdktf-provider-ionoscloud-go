@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/data-sources/logging_pipeline ionoscloud_logging_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.10/docs/data-sources/logging_pipeline ionoscloud_logging_pipeline}.
 type DataIonoscloudLoggingPipeline interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -36,6 +36,7 @@ type DataIonoscloudLoggingPipeline interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	GrafanaAddress() *string
+	HttpAddress() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -58,6 +59,7 @@ type DataIonoscloudLoggingPipeline interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	TcpAddress() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -194,6 +196,16 @@ func (j *jsiiProxy_DataIonoscloudLoggingPipeline) GrafanaAddress() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudLoggingPipeline) HttpAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpAddress",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudLoggingPipeline) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -304,6 +316,16 @@ func (j *jsiiProxy_DataIonoscloudLoggingPipeline) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudLoggingPipeline) TcpAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tcpAddress",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudLoggingPipeline) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -335,7 +357,7 @@ func (j *jsiiProxy_DataIonoscloudLoggingPipeline) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/data-sources/logging_pipeline ionoscloud_logging_pipeline} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.10/docs/data-sources/logging_pipeline ionoscloud_logging_pipeline} Data Source.
 func NewDataIonoscloudLoggingPipeline(scope constructs.Construct, id *string, config *DataIonoscloudLoggingPipelineConfig) DataIonoscloudLoggingPipeline {
 	_init_.Initialize()
 
@@ -353,7 +375,7 @@ func NewDataIonoscloudLoggingPipeline(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/data-sources/logging_pipeline ionoscloud_logging_pipeline} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.10/docs/data-sources/logging_pipeline ionoscloud_logging_pipeline} Data Source.
 func NewDataIonoscloudLoggingPipeline_Override(d DataIonoscloudLoggingPipeline, scope constructs.Construct, id *string, config *DataIonoscloudLoggingPipelineConfig) {
 	_init_.Initialize()
 

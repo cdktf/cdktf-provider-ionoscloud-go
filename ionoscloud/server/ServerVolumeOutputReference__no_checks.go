@@ -75,6 +75,10 @@ func (j *jsiiProxy_ServerVolumeOutputReference) validateSetDiskTypeParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ServerVolumeOutputReference) validateSetExposeSerialParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServerVolumeOutputReference) validateSetImagePasswordParameters(val *string) error {
 	return nil
 }

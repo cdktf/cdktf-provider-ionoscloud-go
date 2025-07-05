@@ -123,6 +123,10 @@ func (j *jsiiProxy_Volume) validateSetDiskTypeParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Volume) validateSetExposeSerialParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Volume) validateSetIdParameters(val *string) error {
 	return nil
 }

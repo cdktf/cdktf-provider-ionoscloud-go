@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/logging_pipeline ionoscloud_logging_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.10/docs/resources/logging_pipeline ionoscloud_logging_pipeline}.
 type LoggingPipeline interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -40,9 +40,11 @@ type LoggingPipeline interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	GrafanaAddress() *string
+	HttpAddress() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Key() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -67,6 +69,7 @@ type LoggingPipeline interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	TcpAddress() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -234,6 +237,16 @@ func (j *jsiiProxy_LoggingPipeline) GrafanaAddress() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LoggingPipeline) HttpAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpAddress",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LoggingPipeline) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -249,6 +262,16 @@ func (j *jsiiProxy_LoggingPipeline) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoggingPipeline) Key() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"key",
 		&returns,
 	)
 	return returns
@@ -364,6 +387,16 @@ func (j *jsiiProxy_LoggingPipeline) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LoggingPipeline) TcpAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tcpAddress",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LoggingPipeline) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -415,7 +448,7 @@ func (j *jsiiProxy_LoggingPipeline) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/logging_pipeline ionoscloud_logging_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.10/docs/resources/logging_pipeline ionoscloud_logging_pipeline} Resource.
 func NewLoggingPipeline(scope constructs.Construct, id *string, config *LoggingPipelineConfig) LoggingPipeline {
 	_init_.Initialize()
 
@@ -433,7 +466,7 @@ func NewLoggingPipeline(scope constructs.Construct, id *string, config *LoggingP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/logging_pipeline ionoscloud_logging_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.10/docs/resources/logging_pipeline ionoscloud_logging_pipeline} Resource.
 func NewLoggingPipeline_Override(l LoggingPipeline, scope constructs.Construct, id *string, config *LoggingPipelineConfig) {
 	_init_.Initialize()
 
