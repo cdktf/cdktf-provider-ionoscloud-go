@@ -37,6 +37,7 @@ type DataIonoscloudServersServersVolumesOutputReference interface {
 	DiscVirtioHotPlug() cdktf.IResolvable
 	DiscVirtioHotUnplug() cdktf.IResolvable
 	DiskType() *string
+	ExposeSerial() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -215,6 +216,16 @@ func (j *jsiiProxy_DataIonoscloudServersServersVolumesOutputReference) DiskType(
 	_jsii_.Get(
 		j,
 		"diskType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudServersServersVolumesOutputReference) ExposeSerial() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"exposeSerial",
 		&returns,
 	)
 	return returns

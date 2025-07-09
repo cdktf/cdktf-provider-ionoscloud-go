@@ -528,6 +528,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "discVirtioHotPlug", GoGetter: "DiscVirtioHotPlug"},
 			_jsii_.MemberProperty{JsiiProperty: "discVirtioHotUnplug", GoGetter: "DiscVirtioHotUnplug"},
 			_jsii_.MemberProperty{JsiiProperty: "diskType", GoGetter: "DiskType"},
+			_jsii_.MemberProperty{JsiiProperty: "exposeSerial", GoGetter: "ExposeSerial"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},

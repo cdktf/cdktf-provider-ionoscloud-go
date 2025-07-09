@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.10/docs/data-sources/monitoring_pipeline ionoscloud_monitoring_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/data-sources/monitoring_pipeline ionoscloud_monitoring_pipeline}.
 type DataIonoscloudMonitoringPipeline interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -335,7 +335,7 @@ func (j *jsiiProxy_DataIonoscloudMonitoringPipeline) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.10/docs/data-sources/monitoring_pipeline ionoscloud_monitoring_pipeline} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/data-sources/monitoring_pipeline ionoscloud_monitoring_pipeline} Data Source.
 func NewDataIonoscloudMonitoringPipeline(scope constructs.Construct, id *string, config *DataIonoscloudMonitoringPipelineConfig) DataIonoscloudMonitoringPipeline {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewDataIonoscloudMonitoringPipeline(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.10/docs/data-sources/monitoring_pipeline ionoscloud_monitoring_pipeline} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/data-sources/monitoring_pipeline ionoscloud_monitoring_pipeline} Data Source.
 func NewDataIonoscloudMonitoringPipeline_Override(d DataIonoscloudMonitoringPipeline, scope constructs.Construct, id *string, config *DataIonoscloudMonitoringPipelineConfig) {
 	_init_.Initialize()
 

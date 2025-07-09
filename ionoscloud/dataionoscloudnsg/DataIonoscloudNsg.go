@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.10/docs/data-sources/nsg ionoscloud_nsg}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/data-sources/nsg ionoscloud_nsg}.
 type DataIonoscloudNsg interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -369,7 +369,7 @@ func (j *jsiiProxy_DataIonoscloudNsg) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.10/docs/data-sources/nsg ionoscloud_nsg} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/data-sources/nsg ionoscloud_nsg} Data Source.
 func NewDataIonoscloudNsg(scope constructs.Construct, id *string, config *DataIonoscloudNsgConfig) DataIonoscloudNsg {
 	_init_.Initialize()
 
@@ -387,7 +387,7 @@ func NewDataIonoscloudNsg(scope constructs.Construct, id *string, config *DataIo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.10/docs/data-sources/nsg ionoscloud_nsg} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/data-sources/nsg ionoscloud_nsg} Data Source.
 func NewDataIonoscloudNsg_Override(d DataIonoscloudNsg, scope constructs.Construct, id *string, config *DataIonoscloudNsgConfig) {
 	_init_.Initialize()
 

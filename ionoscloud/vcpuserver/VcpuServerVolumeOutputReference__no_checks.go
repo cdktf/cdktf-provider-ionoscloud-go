@@ -75,6 +75,10 @@ func (j *jsiiProxy_VcpuServerVolumeOutputReference) validateSetDiskTypeParameter
 	return nil
 }
 
+func (j *jsiiProxy_VcpuServerVolumeOutputReference) validateSetExposeSerialParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VcpuServerVolumeOutputReference) validateSetInternalValueParameters(val *VcpuServerVolume) error {
 	return nil
 }

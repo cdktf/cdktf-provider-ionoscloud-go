@@ -45,6 +45,9 @@ type VcpuServerVolumeOutputReference interface {
 	DiskType() *string
 	SetDiskType(val *string)
 	DiskTypeInput() *string
+	ExposeSerial() interface{}
+	SetExposeSerial(val interface{})
+	ExposeSerialInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *VcpuServerVolume
@@ -100,6 +103,7 @@ type VcpuServerVolumeOutputReference interface {
 	ResetAvailabilityZone()
 	ResetBackupUnitId()
 	ResetBus()
+	ResetExposeSerial()
 	ResetLicenceType()
 	ResetName()
 	ResetSize()
@@ -274,6 +278,26 @@ func (j *jsiiProxy_VcpuServerVolumeOutputReference) DiskTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"diskTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VcpuServerVolumeOutputReference) ExposeSerial() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exposeSerial",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VcpuServerVolumeOutputReference) ExposeSerialInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exposeSerialInput",
 		&returns,
 	)
 	return returns
@@ -529,6 +553,17 @@ func (j *jsiiProxy_VcpuServerVolumeOutputReference)SetDiskType(val *string) {
 	_jsii_.Set(
 		j,
 		"diskType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VcpuServerVolumeOutputReference)SetExposeSerial(val interface{}) {
+	if err := j.validateSetExposeSerialParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"exposeSerial",
 		val,
 	)
 }
@@ -816,6 +851,14 @@ func (v *jsiiProxy_VcpuServerVolumeOutputReference) ResetBus() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetBus",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VcpuServerVolumeOutputReference) ResetExposeSerial() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetExposeSerial",
 		nil, // no parameters
 	)
 }

@@ -36,6 +36,7 @@ type DataIonoscloudVcpuServerVolumesOutputReference interface {
 	DeviceNumber() *float64
 	DiscVirtioHotPlug() cdktf.IResolvable
 	DiscVirtioHotUnplug() cdktf.IResolvable
+	ExposeSerial() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	Id() *string
@@ -205,6 +206,16 @@ func (j *jsiiProxy_DataIonoscloudVcpuServerVolumesOutputReference) DiscVirtioHot
 	_jsii_.Get(
 		j,
 		"discVirtioHotUnplug",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudVcpuServerVolumesOutputReference) ExposeSerial() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"exposeSerial",
 		&returns,
 	)
 	return returns
