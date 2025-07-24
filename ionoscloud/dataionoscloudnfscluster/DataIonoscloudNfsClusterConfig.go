@@ -24,22 +24,22 @@ type DataIonoscloudNfsClusterConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The location of the Network File Storage Cluster. Available locations: 'de/fra, 'de/txl, 'fr-par, 'gb-lhr, 'es/vit, 'us/las, 'us/ewr, 'us/mci'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/data-sources/nfs_cluster#location DataIonoscloudNfsCluster#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/data-sources/nfs_cluster#location DataIonoscloudNfsCluster#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 	// The ID (UUID) of the NFS Cluster.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/data-sources/nfs_cluster#id DataIonoscloudNfsCluster#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/data-sources/nfs_cluster#id DataIonoscloudNfsCluster#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The name of the NFS Cluster.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/data-sources/nfs_cluster#name DataIonoscloudNfsCluster#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/data-sources/nfs_cluster#name DataIonoscloudNfsCluster#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Whether partial matching is allowed or not when using the name filter.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/data-sources/nfs_cluster#partial_match DataIonoscloudNfsCluster#partial_match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/data-sources/nfs_cluster#partial_match DataIonoscloudNfsCluster#partial_match}
 	PartialMatch interface{} `field:"optional" json:"partialMatch" yaml:"partialMatch"`
 }
 

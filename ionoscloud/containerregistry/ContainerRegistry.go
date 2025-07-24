@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/resources/container_registry ionoscloud_container_registry}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/resources/container_registry ionoscloud_container_registry}.
 type ContainerRegistry interface {
 	cdktf.TerraformResource
 	ApiSubnetAllowList() *[]*string
@@ -474,7 +474,7 @@ func (j *jsiiProxy_ContainerRegistry) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/resources/container_registry ionoscloud_container_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/resources/container_registry ionoscloud_container_registry} Resource.
 func NewContainerRegistry(scope constructs.Construct, id *string, config *ContainerRegistryConfig) ContainerRegistry {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewContainerRegistry(scope constructs.Construct, id *string, config *Contai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/resources/container_registry ionoscloud_container_registry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/resources/container_registry ionoscloud_container_registry} Resource.
 func NewContainerRegistry_Override(c ContainerRegistry, scope constructs.Construct, id *string, config *ContainerRegistryConfig) {
 	_init_.Initialize()
 

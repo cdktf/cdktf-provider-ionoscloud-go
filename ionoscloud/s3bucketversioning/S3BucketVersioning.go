@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/resources/s3_bucket_versioning ionoscloud_s3_bucket_versioning}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/resources/s3_bucket_versioning ionoscloud_s3_bucket_versioning}.
 type S3BucketVersioning interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -333,7 +333,7 @@ func (j *jsiiProxy_S3BucketVersioning) VersioningConfigurationInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/resources/s3_bucket_versioning ionoscloud_s3_bucket_versioning} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/resources/s3_bucket_versioning ionoscloud_s3_bucket_versioning} Resource.
 func NewS3BucketVersioning(scope constructs.Construct, id *string, config *S3BucketVersioningConfig) S3BucketVersioning {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewS3BucketVersioning(scope constructs.Construct, id *string, config *S3Buc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/resources/s3_bucket_versioning ionoscloud_s3_bucket_versioning} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/resources/s3_bucket_versioning ionoscloud_s3_bucket_versioning} Resource.
 func NewS3BucketVersioning_Override(s S3BucketVersioning, scope constructs.Construct, id *string, config *S3BucketVersioningConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/data-sources/container_registry_locations ionoscloud_container_registry_locations}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/data-sources/container_registry_locations ionoscloud_container_registry_locations}.
 type DataIonoscloudContainerRegistryLocations interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataIonoscloudContainerRegistryLocations) TimeoutsInput() int
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/data-sources/container_registry_locations ionoscloud_container_registry_locations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/data-sources/container_registry_locations ionoscloud_container_registry_locations} Data Source.
 func NewDataIonoscloudContainerRegistryLocations(scope constructs.Construct, id *string, config *DataIonoscloudContainerRegistryLocationsConfig) DataIonoscloudContainerRegistryLocations {
 	_init_.Initialize()
 
@@ -318,7 +318,7 @@ func NewDataIonoscloudContainerRegistryLocations(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/data-sources/container_registry_locations ionoscloud_container_registry_locations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/data-sources/container_registry_locations ionoscloud_container_registry_locations} Data Source.
 func NewDataIonoscloudContainerRegistryLocations_Override(d DataIonoscloudContainerRegistryLocations, scope constructs.Construct, id *string, config *DataIonoscloudContainerRegistryLocationsConfig) {
 	_init_.Initialize()
 
