@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.13/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer}.
 type ApplicationLoadbalancer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -546,7 +546,7 @@ func (j *jsiiProxy_ApplicationLoadbalancer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.13/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer} Resource.
 func NewApplicationLoadbalancer(scope constructs.Construct, id *string, config *ApplicationLoadbalancerConfig) ApplicationLoadbalancer {
 	_init_.Initialize()
 
@@ -564,7 +564,7 @@ func NewApplicationLoadbalancer(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.13/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer} Resource.
 func NewApplicationLoadbalancer_Override(a ApplicationLoadbalancer, scope constructs.Construct, id *string, config *ApplicationLoadbalancerConfig) {
 	_init_.Initialize()
 

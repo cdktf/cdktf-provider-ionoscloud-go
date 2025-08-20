@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/data-sources/lan ionoscloud_lan}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.13/docs/data-sources/lan ionoscloud_lan}.
 type DataIonoscloudLan interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_DataIonoscloudLan) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/data-sources/lan ionoscloud_lan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.13/docs/data-sources/lan ionoscloud_lan} Data Source.
 func NewDataIonoscloudLan(scope constructs.Construct, id *string, config *DataIonoscloudLanConfig) DataIonoscloudLan {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewDataIonoscloudLan(scope constructs.Construct, id *string, config *DataIo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/data-sources/lan ionoscloud_lan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.13/docs/data-sources/lan ionoscloud_lan} Data Source.
 func NewDataIonoscloudLan_Override(d DataIonoscloudLan, scope constructs.Construct, id *string, config *DataIonoscloudLanConfig) {
 	_init_.Initialize()
 
