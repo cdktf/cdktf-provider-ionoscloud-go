@@ -24,7 +24,7 @@ type DataIonoscloudS3BucketConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.13/docs/data-sources/s3_bucket#name DataIonoscloudS3Bucket#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.14/docs/data-sources/s3_bucket#name DataIonoscloudS3Bucket#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

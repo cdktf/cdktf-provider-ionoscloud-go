@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.13/docs/resources/nsg_firewallrule ionoscloud_nsg_firewallrule}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.14/docs/resources/nsg_firewallrule ionoscloud_nsg_firewallrule}.
 type NsgFirewallrule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -619,7 +619,7 @@ func (j *jsiiProxy_NsgFirewallrule) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.13/docs/resources/nsg_firewallrule ionoscloud_nsg_firewallrule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.14/docs/resources/nsg_firewallrule ionoscloud_nsg_firewallrule} Resource.
 func NewNsgFirewallrule(scope constructs.Construct, id *string, config *NsgFirewallruleConfig) NsgFirewallrule {
 	_init_.Initialize()
 
@@ -637,7 +637,7 @@ func NewNsgFirewallrule(scope constructs.Construct, id *string, config *NsgFirew
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.13/docs/resources/nsg_firewallrule ionoscloud_nsg_firewallrule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.14/docs/resources/nsg_firewallrule ionoscloud_nsg_firewallrule} Resource.
 func NewNsgFirewallrule_Override(n NsgFirewallrule, scope constructs.Construct, id *string, config *NsgFirewallruleConfig) {
 	_init_.Initialize()
 

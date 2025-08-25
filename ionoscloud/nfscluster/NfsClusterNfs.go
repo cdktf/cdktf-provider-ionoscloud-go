@@ -7,7 +7,7 @@ package nfscluster
 type NfsClusterNfs struct {
 	// The minimum Network File Storage version.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.13/docs/resources/nfs_cluster#min_version NfsCluster#min_version}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.14/docs/resources/nfs_cluster#min_version NfsCluster#min_version}
 	MinVersion *string `field:"optional" json:"minVersion" yaml:"minVersion"`
 }
 

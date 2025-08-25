@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.13/docs/data-sources/object_storage_region ionoscloud_object_storage_region}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.14/docs/data-sources/object_storage_region ionoscloud_object_storage_region}.
 type DataIonoscloudObjectStorageRegion interface {
 	cdktf.TerraformDataSource
 	Capability() DataIonoscloudObjectStorageRegionCapabilityOutputReference
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataIonoscloudObjectStorageRegion) Website() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.13/docs/data-sources/object_storage_region ionoscloud_object_storage_region} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.14/docs/data-sources/object_storage_region ionoscloud_object_storage_region} Data Source.
 func NewDataIonoscloudObjectStorageRegion(scope constructs.Construct, id *string, config *DataIonoscloudObjectStorageRegionConfig) DataIonoscloudObjectStorageRegion {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataIonoscloudObjectStorageRegion(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.13/docs/data-sources/object_storage_region ionoscloud_object_storage_region} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.14/docs/data-sources/object_storage_region ionoscloud_object_storage_region} Data Source.
 func NewDataIonoscloudObjectStorageRegion_Override(d DataIonoscloudObjectStorageRegion, scope constructs.Construct, id *string, config *DataIonoscloudObjectStorageRegionConfig) {
 	_init_.Initialize()
 

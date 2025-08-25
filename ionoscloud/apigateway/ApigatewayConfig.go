@@ -24,23 +24,23 @@ type ApigatewayConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the API Gateway.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.13/docs/resources/apigateway#name Apigateway#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.14/docs/resources/apigateway#name Apigateway#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// custom_domains block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.13/docs/resources/apigateway#custom_domains Apigateway#custom_domains}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.14/docs/resources/apigateway#custom_domains Apigateway#custom_domains}
 	CustomDomains interface{} `field:"optional" json:"customDomains" yaml:"customDomains"`
 	// Enable or disable logging. NOTE: Central Logging must be enabled through the Logging API to enable this feature.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.13/docs/resources/apigateway#logs Apigateway#logs}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.14/docs/resources/apigateway#logs Apigateway#logs}
 	Logs interface{} `field:"optional" json:"logs" yaml:"logs"`
 	// Enable or disable metrics.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.13/docs/resources/apigateway#metrics Apigateway#metrics}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.14/docs/resources/apigateway#metrics Apigateway#metrics}
 	Metrics interface{} `field:"optional" json:"metrics" yaml:"metrics"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.13/docs/resources/apigateway#timeouts Apigateway#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.14/docs/resources/apigateway#timeouts Apigateway#timeouts}
 	Timeouts *ApigatewayTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 
