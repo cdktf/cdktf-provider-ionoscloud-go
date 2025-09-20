@@ -24,15 +24,15 @@ type MonitoringPipelineConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The name of the pipeline.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.14/docs/resources/monitoring_pipeline#name MonitoringPipeline#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/monitoring_pipeline#name MonitoringPipeline#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The location of the pipeline.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.14/docs/resources/monitoring_pipeline#location MonitoringPipeline#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/monitoring_pipeline#location MonitoringPipeline#location}
 	Location *string `field:"optional" json:"location" yaml:"location"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.14/docs/resources/monitoring_pipeline#timeouts MonitoringPipeline#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/monitoring_pipeline#timeouts MonitoringPipeline#timeouts}
 	Timeouts *MonitoringPipelineTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

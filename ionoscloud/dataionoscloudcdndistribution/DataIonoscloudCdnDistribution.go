@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.14/docs/data-sources/cdn_distribution ionoscloud_cdn_distribution}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/data-sources/cdn_distribution ionoscloud_cdn_distribution}.
 type DataIonoscloudCdnDistribution interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -392,7 +392,7 @@ func (j *jsiiProxy_DataIonoscloudCdnDistribution) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.14/docs/data-sources/cdn_distribution ionoscloud_cdn_distribution} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/data-sources/cdn_distribution ionoscloud_cdn_distribution} Data Source.
 func NewDataIonoscloudCdnDistribution(scope constructs.Construct, id *string, config *DataIonoscloudCdnDistributionConfig) DataIonoscloudCdnDistribution {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewDataIonoscloudCdnDistribution(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.14/docs/data-sources/cdn_distribution ionoscloud_cdn_distribution} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/data-sources/cdn_distribution ionoscloud_cdn_distribution} Data Source.
 func NewDataIonoscloudCdnDistribution_Override(d DataIonoscloudCdnDistribution, scope constructs.Construct, id *string, config *DataIonoscloudCdnDistributionConfig) {
 	_init_.Initialize()
 
