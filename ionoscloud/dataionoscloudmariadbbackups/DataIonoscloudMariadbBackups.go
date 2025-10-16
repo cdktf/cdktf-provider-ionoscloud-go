@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/data-sources/mariadb_backups ionoscloud_mariadb_backups}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/mariadb_backups ionoscloud_mariadb_backups}.
 type DataIonoscloudMariadbBackups interface {
 	cdktf.TerraformDataSource
 	BackupId() *string
@@ -372,7 +372,7 @@ func (j *jsiiProxy_DataIonoscloudMariadbBackups) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/data-sources/mariadb_backups ionoscloud_mariadb_backups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/mariadb_backups ionoscloud_mariadb_backups} Data Source.
 func NewDataIonoscloudMariadbBackups(scope constructs.Construct, id *string, config *DataIonoscloudMariadbBackupsConfig) DataIonoscloudMariadbBackups {
 	_init_.Initialize()
 
@@ -390,7 +390,7 @@ func NewDataIonoscloudMariadbBackups(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/data-sources/mariadb_backups ionoscloud_mariadb_backups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/mariadb_backups ionoscloud_mariadb_backups} Data Source.
 func NewDataIonoscloudMariadbBackups_Override(d DataIonoscloudMariadbBackups, scope constructs.Construct, id *string, config *DataIonoscloudMariadbBackupsConfig) {
 	_init_.Initialize()
 

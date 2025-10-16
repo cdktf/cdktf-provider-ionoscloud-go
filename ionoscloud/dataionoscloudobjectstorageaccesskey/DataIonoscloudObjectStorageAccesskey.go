@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/data-sources/object_storage_accesskey ionoscloud_object_storage_accesskey}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/object_storage_accesskey ionoscloud_object_storage_accesskey}.
 type DataIonoscloudObjectStorageAccesskey interface {
 	cdktf.TerraformDataSource
 	Accesskey() *string
@@ -335,7 +335,7 @@ func (j *jsiiProxy_DataIonoscloudObjectStorageAccesskey) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/data-sources/object_storage_accesskey ionoscloud_object_storage_accesskey} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/object_storage_accesskey ionoscloud_object_storage_accesskey} Data Source.
 func NewDataIonoscloudObjectStorageAccesskey(scope constructs.Construct, id *string, config *DataIonoscloudObjectStorageAccesskeyConfig) DataIonoscloudObjectStorageAccesskey {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewDataIonoscloudObjectStorageAccesskey(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/data-sources/object_storage_accesskey ionoscloud_object_storage_accesskey} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/object_storage_accesskey ionoscloud_object_storage_accesskey} Data Source.
 func NewDataIonoscloudObjectStorageAccesskey_Override(d DataIonoscloudObjectStorageAccesskey, scope constructs.Construct, id *string, config *DataIonoscloudObjectStorageAccesskeyConfig) {
 	_init_.Initialize()
 
