@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataIonoscloudGroup) validateSetCountParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_DataIonoscloudGroup) validateSetFetchUsersDataParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataIonoscloudGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/group ionoscloud_group}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/group ionoscloud_group}.
 type Group interface {
 	cdktf.TerraformResource
 	AccessActivityLog() interface{}
@@ -91,6 +91,9 @@ type Group interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	FetchUsersData() interface{}
+	SetFetchUsersData(val interface{})
+	FetchUsersDataInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -215,6 +218,7 @@ type Group interface {
 	ResetCreateNetworkSecurityGroups()
 	ResetCreatePcc()
 	ResetCreateSnapshot()
+	ResetFetchUsersData()
 	ResetId()
 	ResetManageDataplatform()
 	ResetManageDbaas()
@@ -695,6 +699,26 @@ func (j *jsiiProxy_Group) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_Group) FetchUsersData() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fetchUsersData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Group) FetchUsersDataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fetchUsersDataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Group) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -1016,7 +1040,7 @@ func (j *jsiiProxy_Group) Users() GroupUsersList {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/group ionoscloud_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/group ionoscloud_group} Resource.
 func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group {
 	_init_.Initialize()
 
@@ -1034,7 +1058,7 @@ func NewGroup(scope constructs.Construct, id *string, config *GroupConfig) Group
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/group ionoscloud_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/group ionoscloud_group} Resource.
 func NewGroup_Override(g Group, scope constructs.Construct, id *string, config *GroupConfig) {
 	_init_.Initialize()
 
@@ -1291,6 +1315,17 @@ func (j *jsiiProxy_Group)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Group)SetFetchUsersData(val interface{}) {
+	if err := j.validateSetFetchUsersDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fetchUsersData",
 		val,
 	)
 }
@@ -1952,6 +1987,14 @@ func (g *jsiiProxy_Group) ResetCreateSnapshot() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetCreateSnapshot",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_Group) ResetFetchUsersData() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFetchUsersData",
 		nil, // no parameters
 	)
 }

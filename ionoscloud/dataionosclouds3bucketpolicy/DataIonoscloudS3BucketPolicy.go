@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/s3_bucket_policy ionoscloud_s3_bucket_policy}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/s3_bucket_policy ionoscloud_s3_bucket_policy}.
 type DataIonoscloudS3BucketPolicy interface {
 	cdktf.TerraformDataSource
 	Bucket() *string
@@ -275,7 +275,7 @@ func (j *jsiiProxy_DataIonoscloudS3BucketPolicy) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/s3_bucket_policy ionoscloud_s3_bucket_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/s3_bucket_policy ionoscloud_s3_bucket_policy} Data Source.
 func NewDataIonoscloudS3BucketPolicy(scope constructs.Construct, id *string, config *DataIonoscloudS3BucketPolicyConfig) DataIonoscloudS3BucketPolicy {
 	_init_.Initialize()
 
@@ -293,7 +293,7 @@ func NewDataIonoscloudS3BucketPolicy(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/s3_bucket_policy ionoscloud_s3_bucket_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/s3_bucket_policy ionoscloud_s3_bucket_policy} Data Source.
 func NewDataIonoscloudS3BucketPolicy_Override(d DataIonoscloudS3BucketPolicy, scope constructs.Construct, id *string, config *DataIonoscloudS3BucketPolicyConfig) {
 	_init_.Initialize()
 

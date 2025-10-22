@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/kafka_cluster ionoscloud_kafka_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/kafka_cluster ionoscloud_kafka_cluster}.
 type KafkaCluster interface {
 	cdktf.TerraformResource
 	BrokerAddresses() *[]*string
@@ -448,7 +448,7 @@ func (j *jsiiProxy_KafkaCluster) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/kafka_cluster ionoscloud_kafka_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/kafka_cluster ionoscloud_kafka_cluster} Resource.
 func NewKafkaCluster(scope constructs.Construct, id *string, config *KafkaClusterConfig) KafkaCluster {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewKafkaCluster(scope constructs.Construct, id *string, config *KafkaCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/kafka_cluster ionoscloud_kafka_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/kafka_cluster ionoscloud_kafka_cluster} Resource.
 func NewKafkaCluster_Override(k KafkaCluster, scope constructs.Construct, id *string, config *KafkaClusterConfig) {
 	_init_.Initialize()
 

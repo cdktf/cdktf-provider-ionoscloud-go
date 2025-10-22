@@ -7,7 +7,7 @@ package mariadbcluster
 type MariadbClusterBackup struct {
 	// The IONOS Object Storage location where the backups will be stored.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/mariadb_cluster#location MariadbCluster#location}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/mariadb_cluster#location MariadbCluster#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/datacenter_nsg_selection ionoscloud_datacenter_nsg_selection}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/datacenter_nsg_selection ionoscloud_datacenter_nsg_selection}.
 type DatacenterNsgSelection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_DatacenterNsgSelection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/datacenter_nsg_selection ionoscloud_datacenter_nsg_selection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/datacenter_nsg_selection ionoscloud_datacenter_nsg_selection} Resource.
 func NewDatacenterNsgSelection(scope constructs.Construct, id *string, config *DatacenterNsgSelectionConfig) DatacenterNsgSelection {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewDatacenterNsgSelection(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/datacenter_nsg_selection ionoscloud_datacenter_nsg_selection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/datacenter_nsg_selection ionoscloud_datacenter_nsg_selection} Resource.
 func NewDatacenterNsgSelection_Override(d DatacenterNsgSelection, scope constructs.Construct, id *string, config *DatacenterNsgSelectionConfig) {
 	_init_.Initialize()
 

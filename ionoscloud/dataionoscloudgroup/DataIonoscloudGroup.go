@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/group ionoscloud_group}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/group ionoscloud_group}.
 type DataIonoscloudGroup interface {
 	cdktf.TerraformDataSource
 	AccessActivityLog() cdktf.IResolvable
@@ -47,6 +47,9 @@ type DataIonoscloudGroup interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	FetchUsersData() interface{}
+	SetFetchUsersData(val interface{})
+	FetchUsersDataInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -113,6 +116,7 @@ type DataIonoscloudGroup interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DataIonoscloudGroupTimeouts)
+	ResetFetchUsersData()
 	ResetId()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -378,6 +382,26 @@ func (j *jsiiProxy_DataIonoscloudGroup) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudGroup) FetchUsersData() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fetchUsersData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataIonoscloudGroup) FetchUsersDataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fetchUsersDataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudGroup) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -599,7 +623,7 @@ func (j *jsiiProxy_DataIonoscloudGroup) Users() DataIonoscloudGroupUsersList {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/group ionoscloud_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/group ionoscloud_group} Data Source.
 func NewDataIonoscloudGroup(scope constructs.Construct, id *string, config *DataIonoscloudGroupConfig) DataIonoscloudGroup {
 	_init_.Initialize()
 
@@ -617,7 +641,7 @@ func NewDataIonoscloudGroup(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/group ionoscloud_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/group ionoscloud_group} Data Source.
 func NewDataIonoscloudGroup_Override(d DataIonoscloudGroup, scope constructs.Construct, id *string, config *DataIonoscloudGroupConfig) {
 	_init_.Initialize()
 
@@ -643,6 +667,17 @@ func (j *jsiiProxy_DataIonoscloudGroup)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataIonoscloudGroup)SetFetchUsersData(val interface{}) {
+	if err := j.validateSetFetchUsersDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fetchUsersData",
 		val,
 	)
 }
@@ -989,6 +1024,14 @@ func (d *jsiiProxy_DataIonoscloudGroup) PutTimeouts(value *DataIonoscloudGroupTi
 		d,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataIonoscloudGroup) ResetFetchUsersData() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFetchUsersData",
+		nil, // no parameters
 	)
 }
 

@@ -183,6 +183,10 @@ func (j *jsiiProxy_Group) validateSetCreateSnapshotParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_Group) validateSetFetchUsersDataParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Group) validateSetIdParameters(val *string) error {
 	return nil
 }
