@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/certificate ionoscloud_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/certificate ionoscloud_certificate}.
 type DataIonoscloudCertificate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -361,7 +361,7 @@ func (j *jsiiProxy_DataIonoscloudCertificate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/certificate ionoscloud_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/certificate ionoscloud_certificate} Data Source.
 func NewDataIonoscloudCertificate(scope constructs.Construct, id *string, config *DataIonoscloudCertificateConfig) DataIonoscloudCertificate {
 	_init_.Initialize()
 
@@ -379,7 +379,7 @@ func NewDataIonoscloudCertificate(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/certificate ionoscloud_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/certificate ionoscloud_certificate} Data Source.
 func NewDataIonoscloudCertificate_Override(d DataIonoscloudCertificate, scope constructs.Construct, id *string, config *DataIonoscloudCertificateConfig) {
 	_init_.Initialize()
 

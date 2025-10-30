@@ -7,11 +7,11 @@ package s3bucketwebsiteconfiguration
 type S3BucketWebsiteConfigurationRoutingRule struct {
 	// condition block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/s3_bucket_website_configuration#condition S3BucketWebsiteConfiguration#condition}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/s3_bucket_website_configuration#condition S3BucketWebsiteConfiguration#condition}
 	Condition *S3BucketWebsiteConfigurationRoutingRuleCondition `field:"optional" json:"condition" yaml:"condition"`
 	// redirect block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/s3_bucket_website_configuration#redirect S3BucketWebsiteConfiguration#redirect}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/s3_bucket_website_configuration#redirect S3BucketWebsiteConfiguration#redirect}
 	Redirect *S3BucketWebsiteConfigurationRoutingRuleRedirect `field:"optional" json:"redirect" yaml:"redirect"`
 }
 
