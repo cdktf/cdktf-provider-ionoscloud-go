@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudMongoClusterConnectionsOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudMongoClusterConnectionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudMongoClusterConnectionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudMongoClusterConnectionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudMongoClusterConnectionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

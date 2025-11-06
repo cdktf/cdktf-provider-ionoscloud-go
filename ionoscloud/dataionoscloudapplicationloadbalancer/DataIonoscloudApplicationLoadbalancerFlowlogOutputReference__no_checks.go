@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudApplicationLoadbalancerFlowlogOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudApplicationLoadbalancerFlowlogOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudApplicationLoadbalancerFlowlogOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudApplicationLoadbalancerFlowlogOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudApplicationLoadbalancerFlowlogOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

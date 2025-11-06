@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudContainerRegistryGarbageCollectionScheduleOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudContainerRegistryGarbageCollectionScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudContainerRegistryGarbageCollectionScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudContainerRegistryGarbageCollectionScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudContainerRegistryGarbageCollectionScheduleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

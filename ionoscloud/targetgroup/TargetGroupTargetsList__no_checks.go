@@ -15,7 +15,7 @@ func (t *jsiiProxy_TargetGroupTargetsList) validateGetParameters(index *float64)
 	return nil
 }
 
-func (t *jsiiProxy_TargetGroupTargetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TargetGroupTargetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

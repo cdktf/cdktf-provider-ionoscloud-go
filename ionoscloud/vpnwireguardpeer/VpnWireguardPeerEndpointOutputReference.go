@@ -69,11 +69,11 @@ type VpnWireguardPeerEndpointOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -471,8 +471,8 @@ func (v *jsiiProxy_VpnWireguardPeerEndpointOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (v *jsiiProxy_VpnWireguardPeerEndpointOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
+func (v *jsiiProxy_VpnWireguardPeerEndpointOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -480,7 +480,7 @@ func (v *jsiiProxy_VpnWireguardPeerEndpointOutputReference) InterpolationForAttr
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -495,8 +495,8 @@ func (v *jsiiProxy_VpnWireguardPeerEndpointOutputReference) ResetPort() {
 	)
 }
 
-func (v *jsiiProxy_VpnWireguardPeerEndpointOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_VpnWireguardPeerEndpointOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -504,7 +504,7 @@ func (v *jsiiProxy_VpnWireguardPeerEndpointOutputReference) Resolve(_context cdk
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

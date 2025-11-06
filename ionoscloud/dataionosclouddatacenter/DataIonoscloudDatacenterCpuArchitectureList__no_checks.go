@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudDatacenterCpuArchitectureList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudDatacenterCpuArchitectureList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudDatacenterCpuArchitectureList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

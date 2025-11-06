@@ -15,7 +15,7 @@ func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleList) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

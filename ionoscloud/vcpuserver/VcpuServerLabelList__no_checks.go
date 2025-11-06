@@ -15,7 +15,7 @@ func (v *jsiiProxy_VcpuServerLabelList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (v *jsiiProxy_VcpuServerLabelList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VcpuServerLabelList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

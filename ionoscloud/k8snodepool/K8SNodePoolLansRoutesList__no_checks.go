@@ -15,7 +15,7 @@ func (k *jsiiProxy_K8SNodePoolLansRoutesList) validateGetParameters(index *float
 	return nil
 }
 
-func (k *jsiiProxy_K8SNodePoolLansRoutesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_K8SNodePoolLansRoutesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

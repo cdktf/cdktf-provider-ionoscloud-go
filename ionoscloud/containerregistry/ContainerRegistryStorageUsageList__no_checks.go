@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerRegistryStorageUsageList) validateGetParameters(inde
 	return nil
 }
 
-func (c *jsiiProxy_ContainerRegistryStorageUsageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerRegistryStorageUsageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,7 +43,7 @@ func (n *jsiiProxy_NetworkloadbalancerForwardingruleTargetsOutputReference) vali
 	return nil
 }
 
-func (n *jsiiProxy_NetworkloadbalancerForwardingruleTargetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkloadbalancerForwardingruleTargetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (n *jsiiProxy_NetworkloadbalancerForwardingruleTargetsOutputReference) vali
 	return nil
 }
 
-func (n *jsiiProxy_NetworkloadbalancerForwardingruleTargetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkloadbalancerForwardingruleTargetsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

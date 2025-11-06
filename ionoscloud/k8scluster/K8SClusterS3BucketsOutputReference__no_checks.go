@@ -43,11 +43,11 @@ func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_K8SClusterS3BucketsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

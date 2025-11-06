@@ -43,11 +43,11 @@ func (a *jsiiProxy_AutoCertificateProviderExternalAccountBindingOutputReference)
 	return nil
 }
 
-func (a *jsiiProxy_AutoCertificateProviderExternalAccountBindingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutoCertificateProviderExternalAccountBindingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutoCertificateProviderExternalAccountBindingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoCertificateProviderExternalAccountBindingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

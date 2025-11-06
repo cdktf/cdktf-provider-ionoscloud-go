@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudMariadbClusterMaintenanceWindowList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudMariadbClusterMaintenanceWindowList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudMariadbClusterMaintenanceWindowList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

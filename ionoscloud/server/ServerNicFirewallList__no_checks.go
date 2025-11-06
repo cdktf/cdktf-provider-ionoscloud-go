@@ -15,7 +15,7 @@ func (s *jsiiProxy_ServerNicFirewallList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (s *jsiiProxy_ServerNicFirewallList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServerNicFirewallList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

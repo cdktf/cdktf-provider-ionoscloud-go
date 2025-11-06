@@ -43,11 +43,11 @@ func (v *jsiiProxy_VcpuServerLabelOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (v *jsiiProxy_VcpuServerLabelOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VcpuServerLabelOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VcpuServerLabelOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VcpuServerLabelOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -81,14 +81,14 @@ type TargetGroupHttpHealthCheckOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	ResetMethod()
 	ResetNegate()
 	ResetPath()
 	ResetRegex()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -610,8 +610,8 @@ func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) InterpolationAsLis
 	return returns
 }
 
-func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -619,7 +619,7 @@ func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) InterpolationForAt
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -658,8 +658,8 @@ func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) ResetRegex() {
 	)
 }
 
-func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := t.validateResolveParameters(_context); err != nil {
+func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -667,7 +667,7 @@ func (t *jsiiProxy_TargetGroupHttpHealthCheckOutputReference) Resolve(_context c
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -15,7 +15,7 @@ func (c *jsiiProxy_CdnDistributionRoutingRulesList) validateGetParameters(index 
 	return nil
 }
 
-func (c *jsiiProxy_CdnDistributionRoutingRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnDistributionRoutingRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

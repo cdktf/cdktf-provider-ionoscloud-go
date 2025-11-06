@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudContainerRegistryTokenCredentialsList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudContainerRegistryTokenCredentialsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudContainerRegistryTokenCredentialsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

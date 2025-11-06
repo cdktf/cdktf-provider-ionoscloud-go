@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectPeersOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectPeersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectPeersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectPeersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudPrivateCrossconnectPeersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicFlowLogList) validateG
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicFlowLogList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicFlowLogList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

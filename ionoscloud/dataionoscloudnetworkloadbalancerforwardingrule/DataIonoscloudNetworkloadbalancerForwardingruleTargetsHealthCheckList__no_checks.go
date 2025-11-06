@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingruleTargetsHealthC
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingruleTargetsHealthCheckList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudNetworkloadbalancerForwardingruleTargetsHealthCheckList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

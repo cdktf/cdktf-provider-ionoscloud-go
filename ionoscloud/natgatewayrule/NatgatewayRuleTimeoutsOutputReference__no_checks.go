@@ -43,11 +43,11 @@ func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NatgatewayRuleTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

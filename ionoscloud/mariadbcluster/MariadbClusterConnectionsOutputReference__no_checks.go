@@ -43,11 +43,11 @@ func (m *jsiiProxy_MariadbClusterConnectionsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (m *jsiiProxy_MariadbClusterConnectionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MariadbClusterConnectionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MariadbClusterConnectionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MariadbClusterConnectionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

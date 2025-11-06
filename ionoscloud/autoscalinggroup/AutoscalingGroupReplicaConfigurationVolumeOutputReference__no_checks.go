@@ -43,11 +43,11 @@ func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationVolumeOutputReference) va
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationVolumeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationVolumeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationVolumeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationVolumeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudNfsShareClientGroupsNfsList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudNfsShareClientGroupsNfsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudNfsShareClientGroupsNfsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

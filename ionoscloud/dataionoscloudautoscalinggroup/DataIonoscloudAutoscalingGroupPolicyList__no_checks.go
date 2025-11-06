@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudAutoscalingGroupPolicyList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudAutoscalingGroupPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudAutoscalingGroupPolicyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

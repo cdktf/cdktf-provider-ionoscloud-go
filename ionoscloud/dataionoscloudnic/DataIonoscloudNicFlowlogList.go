@@ -39,7 +39,7 @@ type DataIonoscloudNicFlowlogList interface {
 	Get(index *float64) DataIonoscloudNicFlowlogOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (d *jsiiProxy_DataIonoscloudNicFlowlogList) Get(index *float64) DataIonoscl
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudNicFlowlogList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataIonoscloudNicFlowlogList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (d *jsiiProxy_DataIonoscloudNicFlowlogList) Resolve(_context cdktf.IResolve
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

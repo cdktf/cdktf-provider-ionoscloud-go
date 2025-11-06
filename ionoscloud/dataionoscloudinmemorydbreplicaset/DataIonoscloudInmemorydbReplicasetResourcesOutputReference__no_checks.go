@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudInmemorydbReplicasetResourcesOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudInmemorydbReplicasetResourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudInmemorydbReplicasetResourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudInmemorydbReplicasetResourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudInmemorydbReplicasetResourcesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

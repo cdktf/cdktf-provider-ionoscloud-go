@@ -43,11 +43,11 @@ func (c *jsiiProxy_ContainerRegistryTokenCredentialsOutputReference) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_ContainerRegistryTokenCredentialsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerRegistryTokenCredentialsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerRegistryTokenCredentialsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerRegistryTokenCredentialsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

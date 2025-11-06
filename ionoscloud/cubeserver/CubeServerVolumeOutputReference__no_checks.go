@@ -43,11 +43,11 @@ func (c *jsiiProxy_CubeServerVolumeOutputReference) validateGetStringMapAttribut
 	return nil
 }
 
-func (c *jsiiProxy_CubeServerVolumeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CubeServerVolumeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CubeServerVolumeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CubeServerVolumeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

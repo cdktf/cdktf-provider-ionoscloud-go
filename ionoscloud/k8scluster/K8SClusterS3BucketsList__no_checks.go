@@ -15,7 +15,7 @@ func (k *jsiiProxy_K8SClusterS3BucketsList) validateGetParameters(index *float64
 	return nil
 }
 
-func (k *jsiiProxy_K8SClusterS3BucketsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_K8SClusterS3BucketsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

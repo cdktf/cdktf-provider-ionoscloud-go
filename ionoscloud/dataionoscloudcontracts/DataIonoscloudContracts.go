@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/contracts ionoscloud_contracts}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/contracts ionoscloud_contracts}.
 type DataIonoscloudContracts interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -252,7 +252,7 @@ func (j *jsiiProxy_DataIonoscloudContracts) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/contracts ionoscloud_contracts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/contracts ionoscloud_contracts} Data Source.
 func NewDataIonoscloudContracts(scope constructs.Construct, id *string, config *DataIonoscloudContractsConfig) DataIonoscloudContracts {
 	_init_.Initialize()
 
@@ -270,7 +270,7 @@ func NewDataIonoscloudContracts(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/contracts ionoscloud_contracts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/contracts ionoscloud_contracts} Data Source.
 func NewDataIonoscloudContracts_Override(d DataIonoscloudContracts, scope constructs.Construct, id *string, config *DataIonoscloudContractsConfig) {
 	_init_.Initialize()
 

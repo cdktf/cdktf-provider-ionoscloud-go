@@ -15,7 +15,7 @@ func (g *jsiiProxy_GroupUsersList) validateGetParameters(index *float64) error {
 	return nil
 }
 
-func (g *jsiiProxy_GroupUsersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GroupUsersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

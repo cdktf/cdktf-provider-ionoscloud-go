@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudVcpuServerCdromsList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudVcpuServerCdromsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudVcpuServerCdromsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

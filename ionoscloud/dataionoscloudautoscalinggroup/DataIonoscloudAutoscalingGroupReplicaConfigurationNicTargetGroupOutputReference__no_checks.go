@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGr
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroupOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudLoggingPipelineLogOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudLoggingPipelineLogOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudLoggingPipelineLogOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudLoggingPipelineLogOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudLoggingPipelineLogOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

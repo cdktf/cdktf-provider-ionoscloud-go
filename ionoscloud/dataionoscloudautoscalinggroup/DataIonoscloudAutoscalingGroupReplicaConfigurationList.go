@@ -39,7 +39,7 @@ type DataIonoscloudAutoscalingGroupReplicaConfigurationList interface {
 	Get(index *float64) DataIonoscloudAutoscalingGroupReplicaConfigurationOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -208,8 +208,8 @@ func (d *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationList) Get(i
 	return returns
 }
 
-func (d *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationList) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -217,7 +217,7 @@ func (d *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationList) Resol
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

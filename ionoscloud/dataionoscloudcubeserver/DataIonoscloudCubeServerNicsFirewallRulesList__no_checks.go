@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudCubeServerNicsFirewallRulesList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudCubeServerNicsFirewallRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudCubeServerNicsFirewallRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (a *jsiiProxy_ApigatewayCustomDomainsList) validateGetParameters(index *flo
 	return nil
 }
 
-func (a *jsiiProxy_ApigatewayCustomDomainsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigatewayCustomDomainsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

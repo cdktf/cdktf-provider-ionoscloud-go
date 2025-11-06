@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudApigatewayRouteUpstreamsOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudApigatewayRouteUpstreamsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudApigatewayRouteUpstreamsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudApigatewayRouteUpstreamsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudApigatewayRouteUpstreamsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

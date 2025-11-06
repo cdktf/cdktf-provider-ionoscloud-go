@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudPgClusterMaintenanceWindowOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudPgClusterMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterMaintenanceWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudPgClusterMaintenanceWindowOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

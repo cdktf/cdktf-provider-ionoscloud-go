@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudServersServersLabelsList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudServersServersLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudServersServersLabelsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (l *jsiiProxy_LoggingPipelineTimeoutsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (l *jsiiProxy_LoggingPipelineTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoggingPipelineTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoggingPipelineTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingPipelineTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

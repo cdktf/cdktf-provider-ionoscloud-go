@@ -15,7 +15,7 @@ func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicFirewallRuleList) vali
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicFirewallRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicFirewallRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

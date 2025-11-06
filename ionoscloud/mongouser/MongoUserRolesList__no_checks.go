@@ -15,7 +15,7 @@ func (m *jsiiProxy_MongoUserRolesList) validateGetParameters(index *float64) err
 	return nil
 }
 
-func (m *jsiiProxy_MongoUserRolesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MongoUserRolesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

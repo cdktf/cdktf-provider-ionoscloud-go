@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudAutoscalingGroupPolicyScaleOutActionList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudAutoscalingGroupPolicyScaleOutActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudAutoscalingGroupPolicyScaleOutActionList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

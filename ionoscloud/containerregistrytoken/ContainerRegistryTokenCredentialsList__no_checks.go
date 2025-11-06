@@ -15,7 +15,7 @@ func (c *jsiiProxy_ContainerRegistryTokenCredentialsList) validateGetParameters(
 	return nil
 }
 
-func (c *jsiiProxy_ContainerRegistryTokenCredentialsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerRegistryTokenCredentialsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudCdnDistributionRoutingRulesUpstreamGeoRestricti
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudCdnDistributionRoutingRulesUpstreamGeoRestrictionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudCdnDistributionRoutingRulesUpstreamGeoRestrictionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

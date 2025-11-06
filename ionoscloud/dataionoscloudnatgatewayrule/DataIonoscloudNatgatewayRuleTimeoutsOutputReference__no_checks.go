@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudNatgatewayRuleTimeoutsOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudNatgatewayRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudNatgatewayRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudNatgatewayRuleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudNatgatewayRuleTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

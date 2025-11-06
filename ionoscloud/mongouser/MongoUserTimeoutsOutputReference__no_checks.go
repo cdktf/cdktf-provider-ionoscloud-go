@@ -43,11 +43,11 @@ func (m *jsiiProxy_MongoUserTimeoutsOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (m *jsiiProxy_MongoUserTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MongoUserTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MongoUserTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MongoUserTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

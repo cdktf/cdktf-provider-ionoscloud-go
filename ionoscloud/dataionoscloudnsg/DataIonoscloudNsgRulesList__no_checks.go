@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudNsgRulesList) validateGetParameters(index *floa
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudNsgRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudNsgRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

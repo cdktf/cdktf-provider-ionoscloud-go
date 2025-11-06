@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudLanIpFailoverOutputReference) validateGetString
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudLanIpFailoverOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudLanIpFailoverOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudLanIpFailoverOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudLanIpFailoverOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

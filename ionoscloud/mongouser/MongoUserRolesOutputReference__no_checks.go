@@ -43,11 +43,11 @@ func (m *jsiiProxy_MongoUserRolesOutputReference) validateGetStringMapAttributeP
 	return nil
 }
 
-func (m *jsiiProxy_MongoUserRolesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MongoUserRolesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MongoUserRolesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MongoUserRolesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

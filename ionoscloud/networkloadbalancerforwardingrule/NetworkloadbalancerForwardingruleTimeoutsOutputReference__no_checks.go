@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkloadbalancerForwardingruleTimeoutsOutputReference) val
 	return nil
 }
 
-func (n *jsiiProxy_NetworkloadbalancerForwardingruleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkloadbalancerForwardingruleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkloadbalancerForwardingruleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkloadbalancerForwardingruleTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

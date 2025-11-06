@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpnWireguardGatewayMaintenanceWindowOutputReference) validate
 	return nil
 }
 
-func (v *jsiiProxy_VpnWireguardGatewayMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpnWireguardGatewayMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpnWireguardGatewayMaintenanceWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnWireguardGatewayMaintenanceWindowOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

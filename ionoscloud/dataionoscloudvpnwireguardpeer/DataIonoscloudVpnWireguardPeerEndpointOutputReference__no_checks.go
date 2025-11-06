@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudVpnWireguardPeerEndpointOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudVpnWireguardPeerEndpointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudVpnWireguardPeerEndpointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudVpnWireguardPeerEndpointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudVpnWireguardPeerEndpointOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudNicFlowlogOutputReference) validateGetStringMap
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudNicFlowlogOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudNicFlowlogOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudNicFlowlogOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudNicFlowlogOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

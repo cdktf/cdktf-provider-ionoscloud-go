@@ -15,7 +15,7 @@ func (n *jsiiProxy_NatgatewayLansList) validateGetParameters(index *float64) err
 	return nil
 }
 
-func (n *jsiiProxy_NatgatewayLansList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NatgatewayLansList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

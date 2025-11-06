@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server ionoscloud_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server ionoscloud_server}.
 type Server interface {
 	cdktf.TerraformResource
 	AllowReplace() interface{}
@@ -89,6 +89,9 @@ type Server interface {
 	NameInput() *string
 	Nic() ServerNicOutputReference
 	NicInput() *ServerNic
+	NicMultiQueue() interface{}
+	SetNicMultiQueue(val interface{})
+	NicMultiQueueInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	PrimaryIp() *string
@@ -194,6 +197,7 @@ type Server interface {
 	ResetImagePassword()
 	ResetLabel()
 	ResetNic()
+	ResetNicMultiQueue()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -644,6 +648,26 @@ func (j *jsiiProxy_Server) NicInput() *ServerNic {
 	return returns
 }
 
+func (j *jsiiProxy_Server) NicMultiQueue() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nicMultiQueue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Server) NicMultiQueueInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nicMultiQueueInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Server) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -915,7 +939,7 @@ func (j *jsiiProxy_Server) VolumeInput() *ServerVolume {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server ionoscloud_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server ionoscloud_server} Resource.
 func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Server {
 	_init_.Initialize()
 
@@ -933,7 +957,7 @@ func NewServer(scope constructs.Construct, id *string, config *ServerConfig) Ser
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server ionoscloud_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server ionoscloud_server} Resource.
 func NewServer_Override(s Server, scope constructs.Construct, id *string, config *ServerConfig) {
 	_init_.Initialize()
 
@@ -1132,6 +1156,17 @@ func (j *jsiiProxy_Server)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Server)SetNicMultiQueue(val interface{}) {
+	if err := j.validateSetNicMultiQueueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nicMultiQueue",
 		val,
 	)
 }
@@ -1729,6 +1764,14 @@ func (s *jsiiProxy_Server) ResetNic() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetNic",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Server) ResetNicMultiQueue() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNicMultiQueue",
 		nil, // no parameters
 	)
 }

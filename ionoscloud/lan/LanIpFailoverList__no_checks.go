@@ -15,7 +15,7 @@ func (l *jsiiProxy_LanIpFailoverList) validateGetParameters(index *float64) erro
 	return nil
 }
 
-func (l *jsiiProxy_LanIpFailoverList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LanIpFailoverList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

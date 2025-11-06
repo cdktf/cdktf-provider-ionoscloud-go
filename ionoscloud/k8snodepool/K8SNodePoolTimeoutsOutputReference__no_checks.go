@@ -43,11 +43,11 @@ func (k *jsiiProxy_K8SNodePoolTimeoutsOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (k *jsiiProxy_K8SNodePoolTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_K8SNodePoolTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_K8SNodePoolTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_K8SNodePoolTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

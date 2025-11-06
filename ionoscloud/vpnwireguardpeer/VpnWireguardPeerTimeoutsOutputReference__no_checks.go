@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpnWireguardPeerTimeoutsOutputReference) validateGetStringMap
 	return nil
 }
 
-func (v *jsiiProxy_VpnWireguardPeerTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpnWireguardPeerTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpnWireguardPeerTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnWireguardPeerTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

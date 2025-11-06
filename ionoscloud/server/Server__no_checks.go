@@ -171,6 +171,10 @@ func (j *jsiiProxy_Server) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Server) validateSetNicMultiQueueParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Server) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

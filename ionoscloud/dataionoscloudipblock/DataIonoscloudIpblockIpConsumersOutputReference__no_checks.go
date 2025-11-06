@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudIpblockIpConsumersOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudIpblockIpConsumersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudIpblockIpConsumersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudIpblockIpConsumersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudIpblockIpConsumersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

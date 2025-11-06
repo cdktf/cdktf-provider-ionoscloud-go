@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudAutoCertificateProviderTimeoutsOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudAutoCertificateProviderTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudAutoCertificateProviderTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudAutoCertificateProviderTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudAutoCertificateProviderTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

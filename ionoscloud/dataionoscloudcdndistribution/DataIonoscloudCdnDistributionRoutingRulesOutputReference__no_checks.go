@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudCdnDistributionRoutingRulesOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudCdnDistributionRoutingRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudCdnDistributionRoutingRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudCdnDistributionRoutingRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudCdnDistributionRoutingRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

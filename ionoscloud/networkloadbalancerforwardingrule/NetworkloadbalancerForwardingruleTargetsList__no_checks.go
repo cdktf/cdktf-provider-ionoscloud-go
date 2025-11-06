@@ -15,7 +15,7 @@ func (n *jsiiProxy_NetworkloadbalancerForwardingruleTargetsList) validateGetPara
 	return nil
 }
 
-func (n *jsiiProxy_NetworkloadbalancerForwardingruleTargetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkloadbalancerForwardingruleTargetsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

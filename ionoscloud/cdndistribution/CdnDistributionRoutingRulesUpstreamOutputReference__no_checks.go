@@ -43,7 +43,7 @@ func (c *jsiiProxy_CdnDistributionRoutingRulesUpstreamOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_CdnDistributionRoutingRulesUpstreamOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CdnDistributionRoutingRulesUpstreamOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CdnDistributionRoutingRulesUpstreamOutputReference) validateP
 	return nil
 }
 
-func (c *jsiiProxy_CdnDistributionRoutingRulesUpstreamOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CdnDistributionRoutingRulesUpstreamOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

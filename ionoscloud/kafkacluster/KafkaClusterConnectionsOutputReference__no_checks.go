@@ -43,11 +43,11 @@ func (k *jsiiProxy_KafkaClusterConnectionsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (k *jsiiProxy_KafkaClusterConnectionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KafkaClusterConnectionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KafkaClusterConnectionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KafkaClusterConnectionsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

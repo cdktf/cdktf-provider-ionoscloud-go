@@ -43,11 +43,11 @@ func (i *jsiiProxy_InmemorydbReplicasetTimeoutsOutputReference) validateGetStrin
 	return nil
 }
 
-func (i *jsiiProxy_InmemorydbReplicasetTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_InmemorydbReplicasetTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_InmemorydbReplicasetTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_InmemorydbReplicasetTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

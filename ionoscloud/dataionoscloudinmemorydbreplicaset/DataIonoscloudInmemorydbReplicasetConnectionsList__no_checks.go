@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudInmemorydbReplicasetConnectionsList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudInmemorydbReplicasetConnectionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudInmemorydbReplicasetConnectionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

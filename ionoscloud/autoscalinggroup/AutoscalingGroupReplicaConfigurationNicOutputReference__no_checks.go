@@ -43,7 +43,7 @@ func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) valid
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -59,7 +59,7 @@ func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) valid
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

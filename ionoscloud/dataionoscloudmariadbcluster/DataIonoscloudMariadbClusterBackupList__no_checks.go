@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudMariadbClusterBackupList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudMariadbClusterBackupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudMariadbClusterBackupList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

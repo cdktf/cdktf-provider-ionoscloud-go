@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudServersServersNicsFirewallRulesOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudServersServersNicsFirewallRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudServersServersNicsFirewallRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudServersServersNicsFirewallRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudServersServersNicsFirewallRulesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

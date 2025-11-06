@@ -15,7 +15,7 @@ func (v *jsiiProxy_VpnIpsecTunnelEspList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (v *jsiiProxy_VpnIpsecTunnelEspList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnIpsecTunnelEspList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

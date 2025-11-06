@@ -15,7 +15,7 @@ func (i *jsiiProxy_IpblockIpConsumersList) validateGetParameters(index *float64)
 	return nil
 }
 
-func (i *jsiiProxy_IpblockIpConsumersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IpblockIpConsumersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

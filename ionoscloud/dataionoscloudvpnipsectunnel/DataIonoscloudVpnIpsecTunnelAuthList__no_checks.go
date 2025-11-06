@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudVpnIpsecTunnelAuthList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudVpnIpsecTunnelAuthList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudVpnIpsecTunnelAuthList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

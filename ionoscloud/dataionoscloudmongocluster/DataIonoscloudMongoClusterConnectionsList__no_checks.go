@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudMongoClusterConnectionsList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudMongoClusterConnectionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudMongoClusterConnectionsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

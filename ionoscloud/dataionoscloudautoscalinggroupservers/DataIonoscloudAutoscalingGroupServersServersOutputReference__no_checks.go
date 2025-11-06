@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudAutoscalingGroupServersServersOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudAutoscalingGroupServersServersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudAutoscalingGroupServersServersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudAutoscalingGroupServersServersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudAutoscalingGroupServersServersOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudTargetGroupHttpHealthCheckOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudTargetGroupHttpHealthCheckOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudTargetGroupHttpHealthCheckOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudTargetGroupHttpHealthCheckOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudTargetGroupHttpHealthCheckOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

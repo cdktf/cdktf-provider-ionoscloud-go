@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudContainerRegistryStorageUsageList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudContainerRegistryStorageUsageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudContainerRegistryStorageUsageList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

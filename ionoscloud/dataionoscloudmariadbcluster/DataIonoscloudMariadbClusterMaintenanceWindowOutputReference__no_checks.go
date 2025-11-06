@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudMariadbClusterMaintenanceWindowOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudMariadbClusterMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudMariadbClusterMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudMariadbClusterMaintenanceWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudMariadbClusterMaintenanceWindowOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

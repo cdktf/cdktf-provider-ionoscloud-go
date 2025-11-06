@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudK8SNodePoolLansRoutesOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudK8SNodePoolLansRoutesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudK8SNodePoolLansRoutesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudK8SNodePoolLansRoutesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudK8SNodePoolLansRoutesOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

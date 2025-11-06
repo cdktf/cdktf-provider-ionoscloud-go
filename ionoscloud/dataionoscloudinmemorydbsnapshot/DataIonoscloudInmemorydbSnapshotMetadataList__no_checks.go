@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudInmemorydbSnapshotMetadataList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudInmemorydbSnapshotMetadataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudInmemorydbSnapshotMetadataList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

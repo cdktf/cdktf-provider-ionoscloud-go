@@ -15,7 +15,7 @@ func (k *jsiiProxy_K8SNodePoolLansList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (k *jsiiProxy_K8SNodePoolLansList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_K8SNodePoolLansList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

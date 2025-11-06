@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationVolumeList)
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationVolumeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationVolumeList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudDatacenterCpuArchitectureOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudDatacenterCpuArchitectureOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudDatacenterCpuArchitectureOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudDatacenterCpuArchitectureOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudDatacenterCpuArchitectureOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

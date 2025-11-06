@@ -43,11 +43,11 @@ func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicFlowLogOutputReference
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicFlowLogOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicFlowLogOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicFlowLogOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingGroupReplicaConfigurationNicFlowLogOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

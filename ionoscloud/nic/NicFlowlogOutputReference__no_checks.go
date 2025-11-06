@@ -43,11 +43,11 @@ func (n *jsiiProxy_NicFlowlogOutputReference) validateGetStringMapAttributeParam
 	return nil
 }
 
-func (n *jsiiProxy_NicFlowlogOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NicFlowlogOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NicFlowlogOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NicFlowlogOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

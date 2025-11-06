@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/server ionoscloud_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/server ionoscloud_server}.
 type DataIonoscloudServer interface {
 	cdktf.TerraformDataSource
 	AvailabilityZone() *string
@@ -57,6 +57,7 @@ type DataIonoscloudServer interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NicMultiQueue() cdktf.IResolvable
 	Nics() DataIonoscloudServerNicsList
 	// The tree node.
 	Node() constructs.Node
@@ -368,6 +369,16 @@ func (j *jsiiProxy_DataIonoscloudServer) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudServer) NicMultiQueue() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"nicMultiQueue",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudServer) Nics() DataIonoscloudServerNicsList {
 	var returns DataIonoscloudServerNicsList
 	_jsii_.Get(
@@ -549,7 +560,7 @@ func (j *jsiiProxy_DataIonoscloudServer) Volumes() DataIonoscloudServerVolumesLi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/server ionoscloud_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/server ionoscloud_server} Data Source.
 func NewDataIonoscloudServer(scope constructs.Construct, id *string, config *DataIonoscloudServerConfig) DataIonoscloudServer {
 	_init_.Initialize()
 
@@ -567,7 +578,7 @@ func NewDataIonoscloudServer(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/server ionoscloud_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/server ionoscloud_server} Data Source.
 func NewDataIonoscloudServer_Override(d DataIonoscloudServer, scope constructs.Construct, id *string, config *DataIonoscloudServerConfig) {
 	_init_.Initialize()
 

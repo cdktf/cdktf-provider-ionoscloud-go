@@ -24,11 +24,11 @@ type ObjectStorageAccesskeyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Description of the Access key.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/object_storage_accesskey#description ObjectStorageAccesskey#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/object_storage_accesskey#description ObjectStorageAccesskey#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/object_storage_accesskey#timeouts ObjectStorageAccesskey#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/object_storage_accesskey#timeouts ObjectStorageAccesskey#timeouts}
 	Timeouts *ObjectStorageAccesskeyTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

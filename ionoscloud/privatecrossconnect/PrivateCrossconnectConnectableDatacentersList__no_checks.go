@@ -15,7 +15,7 @@ func (p *jsiiProxy_PrivateCrossconnectConnectableDatacentersList) validateGetPar
 	return nil
 }
 
-func (p *jsiiProxy_PrivateCrossconnectConnectableDatacentersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivateCrossconnectConnectableDatacentersList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

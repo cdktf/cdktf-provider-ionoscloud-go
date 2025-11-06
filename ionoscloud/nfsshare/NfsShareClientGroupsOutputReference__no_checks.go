@@ -43,7 +43,7 @@ func (n *jsiiProxy_NfsShareClientGroupsOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (n *jsiiProxy_NfsShareClientGroupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NfsShareClientGroupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (n *jsiiProxy_NfsShareClientGroupsOutputReference) validatePutNfsParameters
 	return nil
 }
 
-func (n *jsiiProxy_NfsShareClientGroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NfsShareClientGroupsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

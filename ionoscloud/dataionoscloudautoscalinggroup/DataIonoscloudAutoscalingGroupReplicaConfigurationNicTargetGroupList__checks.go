@@ -27,9 +27,9 @@ func (d *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGr
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroupList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

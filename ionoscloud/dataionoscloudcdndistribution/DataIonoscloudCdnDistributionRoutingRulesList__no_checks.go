@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudCdnDistributionRoutingRulesList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudCdnDistributionRoutingRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudCdnDistributionRoutingRulesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudVpnWireguardPeerEndpointList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudVpnWireguardPeerEndpointList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudVpnWireguardPeerEndpointList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

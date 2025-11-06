@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudVpnIpsecTunnelEspOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudVpnIpsecTunnelEspOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudVpnIpsecTunnelEspOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudVpnIpsecTunnelEspOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudVpnIpsecTunnelEspOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

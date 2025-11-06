@@ -43,7 +43,7 @@ func (v *jsiiProxy_VcpuServerNicOutputReference) validateGetStringMapAttributePa
 	return nil
 }
 
-func (v *jsiiProxy_VcpuServerNicOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VcpuServerNicOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (v *jsiiProxy_VcpuServerNicOutputReference) validatePutFirewallParameters(v
 	return nil
 }
 
-func (v *jsiiProxy_VcpuServerNicOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VcpuServerNicOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

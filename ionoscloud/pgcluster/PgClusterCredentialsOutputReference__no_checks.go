@@ -43,11 +43,11 @@ func (p *jsiiProxy_PgClusterCredentialsOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (p *jsiiProxy_PgClusterCredentialsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PgClusterCredentialsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PgClusterCredentialsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PgClusterCredentialsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

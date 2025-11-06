@@ -43,11 +43,11 @@ func (n *jsiiProxy_NetworkloadbalancerForwardingruleTargetsHealthCheckOutputRefe
 	return nil
 }
 
-func (n *jsiiProxy_NetworkloadbalancerForwardingruleTargetsHealthCheckOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkloadbalancerForwardingruleTargetsHealthCheckOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkloadbalancerForwardingruleTargetsHealthCheckOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkloadbalancerForwardingruleTargetsHealthCheckOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudLoggingPipelineLogDestinationsList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudLoggingPipelineLogDestinationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudLoggingPipelineLogDestinationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

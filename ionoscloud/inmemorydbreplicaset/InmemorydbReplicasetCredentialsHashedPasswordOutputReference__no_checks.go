@@ -43,11 +43,11 @@ func (i *jsiiProxy_InmemorydbReplicasetCredentialsHashedPasswordOutputReference)
 	return nil
 }
 
-func (i *jsiiProxy_InmemorydbReplicasetCredentialsHashedPasswordOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_InmemorydbReplicasetCredentialsHashedPasswordOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_InmemorydbReplicasetCredentialsHashedPasswordOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_InmemorydbReplicasetCredentialsHashedPasswordOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

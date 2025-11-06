@@ -43,7 +43,7 @@ func (c *jsiiProxy_CubeServerNicOutputReference) validateGetStringMapAttributePa
 	return nil
 }
 
-func (c *jsiiProxy_CubeServerNicOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CubeServerNicOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (c *jsiiProxy_CubeServerNicOutputReference) validatePutFirewallParameters(v
 	return nil
 }
 
-func (c *jsiiProxy_CubeServerNicOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CubeServerNicOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

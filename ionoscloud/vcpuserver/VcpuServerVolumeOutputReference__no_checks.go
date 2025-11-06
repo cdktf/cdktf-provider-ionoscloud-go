@@ -43,11 +43,11 @@ func (v *jsiiProxy_VcpuServerVolumeOutputReference) validateGetStringMapAttribut
 	return nil
 }
 
-func (v *jsiiProxy_VcpuServerVolumeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VcpuServerVolumeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VcpuServerVolumeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VcpuServerVolumeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

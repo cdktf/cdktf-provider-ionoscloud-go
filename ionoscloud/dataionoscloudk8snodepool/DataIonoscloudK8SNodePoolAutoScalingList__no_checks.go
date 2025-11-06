@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudK8SNodePoolAutoScalingList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudK8SNodePoolAutoScalingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudK8SNodePoolAutoScalingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

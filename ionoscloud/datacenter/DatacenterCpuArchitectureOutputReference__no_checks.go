@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatacenterCpuArchitectureOutputReference) validateGetStringMa
 	return nil
 }
 
-func (d *jsiiProxy_DatacenterCpuArchitectureOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatacenterCpuArchitectureOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatacenterCpuArchitectureOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatacenterCpuArchitectureOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

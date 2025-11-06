@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudPgClusterMaintenanceWindowList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudPgClusterMaintenanceWindowList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudPgClusterMaintenanceWindowList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

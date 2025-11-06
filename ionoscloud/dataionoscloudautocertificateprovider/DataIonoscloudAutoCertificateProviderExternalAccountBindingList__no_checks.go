@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudAutoCertificateProviderExternalAccountBindingLi
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudAutoCertificateProviderExternalAccountBindingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudAutoCertificateProviderExternalAccountBindingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

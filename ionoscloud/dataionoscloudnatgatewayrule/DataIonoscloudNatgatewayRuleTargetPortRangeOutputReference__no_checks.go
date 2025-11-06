@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataIonoscloudNatgatewayRuleTargetPortRangeOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudNatgatewayRuleTargetPortRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIonoscloudNatgatewayRuleTargetPortRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudNatgatewayRuleTargetPortRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudNatgatewayRuleTargetPortRangeOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

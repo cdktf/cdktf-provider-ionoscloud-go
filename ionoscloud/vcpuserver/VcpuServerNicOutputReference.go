@@ -101,7 +101,7 @@ type VcpuServerNicOutputReference interface {
 	// Experimental.
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
 	PutFirewall(value interface{})
 	ResetDhcp()
 	ResetDhcpv6()
@@ -116,7 +116,7 @@ type VcpuServerNicOutputReference interface {
 	ResetSecurityGroupsIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktf.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -843,8 +843,8 @@ func (v *jsiiProxy_VcpuServerNicOutputReference) InterpolationAsList() cdktf.IRe
 	return returns
 }
 
-func (v *jsiiProxy_VcpuServerNicOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
+func (v *jsiiProxy_VcpuServerNicOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
@@ -852,7 +852,7 @@ func (v *jsiiProxy_VcpuServerNicOutputReference) InterpolationForAttribute(prope
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -958,8 +958,8 @@ func (v *jsiiProxy_VcpuServerNicOutputReference) ResetSecurityGroupsIds() {
 	)
 }
 
-func (v *jsiiProxy_VcpuServerNicOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_VcpuServerNicOutputReference) Resolve(context cdktf.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -967,7 +967,7 @@ func (v *jsiiProxy_VcpuServerNicOutputReference) Resolve(_context cdktf.IResolve
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

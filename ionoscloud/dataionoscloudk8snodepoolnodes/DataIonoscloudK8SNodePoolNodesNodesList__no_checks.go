@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesNodesList) validateGetParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesNodesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudK8SNodePoolNodesNodesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

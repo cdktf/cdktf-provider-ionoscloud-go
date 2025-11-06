@@ -43,11 +43,11 @@ func (v *jsiiProxy_VpnIpsecGatewayTimeoutsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (v *jsiiProxy_VpnIpsecGatewayTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpnIpsecGatewayTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpnIpsecGatewayTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpnIpsecGatewayTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

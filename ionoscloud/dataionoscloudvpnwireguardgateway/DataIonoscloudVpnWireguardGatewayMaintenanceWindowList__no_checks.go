@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudVpnWireguardGatewayMaintenanceWindowList) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudVpnWireguardGatewayMaintenanceWindowList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudVpnWireguardGatewayMaintenanceWindowList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

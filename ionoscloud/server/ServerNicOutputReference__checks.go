@@ -85,9 +85,9 @@ func (s *jsiiProxy_ServerNicOutputReference) validateGetStringMapAttributeParame
 	return nil
 }
 
-func (s *jsiiProxy_ServerNicOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_ServerNicOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -124,9 +124,9 @@ func (s *jsiiProxy_ServerNicOutputReference) validatePutFirewallParameters(value
 	return nil
 }
 
-func (s *jsiiProxy_ServerNicOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_ServerNicOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

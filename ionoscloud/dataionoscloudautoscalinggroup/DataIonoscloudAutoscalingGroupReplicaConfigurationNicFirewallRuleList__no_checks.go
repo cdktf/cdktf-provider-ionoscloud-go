@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewall
 	return nil
 }
 
-func (d *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
