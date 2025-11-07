@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/vpn_wireguard_gateway ionoscloud_vpn_wireguard_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/vpn_wireguard_gateway ionoscloud_vpn_wireguard_gateway}.
 type DataIonoscloudVpnWireguardGateway interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -436,7 +436,7 @@ func (j *jsiiProxy_DataIonoscloudVpnWireguardGateway) Tier() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/vpn_wireguard_gateway ionoscloud_vpn_wireguard_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/vpn_wireguard_gateway ionoscloud_vpn_wireguard_gateway} Data Source.
 func NewDataIonoscloudVpnWireguardGateway(scope constructs.Construct, id *string, config *DataIonoscloudVpnWireguardGatewayConfig) DataIonoscloudVpnWireguardGateway {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewDataIonoscloudVpnWireguardGateway(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/vpn_wireguard_gateway ionoscloud_vpn_wireguard_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/vpn_wireguard_gateway ionoscloud_vpn_wireguard_gateway} Data Source.
 func NewDataIonoscloudVpnWireguardGateway_Override(d DataIonoscloudVpnWireguardGateway, scope constructs.Construct, id *string, config *DataIonoscloudVpnWireguardGatewayConfig) {
 	_init_.Initialize()
 

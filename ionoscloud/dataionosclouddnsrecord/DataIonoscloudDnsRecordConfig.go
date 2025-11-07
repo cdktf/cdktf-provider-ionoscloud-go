@@ -24,26 +24,26 @@ type DataIonoscloudDnsRecordConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// The UUID of an existing DNS Zone.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/dns_record#zone_id DataIonoscloudDnsRecord#zone_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/dns_record#zone_id DataIonoscloudDnsRecord#zone_id}
 	ZoneId *string `field:"required" json:"zoneId" yaml:"zoneId"`
 	// The ID of your DNS Record.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/dns_record#id DataIonoscloudDnsRecord#id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/dns_record#id DataIonoscloudDnsRecord#id}
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The name of your DNS Record.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/dns_record#name DataIonoscloudDnsRecord#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/dns_record#name DataIonoscloudDnsRecord#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Whether partial matching is allowed or not when using name argument.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/dns_record#partial_match DataIonoscloudDnsRecord#partial_match}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/dns_record#partial_match DataIonoscloudDnsRecord#partial_match}
 	PartialMatch interface{} `field:"optional" json:"partialMatch" yaml:"partialMatch"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/dns_record#timeouts DataIonoscloudDnsRecord#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/dns_record#timeouts DataIonoscloudDnsRecord#timeouts}
 	Timeouts *DataIonoscloudDnsRecordTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

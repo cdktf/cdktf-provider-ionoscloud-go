@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/inmemorydb_snapshot ionoscloud_inmemorydb_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/inmemorydb_snapshot ionoscloud_inmemorydb_snapshot}.
 type DataIonoscloudInmemorydbSnapshot interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DataIonoscloudInmemorydbSnapshot) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/inmemorydb_snapshot ionoscloud_inmemorydb_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/inmemorydb_snapshot ionoscloud_inmemorydb_snapshot} Data Source.
 func NewDataIonoscloudInmemorydbSnapshot(scope constructs.Construct, id *string, config *DataIonoscloudInmemorydbSnapshotConfig) DataIonoscloudInmemorydbSnapshot {
 	_init_.Initialize()
 
@@ -340,7 +340,7 @@ func NewDataIonoscloudInmemorydbSnapshot(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/inmemorydb_snapshot ionoscloud_inmemorydb_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/inmemorydb_snapshot ionoscloud_inmemorydb_snapshot} Data Source.
 func NewDataIonoscloudInmemorydbSnapshot_Override(d DataIonoscloudInmemorydbSnapshot, scope constructs.Construct, id *string, config *DataIonoscloudInmemorydbSnapshotConfig) {
 	_init_.Initialize()
 

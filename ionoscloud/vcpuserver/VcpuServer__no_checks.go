@@ -163,6 +163,10 @@ func (j *jsiiProxy_VcpuServer) validateSetNameParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_VcpuServer) validateSetNicMultiQueueParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VcpuServer) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

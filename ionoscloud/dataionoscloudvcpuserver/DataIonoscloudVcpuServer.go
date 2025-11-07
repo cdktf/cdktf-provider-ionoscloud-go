@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/vcpu_server ionoscloud_vcpu_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/vcpu_server ionoscloud_vcpu_server}.
 type DataIonoscloudVcpuServer interface {
 	cdktf.TerraformDataSource
 	AvailabilityZone() *string
@@ -57,6 +57,7 @@ type DataIonoscloudVcpuServer interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NicMultiQueue() cdktf.IResolvable
 	Nics() DataIonoscloudVcpuServerNicsList
 	// The tree node.
 	Node() constructs.Node
@@ -361,6 +362,16 @@ func (j *jsiiProxy_DataIonoscloudVcpuServer) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataIonoscloudVcpuServer) NicMultiQueue() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"nicMultiQueue",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataIonoscloudVcpuServer) Nics() DataIonoscloudVcpuServerNicsList {
 	var returns DataIonoscloudVcpuServerNicsList
 	_jsii_.Get(
@@ -512,7 +523,7 @@ func (j *jsiiProxy_DataIonoscloudVcpuServer) Volumes() DataIonoscloudVcpuServerV
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/vcpu_server ionoscloud_vcpu_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/vcpu_server ionoscloud_vcpu_server} Data Source.
 func NewDataIonoscloudVcpuServer(scope constructs.Construct, id *string, config *DataIonoscloudVcpuServerConfig) DataIonoscloudVcpuServer {
 	_init_.Initialize()
 
@@ -530,7 +541,7 @@ func NewDataIonoscloudVcpuServer(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/vcpu_server ionoscloud_vcpu_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/vcpu_server ionoscloud_vcpu_server} Data Source.
 func NewDataIonoscloudVcpuServer_Override(d DataIonoscloudVcpuServer, scope constructs.Construct, id *string, config *DataIonoscloudVcpuServerConfig) {
 	_init_.Initialize()
 

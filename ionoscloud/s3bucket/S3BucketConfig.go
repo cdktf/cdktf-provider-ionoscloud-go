@@ -26,27 +26,27 @@ type S3BucketConfig struct {
 	//
 	// It must start and end with a letter or number and contain only lowercase alphanumeric characters, hyphens, periods and underscores.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/s3_bucket#name S3Bucket#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/resources/s3_bucket#name S3Bucket#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Whether all objects should be deleted from the bucket so that the bucket can be destroyed.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/s3_bucket#force_destroy S3Bucket#force_destroy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/resources/s3_bucket#force_destroy S3Bucket#force_destroy}
 	ForceDestroy interface{} `field:"optional" json:"forceDestroy" yaml:"forceDestroy"`
 	// Whether object lock is enabled for the bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/s3_bucket#object_lock_enabled S3Bucket#object_lock_enabled}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/resources/s3_bucket#object_lock_enabled S3Bucket#object_lock_enabled}
 	ObjectLockEnabled interface{} `field:"optional" json:"objectLockEnabled" yaml:"objectLockEnabled"`
 	// The region of the bucket. Defaults to eu-central-3.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/s3_bucket#region S3Bucket#region}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/resources/s3_bucket#region S3Bucket#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
 	// A mapping of tags to assign to the bucket.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/s3_bucket#tags S3Bucket#tags}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/resources/s3_bucket#tags S3Bucket#tags}
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/s3_bucket#timeouts S3Bucket#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/resources/s3_bucket#timeouts S3Bucket#timeouts}
 	Timeouts *S3BucketTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

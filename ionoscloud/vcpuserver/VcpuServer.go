@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/vcpu_server ionoscloud_vcpu_server}.
+// Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/resources/vcpu_server ionoscloud_vcpu_server}.
 type VcpuServer interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -84,6 +84,9 @@ type VcpuServer interface {
 	NameInput() *string
 	Nic() VcpuServerNicOutputReference
 	NicInput() *VcpuServerNic
+	NicMultiQueue() interface{}
+	SetNicMultiQueue(val interface{})
+	NicMultiQueueInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	PrimaryIp() *string
@@ -178,6 +181,7 @@ type VcpuServer interface {
 	ResetImagePassword()
 	ResetLabel()
 	ResetNic()
+	ResetNicMultiQueue()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -593,6 +597,26 @@ func (j *jsiiProxy_VcpuServer) NicInput() *VcpuServerNic {
 	return returns
 }
 
+func (j *jsiiProxy_VcpuServer) NicMultiQueue() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nicMultiQueue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VcpuServer) NicMultiQueueInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"nicMultiQueueInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VcpuServer) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -814,7 +838,7 @@ func (j *jsiiProxy_VcpuServer) VolumeInput() *VcpuServerVolume {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/vcpu_server ionoscloud_vcpu_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/resources/vcpu_server ionoscloud_vcpu_server} Resource.
 func NewVcpuServer(scope constructs.Construct, id *string, config *VcpuServerConfig) VcpuServer {
 	_init_.Initialize()
 
@@ -832,7 +856,7 @@ func NewVcpuServer(scope constructs.Construct, id *string, config *VcpuServerCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/vcpu_server ionoscloud_vcpu_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/resources/vcpu_server ionoscloud_vcpu_server} Resource.
 func NewVcpuServer_Override(v VcpuServer, scope constructs.Construct, id *string, config *VcpuServerConfig) {
 	_init_.Initialize()
 
@@ -1009,6 +1033,17 @@ func (j *jsiiProxy_VcpuServer)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VcpuServer)SetNicMultiQueue(val interface{}) {
+	if err := j.validateSetNicMultiQueueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nicMultiQueue",
 		val,
 	)
 }
@@ -1549,6 +1584,14 @@ func (v *jsiiProxy_VcpuServer) ResetNic() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetNic",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VcpuServer) ResetNicMultiQueue() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetNicMultiQueue",
 		nil, // no parameters
 	)
 }
